@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import safFactoryImage from "@assets/SAF Factory to jet_1754154741557.png";
 
 export default function CompanyOverview() {
   const features = [
@@ -65,8 +66,8 @@ export default function CompanyOverview() {
           >
             <div className="absolute -inset-4 bg-gradient-to-r from-emerald/20 to-mint/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
             <img 
-              src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&h=800"
-              alt="Modern industrial refinery with clean technology"
+              src={safFactoryImage}
+              alt="SAF Factory to Jet - Sustainable Aviation Fuel production and delivery process"
               className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent rounded-2xl"></div>
