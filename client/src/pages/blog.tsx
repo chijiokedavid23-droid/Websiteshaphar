@@ -3,6 +3,21 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, User, Tag } from "lucide-react";
 
+// Function to map article titles to article IDs
+const getArticleId = (title: string): string | null => {
+  const titleMap: Record<string, string> = {
+    "Tim Rose Joins Shaphargroup Board as Strategic Executive Director": "tim-rose-joins-board",
+    "Why Europe and China Must Collaborate to Meet Net Zero — Not Compete": "europe-china-collaboration",
+    "✈️ Shaphargroup's David C. Arinze Speaks at SAF Investors Summit London 2025": "saf-investors-summit",
+    "Controlling the Future of SAF: Why Integration, Not Size, Will Define the Next Energy Giants": "controlling-future-of-saf",
+    "Shaphargroup Achieves ISCC CORSIA Certification (SAF)": "iscc-corsia-certification",
+    "From UCO to Jet Fuel: The Journey Toward Sustainable Aviation": "uco-to-jet-fuel",
+    "How Used Cooking Oil Is Powering a Greener Future": "uco-greener-future"
+  };
+  
+  return titleMap[title] || null;
+};
+
 export default function Blog() {
   const featuredPost = {
     title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
@@ -216,7 +231,14 @@ export default function Blog() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
-            onClick={() => window.open(featuredPost.link, '_blank')}
+            onClick={() => {
+              const articleId = getArticleId(featuredPost.title);
+              if (articleId) {
+                window.location.href = `/article/${articleId}`;
+              } else {
+                window.open(featuredPost.link, '_blank');
+              }
+            }}
           >
             <div className="grid lg:grid-cols-2 gap-6">
               <div className="relative overflow-hidden">
@@ -285,7 +307,14 @@ export default function Blog() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                onClick={() => window.open(post.link, '_blank')}
+                onClick={() => {
+                  const articleId = getArticleId(post.title);
+                  if (articleId) {
+                    window.location.href = `/article/${articleId}`;
+                  } else {
+                    window.open(post.link, '_blank');
+                  }
+                }}
               >
                 <div className="relative overflow-hidden">
                   <img 

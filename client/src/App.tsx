@@ -8,6 +8,7 @@ import SAF from "@/pages/saf";
 import Sustainability from "@/pages/sustainability";
 import About from "@/pages/about";
 import Blog from "@/pages/blog";
+import Article from "@/pages/article";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
@@ -19,6 +20,7 @@ function Router() {
       <Route path="/sustainability" component={Sustainability} />
       <Route path="/about" component={About} />
       <Route path="/blog" component={Blog} />
+      <Route path="/article/:id" component={Article} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
