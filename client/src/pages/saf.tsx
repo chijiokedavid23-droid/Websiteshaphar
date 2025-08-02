@@ -19,7 +19,8 @@ export default function SAF() {
       
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-forest/80 to-emerald/60 z-10"></div>
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/70 to-forest/70 z-15"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -29,16 +30,16 @@ export default function SAF() {
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Sustainable Aviation Fuel for a <span className="text-emerald-300">Net-Zero Future</span>
+            Sustainable Aviation Fuel for a <span className="text-emerald-200">Net-Zero Future</span>
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-4xl mx-auto"
+            className="text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-4xl mx-auto drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
