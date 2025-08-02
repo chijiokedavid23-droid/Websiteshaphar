@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronDown, Send, Factory } from "lucide-react";
+import { Link } from "wouter";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -12,10 +13,13 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy/80 to-forest/60 z-10"></div>
+      {/* Professional gradient overlay with subtle pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy/95 to-forest z-10"></div>
+      <div className="absolute inset-0 opacity-30 z-10" style={{
+        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
+      }}></div>
       
-      {/* Background image - sustainable aviation fuel planes */}
+      {/* High-quality background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -24,18 +28,22 @@ export default function HeroSection() {
       />
       
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Powering <span className="text-emerald-300">Net-Zero</span> Aviation. Today.
+            Powering{" "}
+            <span className="bg-gradient-to-r from-emerald to-mint bg-clip-text text-transparent">
+              Net-Zero Aviation
+            </span>
+            . Today.
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed"
+            className="text-xl md:text-2xl text-gray-100 mb-6 leading-relaxed font-light max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -44,7 +52,7 @@ export default function HeroSection() {
           </motion.p>
           
           <motion.p 
-            className="text-lg text-gray-300 mb-12"
+            className="text-lg text-gray-300 mb-14 font-light"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -53,25 +61,26 @@ export default function HeroSection() {
           </motion.p>
           
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Button 
-              size="lg"
-              onClick={() => scrollToSection("contact")}
-              className="bg-gold text-white hover:bg-gold/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-8 py-4"
-            >
-              <Send className="w-5 h-5 mr-2" />
-              Contact Us
-            </Button>
+            <Link href="/contact">
+              <Button 
+                size="lg"
+                className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 px-10 py-4 rounded-lg"
+              >
+                <Send className="w-5 h-5 mr-2" />
+                Contact Us
+              </Button>
+            </Link>
             
             <Button
               size="lg"
               variant="outline"
               asChild
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-navy transition-all duration-300 font-semibold text-lg px-8 py-4"
+              className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white hover:text-navy transition-all duration-300 font-semibold text-lg px-10 py-4 rounded-lg"
             >
               <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer">
                 <Factory className="w-5 h-5 mr-2" />
@@ -82,7 +91,7 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
+      {/* Professional scroll indicator */}
       <motion.div 
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
         initial={{ opacity: 0 }}
@@ -91,11 +100,15 @@ export default function HeroSection() {
       >
         <motion.button
           onClick={() => scrollToSection("about")}
-          className="animate-bounce"
+          className="w-8 h-12 border-2 border-white/40 rounded-full flex justify-center items-start pt-2 hover:border-white/60 transition-colors"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <ChevronDown className="w-8 h-8 text-white" />
+          <motion.div 
+            className="w-1 h-2 bg-white/60 rounded-full"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          />
         </motion.button>
       </motion.div>
     </section>

@@ -48,47 +48,54 @@ export default function CapabilitiesSection() {
   ];
 
   return (
-    <section id="capabilities" className="py-20 bg-gray-50">
+    <section id="capabilities" className="py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
-          className="text-center mb-16"
+          className="text-center mb-20"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <div className="text-sm font-semibold text-emerald tracking-wide uppercase mb-4">
+          <div className="text-sm font-bold text-emerald tracking-wider uppercase mb-6 flex items-center justify-center">
+            <div className="w-8 h-0.5 bg-emerald mr-3"></div>
             Our Capabilities
+            <div className="w-8 h-0.5 bg-emerald ml-3"></div>
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            Built for Reliability at Scale
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-8 tracking-tight">
+            Built for{" "}
+            <span className="text-emerald">Reliability</span>{" "}
+            at Scale
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
             Whether you're meeting blending mandates or decarbonizing voluntarily, we provide 
             ready-to-export, drop-in HEFA SAF — at scale.
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid md:grid-cols-3 gap-8 mb-20">
           {capabilities.map((capability, index) => {
             const IconComponent = capability.icon;
             return (
               <motion.div
                 key={index}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+                className="group bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 relative overflow-hidden"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02 }}
               >
-                <div className={`w-16 h-16 ${capability.color} rounded-2xl flex items-center justify-center mb-6`}>
-                  <IconComponent className="w-8 h-8 text-white" />
+                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald/5 to-mint/5 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500"></div>
+                <div className="relative z-10">
+                  <div className={`w-18 h-18 ${capability.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300`}>
+                    <IconComponent className="w-9 h-9 text-white" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-navy mb-4 group-hover:text-emerald transition-colors duration-300">{capability.title}</h3>
+                  <p className="text-gray-600 mb-6 leading-relaxed">{capability.description}</p>
+                  <div className="text-4xl font-bold text-emerald">{capability.metric}</div>
+                  <div className="text-sm text-gray-500 font-medium tracking-wide">{capability.unit}</div>
                 </div>
-                <h3 className="text-2xl font-bold text-navy mb-4">{capability.title}</h3>
-                <p className="text-gray-600 mb-4">{capability.description}</p>
-                <div className="text-3xl font-bold text-gold">{capability.metric}</div>
-                <div className="text-sm text-gray-500 font-medium">{capability.unit}</div>
               </motion.div>
             );
           })}
