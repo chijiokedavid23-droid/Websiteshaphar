@@ -7,6 +7,7 @@ import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
 import charlesImagePath from "@assets/Charls 3_1754161125449.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
+import jiGangImagePath from "@assets/Gee_1754161789665.jpg";
 
 export default function About() {
   const scrollToContact = () => {
@@ -58,7 +59,7 @@ export default function About() {
     {
       name: "Ji Gang",
       title: "Production Director",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/01/Production-Director-Ji-Gang-150x150.jpg"
+      image: jiGangImagePath
     },
     {
       name: "Tim Rose",
