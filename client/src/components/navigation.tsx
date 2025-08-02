@@ -46,7 +46,7 @@ export default function Navigation() {
               <img 
                 src={logoPath} 
                 alt="Shaphargroup" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
             </Link>
           </motion.div>
@@ -60,7 +60,7 @@ export default function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={item.path} className={`text-charcoal hover:text-emerald transition-colors duration-200 font-medium ${
+                <Link href={item.path} className={`text-white hover:text-emerald transition-colors duration-200 font-medium ${
                   location === item.path ? 'text-emerald font-semibold' : ''
                 }`}>
                   {item.name}
