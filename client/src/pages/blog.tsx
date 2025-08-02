@@ -27,16 +27,16 @@ export default function Blog() {
     {
       title: "✈️ Shaphargroup's David C. Arinze Speaks at SAF Investors Summit London 2025",
       excerpt: "London, UK – May 29, 2025. Shaphargroup proudly participated in the SAF Investors Summit London 2025, one of the premier events for sustainable aviation fuel stakeholders.",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/06/54553304794_d731ca50ea_b-768x512.jpg",
       category: "News",
       date: "June 4, 2025",
       author: "Admin",
-      link: "https://shaphargroup.com/news/shaphargroups-david-c-arinze-speaks-at-saf-investors-summit-london-2025/"
+      link: "https://shaphargroup.com/news/%e2%9c%88%ef%b8%8f-shaphargroups-david-c-arinze-speaks-at-saf-investors-summit-london-2025/"
     },
     {
       title: "Controlling the Future of SAF: Why Integration, Not Size, Will Define the Next Energy Giants",
       excerpt: "By David C. Arinze, Managing Partner | Shaphargroup, Renewable Energy Strategist | UCO & SAF Advocate. An analysis of market dynamics in the sustainable aviation fuel industry.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/06/ChatGPT-Image-Jun-2-2025-04_00_37-PM-768x512.png",
       category: "Insights & Thought Leadership",
       date: "June 2, 2025",
       author: "David C. Arinze",
@@ -45,7 +45,7 @@ export default function Blog() {
     {
       title: "Shaphargroup Achieves ISCC CORSIA Certification for Sustainable Aviation Fuel",
       excerpt: "Major milestone in sustainable aviation fuel certification and compliance, reinforcing our commitment to transparency and environmental responsibility.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/01/ISCC-CORSIA-certification-Shaphargroup-150x150.png",
       category: "Certification",
       date: "May 15, 2025",
       author: "Admin",
@@ -54,7 +54,7 @@ export default function Blog() {
     {
       title: "Refinery Investment in Yangxin County Welcomed by Government Officials",
       excerpt: "Top government officials welcome Shaphargroup's strategic investment in sustainable fuel infrastructure, marking a significant step forward for the region.",
-      image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/01/Yangxin-county-meeting-1-150x150.png",
       category: "Investment News",
       date: "April 20, 2025",
       author: "Admin",
