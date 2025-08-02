@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronDown, Send, Factory } from "lucide-react";
 import { Link } from "wouter";
+import aviationImagePath from "@assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp";
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -17,7 +18,7 @@ export default function HeroSection() {
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('/attached_assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp')"
+          backgroundImage: `url(${aviationImagePath})`
         }}
       />
       
