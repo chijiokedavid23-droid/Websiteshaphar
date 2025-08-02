@@ -227,9 +227,9 @@ export default function About() {
                   <img 
                     src={member.image}
                     alt={member.name}
-                    className="w-full h-64 object-cover"
+                    className="w-full h-64 object-contain bg-gray-50"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent pointer-events-none"></div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-navy mb-2">{member.name}</h3>
