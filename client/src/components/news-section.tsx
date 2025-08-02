@@ -50,9 +50,6 @@ export default function NewsSection() {
           <div className="text-sm font-semibold text-emerald tracking-wide uppercase mb-4">
             Latest News
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-            Industry Updates & Achievements
-          </h2>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
