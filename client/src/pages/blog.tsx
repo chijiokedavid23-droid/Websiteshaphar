@@ -96,7 +96,7 @@ export default function Blog() {
     {
       title: "Powering Aviation's Green Future: How Strategic Feedstock Partnerships Can Accelerate SAF Adoption",
       excerpt: "The aviation sector is under mounting pressure to decarbonize, with the EU's ReFuelEU Aviation mandate requiring a minimum of 6% Sustainable Aviation Fuel (SAF) by 2030.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/05/ChatGPT-Image-May-12-2025-12_01_28-AM-768x512.png",
+      image: "@assets/Unlocking SAF_1754168191181.jpeg",
       category: "Insights & Thought Leadership",
       date: "May 12, 2025",
       author: "David C. Arinze",
