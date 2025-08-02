@@ -22,7 +22,7 @@ export default function SAF() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://shaphargroup.com/wp-content/uploads/2025/04/SAF-shaphargroup-768x512.webp')"
+            backgroundImage: "url('https://images.unsplash.com/photo-1540962351504-03099e0a754b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2002&q=80')"
           }}
         />
         
