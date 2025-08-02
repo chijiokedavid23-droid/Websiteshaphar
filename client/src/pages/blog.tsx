@@ -211,34 +211,34 @@ export default function Blog() {
           </motion.div>
 
           <motion.div 
-            className="bg-white rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-300 cursor-pointer"
+            className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
             onClick={() => window.open(featuredPost.link, '_blank')}
           >
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid lg:grid-cols-2 gap-6">
               <div className="relative overflow-hidden">
                 <img 
                   src={featuredPost.image}
                   alt={featuredPost.title}
-                  className="w-full h-full object-cover min-h-[400px] hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover min-h-[280px] hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute top-4 left-4">
+                <div className="absolute top-3 left-3">
                   <span className="bg-emerald text-white px-3 py-1 rounded-full text-sm font-medium">
                     {featuredPost.category}
                   </span>
                 </div>
               </div>
-              <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <h3 className="text-3xl font-bold text-navy mb-4 leading-tight hover:text-emerald transition-colors">
+              <div className="p-6 lg:p-8 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold text-navy mb-3 leading-tight hover:text-emerald transition-colors">
                   {featuredPost.title}
                 </h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-gray-600 mb-4 leading-relaxed text-sm">
                   {featuredPost.excerpt}
                 </p>
-                <div className="flex items-center text-sm text-gray-500 mb-6 space-x-6">
+                <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
                   <div className="flex items-center">
                     <Calendar className="w-4 h-4 mr-2" />
                     {featuredPost.date}
@@ -250,7 +250,7 @@ export default function Blog() {
                 </div>
                 <div className="flex items-center text-emerald font-medium hover:text-forest transition-colors">
                   <span>Read Full Article</span>
-                  <ArrowRight className="w-5 h-5 ml-2" />
+                  <ArrowRight className="w-4 h-4 ml-2" />
                 </div>
               </div>
             </div>
@@ -276,11 +276,11 @@ export default function Blog() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {blogPosts.map((post, index) => (
               <motion.article
                 key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 cursor-pointer group"
+                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1 cursor-pointer group"
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
@@ -291,35 +291,31 @@ export default function Blog() {
                   <img 
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-emerald text-white px-3 py-1 rounded-full text-xs font-medium">
+                  <div className="absolute top-2 left-2">
+                    <span className="bg-emerald text-white px-2 py-1 rounded-full text-xs font-medium">
                       {post.category}
                     </span>
                   </div>
                 </div>
-                <div className="p-6">
-                  <h3 className="text-lg font-bold text-navy mb-3 line-clamp-2 group-hover:text-emerald transition-colors">
+                <div className="p-3">
+                  <h3 className="text-sm font-bold text-navy mb-2 line-clamp-2 group-hover:text-emerald transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                  <p className="text-gray-600 text-xs mb-3 line-clamp-2">
                     {post.excerpt}
                   </p>
-                  <div className="flex items-center text-xs text-gray-500 mb-4 space-x-4">
+                  <div className="flex items-center text-xs text-gray-500 mb-3 space-x-3">
                     <div className="flex items-center">
                       <Calendar className="w-3 h-3 mr-1" />
                       {post.date}
                     </div>
-                    <div className="flex items-center">
-                      <User className="w-3 h-3 mr-1" />
-                      {post.author}
-                    </div>
                   </div>
-                  <div className="flex items-center text-emerald text-sm font-medium group-hover:text-forest transition-colors">
+                  <div className="flex items-center text-emerald text-xs font-medium group-hover:text-forest transition-colors">
                     <span>Read More</span>
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                    <ArrowRight className="w-3 h-3 ml-1 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
               </motion.article>
