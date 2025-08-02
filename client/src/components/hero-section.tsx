@@ -13,19 +13,19 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Professional gradient overlay with subtle pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy/95 to-forest z-10"></div>
-      <div className="absolute inset-0 opacity-30 z-10" style={{
-        backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.02'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`
-      }}></div>
-      
-      {/* High-quality background image */}
+      {/* Professional aviation background image with better contrast */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2074&q=80')"
+          backgroundImage: "url('https://images.unsplash.com/photo-1544652478-6653e09f18a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
         }}
       />
+      
+      {/* Strong dark overlay for better text readability */}
+      <div className="absolute inset-0 bg-black/60 z-10"></div>
+      
+      {/* Additional gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-navy/30 via-transparent to-forest/30 z-15"></div>
       
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-5xl mx-auto">
