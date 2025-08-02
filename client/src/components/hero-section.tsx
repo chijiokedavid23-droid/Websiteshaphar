@@ -36,11 +36,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            Powering{" "}
-            <span className="bg-gradient-to-r from-emerald to-mint bg-clip-text text-transparent">
-              Net-Zero Aviation
-            </span>
-            . Today
+            Powering Net-Zero Aviation Today
           </motion.h1>
           
           <motion.p 
