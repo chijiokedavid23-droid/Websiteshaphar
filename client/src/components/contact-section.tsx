@@ -103,7 +103,7 @@ export default function ContactSection() {
               size="lg"
               variant="outline"
               onClick={scrollToContact}
-              className="bg-transparent border-2 border-white text-white hover:bg-white hover:text-emerald transition-all duration-300 font-semibold text-lg px-8 py-4"
+              className="bg-white border-2 border-white text-emerald hover:bg-emerald hover:text-white transition-all duration-300 font-semibold text-lg px-8 py-4"
             >
               <Calendar className="w-5 h-5 mr-2" />
               Schedule a Call
