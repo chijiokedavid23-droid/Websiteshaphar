@@ -61,6 +61,15 @@ export default {
           border: "var(--sidebar-border)",
           ring: "var(--sidebar-ring)",
         },
+        // Custom Shaphargroup colors
+        navy: "var(--navy)",
+        forest: "var(--forest)",
+        sky: "var(--sky)",
+        emerald: "var(--emerald)",
+        charcoal: "var(--charcoal)",
+        sage: "var(--sage)",
+        mint: "var(--mint)",
+        gold: "hsl(45, 86%, 58%)",
       },
       keyframes: {
         "accordion-down": {

@@ -88,8 +88,10 @@ export default function CapabilitiesSection() {
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald/5 to-mint/5 rounded-full transform translate-x-16 -translate-y-16 group-hover:scale-150 transition-transform duration-500"></div>
                 <div className="relative z-10">
-                  <div className={`w-18 h-18 ${capability.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300`}>
-                    <IconComponent className="w-9 h-9 text-navy stroke-2" />
+                  <div className={`w-20 h-20 ${capability.color} rounded-2xl flex items-center justify-center mb-6 shadow-lg group-hover:shadow-xl transition-shadow duration-300 relative`}>
+                    <div className="absolute inset-2 bg-white/20 rounded-xl flex items-center justify-center">
+                      <IconComponent className="w-10 h-10 text-white stroke-[3]" />
+                    </div>
                   </div>
                   <h3 className="text-2xl font-bold text-navy mb-4 group-hover:text-emerald transition-colors duration-300">{capability.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">{capability.description}</p>
