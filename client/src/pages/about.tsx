@@ -8,6 +8,7 @@ import charlesImagePath from "@assets/Charls 3_1754161125449.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
 import jiGangImagePath from "@assets/Gee_1754161789665.jpg";
+import elvisImagePath from "@assets/Elvis.jpg2_1754161974007.jpg";
 
 export default function About() {
   const scrollToContact = () => {
@@ -69,7 +70,7 @@ export default function About() {
     {
       name: "Cao Yuzhao (Elvis)",
       title: "Director Supply Chain",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/01/Director-Supply-Chain-Cao-Yuzhao-Elvis-150x150.jpg"
+      image: elvisImagePath
     }
   ];
 
