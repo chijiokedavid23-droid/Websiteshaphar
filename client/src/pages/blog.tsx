@@ -2,6 +2,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, User, Tag } from "lucide-react";
+import unlockingSafImage from "@assets/Unlocking SAF_1754168191181.jpeg";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
@@ -96,7 +97,7 @@ export default function Blog() {
     {
       title: "Powering Aviation's Green Future: How Strategic Feedstock Partnerships Can Accelerate SAF Adoption",
       excerpt: "The aviation sector is under mounting pressure to decarbonize, with the EU's ReFuelEU Aviation mandate requiring a minimum of 6% Sustainable Aviation Fuel (SAF) by 2030.",
-      image: "@assets/Unlocking SAF_1754168191181.jpeg",
+      image: unlockingSafImage,
       category: "Insights & Thought Leadership",
       date: "May 12, 2025",
       author: "David C. Arinze",
