@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import safSummitImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 import refineryInvestmentImage from "@assets/Yangxin county meeting 1_1754156293882.png";
 import isccCertificationImage from "@assets/image_1754156625874.png";
-import timRoseImage from "@assets/image_1754154133716.png";
+import timRoseImage from "@assets/MR TIM_1754156709435.jpg";
 
 export default function NewsSection() {
   const newsItems = [
