@@ -43,11 +43,11 @@ export default function Blog() {
       link: "https://shaphargroup.com/uco-saf-market-perspective/controlling-the-future-of-saf-why-integration-not-size-will-define-the-next-energy-giants/"
     },
     {
-      title: "Shaphargroup Achieves ISCC CORSIA Certification for Sustainable Aviation Fuel",
-      excerpt: "Major milestone in sustainable aviation fuel certification and compliance, reinforcing our commitment to transparency and environmental responsibility.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/01/ISCC-CORSIA-certification-Shaphargroup-150x150.png",
-      category: "Certification",
-      date: "May 15, 2025",
+      title: "Shaphargroup Achieves ISCC CORSIA Certification (SAF)",
+      excerpt: "Shaphargroup is proud to announce that we have been awarded the ISCC CORSIA International Sustainability and Carbon Certification, a globally recognized standard that underscores our commitment to producing and supplying sustainable biofuels for the aviation industry.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/05/ISCC-CORSIA-SAF-CERTIFICATE-768x1027.jpeg",
+      category: "SAF",
+      date: "May 6, 2025",
       author: "Admin",
       link: "https://shaphargroup.com/saf/shaphargroup-achieves-iscc-corsia-certification-saf/"
     },
@@ -61,13 +61,67 @@ export default function Blog() {
       link: "https://mp.weixin.qq.com/s/-BH7ORo8MU2Qv620mGrI4g"
     },
     {
-      title: "The Future of Sustainable Aviation: UCO as a Climate Solution",
-      excerpt: "Exploring how Used Cooking Oil (UCO) is transforming from waste product to a critical component in aviation's sustainability journey.",
-      image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      category: "Industry Insights",
-      date: "March 28, 2025",
+      title: "From UCO to Jet Fuel: The Journey Toward Sustainable Aviation",
+      excerpt: "As the aviation industry races to meet its net-zero targets, one solution is already proving both practical and scalable: Sustainable Aviation Fuel (SAF) made from Used Cooking Oil (UCO).",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/05/ChatGPT-Image-May-14-2025-11_03_27-PM-768x512.png",
+      category: "Insights & Thought Leadership",
+      date: "May 14, 2025",
       author: "David C. Arinze",
-      link: "#"
+      link: "https://shaphargroup.com/uco-saf-market-perspective/from-uco-to-jet-fuel-the-journey-toward-sustainable-aviation/"
+    },
+    {
+      title: "Shaphargroup's David C. Arinze to Speak at SAF Investors Conference in London",
+      excerpt: "We're excited to announce that David C. Arinze, Managing Partner of Shaphargroup and head of our European and American operations, will be speaking at the upcoming SAF Investors Conference in London.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/05/SAF-LONDON2-768x384.png",
+      category: "News",
+      date: "May 13, 2025",
+      author: "Admin",
+      link: "https://shaphargroup.com/news/shaphargroups-david-c-arinze-to-speak-at-saf-investors-conference-in-london/"
+    },
+    {
+      title: "Powering Aviation's Green Future: How Strategic Feedstock Partnerships Can Accelerate SAF Adoption",
+      excerpt: "The aviation sector is under mounting pressure to decarbonize, with the EU's ReFuelEU Aviation mandate requiring a minimum of 6% Sustainable Aviation Fuel (SAF) by 2030.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/05/ChatGPT-Image-May-12-2025-12_01_28-AM-768x512.png",
+      category: "Insights & Thought Leadership",
+      date: "May 12, 2025",
+      author: "David C. Arinze",
+      link: "https://shaphargroup.com/uco-saf-market-perspective/powering-aviations-green-future-how-strategic-feedstock-partnerships-can-accelerate-saf-adoption/"
+    },
+    {
+      title: "Building a Trustworthy UCO Supply Chain: Why Certification and Transparency Matter More Than Ever",
+      excerpt: "In today's race toward decarbonization, used cooking oil (UCO) has emerged as a critical feedstock for renewable fuels, especially Sustainable Aviation Fuel (SAF).",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-28-2025-11_56_32-AM-768x512.png",
+      category: "Insights & Thought Leadership",
+      date: "April 28, 2025",
+      author: "David C. Arinze",
+      link: "https://shaphargroup.com/uco-saf-market-perspective/building-a-trustworthy-uco-supply-chain/"
+    },
+    {
+      title: "The Critical Role of UCO in Achieving Global Sustainable Aviation Fuel (SAF) Targets",
+      excerpt: "In a world racing toward net-zero emissions, aviation stands at a historic crossroads. Airlines, governments, and fuel producers are investing billions into Sustainable Aviation Fuel (SAF) development.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-26-2025-01_12_52-PM-768x512.png",
+      category: "Insights & Thought Leadership",
+      date: "April 26, 2025",
+      author: "David C. Arinze",
+      link: "https://shaphargroup.com/uco-saf-market-perspective/the-critical-role-of-uco-in-achieving-global-sustainable-aviation-fuel-saf-targets/"
+    },
+    {
+      title: "How Used Cooking Oil Is Powering a Greener Future",
+      excerpt: "As the world intensifies its shift toward clean energy, Used Cooking Oil (UCO) is emerging as one of the most exciting feedstocks for sustainable fuel production.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-16-2025-12_02_05-PM-768x512.png",
+      category: "News",
+      date: "April 16, 2025",
+      author: "Admin",
+      link: "https://shaphargroup.com/news/uco-is-the-new-gold-how-used-cooking-oil-is-powering-a-greener-future/"
+    },
+    {
+      title: "Shaphargroup Meets with Yanzhou District Government: Expands SAF Investment Agenda in Shandong",
+      excerpt: "A senior delegation from Shaphargroup visited the Yanzhou District Government and met with key officials to discuss expanding sustainable aviation fuel investment opportunities in the region.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/02/ChatGPT-Image-Feb-15-2025-11_13_15-AM-768x512.png",
+      category: "News",
+      date: "February 15, 2025",
+      author: "Admin",
+      link: "https://shaphargroup.com/news/shaphargroup-meets-with-yanzhou-district-government-expands-saf-investment-agenda-in-shandong/"
     }
   ];
 
@@ -75,7 +129,7 @@ export default function Blog() {
     "All Posts",
     "News",
     "Insights & Thought Leadership", 
-    "Industry Insights",
+    "SAF",
     "Certification",
     "Investment News"
   ];
