@@ -40,7 +40,7 @@ export default function HeroSection() {
             <span className="bg-gradient-to-r from-emerald to-mint bg-clip-text text-transparent">
               Net-Zero Aviation
             </span>
-            . Today.
+            . Today
           </motion.h1>
           
           <motion.p 
