@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "wouter";
+import logoPath from "@assets/Shaphargroup logo logo browser_1754153550144.png";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,8 +42,12 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="text-2xl font-bold text-navy hover:text-emerald transition-colors">
-              Shaphargroup
+            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img 
+                src={logoPath} 
+                alt="Shaphargroup" 
+                className="h-8 w-auto"
+              />
             </Link>
           </motion.div>
           
