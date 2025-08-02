@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
-import safSummitImage from "@assets/image_1754153142726.png";
+import safSummitImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 import refineryInvestmentImage from "@assets/image_1754153427744.png";
 import isccCertificationImage from "@assets/image_1754153780012.png";
 import timRoseImage from "@assets/image_1754154133716.png";
