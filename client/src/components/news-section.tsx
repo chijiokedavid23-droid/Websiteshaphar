@@ -1,31 +1,35 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import safSummitImage from "@assets/image_1754153142726.png";
+import refineryInvestmentImage from "@assets/image_1754153427744.png";
+import isccCertificationImage from "@assets/image_1754153780012.png";
+import timRoseImage from "@assets/image_1754154133716.png";
 
 export default function NewsSection() {
   const newsItems = [
     {
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: safSummitImage,
       category: "Recent Event",
       title: "David C. Arinze Speaks at SAF Investors Summit London 2025",
       description: "Shaphargroup's leadership addresses key industry stakeholders at prestigious aviation summit.",
       link: "https://shaphargroup.com/news/shaphargroups-david-c-arinze-speaks-at-saf-investors-summit-london-2025/"
     },
     {
-      image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: refineryInvestmentImage,
       category: "Investment News",
       title: "Refinery Investment in Yangxin County Welcomed by Officials",
       description: "Top government officials welcome Shaphargroup's strategic investment in sustainable fuel infrastructure.",
       link: "https://mp.weixin.qq.com/s/-BH7ORo8MU2Qv620mGrI4g"
     },
     {
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: isccCertificationImage,
       category: "Certification",
       title: "Shaphargroup Achieves ISCC CORSIA Certification (SAF)",
       description: "Major milestone in sustainable aviation fuel certification and compliance.",
       link: "https://shaphargroup.com/saf/shaphargroup-achieves-iscc-corsia-certification-saf/"
     },
     {
-      image: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400",
+      image: timRoseImage,
       category: "Leadership",
       title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
       description: "Strategic leadership expansion strengthens company's global market position.",
