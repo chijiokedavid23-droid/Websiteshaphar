@@ -68,10 +68,9 @@ export default function CompanyOverview() {
             <img 
               src={safFactoryImagePath}
               alt="SAF Factory to Jet - Sustainable Aviation Fuel production and delivery process"
-              className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-500"
+              className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-500 z-10"
               key="saf-factory-image"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-navy/30 to-transparent rounded-2xl"></div>
           </motion.div>
         </div>
       </div>
