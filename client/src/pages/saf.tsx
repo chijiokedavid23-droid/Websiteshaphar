@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Plane, Factory, Globe, Award } from "lucide-react";
+import safImagePath from "@assets/SAF_1754159425868.png";
 
 export default function SAF() {
   const scrollToContact = () => {
@@ -22,7 +23,7 @@ export default function SAF() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: `url(${safImagePath})`
           }}
         />
         
