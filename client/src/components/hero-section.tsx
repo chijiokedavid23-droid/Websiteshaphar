@@ -13,19 +13,19 @@ export default function HeroSection() {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Beautiful SAF/Aviation background image */}
+      {/* Custom aviation background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: "url('https://images.unsplash.com/photo-1569629743817-70c4e6ab7d2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80')"
+          backgroundImage: "url('/attached_assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp')"
         }}
       />
       
-      {/* Strong dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/60 z-10"></div>
+      {/* Overlay for better text readability while preserving image beauty */}
+      <div className="absolute inset-0 bg-black/40 z-10"></div>
       
       {/* Additional gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy/30 via-transparent to-forest/30 z-15"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-navy/20 via-transparent to-forest/20 z-15"></div>
       
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-5xl mx-auto">
