@@ -226,7 +226,7 @@ export default function Blog() {
           </motion.div>
 
           <motion.div 
-            className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer"
+            className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -240,12 +240,12 @@ export default function Blog() {
               }
             }}
           >
-            <div className="grid lg:grid-cols-2 gap-6">
-              <div className="relative overflow-hidden">
+            <div className="grid md:grid-cols-5 gap-4">
+              <div className="relative overflow-hidden md:col-span-2">
                 <img 
                   src={featuredPost.image}
                   alt={featuredPost.title}
-                  className="w-full h-full object-cover min-h-[280px] hover:scale-105 transition-transform duration-300"
+                  className="w-full h-full object-cover min-h-[200px] hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-3 left-3">
                   <span className="bg-emerald text-white px-3 py-1 rounded-full text-sm font-medium">
@@ -253,20 +253,20 @@ export default function Blog() {
                   </span>
                 </div>
               </div>
-              <div className="p-6 lg:p-8 flex flex-col justify-center">
-                <h3 className="text-2xl font-bold text-navy mb-3 leading-tight hover:text-emerald transition-colors">
+              <div className="p-4 md:p-6 flex flex-col justify-center md:col-span-3">
+                <h3 className="text-xl font-bold text-navy mb-2 leading-tight hover:text-emerald transition-colors">
                   {featuredPost.title}
                 </h3>
-                <p className="text-gray-600 mb-4 leading-relaxed text-sm">
-                  {featuredPost.excerpt}
+                <p className="text-gray-600 mb-3 leading-relaxed text-sm">
+                  {featuredPost.excerpt.substring(0, 120)}...
                 </p>
-                <div className="flex items-center text-sm text-gray-500 mb-4 space-x-4">
+                <div className="flex items-center text-sm text-gray-500 mb-3 space-x-4">
                   <div className="flex items-center">
-                    <Calendar className="w-4 h-4 mr-2" />
+                    <Calendar className="w-4 h-4 mr-1" />
                     {featuredPost.date}
                   </div>
                   <div className="flex items-center">
-                    <User className="w-4 h-4 mr-2" />
+                    <User className="w-4 h-4 mr-1" />
                     {featuredPost.author}
                   </div>
                 </div>
