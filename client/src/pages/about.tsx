@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Building, Users, Globe, Award, Target, Heart } from "lucide-react";
 import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
 import charlesImagePath from "@assets/Charls 3_1754161125449.jpg";
+import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 
 export default function About() {
   const scrollToContact = () => {
@@ -51,7 +52,7 @@ export default function About() {
     {
       name: "David C. Arinze",
       title: "MD Europe & Americas",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/01/MD-Europe-Americas-David-C.-Arinze-150x150.jpg"
+      image: davidImagePath
     },
     {
       name: "Ji Gang",
