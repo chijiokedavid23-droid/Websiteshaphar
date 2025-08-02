@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Building, Users, Globe, Award, Target, Heart } from "lucide-react";
 import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
-import charlesImagePath from "@assets/Charls 3_1754161125449.jpg";
+import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
 import jiGangImagePath from "@assets/Gee_1754161789665.jpg";
