@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Building, Users, Globe, Award, Target, Heart } from "lucide-react";
+import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
 
 export default function About() {
   const scrollToContact = () => {
@@ -39,32 +40,32 @@ export default function About() {
     {
       name: "Jiao Li Guang (Charles)",
       title: "CEO",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+      image: "https://shaphargroup.com/wp-content/uploads/2025/01/CEO-Jiao-Li-Guang-Charles-150x150.jpg"
     },
     {
       name: "Zhen Tiyu (Jane)",
       title: "CFO",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b5e5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+      image: "https://shaphargroup.com/wp-content/uploads/2025/01/CFO-Zhen-Tiyu-Jane-150x150.jpg"
     },
     {
       name: "David C. Arinze",
       title: "MD Europe & Americas",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+      image: "https://shaphargroup.com/wp-content/uploads/2025/01/MD-Europe-Americas-David-C.-Arinze-150x150.jpg"
     },
     {
       name: "Ji Gang",
       title: "Production Director",
-      image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+      image: "https://shaphargroup.com/wp-content/uploads/2025/01/Production-Director-Ji-Gang-150x150.jpg"
     },
     {
       name: "Tim Rose",
       title: "Non Executive Director",
-      image: "https://images.unsplash.com/photo-1556157382-97eda2d62296?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+      image: timRoseImagePath
     },
     {
       name: "Cao Yuzhao (Elvis)",
       title: "Director Supply Chain",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=400"
+      image: "https://shaphargroup.com/wp-content/uploads/2025/01/Director-Supply-Chain-Cao-Yuzhao-Elvis-150x150.jpg"
     }
   ];
 
