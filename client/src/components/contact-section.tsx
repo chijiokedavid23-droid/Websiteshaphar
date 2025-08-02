@@ -75,7 +75,7 @@ export default function ContactSection() {
             Let's Shape the Future of Sustainable Aviation Together
           </motion.h2>
           <motion.p 
-            className="text-xl text-white mb-12 max-w-3xl mx-auto"
+            className="text-xl text-emerald-900 mb-12 max-w-3xl mx-auto font-semibold"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
