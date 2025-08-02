@@ -1,21 +1,24 @@
 import { motion } from "framer-motion";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Link } from "wouter";
 
 export default function Footer() {
   const quickLinks = [
-    { name: "About Us", href: "#about" },
-    { name: "Capabilities", href: "#capabilities" },
-    { name: "News", href: "#news" },
-    { name: "Contact", href: "#contact" },
+    { name: "Home", href: "/" },
+    { name: "SAF", href: "/saf" },
+    { name: "Sustainability", href: "/sustainability" },
+    { name: "About", href: "/about" },
+    { name: "FutureFuel Blog", href: "/blog" },
+    { name: "Contact", href: "/contact" },
     { name: "UCO Refinery", href: "https://sg-uco.com/", external: true }
   ];
 
   const services = [
-    { name: "SAF Production", href: "#capabilities" },
-    { name: "UCO Refining", href: "#capabilities" },
-    { name: "Global Logistics", href: "#capabilities" },
-    { name: "Certification", href: "#capabilities" },
-    { name: "Compliance", href: "#capabilities" }
+    { name: "SAF Production", href: "/saf" },
+    { name: "UCO Refining", href: "/saf" },
+    { name: "Global Logistics", href: "/about" },
+    { name: "Sustainability", href: "/sustainability" },
+    { name: "Certification", href: "/sustainability" }
   ];
 
   const socialLinks = [
@@ -25,12 +28,7 @@ export default function Footer() {
     { icon: Linkedin, href: "#", label: "LinkedIn" }
   ];
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
 
   return (
     <footer className="bg-navy text-white py-16">
@@ -89,12 +87,12 @@ export default function Footer() {
                       {link.name}
                     </a>
                   ) : (
-                    <button
-                      onClick={() => scrollToSection(link.href.substring(1))}
+                    <Link
+                      href={link.href}
                       className="text-gray-300 hover:text-emerald transition-colors text-left"
                     >
                       {link.name}
-                    </button>
+                    </Link>
                   )}
                 </li>
               ))}
@@ -112,12 +110,12 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <button
-                    onClick={() => scrollToSection(service.href.substring(1))}
+                  <Link
+                    href={service.href}
                     className="text-gray-300 hover:text-emerald transition-colors text-left"
                   >
                     {service.name}
-                  </button>
+                  </Link>
                 </li>
               ))}
             </ul>

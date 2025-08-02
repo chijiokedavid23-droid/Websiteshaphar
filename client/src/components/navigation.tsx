@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link, useLocation } from "wouter";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,17 +18,14 @@ export default function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-      setIsMobileMenuOpen(false);
-    }
-  };
-
-  const handleContactClick = () => {
-    scrollToSection("contact");
-  };
+  const navigationItems = [
+    { name: "Home", path: "/" },
+    { name: "SAF", path: "/saf" },
+    { name: "Sustainability", path: "/sustainability" },
+    { name: "About", path: "/about" },
+    { name: "FutureFuel Blog", path: "/blog" },
+    { name: "Contact", path: "/contact" }
+  ];
 
   return (
     <header 
@@ -42,28 +41,26 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="text-2xl font-bold text-navy">Shaphargroup</div>
+            <Link href="/" className="text-2xl font-bold text-navy hover:text-emerald transition-colors">
+              Shaphargroup
+            </Link>
           </motion.div>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            {[
-              { name: "Home", id: "home" },
-              { name: "About", id: "about" },
-              { name: "Capabilities", id: "capabilities" },
-              { name: "News", id: "news" },
-              { name: "Contact", id: "contact" }
-            ].map((item, index) => (
-              <motion.button
-                key={item.id}
-                onClick={() => scrollToSection(item.id)}
-                className="text-charcoal hover:text-navy transition-colors duration-200 font-medium"
+            {navigationItems.map((item, index) => (
+              <motion.div
+                key={item.path}
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                {item.name}
-              </motion.button>
+                <Link href={item.path} className={`text-charcoal hover:text-emerald transition-colors duration-200 font-medium ${
+                  location === item.path ? 'text-emerald font-semibold' : ''
+                }`}>
+                  {item.name}
+                </Link>
+              </motion.div>
             ))}
           </nav>
 
@@ -73,12 +70,9 @@ export default function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Button 
-                onClick={handleContactClick}
-                className="bg-gold text-white hover:bg-gold/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg"
-              >
+              <Link href="/contact" className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md">
                 Contact Us
-              </Button>
+              </Link>
             </motion.div>
             
             {/* Mobile menu button */}
@@ -107,20 +101,17 @@ export default function Navigation() {
             transition={{ duration: 0.3 }}
           >
             <div className="px-4 py-2 space-y-2">
-              {[
-                { name: "Home", id: "home" },
-                { name: "About", id: "about" },
-                { name: "Capabilities", id: "capabilities" },
-                { name: "News", id: "news" },
-                { name: "Contact", id: "contact" }
-              ].map((item) => (
-                <button
-                  key={item.id}
-                  onClick={() => scrollToSection(item.id)}
-                  className="block w-full text-left py-2 text-charcoal hover:text-navy transition-colors"
+              {navigationItems.map((item) => (
+                <Link 
+                  key={item.path} 
+                  href={item.path} 
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`block w-full text-left py-2 text-charcoal hover:text-emerald transition-colors ${
+                    location === item.path ? 'text-emerald font-semibold' : ''
+                  }`}
                 >
                   {item.name}
-                </button>
+                </Link>
               ))}
             </div>
           </motion.div>

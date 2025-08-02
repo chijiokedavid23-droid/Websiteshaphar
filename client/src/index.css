@@ -24,13 +24,14 @@
   --ring: hsl(220, 62%, 24%);
   --radius: 0.5rem;
   
-  /* Custom colors for Shaphargroup */
+  /* Custom colors for Shaphargroup - Green/Sustainable Theme */
   --navy: hsl(220, 62%, 24%);
-  --forest: hsl(159, 84%, 20%);
+  --forest: hsl(158, 64%, 20%);
   --sky: hsl(201, 96%, 32%);
-  --emerald: hsl(160, 84%, 39%);
+  --emerald: hsl(158, 73%, 35%);
   --charcoal: hsl(215, 16%, 47%);
-  --gold: hsl(32, 95%, 44%);
+  --sage: hsl(152, 25%, 60%);
+  --mint: hsl(162, 63%, 45%);
 }
 
 .dark {
@@ -115,7 +116,19 @@
     background-color: var(--charcoal);
   }
   
-  .bg-gold {
-    background-color: var(--gold);
+  .bg-sage {
+    background-color: var(--sage);
+  }
+  
+  .bg-mint {
+    background-color: var(--mint);
+  }
+  
+  .text-sage {
+    color: var(--sage);
+  }
+  
+  .text-mint {
+    color: var(--mint);
   }
 }
