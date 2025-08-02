@@ -9,6 +9,7 @@ import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
 import jiGangImagePath from "@assets/Gee_1754161789665.jpg";
 import elvisImagePath from "@assets/Elvis.jpg2_1754161974007.jpg";
+import greenEarthImagePath from "@assets/green earth_1754163467882.jpg";
 
 export default function About() {
   const scrollToContact = () => {
@@ -142,8 +143,8 @@ export default function About() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://images.unsplash.com/photo-1581833971358-2c8b550f87b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=800"
-                alt="Modern sustainable refinery facility"
+                src={greenEarthImagePath}
+                alt="Green earth sustainability concept"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent rounded-2xl"></div>
