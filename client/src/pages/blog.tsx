@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, User, Tag } from "lucide-react";
 import unlockingSafImage from "@assets/Unlocking SAF_1754168191181.jpeg";
+import yangxinMeetingImage from "@assets/Yangxin county meeting 1_1754487367075.png";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
@@ -70,7 +71,7 @@ export default function Blog() {
     {
       title: "Refinery Investment in Yangxin County Welcomed by Government Officials",
       excerpt: "Top government officials welcome Shaphargroup's strategic investment in sustainable fuel infrastructure, marking a significant step forward for the region.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/01/Yangxin-county-meeting-1-150x150.png",
+      image: yangxinMeetingImage,
       category: "Investment News",
       date: "April 20, 2025",
       author: "Admin",
