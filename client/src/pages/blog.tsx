@@ -6,6 +6,7 @@ import unlockingSafImage from "@assets/Unlocking SAF_1754168191181.jpeg";
 import yangxinMeetingImage from "@assets/Yangxin county meeting 1_1754487367075.png";
 import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
 import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
+import ucoSampleImage from "@assets/SG UCO sample_1754488157265.jpeg";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
@@ -127,7 +128,7 @@ export default function Blog() {
     {
       title: "How Used Cooking Oil Is Powering a Greener Future",
       excerpt: "As the world intensifies its shift toward clean energy, Used Cooking Oil (UCO) is emerging as one of the most exciting feedstocks for sustainable fuel production.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-16-2025-12_02_05-PM-768x512.png",
+      image: ucoSampleImage,
       category: "News",
       date: "April 16, 2025",
       author: "Admin",
