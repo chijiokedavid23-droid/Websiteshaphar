@@ -68,9 +68,10 @@ export default function Sustainability() {
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
         <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-no-repeat"
           style={{
-            backgroundImage: "url('https://shaphargroup.com/wp-content/uploads/2025/04/UCO-REFINED-AND-SUPPLIED-FOR-SAF.png')"
+            backgroundImage: "url('https://shaphargroup.com/wp-content/uploads/2025/04/UCO-REFINED-AND-SUPPLIED-FOR-SAF.png')",
+            backgroundPosition: "center 70%"
           }}
         />
         <div className="absolute inset-0 bg-gradient-to-br from-forest/90 to-emerald/70 z-10"></div>
