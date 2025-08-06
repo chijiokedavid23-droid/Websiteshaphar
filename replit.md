@@ -1,6 +1,6 @@
 # Overview
 
-This is a full-stack web application for Shaphargroup, a sustainable aviation fuel (SAF) company. The project is built as a marketing website showcasing the company's capabilities in HEFA Sustainable Aviation Fuel production, UCO refining, and global logistics operations. The application features a modern, responsive design with smooth animations and a professional corporate presentation focused on the aviation fuel industry.
+This is a full-stack web application for a school website. The project is built as a modern educational institution website showcasing academics, faculty, student life, admissions, and school events. The application features a responsive design with smooth animations and professional presentation focused on educational services and community engagement.
 
 # User Preferences
 
@@ -63,4 +63,4 @@ Preferred communication style: Simple, everyday language.
 - **React Hook Form**: Form state management with @hookform/resolvers
 - **Validation**: Zod integration for client-side form validation
 
-The application is designed as a professional corporate website with room for future expansion into user authentication, dynamic content management, and potential e-commerce functionality for fuel procurement.
+The application is designed as a professional educational website with room for future expansion into student portals, online course management, parent communication systems, and event registration functionality.
