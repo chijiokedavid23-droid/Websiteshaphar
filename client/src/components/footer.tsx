@@ -15,7 +15,7 @@ export default function Footer() {
 
   const services = [
     { name: "SAF Production", href: "/saf" },
-    { name: "UCO Refining", href: "/saf" },
+    { name: "UCO Refining", href: "https://sg-uco.com/", external: true },
     { name: "Global Logistics", href: "/about" },
     { name: "Sustainability", href: "/sustainability" },
     { name: "Certification", href: "/sustainability" }
@@ -90,6 +90,7 @@ export default function Footer() {
                     <Link
                       href={link.href}
                       className="text-gray-300 hover:text-emerald transition-colors text-left"
+                      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     >
                       {link.name}
                     </Link>
@@ -110,12 +111,24 @@ export default function Footer() {
             <ul className="space-y-3">
               {services.map((service, index) => (
                 <li key={index}>
-                  <Link
-                    href={service.href}
-                    className="text-gray-300 hover:text-emerald transition-colors text-left"
-                  >
-                    {service.name}
-                  </Link>
+                  {service.external ? (
+                    <a
+                      href={service.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-300 hover:text-emerald transition-colors"
+                    >
+                      {service.name}
+                    </a>
+                  ) : (
+                    <Link
+                      href={service.href}
+                      className="text-gray-300 hover:text-emerald transition-colors text-left"
+                      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                    >
+                      {service.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
@@ -130,10 +143,18 @@ export default function Footer() {
           viewport={{ once: true }}
         >
           <div className="flex justify-center space-x-6 mb-4">
-            <Link href="/privacy-policy" className="text-gray-300 hover:text-emerald transition-colors text-sm">
+            <Link 
+              href="/privacy-policy" 
+              className="text-gray-300 hover:text-emerald transition-colors text-sm"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-gray-300 hover:text-emerald transition-colors text-sm">
+            <Link 
+              href="/terms-of-service" 
+              className="text-gray-300 hover:text-emerald transition-colors text-sm"
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            >
               Terms of Service
             </Link>
           </div>
