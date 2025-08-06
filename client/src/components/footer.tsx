@@ -173,7 +173,7 @@ export default function Footer() {
               Terms of Service
             </Link>
           </div>
-          <p className="text-gray-100">
+          <p className="text-white font-medium">
             © 2025 Shaphargroup. All rights reserved. | Powering Net-Zero Aviation Today.
           </p>
         </motion.div>
