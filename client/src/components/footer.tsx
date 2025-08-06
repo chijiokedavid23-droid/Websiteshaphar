@@ -129,7 +129,7 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-300">
+          <p className="text-gray-100">
             © 2025 Shaphargroup. All rights reserved. | Powering Net-Zero Aviation Today.
           </p>
         </motion.div>
