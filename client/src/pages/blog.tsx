@@ -18,7 +18,8 @@ const getArticleId = (title: string): string | null => {
     "Controlling the Future of SAF: Why Integration, Not Size, Will Define the Next Energy Giants": "controlling-future-of-saf",
     "Shaphargroup Achieves ISCC CORSIA Certification (SAF)": "iscc-corsia-certification",
     "From UCO to Jet Fuel: The Journey Toward Sustainable Aviation": "uco-to-jet-fuel",
-    "How Used Cooking Oil Is Powering a Greener Future": "uco-greener-future"
+    "How Used Cooking Oil Is Powering a Greener Future": "uco-greener-future",
+    "SAF: The Fuel Taking Aviation Toward Net Zero": "saf-fuel-aviation-net-zero"
   };
   
   return titleMap[title] || null;
@@ -36,6 +37,15 @@ export default function Blog() {
   };
 
   const blogPosts = [
+    {
+      title: "SAF: The Fuel Taking Aviation Toward Net Zero",
+      excerpt: "Aviation accounts for nearly 3% of global carbon emissions—but that's changing fast. Sustainable Aviation Fuel (SAF) is revolutionizing the skies, and Shaphargroup is right at the forefront of this transformation.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/04/bluewhales-and-Shaphargroup.jpeg",
+      category: "SAF",
+      date: "July 20, 2025",
+      author: "Admin",
+      link: "https://shaphargroup.com/saf-bluewhale/saf-the-fuel-taking-aviation-toward-net-zero/"
+    },
     {
       title: "Why Europe and China Must Collaborate to Meet Net Zero — Not Compete",
       excerpt: "Whenever China is mentioned in Western political debates, the focus often shifts to national security concerns rather than collaborative opportunities.",

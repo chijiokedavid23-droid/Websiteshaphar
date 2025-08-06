@@ -16,6 +16,44 @@ interface ArticleData {
 }
 
 const articlesData: Record<string, ArticleData> = {
+  "saf-fuel-aviation-net-zero": {
+    id: "saf-fuel-aviation-net-zero",
+    title: "SAF: The Fuel Taking Aviation Toward Net Zero",
+    content: `Aviation accounts for nearly 3% of global carbon emissions—but that's changing fast. **Sustainable Aviation Fuel (SAF)** is revolutionizing the skies, and Shaphargroup is right at the forefront of this transformation.
+
+## The Future of Flight
+
+SAF, made from renewable feedstocks like UCO, animal fats, or agricultural waste, can **cut lifecycle emissions by up to 80%**. Leading airlines have already committed to SAF integration, and new mandates across Europe and Asia are accelerating adoption.
+
+The transformation is happening now:
+- Major airlines are setting aggressive SAF targets
+- Government mandates are driving demand across Europe and Asia
+- Investment in SAF production capacity is scaling rapidly
+- New technologies are improving efficiency and reducing costs
+
+## Shaphargroup x BlueWhales
+
+We are proud to partner with **BlueWhales**, a China-based SAF producer, to distribute SAF-SPK to customers across Europe. This collaboration helps bridge the gap between Asia's production capacity and Europe's growing SAF demand.
+
+Our partnership demonstrates how strategic alliances can:
+- Connect supply with demand across continents
+- Ensure quality and compliance with international standards
+- Scale production to meet growing market needs
+- Build sustainable supply chains for the future
+
+## Long-Term Vision
+
+By investing in SAF, we're not just helping airlines meet emission targets—we're enabling a cleaner, quieter, and more responsible aviation industry. With our expertise in renewable logistics and compliance, Shaphargroup is positioned as a key player in tomorrow's sky.
+
+The aviation industry is at a pivotal moment. SAF represents not just an environmental solution, but a business opportunity that aligns profit with purpose. As we look toward 2030 and beyond, sustainable aviation fuel will become the standard, not the exception.
+
+> **From cooking oil to cruising altitude—SAF is the flight path to net zero.**`,
+    image: "https://shaphargroup.com/wp-content/uploads/2025/04/bluewhales-and-Shaphargroup.jpeg",
+    category: "SAF",
+    date: "July 20, 2025",
+    author: "Admin",
+    originalLink: "https://shaphargroup.com/saf-bluewhale/saf-the-fuel-taking-aviation-toward-net-zero/"
+  },
   "tim-rose-joins-board": {
     id: "tim-rose-joins-board",
     title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
