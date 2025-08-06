@@ -10,6 +10,10 @@ export default function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [location] = useLocation();
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 100);
@@ -42,7 +46,7 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <Link href="/" onClick={scrollToTop} className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src={logoPath} 
                 alt="Shaphargroup" 
@@ -60,7 +64,7 @@ export default function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={item.path} className={`${
+                <Link href={item.path} onClick={scrollToTop} className={`${
                   isScrolled ? 'text-navy hover:text-emerald' : 'text-white hover:text-emerald'
                 } transition-colors duration-200 font-medium ${
                   location === item.path ? 'text-emerald font-semibold' : ''
@@ -77,7 +81,7 @@ export default function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Link href="/contact" className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md">
+              <Link href="/contact" onClick={scrollToTop} className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md">
                 Contact Us
               </Link>
             </motion.div>
@@ -112,7 +116,10 @@ export default function Navigation() {
                 <Link 
                   key={item.path} 
                   href={item.path} 
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={() => {
+                    setIsMobileMenuOpen(false);
+                    scrollToTop();
+                  }}
                   className={`block w-full text-left py-2 text-charcoal hover:text-emerald transition-colors ${
                     location === item.path ? 'text-emerald font-semibold' : ''
                   }`}

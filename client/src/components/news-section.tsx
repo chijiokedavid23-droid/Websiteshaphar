@@ -1,39 +1,42 @@
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+import { useLocation } from "wouter";
 import safSummitImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 import refineryInvestmentImage from "@assets/Yangxin county meeting 1_1754156293882.png";
 import isccCertificationImage from "@assets/image_1754156625874.png";
 import timRoseImage from "@assets/MR TIM_1754156709435.jpg";
 
 export default function NewsSection() {
+  const [, setLocation] = useLocation();
+
   const newsItems = [
     {
       image: safSummitImage,
       category: "Recent Event",
       title: "David C. Arinze Speaks at SAF Investors Summit London 2025",
       description: "Shaphargroup's leadership addresses key industry stakeholders at prestigious aviation summit.",
-      link: "https://shaphargroup.com/news/shaphargroups-david-c-arinze-speaks-at-saf-investors-summit-london-2025/"
+      internalLink: "/article/saf-investors-summit"
     },
     {
       image: refineryInvestmentImage,
       category: "Investment News",
       title: "Refinery Investment in Yangxin County Welcomed by Officials",
       description: "Top government officials welcome Shaphargroup's strategic investment in sustainable fuel infrastructure.",
-      link: "https://mp.weixin.qq.com/s/-BH7ORo8MU2Qv620mGrI4g"
+      internalLink: "/blog" // This article isn't in our internal system yet, so link to blog page
     },
     {
       image: isccCertificationImage,
       category: "Certification",
       title: "Shaphargroup Achieves ISCC CORSIA Certification (SAF)",
       description: "Major milestone in sustainable aviation fuel certification and compliance.",
-      link: "https://shaphargroup.com/saf/shaphargroup-achieves-iscc-corsia-certification-saf/"
+      internalLink: "/article/iscc-corsia-certification"
     },
     {
       image: timRoseImage,
       category: "Leadership",
       title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
       description: "Strategic leadership expansion strengthens company's global market position.",
-      link: "https://shaphargroup.com/news/tim-rose-joins-shaphargroup-board-as-strategic-executive-director/"
+      internalLink: "/article/tim-rose-joins-board"
     }
   ];
 
@@ -61,7 +64,7 @@ export default function NewsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              onClick={() => window.open(item.link, '_blank')}
+              onClick={() => setLocation(item.internalLink)}
             >
               <div className="relative overflow-hidden">
                 <img 
