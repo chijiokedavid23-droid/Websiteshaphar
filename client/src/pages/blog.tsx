@@ -5,6 +5,7 @@ import { ArrowRight, Calendar, User, Tag } from "lucide-react";
 import unlockingSafImage from "@assets/Unlocking SAF_1754168191181.jpeg";
 import yangxinMeetingImage from "@assets/Yangxin county meeting 1_1754487367075.png";
 import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
+import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
@@ -117,7 +118,7 @@ export default function Blog() {
     {
       title: "The Critical Role of UCO in Achieving Global Sustainable Aviation Fuel (SAF) Targets",
       excerpt: "In a world racing toward net-zero emissions, aviation stands at a historic crossroads. Airlines, governments, and fuel producers are investing billions into Sustainable Aviation Fuel (SAF) development.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-26-2025-01_12_52-PM-768x512.png",
+      image: shaphargroupImage,
       category: "Insights & Thought Leadership",
       date: "April 26, 2025",
       author: "David C. Arinze",
