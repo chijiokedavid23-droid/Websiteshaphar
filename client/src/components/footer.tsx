@@ -18,7 +18,7 @@ export default function Footer() {
     { name: "UCO Refining", href: "https://sg-uco.com/", external: true },
     { name: "Global Logistics", href: "/about" },
     { name: "Sustainability", href: "/sustainability" },
-    { name: "Certification", href: "/sustainability" }
+    { name: "Certification", href: "/about", scrollTo: "certifications" }
   ];
 
   const socialLinks = [
@@ -124,7 +124,21 @@ export default function Footer() {
                     <Link
                       href={service.href}
                       className="text-gray-300 hover:text-emerald transition-colors text-left"
-                      onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                      onClick={() => {
+                        if (service.scrollTo) {
+                          // Small delay to ensure page navigation completes first
+                          setTimeout(() => {
+                            const element = document.getElementById(service.scrollTo);
+                            if (element) {
+                              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                            } else {
+                              window.scrollTo({ top: 0, behavior: 'smooth' });
+                            }
+                          }, 100);
+                        } else {
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                      }}
                     >
                       {service.name}
                     </Link>
