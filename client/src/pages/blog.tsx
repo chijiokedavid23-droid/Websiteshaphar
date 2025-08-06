@@ -7,6 +7,7 @@ import yangxinMeetingImage from "@assets/Yangxin county meeting 1_1754487367075.
 import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
 import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
 import ucoSampleImage from "@assets/SG UCO sample_1754488157265.jpeg";
+import yanzhouMeetingImage from "@assets/Yangxin county meeting 1_1754488489140.png";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
@@ -137,7 +138,7 @@ export default function Blog() {
     {
       title: "Shaphargroup Meets with Yanzhou District Government: Expands SAF Investment Agenda in Shandong",
       excerpt: "A senior delegation from Shaphargroup visited the Yanzhou District Government and met with key officials to discuss expanding sustainable aviation fuel investment opportunities in the region.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/02/ChatGPT-Image-Feb-15-2025-11_13_15-AM-768x512.png",
+      image: yanzhouMeetingImage,
       category: "News",
       date: "February 15, 2025",
       author: "Admin",
