@@ -196,6 +196,116 @@ export default function About() {
         </div>
       </section>
 
+      {/* Certifications & Compliance */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
+              Certifications & Compliance
+            </h2>
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+              Shaphargroup maintains the highest industry standards through internationally recognized certifications, 
+              ensuring sustainable and traceable biofuel production across our global operations.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <motion.div
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 bg-emerald rounded-xl flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-navy mb-4">ISCC-EU Certification</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                International Sustainability and Carbon Certification for European Union markets, 
+                ensuring our biofuels meet strict sustainability criteria and greenhouse gas emission reduction requirements.
+              </p>
+              <div className="bg-emerald/10 rounded-lg p-4">
+                <p className="text-emerald font-semibold">✓ EU Renewable Energy Directive Compliant</p>
+                <p className="text-emerald font-semibold">✓ Traceable Supply Chain</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 bg-sky rounded-xl flex items-center justify-center mx-auto mb-6">
+                <Globe className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-navy mb-4">ISCC CORSIA Certification</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Carbon Offsetting and Reduction Scheme for International Aviation (CORSIA) certification, 
+                enabling airlines worldwide to meet ICAO sustainability requirements with our SAF products.
+              </p>
+              <div className="bg-sky/10 rounded-lg p-4">
+                <p className="text-sky font-semibold">✓ ICAO CORSIA Eligible</p>
+                <p className="text-sky font-semibold">✓ Aviation Carbon Reduction</p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-center"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              <div className="w-16 h-16 bg-forest rounded-xl flex items-center justify-center mx-auto mb-6">
+                <Building className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-navy mb-4">Book and Claim Certification</h3>
+              <p className="text-gray-600 leading-relaxed mb-6">
+                Advanced sustainability accounting mechanism that allows for flexible, cost-effective procurement 
+                of sustainable biofuels while maintaining full traceability and environmental integrity.
+              </p>
+              <div className="bg-forest/10 rounded-lg p-4">
+                <p className="text-forest font-semibold">✓ Mass Balance Certified</p>
+                <p className="text-forest font-semibold">✓ Flexible Procurement</p>
+              </div>
+            </motion.div>
+          </div>
+
+          <motion.div 
+            className="mt-12 bg-white rounded-2xl p-8 shadow-lg border-l-4 border-emerald"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-bold text-navy mb-4">Comprehensive Compliance Framework</h3>
+            <p className="text-lg text-gray-600 mb-6">
+              Our multi-certification approach ensures Shaphargroup biofuels meet the most stringent international standards, 
+              providing customers with verified, traceable, and compliant sustainable aviation fuel for global markets.
+            </p>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-semibold text-navy mb-2">Quality Assurance</h4>
+                <p className="text-gray-600">Rigorous testing and verification at every production stage</p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-navy mb-2">Supply Chain Transparency</h4>
+                <p className="text-gray-600">Full traceability from feedstock sourcing to final delivery</p>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Leadership Team */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -298,7 +408,7 @@ export default function About() {
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
                   <Award className="w-12 h-12 text-emerald-300 mx-auto mb-4" />
-                  <div className="text-2xl font-bold text-white mb-2">ISCC</div>
+                  <div className="text-2xl font-bold text-white mb-2">Triple</div>
                   <div className="text-gray-300 text-sm">Certified</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center">
