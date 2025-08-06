@@ -129,6 +129,14 @@ export default function Footer() {
           transition={{ duration: 0.8, delay: 0.6 }}
           viewport={{ once: true }}
         >
+          <div className="flex justify-center space-x-6 mb-4">
+            <Link href="/privacy-policy" className="text-gray-300 hover:text-emerald transition-colors text-sm">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-of-service" className="text-gray-300 hover:text-emerald transition-colors text-sm">
+              Terms of Service
+            </Link>
+          </div>
           <p className="text-gray-100">
             © 2025 Shaphargroup. All rights reserved. | Powering Net-Zero Aviation Today.
           </p>

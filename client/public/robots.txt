@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://shaphargroup.com/sitemap.xml
+
+# High-value pages for crawling
+Allow: /saf
+Allow: /sustainability  
+Allow: /about
+Allow: /blog
+Allow: /contact
+
+# Ensure search engines can access CSS and JS
+Allow: /assets/
+Allow: *.css
+Allow: *.js
