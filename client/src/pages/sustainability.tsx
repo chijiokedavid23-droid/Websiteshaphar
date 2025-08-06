@@ -67,19 +67,17 @@ export default function Sustainability() {
       
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-forest/80 to-emerald/60 z-10"></div>
         <div 
-          className="absolute inset-0 bg-cover bg-no-repeat"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://shaphargroup.com/wp-content/uploads/2025/04/UCO-REFINED-AND-SUPPLIED-FOR-SAF.png')",
-            backgroundPosition: "center 70%"
+            backgroundImage: "url('https://shaphargroup.com/wp-content/uploads/2025/04/UCO-REFINED-AND-SUPPLIED-FOR-SAF.png')"
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-forest/90 to-emerald/70 z-10"></div>
-        <div className="absolute inset-0 bg-black/20 z-10"></div>
         
-        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
-            className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight drop-shadow-lg"
+            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -88,7 +86,7 @@ export default function Sustainability() {
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-gray-100 mb-8 leading-relaxed max-w-4xl mx-auto drop-shadow-md"
+            className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-4xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
