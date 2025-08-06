@@ -29,7 +29,7 @@ export default function HeroSection() {
       {/* Additional gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-navy/20 via-transparent to-forest/20 z-15"></div>
       
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <div className="max-w-5xl mx-auto">
           <motion.h1 
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight"
