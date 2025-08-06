@@ -173,7 +173,7 @@ export default function Footer() {
               Terms of Service
             </Link>
           </div>
-          <p className="text-white font-medium">
+          <p className="text-white font-bold text-lg drop-shadow-lg" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.8)' }}>
             © 2025 Shaphargroup. All rights reserved. | Powering Net-Zero Aviation Today.
           </p>
         </motion.div>
