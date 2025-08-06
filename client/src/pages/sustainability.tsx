@@ -2,7 +2,6 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Recycle, Leaf, Target, Globe, Award, Users, BarChart3 } from "lucide-react";
-import sustainabilityHeroImage from "@assets/UCO REFINED AND SUPPLIED FOR SAF_1754505492106.png";
 
 export default function Sustainability() {
   const impactStats = [
@@ -72,7 +71,7 @@ export default function Sustainability() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${sustainabilityHeroImage})`
+            backgroundImage: "url('https://images.pexels.com/photos/104826/aircraft-holiday-sun-tourism-104826.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')"
           }}
         />
         
