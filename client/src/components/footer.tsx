@@ -159,15 +159,15 @@ export default function Footer() {
           <div className="flex justify-center space-x-6 mb-4">
             <Link 
               href="/privacy-policy" 
-              className="text-gray-300 hover:text-emerald transition-colors text-sm font-medium"
+              className="text-white hover:text-emerald transition-colors text-sm font-medium"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Privacy Statement
             </Link>
-            <span className="text-gray-500">•</span>
+            <span className="text-gray-300">•</span>
             <Link 
               href="/terms-of-service" 
-              className="text-gray-300 hover:text-emerald transition-colors text-sm font-medium"
+              className="text-white hover:text-emerald transition-colors text-sm font-medium"
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               Terms of Service
