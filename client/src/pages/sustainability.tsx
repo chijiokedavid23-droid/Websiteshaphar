@@ -78,7 +78,7 @@ export default function Sustainability() {
         
         <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-lg"
+            className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
