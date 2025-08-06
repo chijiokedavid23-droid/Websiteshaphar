@@ -16,6 +16,53 @@ interface ArticleData {
 }
 
 const articlesData: Record<string, ArticleData> = {
+  "biodiesel-boom-cleaner-engines": {
+    id: "biodiesel-boom-cleaner-engines",
+    title: "The Biodiesel Boom: Cleaner Engines, Healthier Planet",
+    content: `Biodiesel is not just a trend—it's a global movement. As the world looks for cleaner alternatives to fossil diesel, **biodiesel has emerged as a powerful solution for the heavy-duty transport and agricultural sectors**.
+
+## Cleaner, Safer, and Better
+
+Biodiesel emits up to **85% fewer greenhouse gases** than traditional diesel. It's biodegradable, non-toxic, and can be used in existing diesel engines with little or no modification. From trucks and buses to tractors and generators, biodiesel is helping major industries decarbonize.
+
+Key advantages of biodiesel include:
+- **Dramatic emission reductions**: Up to 85% lower greenhouse gas emissions compared to petroleum diesel
+- **Engine compatibility**: Works in existing diesel engines with minimal or no modifications
+- **Biodegradable and non-toxic**: Safer for the environment and human health
+- **Renewable resource**: Made from waste oils, agricultural crops, and animal fats
+- **Energy security**: Reduces dependence on imported petroleum
+
+## Economic and Environmental Impact
+
+The production of biodiesel also supports **local economies**, creating jobs in agriculture, refining, and logistics. It helps reduce dependence on imported petroleum and contributes to cleaner air and healthier communities.
+
+The biodiesel industry provides multiple benefits:
+- Job creation across the supply chain
+- Rural economic development
+- Reduced trade deficits from petroleum imports
+- Improved air quality in urban areas
+- Support for agricultural communities
+
+## What We Do
+
+Shaphargroup provides high-grade biodiesel feedstocks and is working to expand biodiesel adoption across Europe and Africa. With strong supply chain networks and a focus on quality, we're proud to help fuel the future sustainably.
+
+Our biodiesel initiatives include:
+- Sourcing premium waste oil feedstocks
+- Quality assurance and certification programs  
+- Supply chain optimization for European and African markets
+- Partnership development with fuel distributors
+- Technical support for biodiesel adoption
+
+The future of transportation is cleaner, and biodiesel is leading the way. As governments implement stricter emission standards and businesses seek sustainable solutions, biodiesel offers a proven, scalable alternative that works today.
+
+> **Biodiesel is proof that green fuel can also be powerful.**`,
+    image: "https://shaphargroup.com/wp-content/uploads/2025/04/biofuel-filling-station_1456616751_840x560px.jpg",
+    category: "Biodiesel",
+    date: "July 25, 2025",
+    author: "Admin",
+    originalLink: "https://shaphargroup.com/biodiesel/the-biodiesel-boom-cleaner-engines-healthier-planet/"
+  },
   "saf-fuel-aviation-net-zero": {
     id: "saf-fuel-aviation-net-zero",
     title: "SAF: The Fuel Taking Aviation Toward Net Zero",
