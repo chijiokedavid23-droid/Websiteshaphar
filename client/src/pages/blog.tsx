@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Calendar, User, Tag } from "lucide-react";
 import unlockingSafImage from "@assets/Unlocking SAF_1754168191181.jpeg";
 import yangxinMeetingImage from "@assets/Yangxin county meeting 1_1754487367075.png";
+import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
@@ -107,7 +108,7 @@ export default function Blog() {
     {
       title: "Building a Trustworthy UCO Supply Chain: Why Certification and Transparency Matter More Than Ever",
       excerpt: "In today's race toward decarbonization, used cooking oil (UCO) has emerged as a critical feedstock for renewable fuels, especially Sustainable Aviation Fuel (SAF).",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/04/ChatGPT-Image-Apr-28-2025-11_56_32-AM-768x512.png",
+      image: ucoCertificateImage,
       category: "Insights & Thought Leadership",
       date: "April 28, 2025",
       author: "David C. Arinze",
