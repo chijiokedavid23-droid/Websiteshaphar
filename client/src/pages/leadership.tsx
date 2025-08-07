@@ -40,10 +40,10 @@ export default function Leadership() {
       bio: "A visionary leader in renewable energy and sustainable trade, David serves as Managing Director, Europe and Americas at Shaphargroup, driving global UCO and SAF supply chains across the U.S., EU, and China. With a strong foundation in business and project leadership, he holds an M.Sc. in Project Management from the University of Salford (UK), a diploma in SME & Digital Finance from the Frankfurt School (Germany), and a B.Sc. in Business Administration. He brings deep expertise in ESG, digital finance, and cross-border execution. David's strategic direction continues to expand Shaphargroup's global footprint in the clean energy sector."
     },
     {
-      name: "Ji Gang",
+      name: "Ji Gang (Gee Gang)",
       title: "Production Director",
       image: jiGangImagePath,
-      bio: "Bio coming soon - please provide Ji Gang's biography."
+      bio: "Ji Gang is a veteran oleochemical engineer with over 15 years of expertise in palm oil and UCO refining. As Director of R&D at Shaphargroup, he leads the design and innovation of next-generation UCO production lines that meet global SAF and biodiesel standards. Ji earned a Bachelor's in Chemistry from Jiangsu University of Technology and spent 16 years at PT. Duakuda Indonesia driving efficiency in oleochemical operations. His leadership ensures Shaphargroup's technology stays ahead in sustainable fuel refinement."
     },
     {
       name: "Timothy Rose",
