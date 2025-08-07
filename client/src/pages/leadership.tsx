@@ -3,7 +3,7 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Users, Globe, Award, Building, Info } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
 import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
@@ -13,6 +13,163 @@ import jiGangImagePath from "@assets/Gee_1754161789665.jpg";
 import elvisImagePath from "@assets/Elvis.jpg2_1754161974007.jpg";
 
 export default function Leadership() {
+  // SEO Meta Tags Setup
+  useEffect(() => {
+    // Page Title
+    document.title = "Leadership Team - Sustainable Aviation Fuel Experts | Shaphargroup";
+    
+    // Meta Description
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Meet Shaphargroup\'s leadership team of sustainable aviation fuel experts, including CEO Charles Jiao, CFO Jane Zhen, and our global directors driving SAF innovation across Asia, Europe, and Americas.');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'description';
+      meta.content = 'Meet Shaphargroup\'s leadership team of sustainable aviation fuel experts, including CEO Charles Jiao, CFO Jane Zhen, and our global directors driving SAF innovation across Asia, Europe, and Americas.';
+      document.head.appendChild(meta);
+    }
+
+    // Keywords
+    const metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (metaKeywords) {
+      metaKeywords.setAttribute('content', 'Shaphargroup leadership, SAF executives, sustainable aviation fuel team, Charles Jiao CEO, Jane Zhen CFO, David Arinze, Timothy Rose, Ji Gang, Elvis Cao, UCO refining experts, renewable energy leaders');
+    } else {
+      const meta = document.createElement('meta');
+      meta.name = 'keywords';
+      meta.content = 'Shaphargroup leadership, SAF executives, sustainable aviation fuel team, Charles Jiao CEO, Jane Zhen CFO, David Arinze, Timothy Rose, Ji Gang, Elvis Cao, UCO refining experts, renewable energy leaders';
+      document.head.appendChild(meta);
+    }
+
+    // Open Graph Tags
+    const updateOrCreateOGTag = (property: string, content: string) => {
+      let tag = document.querySelector(`meta[property="${property}"]`);
+      if (tag) {
+        tag.setAttribute('content', content);
+      } else {
+        tag = document.createElement('meta');
+        tag.setAttribute('property', property);
+        tag.setAttribute('content', content);
+        document.head.appendChild(tag);
+      }
+    };
+
+    updateOrCreateOGTag('og:title', 'Leadership Team - Sustainable Aviation Fuel Experts | Shaphargroup');
+    updateOrCreateOGTag('og:description', 'Meet Shaphargroup\'s leadership team of sustainable aviation fuel experts driving SAF innovation globally.');
+    updateOrCreateOGTag('og:type', 'website');
+    updateOrCreateOGTag('og:url', window.location.href);
+    updateOrCreateOGTag('og:site_name', 'Shaphargroup');
+
+    // Twitter Card Tags
+    const updateOrCreateTwitterTag = (name: string, content: string) => {
+      let tag = document.querySelector(`meta[name="${name}"]`);
+      if (tag) {
+        tag.setAttribute('content', content);
+      } else {
+        tag = document.createElement('meta');
+        tag.setAttribute('name', name);
+        tag.setAttribute('content', content);
+        document.head.appendChild(tag);
+      }
+    };
+
+    updateOrCreateTwitterTag('twitter:card', 'summary_large_image');
+    updateOrCreateTwitterTag('twitter:title', 'Leadership Team - Shaphargroup');
+    updateOrCreateTwitterTag('twitter:description', 'Meet our expert leadership team driving sustainable aviation fuel innovation.');
+
+    // Structured Data for Organization and People
+    const structuredData = {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Shaphargroup",
+      "url": "https://www.shaphargroup.com",
+      "description": "Leading sustainable aviation fuel producer specializing in UCO refining and HEFA SAF production",
+      "employee": [
+        {
+          "@type": "Person",
+          "name": "Jiao Li Guang",
+          "alternateName": "Charles Jiao",
+          "jobTitle": "Chief Executive Officer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup Industry (Hainan) Co., Ltd."
+          },
+          "description": "Seasoned industrial chemist and refinery executive with over a decade of experience in sustainable aviation fuel systems."
+        },
+        {
+          "@type": "Person",
+          "name": "Ji Gang",
+          "alternateName": "Gee Gang",
+          "jobTitle": "Production Director",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup"
+          },
+          "description": "Veteran oleochemical engineer with 15+ years expertise in palm oil and UCO refining."
+        },
+        {
+          "@type": "Person",
+          "name": "David Chijioke Arinze",
+          "jobTitle": "Managing Director, Europe & Americas",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup"
+          },
+          "description": "Visionary leader in renewable energy and sustainable trade with M.Sc. in Project Management."
+        },
+        {
+          "@type": "Person",
+          "name": "Zhen Tiyu",
+          "alternateName": "Jane Zhen",
+          "jobTitle": "Chief Financial Officer",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup Industry (Hainan)"
+          },
+          "description": "Financial strategy leader with expertise in international trade finance and capital risk control."
+        },
+        {
+          "@type": "Person",
+          "name": "Timothy Rose",
+          "jobTitle": "Non Executive Director",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup"
+          },
+          "description": "Chartered Director with 30+ years strategic governance experience, former World Bank leader."
+        },
+        {
+          "@type": "Person",
+          "name": "Cao Yuzhao",
+          "alternateName": "Elvis Cao",
+          "jobTitle": "Director Supply Chain",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup"
+          },
+          "description": "Supply chain expert overseeing UCO sourcing and logistics across China, former Sinopec executive."
+        }
+      ]
+    };
+
+    // Remove existing structured data script
+    const existingScript = document.querySelector('script[type="application/ld+json"]');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
+    // Add new structured data
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.textContent = JSON.stringify(structuredData);
+    document.head.appendChild(script);
+
+    // Cleanup function
+    return () => {
+      // Reset title on unmount
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, []);
+
   const scrollToContact = () => {
     const section = document.getElementById("contact");
     if (section) {
@@ -64,13 +221,15 @@ export default function Leadership() {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
+      <header className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20" role="banner" aria-labelledby="hero-heading">
         <div className="absolute inset-0 bg-gradient-to-br from-navy/80 to-forest/60 z-10"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url('https://shaphargroup.com/wp-content/uploads/2025/07/Shaphargroup-refinery-768x512.jpeg')"
           }}
+          role="img"
+          aria-label="Shaphargroup sustainable aviation fuel refinery facility"
         />
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -83,6 +242,7 @@ export default function Leadership() {
             Our Leadership
           </motion.div>
           <motion.h1 
+            id="hero-heading"
             className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -96,28 +256,29 @@ export default function Leadership() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            Our experienced leadership team guides Shaphargroup's mission to transform the global energy landscape through sustainable innovation and expertise in biofuel production.
+            Our experienced leadership team guides Shaphargroup's mission to transform the global energy landscape through sustainable aviation fuel innovation and expertise in UCO refining.
           </motion.p>
         </div>
-      </section>
+      </header>
 
       {/* Leadership Team */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-              Leadership Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced leadership team guides Shaphargroup's mission to transform the global energy landscape through sustainable innovation.
-            </p>
-          </motion.div>
+      <main role="main">
+        <section className="py-20 bg-white" aria-labelledby="team-section-heading">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <motion.div 
+              className="text-center mb-16"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+            >
+              <h2 id="team-section-heading" className="text-4xl md:text-5xl font-bold text-navy mb-6">
+                Sustainable Aviation Fuel Leadership Team
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                Meet our executive team of SAF experts, UCO refining specialists, and renewable energy leaders driving global sustainability in aviation fuel.
+              </p>
+            </motion.div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {leadership.map((member, index) => (
@@ -133,9 +294,10 @@ export default function Leadership() {
                 <div className="relative overflow-hidden group">
                   <img 
                     src={member.image}
-                    alt={member.name}
+                    alt={`${member.name}, ${member.title} at Shaphargroup - Sustainable Aviation Fuel Expert`}
                     className="w-full h-64 object-contain bg-gray-50"
                     data-testid={`img-leader-${index}`}
+                    loading={index < 3 ? "eager" : "lazy"}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent pointer-events-none"></div>
                   
@@ -304,6 +466,7 @@ export default function Leadership() {
           </motion.div>
         </div>
       </section>
+      </main>
 
       <Footer />
     </div>
