@@ -2,7 +2,9 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Users, Globe, Award, Building } from "lucide-react";
+import { Users, Globe, Award, Building, Info } from "lucide-react";
+import { useState } from "react";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
 import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
@@ -22,32 +24,38 @@ export default function Leadership() {
     {
       name: "Jiao Li Guang (Charles)",
       title: "CEO",
-      image: charlesImagePath
+      image: charlesImagePath,
+      bio: "Bio coming soon - please provide Charles's biography."
     },
     {
       name: "Zhen Tiyu (Jane)",
       title: "CFO",
-      image: janeImagePath
+      image: janeImagePath,
+      bio: "Bio coming soon - please provide Jane's biography."
     },
     {
       name: "David C. Arinze",
       title: "MD Europe & Americas",
-      image: davidImagePath
+      image: davidImagePath,
+      bio: "Bio coming soon - please provide David's biography."
     },
     {
       name: "Ji Gang",
       title: "Production Director",
-      image: jiGangImagePath
+      image: jiGangImagePath,
+      bio: "Bio coming soon - please provide Ji Gang's biography."
     },
     {
       name: "Tim Rose",
       title: "Non Executive Director",
-      image: timRoseImagePath
+      image: timRoseImagePath,
+      bio: "Bio coming soon - please provide Tim's biography."
     },
     {
       name: "Cao Yuzhao (Elvis)",
       title: "Director Supply Chain",
-      image: elvisImagePath
+      image: elvisImagePath,
+      bio: "Bio coming soon - please provide Elvis's biography."
     }
   ];
 
@@ -122,7 +130,7 @@ export default function Leadership() {
                 viewport={{ once: true }}
                 data-testid={`card-leader-${index}`}
               >
-                <div className="relative overflow-hidden">
+                <div className="relative overflow-hidden group">
                   <img 
                     src={member.image}
                     alt={member.name}
@@ -130,10 +138,69 @@ export default function Leadership() {
                     data-testid={`img-leader-${index}`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent pointer-events-none"></div>
+                  
+                  {/* Bio Button - appears on hover */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <button className="absolute top-4 right-4 bg-emerald/90 hover:bg-emerald text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110" data-testid={`button-bio-${index}`}>
+                        <Info className="w-5 h-5" />
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl font-bold text-navy">
+                          {member.name}
+                        </DialogTitle>
+                        <p className="text-emerald font-semibold text-lg">{member.title}</p>
+                      </DialogHeader>
+                      <div className="mt-4">
+                        <div className="flex gap-6 mb-6">
+                          <img 
+                            src={member.image}
+                            alt={member.name}
+                            className="w-24 h-24 object-contain bg-gray-50 rounded-lg"
+                          />
+                          <div className="flex-1">
+                            <p className="text-gray-600 leading-relaxed">{member.bio}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-navy mb-2" data-testid={`text-leader-name-${index}`}>{member.name}</h3>
-                  <p className="text-emerald font-semibold" data-testid={`text-leader-title-${index}`}>{member.title}</p>
+                  <p className="text-emerald font-semibold mb-3" data-testid={`text-leader-title-${index}`}>{member.title}</p>
+                  
+                  {/* Click for Bio hint */}
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <button className="text-sm text-gray-500 hover:text-emerald transition-colors flex items-center gap-1" data-testid={`link-bio-${index}`}>
+                        <Info className="w-4 h-4" />
+                        View Biography
+                      </button>
+                    </DialogTrigger>
+                    <DialogContent className="max-w-2xl">
+                      <DialogHeader>
+                        <DialogTitle className="text-2xl font-bold text-navy">
+                          {member.name}
+                        </DialogTitle>
+                        <p className="text-emerald font-semibold text-lg">{member.title}</p>
+                      </DialogHeader>
+                      <div className="mt-4">
+                        <div className="flex gap-6 mb-6">
+                          <img 
+                            src={member.image}
+                            alt={member.name}
+                            className="w-24 h-24 object-contain bg-gray-50 rounded-lg"
+                          />
+                          <div className="flex-1">
+                            <p className="text-gray-600 leading-relaxed">{member.bio}</p>
+                          </div>
+                        </div>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
                 </div>
               </motion.div>
             ))}
