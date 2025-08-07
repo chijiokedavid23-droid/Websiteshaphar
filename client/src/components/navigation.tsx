@@ -1,8 +1,14 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "wouter";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import logoPath from "@assets/Shaphargroup logo logo browser_1754153550144.png";
 
 export default function Navigation() {
@@ -27,7 +33,14 @@ export default function Navigation() {
     { name: "Home", path: "/" },
     { name: "SAF", path: "/saf" },
     { name: "Sustainability", path: "/sustainability" },
-    { name: "About", path: "/about" },
+    { 
+      name: "About", 
+      path: "/about",
+      dropdown: [
+        { name: "Our Story", path: "/about" },
+        { name: "Leadership", path: "/leadership" }
+      ]
+    },
     { name: "FutureFuel Blog", path: "/blog" },
     { name: "Contact", path: "/contact" }
   ];
@@ -64,13 +77,35 @@ export default function Navigation() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
-                <Link href={item.path} onClick={scrollToTop} className={`${
-                  isScrolled ? 'text-navy hover:text-emerald' : 'text-white hover:text-emerald'
-                } transition-colors duration-200 font-medium ${
-                  location === item.path ? 'text-emerald font-semibold' : ''
-                }`}>
-                  {item.name}
-                </Link>
+                {item.dropdown ? (
+                  <DropdownMenu>
+                    <DropdownMenuTrigger className={`flex items-center ${
+                      isScrolled ? 'text-navy hover:text-emerald' : 'text-white hover:text-emerald'
+                    } transition-colors duration-200 font-medium ${
+                      location === item.path || item.dropdown.some(subItem => location === subItem.path) ? 'text-emerald font-semibold' : ''
+                    }`} data-testid="dropdown-about">
+                      {item.name}
+                      <ChevronDown className="ml-1 w-4 h-4" />
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="bg-white shadow-lg border border-gray-200 rounded-lg">
+                      {item.dropdown.map((subItem) => (
+                        <DropdownMenuItem key={subItem.path} className="hover:bg-gray-50">
+                          <Link href={subItem.path} onClick={scrollToTop} className="w-full text-navy hover:text-emerald font-medium" data-testid={`link-${subItem.name.toLowerCase().replace(' ', '-')}`}>
+                            {subItem.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                ) : (
+                  <Link href={item.path} onClick={scrollToTop} className={`${
+                    isScrolled ? 'text-navy hover:text-emerald' : 'text-white hover:text-emerald'
+                  } transition-colors duration-200 font-medium ${
+                    location === item.path ? 'text-emerald font-semibold' : ''
+                  }`} data-testid={`link-${item.name.toLowerCase().replace(' ', '-')}`}>
+                    {item.name}
+                  </Link>
+                )}
               </motion.div>
             ))}
           </nav>
@@ -113,19 +148,43 @@ export default function Navigation() {
           >
             <div className="px-4 py-2 space-y-2">
               {navigationItems.map((item) => (
-                <Link 
-                  key={item.path} 
-                  href={item.path} 
-                  onClick={() => {
-                    setIsMobileMenuOpen(false);
-                    scrollToTop();
-                  }}
-                  className={`block w-full text-left py-2 text-charcoal hover:text-emerald transition-colors ${
-                    location === item.path ? 'text-emerald font-semibold' : ''
-                  }`}
-                >
-                  {item.name}
-                </Link>
+                <div key={item.path}>
+                  {item.dropdown ? (
+                    <div>
+                      <div className="text-charcoal font-semibold py-2">{item.name}</div>
+                      {item.dropdown.map((subItem) => (
+                        <Link 
+                          key={subItem.path} 
+                          href={subItem.path} 
+                          onClick={() => {
+                            setIsMobileMenuOpen(false);
+                            scrollToTop();
+                          }}
+                          className={`block w-full text-left py-2 pl-4 text-charcoal hover:text-emerald transition-colors ${
+                            location === subItem.path ? 'text-emerald font-semibold' : ''
+                          }`}
+                          data-testid={`mobile-link-${subItem.name.toLowerCase().replace(' ', '-')}`}
+                        >
+                          {subItem.name}
+                        </Link>
+                      ))}
+                    </div>
+                  ) : (
+                    <Link 
+                      href={item.path} 
+                      onClick={() => {
+                        setIsMobileMenuOpen(false);
+                        scrollToTop();
+                      }}
+                      className={`block w-full text-left py-2 text-charcoal hover:text-emerald transition-colors ${
+                        location === item.path ? 'text-emerald font-semibold' : ''
+                      }`}
+                      data-testid={`mobile-link-${item.name.toLowerCase().replace(' ', '-')}`}
+                    >
+                      {item.name}
+                    </Link>
+                  )}
+                </div>
               ))}
             </div>
           </motion.div>

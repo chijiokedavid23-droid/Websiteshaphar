@@ -3,12 +3,7 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Building, Users, Globe, Award, Target, Heart } from "lucide-react";
-import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
-import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
-import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
-import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
-import jiGangImagePath from "@assets/Gee_1754161789665.jpg";
-import elvisImagePath from "@assets/Elvis.jpg2_1754161974007.jpg";
+
 import greenEarthImagePath from "@assets/green earth_1754163467882.jpg";
 
 export default function About() {
@@ -42,38 +37,7 @@ export default function About() {
     }
   ];
 
-  const leadership = [
-    {
-      name: "Jiao Li Guang (Charles)",
-      title: "CEO",
-      image: charlesImagePath
-    },
-    {
-      name: "Zhen Tiyu (Jane)",
-      title: "CFO",
-      image: janeImagePath
-    },
-    {
-      name: "David C. Arinze",
-      title: "MD Europe & Americas",
-      image: davidImagePath
-    },
-    {
-      name: "Ji Gang",
-      title: "Production Director",
-      image: jiGangImagePath
-    },
-    {
-      name: "Tim Rose",
-      title: "Non Executive Director",
-      image: timRoseImagePath
-    },
-    {
-      name: "Cao Yuzhao (Elvis)",
-      title: "Director Supply Chain",
-      image: elvisImagePath
-    }
-  ];
+
 
   return (
     <div className="min-h-screen">
@@ -306,51 +270,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Leadership Team */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            className="text-center mb-16"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
-              Leadership Team
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our experienced leadership team guides Shaphargroup's mission to transform the global energy landscape through sustainable innovation.
-            </p>
-          </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {leadership.map((member, index) => (
-              <motion.div
-                key={index}
-                className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                viewport={{ once: true }}
-              >
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={member.image}
-                    alt={member.name}
-                    className="w-full h-64 object-contain bg-gray-50"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent pointer-events-none"></div>
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-navy mb-2">{member.name}</h3>
-                  <p className="text-emerald font-semibold">{member.title}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Why Partner Section */}
       <section className="py-20 bg-navy">
