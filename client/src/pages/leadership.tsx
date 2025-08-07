@@ -55,7 +55,7 @@ export default function Leadership() {
       name: "Cao Yuzhao (Elvis)",
       title: "Director Supply Chain",
       image: elvisImagePath,
-      bio: "Bio coming soon - please provide Elvis's biography."
+      bio: "Elvis Cao is Director of Supply Chain at Shaphargroup, where he oversees the end-to-end sourcing, logistics, and traceability of UCO across China. With a degree in Chemistry from North China University of Science and Technology, he brings over 10 years of experience managing international supply chains in the renewable fuels sector. Prior to Shaphargroup, Elvis held a senior logistics role at Sinopec, one of China's largest energy companies. His expertise ensures secure, scalable, and compliant feedstock delivery for SAF and HVO markets."
     }
   ];
 
