@@ -4,8 +4,50 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Plane, Factory, Globe, Award } from "lucide-react";
 import safImagePath from "@assets/SAF_1754159425868.png";
+import { useEffect } from "react";
+import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 
 export default function SAF() {
+  // SEO Meta Tags Setup
+  useEffect(() => {
+    updateSEOTags({
+      ...SEO_CONFIGS.saf,
+      canonical: window.location.href,
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "HEFA Sustainable Aviation Fuel",
+        "description": "Premium HEFA-SPK sustainable aviation fuel produced from refined UCO feedstock with ISCC certification",
+        "manufacturer": {
+          "@type": "Organization",
+          "name": "Shaphargroup"
+        },
+        "category": "Sustainable Aviation Fuel",
+        "additionalProperty": [
+          {
+            "@type": "PropertyValue",
+            "name": "GHG Reduction",
+            "value": "85%"
+          },
+          {
+            "@type": "PropertyValue", 
+            "name": "Certification",
+            "value": "ISCC EU & ISCC PLUS"
+          },
+          {
+            "@type": "PropertyValue",
+            "name": "Fuel Type",
+            "value": "HEFA-SPK"
+          }
+        ]
+      }
+    });
+
+    optimizePagePerformance();
+    return () => {
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, []);
   const scrollToContact = () => {
     const section = document.getElementById("contact");
     if (section) {

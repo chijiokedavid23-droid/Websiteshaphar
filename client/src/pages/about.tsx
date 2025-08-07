@@ -3,10 +3,45 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Building, Users, Globe, Award, Target, Heart } from "lucide-react";
+import { useEffect } from "react";
+import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 
 import greenEarthImagePath from "@assets/green earth_1754163467882.jpg";
 
 export default function About() {
+  // SEO Meta Tags Setup
+  useEffect(() => {
+    updateSEOTags({
+      ...SEO_CONFIGS.about,
+      canonical: window.location.href,
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Organization", 
+        "name": "Shaphargroup",
+        "description": "Global sustainable aviation fuel producer specializing in HEFA SAF and UCO refining",
+        "foundingDate": "2020",
+        "mission": "Transforming aviation through sustainable fuel production and circular economy principles",
+        "knowsAbout": [
+          "Sustainable Aviation Fuel Production",
+          "HEFA SAF Manufacturing", 
+          "UCO Refining",
+          "Aviation Decarbonization",
+          "Biofuel Technology",
+          "Circular Economy"
+        ],
+        "hasCredential": [
+          "ISCC EU Certification",
+          "ISCC PLUS Certification", 
+          "REACH Compliance"
+        ]
+      }
+    });
+
+    optimizePagePerformance();
+    return () => {
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, []);
   const scrollToContact = () => {
     const section = document.getElementById("contact");
     if (section) {

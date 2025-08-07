@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Users, Globe, Award, Building, Info } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
 import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
@@ -15,8 +16,57 @@ import elvisImagePath from "@assets/Elvis.jpg2_1754161974007.jpg";
 export default function Leadership() {
   // SEO Meta Tags Setup
   useEffect(() => {
-    // Page Title
-    document.title = "Leadership Team - Sustainable Aviation Fuel Experts | Shaphargroup";
+    updateSEOTags({
+      ...SEO_CONFIGS.leadership,
+      canonical: window.location.href,
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Shaphargroup",
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Charles Jiao",
+            "alternateName": "Jiao Li Guang",
+            "jobTitle": "Chief Executive Officer",
+            "description": "Seasoned industrial chemist with expertise in SAF production and oleochemical refining"
+          },
+          {
+            "@type": "Person",
+            "name": "Ji Gang",
+            "jobTitle": "Production Director",
+            "description": "Expert in UCO refining operations and sustainable fuel production"
+          },
+          {
+            "@type": "Person",
+            "name": "David Chijioke Arinze",
+            "alternateName": "David C. Arinze",
+            "jobTitle": "MD Europe & Americas",
+            "description": "Leading expert in sustainable aviation fuel and renewable energy markets"
+          },
+          {
+            "@type": "Person",
+            "name": "Jane Zhen",
+            "jobTitle": "Chief Financial Officer",
+            "description": "Financial expert specializing in sustainable energy investments and operations"
+          },
+          {
+            "@type": "Person",
+            "name": "Timothy Rose",
+            "jobTitle": "Non Executive Director",
+            "description": "Distinguished governance leader and strategic advisor"
+          },
+          {
+            "@type": "Person",
+            "name": "Elvis Cao",
+            "jobTitle": "Director Supply Chain",
+            "description": "Supply chain expert managing global UCO procurement and logistics"
+          }
+        ]
+      }
+    });
+
+    optimizePagePerformance();
     
     // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');

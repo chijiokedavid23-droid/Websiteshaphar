@@ -2,8 +2,43 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Recycle, Leaf, Target, Globe, Award, Users, BarChart3 } from "lucide-react";
+import { useEffect } from "react";
+import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 
 export default function Sustainability() {
+  // SEO Meta Tags Setup
+  useEffect(() => {
+    updateSEOTags({
+      ...SEO_CONFIGS.sustainability,
+      canonical: window.location.href,
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "EnvironmentalImpact",
+        "name": "Shaphargroup Sustainability Impact",
+        "description": "Environmental benefits of sustainable aviation fuel production",
+        "carbonFootprintReduction": {
+          "@type": "QuantitativeValue",
+          "value": "85",
+          "unitText": "percent GHG reduction vs fossil fuels"
+        },
+        "carbonEmissionsAvoided": {
+          "@type": "QuantitativeValue", 
+          "value": "1580000",
+          "unitText": "tons CO₂ annually"
+        },
+        "circularEconomyPrinciples": [
+          "Waste oil valorization",
+          "UCO to SAF conversion", 
+          "Renewable feedstock processing"
+        ]
+      }
+    });
+
+    optimizePagePerformance();
+    return () => {
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, []);
   const impactStats = [
     { number: "500,000", unit: "MT/year", description: "Premium refined UCO capacity" },
     { number: "1.58M", unit: "tons CO₂", description: "Emissions avoided annually" },

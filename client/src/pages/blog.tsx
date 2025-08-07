@@ -2,6 +2,8 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, User, Tag } from "lucide-react";
+import { useEffect } from "react";
+import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import unlockingSafImage from "@assets/Unlocking SAF_1754168191181.jpeg";
 import yangxinMeetingImage from "@assets/Yangxin county meeting 1_1754487367075.png";
 import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
@@ -27,6 +29,30 @@ const getArticleId = (title: string): string | null => {
 };
 
 export default function Blog() {
+  // SEO Meta Tags Setup
+  useEffect(() => {
+    updateSEOTags({
+      ...SEO_CONFIGS.blog,
+      canonical: window.location.href,
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Shaphargroup SAF Industry Blog",
+        "description": "Latest insights on sustainable aviation fuel, HEFA SAF production, and aviation decarbonization",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Shaphargroup"
+        },
+        "about": ["Sustainable Aviation Fuel", "HEFA SAF", "UCO Refining", "Aviation Decarbonization"]
+      }
+    });
+
+    optimizePagePerformance();
+
+    return () => {
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, []);
   const featuredPost = {
     title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
     excerpt: "We are pleased to announce that Tim Rose, a distinguished governance leader and board advisor, has joined our team.",

@@ -6,17 +6,69 @@ import MarketImpact from "@/components/market-impact";
 import NewsSection from "@/components/news-section";
 import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
+import { useEffect } from "react";
+import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 
 export default function Home() {
+  // SEO Meta Tags Setup
+  useEffect(() => {
+    // Use centralized SEO configuration
+    updateSEOTags({
+      ...SEO_CONFIGS.home,
+      canonical: window.location.href,
+      ogImage: "https://shaphargroup.com/wp-content/uploads/2025/04/Shaphargroup-logo-logo-browser.png",
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Shaphargroup",
+        "alternateName": "Shaphargroup Industry (Hainan) Co., Ltd.",
+        "url": "https://www.shaphargroup.com",
+        "logo": "https://shaphargroup.com/logo.png",
+        "description": "Global leader in sustainable aviation fuel production, specializing in HEFA SAF and UCO refining with operations in China, Netherlands, and Americas.",
+        "industry": "Sustainable Aviation Fuel Production",
+        "foundingDate": "2020",
+        "keywords": ["Sustainable Aviation Fuel", "HEFA SAF", "UCO Refining", "Biofuel Production", "Aviation Decarbonization"],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Sustainable Aviation Fuel Products",
+          "itemListElement": [
+            {
+              "@type": "Product",
+              "name": "HEFA Sustainable Aviation Fuel",
+              "description": "Premium HEFA-SPK sustainable aviation fuel for commercial aviation blending"
+            },
+            {
+              "@type": "Product", 
+              "name": "Refined Used Cooking Oil",
+              "description": "Premium refined UCO feedstock for biofuel and SAF production"
+            }
+          ]
+        },
+        "areaServed": ["Global", "Asia", "Europe", "Americas"],
+        "serviceType": ["Sustainable Aviation Fuel Production", "UCO Refining", "Biofuel Manufacturing"]
+      }
+    });
+
+    // Optimize page performance
+    optimizePagePerformance();
+
+    // Cleanup
+    return () => {
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Navigation />
-      <HeroSection />
-      <CompanyOverview />
-      <CapabilitiesSection />
-      <MarketImpact />
-      <NewsSection />
-      <ContactSection />
+      <main role="main">
+        <HeroSection />
+        <CompanyOverview />
+        <CapabilitiesSection />
+        <MarketImpact />
+        <NewsSection />
+        <ContactSection />
+      </main>
       <Footer />
     </div>
   );

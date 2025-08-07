@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -11,6 +12,46 @@ import { MapPin, Building, Send, Phone, Mail, Clock, Globe } from "lucide-react"
 import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
+  // SEO Meta Tags Setup
+  useEffect(() => {
+    updateSEOTags({
+      ...SEO_CONFIGS.contact,
+      canonical: window.location.href,
+      structuredData: {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Shaphargroup",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "contactType": "Business Inquiries",
+            "availableLanguage": ["English", "Chinese"],
+            "contactOption": "TollFree"
+          }
+        ],
+        "address": [
+          {
+            "@type": "PostalAddress",
+            "addressLocality": "Rotterdam",
+            "addressCountry": "Netherlands", 
+            "streetAddress": "Coolsingel 104, 3011 AG"
+          },
+          {
+            "@type": "PostalAddress",
+            "addressLocality": "Yangxin County, Shandong",
+            "addressCountry": "China",
+            "streetAddress": "South of Industrial 6th Road, Economic Development Zone"
+          }
+        ]
+      }
+    });
+
+    optimizePagePerformance();
+
+    return () => {
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, []);
   const { toast } = useToast();
   const [formData, setFormData] = useState({
     name: "",
