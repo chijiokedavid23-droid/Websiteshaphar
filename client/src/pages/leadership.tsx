@@ -272,7 +272,8 @@ export default function Leadership() {
       
       {/* Hero Section */}
       <header className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20" role="banner" aria-labelledby="hero-heading">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/80 to-forest/60 z-10"></div>
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/90 to-forest/80 z-15"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -282,9 +283,9 @@ export default function Leadership() {
           aria-label="Shaphargroup sustainable aviation fuel refinery facility"
         />
         
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div 
-            className="text-sm font-semibold text-emerald-300 tracking-wide uppercase mb-4"
+            className="text-sm font-bold text-emerald-200 tracking-wide uppercase mb-4 text-overlay"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -293,15 +294,15 @@ export default function Leadership() {
           </motion.div>
           <motion.h1 
             id="hero-heading"
-            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight text-overlay-strong"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            Meet the <span className="text-emerald-300">Visionaries</span> Behind Shaphargroup
+            Meet the <span className="text-emerald-200 font-extrabold">Visionaries</span> Behind Shaphargroup
           </motion.h1>
           <motion.p 
-            className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl text-gray-100 max-w-3xl mx-auto leading-relaxed font-medium text-overlay"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
