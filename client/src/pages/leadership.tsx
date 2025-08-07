@@ -28,10 +28,10 @@ export default function Leadership() {
       bio: "A seasoned industrial chemist and refinery executive, Charles Jiao has over a decade of frontline experience in waste oil processing, advanced oleochemicals, and sustainable aviation fuel (SAF) systems. As CEO of Shaphargroup Industry (Hainan) Co., Ltd., he oversees the production of ISCC-certified UCO and SAF. Charles has led multiple refinery expansions, optimized distillation processes for high-purity outputs, and spearheaded compliance with global SAF standards. His deep command of feedstock science and market dynamics positions him as a key figure in Asia's clean energy transformation."
     },
     {
-      name: "Zhen Tiyu (Jane Zhen)",
-      title: "CFO",
-      image: janeImagePath,
-      bio: "As Chief Financial Officer of Shaphargroup Industry (Hainan), Jane Zhen leads financial strategy across global UCO and SAF trade operations. With deep expertise in international trade finance, export tax optimization, and capital risk control, she ensures the group's financial resilience and compliance. Jane holds a degree in Accounting from Wuxi Vocational and Technical University and has led finance teams at Michelin and Bertelsmann. Her leadership is instrumental in aligning Shaphargroup's financial structure with its global growth and sustainability goals."
+      name: "Ji Gang (Gee Gang)",
+      title: "Production Director",
+      image: jiGangImagePath,
+      bio: "Ji Gang is a veteran oleochemical engineer with over 15 years of expertise in palm oil and UCO refining. As Director of R&D at Shaphargroup, he leads the design and innovation of next-generation UCO production lines that meet global SAF and biodiesel standards. Ji earned a Bachelor's in Chemistry from Jiangsu University of Technology and spent 16 years at PT. Duakuda Indonesia driving efficiency in oleochemical operations. His leadership ensures Shaphargroup's technology stays ahead in sustainable fuel refinement."
     },
     {
       name: "David Chijioke Arinze",
@@ -40,10 +40,10 @@ export default function Leadership() {
       bio: "A visionary leader in renewable energy and sustainable trade, David serves as Managing Director, Europe and Americas at Shaphargroup, driving global UCO and SAF supply chains across the U.S., EU, and China. With a strong foundation in business and project leadership, he holds an M.Sc. in Project Management from the University of Salford (UK), a diploma in SME & Digital Finance from the Frankfurt School (Germany), and a B.Sc. in Business Administration. He brings deep expertise in ESG, digital finance, and cross-border execution. David's strategic direction continues to expand Shaphargroup's global footprint in the clean energy sector."
     },
     {
-      name: "Ji Gang (Gee Gang)",
-      title: "Production Director",
-      image: jiGangImagePath,
-      bio: "Ji Gang is a veteran oleochemical engineer with over 15 years of expertise in palm oil and UCO refining. As Director of R&D at Shaphargroup, he leads the design and innovation of next-generation UCO production lines that meet global SAF and biodiesel standards. Ji earned a Bachelor's in Chemistry from Jiangsu University of Technology and spent 16 years at PT. Duakuda Indonesia driving efficiency in oleochemical operations. His leadership ensures Shaphargroup's technology stays ahead in sustainable fuel refinement."
+      name: "Zhen Tiyu (Jane Zhen)",
+      title: "CFO",
+      image: janeImagePath,
+      bio: "As Chief Financial Officer of Shaphargroup Industry (Hainan), Jane Zhen leads financial strategy across global UCO and SAF trade operations. With deep expertise in international trade finance, export tax optimization, and capital risk control, she ensures the group's financial resilience and compliance. Jane holds a degree in Accounting from Wuxi Vocational and Technical University and has led finance teams at Michelin and Bertelsmann. Her leadership is instrumental in aligning Shaphargroup's financial structure with its global growth and sustainability goals."
     },
     {
       name: "Timothy Rose",
