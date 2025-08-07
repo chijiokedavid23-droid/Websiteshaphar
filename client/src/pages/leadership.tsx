@@ -34,10 +34,10 @@ export default function Leadership() {
       bio: "Bio coming soon - please provide Jane's biography."
     },
     {
-      name: "David C. Arinze",
+      name: "David Chijioke Arinze",
       title: "MD Europe & Americas",
       image: davidImagePath,
-      bio: "Bio coming soon - please provide David's biography."
+      bio: "A visionary leader in renewable energy and sustainable trade, David serves as Managing Director, Europe and Americas at Shaphargroup, driving global UCO and SAF supply chains across the U.S., EU, and China. With a strong foundation in business and project leadership, he holds an M.Sc. in Project Management from the University of Salford (UK), a diploma in SME & Digital Finance from the Frankfurt School (Germany), and a B.Sc. in Business Administration. He brings deep expertise in ESG, digital finance, and cross-border execution. David's strategic direction continues to expand Shaphargroup's global footprint in the clean energy sector."
     },
     {
       name: "Ji Gang",
