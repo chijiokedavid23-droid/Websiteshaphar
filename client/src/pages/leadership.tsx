@@ -25,7 +25,7 @@ export default function Leadership() {
       name: "Jiao Li Guang (Charles)",
       title: "CEO",
       image: charlesImagePath,
-      bio: "Bio coming soon - please provide Charles's biography."
+      bio: "A seasoned industrial chemist and refinery executive, Charles Jiao has over a decade of frontline experience in waste oil processing, advanced oleochemicals, and sustainable aviation fuel (SAF) systems. As CEO of Shaphargroup Industry (Hainan) Co., Ltd., he oversees the production of ISCC-certified UCO and SAF. Charles has led multiple refinery expansions, optimized distillation processes for high-purity outputs, and spearheaded compliance with global SAF standards. His deep command of feedstock science and market dynamics positions him as a key figure in Asia's clean energy transformation."
     },
     {
       name: "Zhen Tiyu (Jane)",
