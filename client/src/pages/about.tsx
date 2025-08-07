@@ -80,7 +80,9 @@ export default function About() {
       
       {/* Hero Section */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden pt-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/80 to-forest/60 z-10"></div>
+        {/* Stronger overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/70 z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/90 to-forest/80 z-15"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -88,9 +90,9 @@ export default function About() {
           }}
         />
         
-        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div 
-            className="text-sm font-semibold text-emerald-300 tracking-wide uppercase mb-4"
+            className="text-sm font-bold text-emerald-200 tracking-wide uppercase mb-4 drop-shadow-lg"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -98,12 +100,15 @@ export default function About() {
             Our Story
           </motion.div>
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            style={{ 
+              textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.5)'
+            }}
           >
-            Shaphargroup: Pioneering <span className="text-emerald-300">Sustainable Biofuels</span> Worldwide
+            Shaphargroup: Pioneering <span className="text-emerald-200 font-extrabold">Sustainable Biofuels</span> Worldwide
           </motion.h1>
         </div>
       </section>

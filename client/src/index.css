@@ -72,6 +72,24 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  /* Text overlay utilities for better readability */
+  .text-overlay {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8), 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .text-overlay-light {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5), 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .text-overlay-strong {
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.9), 0 0 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Enhanced backdrop filters */
+  .backdrop-enhanced {
+    backdrop-filter: blur(2px) brightness(0.7) contrast(1.2);
+  }
+
   html {
     scroll-behavior: smooth;
   }
