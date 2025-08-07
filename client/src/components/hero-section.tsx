@@ -32,7 +32,7 @@ export default function HeroSection() {
       <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
         <div className="max-w-5xl mx-auto">
           <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight tracking-tight text-overlay-strong"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -41,7 +41,7 @@ export default function HeroSection() {
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-gray-100 mb-6 leading-relaxed font-light max-w-4xl mx-auto"
+            className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-4 sm:mb-6 leading-relaxed font-light max-w-4xl mx-auto text-overlay"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -50,7 +50,7 @@ export default function HeroSection() {
           </motion.p>
           
           <motion.p 
-            className="text-lg text-gray-300 mb-14 font-light"
+            className="text-base sm:text-lg text-gray-300 mb-10 sm:mb-14 font-light text-overlay-light"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
@@ -59,17 +59,17 @@ export default function HeroSection() {
           </motion.p>
           
           <motion.div 
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full px-4 sm:px-0"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Link href="/contact">
+            <Link href="/contact" className="w-full sm:w-auto">
               <Button 
                 size="lg"
-                className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 px-10 py-4 rounded-lg"
+                className="w-full sm:w-auto bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 px-8 sm:px-10 py-3 sm:py-4 rounded-lg touch-manipulation"
               >
-                <Send className="w-5 h-5 mr-2" />
+                <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Contact Us
               </Button>
             </Link>
@@ -78,10 +78,10 @@ export default function HeroSection() {
               size="lg"
               variant="outline"
               asChild
-              className="bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white hover:text-navy transition-all duration-300 font-semibold text-lg px-10 py-4 rounded-lg"
+              className="w-full sm:w-auto bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white hover:text-navy transition-all duration-300 font-semibold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 rounded-lg touch-manipulation"
             >
-              <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer">
-                <Factory className="w-5 h-5 mr-2" />
+              <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
+                <Factory className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                 Explore Our UCO Refinery
               </a>
             </Button>

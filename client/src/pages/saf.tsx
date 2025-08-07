@@ -72,7 +72,7 @@ export default function SAF() {
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight text-overlay-strong"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight text-overlay-strong"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -81,7 +81,7 @@ export default function SAF() {
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-white mb-8 leading-relaxed max-w-4xl mx-auto text-overlay"
+            className="text-lg sm:text-xl md:text-2xl text-white mb-6 sm:mb-8 leading-relaxed max-w-4xl mx-auto text-overlay"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

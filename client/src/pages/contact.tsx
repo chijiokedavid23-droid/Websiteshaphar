@@ -154,7 +154,7 @@ export default function Contact() {
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight text-overlay-strong"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -163,7 +163,7 @@ export default function Contact() {
           </motion.h1>
           
           <motion.p 
-            className="text-xl md:text-2xl text-gray-200 mb-8 leading-relaxed max-w-3xl mx-auto"
+            className="text-lg sm:text-xl md:text-2xl text-gray-200 mb-6 sm:mb-8 leading-relaxed max-w-3xl mx-auto text-overlay"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -183,7 +183,7 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6">
               Global Operations
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -192,7 +192,7 @@ export default function Contact() {
           </motion.div>
 
           {/* Contact Info Cards */}
-          <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8 mb-16">
             {contactInfo.map((info, index) => {
               const IconComponent = info.icon;
               return (
@@ -224,7 +224,7 @@ export default function Contact() {
           </div>
 
           {/* Office Locations */}
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
             {offices.map((office, index) => {
               const IconComponent = office.icon;
               return (
@@ -273,8 +273,8 @@ export default function Contact() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold text-navy mb-8 text-center">Get in Touch</h3>
-            <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6">
+            <h3 className="text-2xl sm:text-3xl font-bold text-navy mb-6 sm:mb-8 text-center">Get in Touch</h3>
+            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
               <div>
                 <Label htmlFor="name" className="text-sm font-medium text-charcoal mb-2">
                   Full Name *
@@ -371,9 +371,9 @@ export default function Contact() {
                 <Button 
                   type="submit"
                   size="lg"
-                  className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-8 py-4"
+                  className="w-full sm:w-auto bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-6 sm:px-8 py-3 sm:py-4 touch-manipulation"
                 >
-                  <Send className="w-5 h-5 mr-2" />
+                  <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
                   Send Message
                 </Button>
               </div>

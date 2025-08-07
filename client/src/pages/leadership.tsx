@@ -323,7 +323,7 @@ export default function Leadership() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 id="team-section-heading" className="text-4xl md:text-5xl font-bold text-navy mb-6">
+              <h2 id="team-section-heading" className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6">
                 Sustainable Aviation Fuel Leadership Team
               </h2>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -331,7 +331,7 @@ export default function Leadership() {
               </p>
             </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {leadership.map((member, index) => (
               <motion.div
                 key={index}
@@ -352,29 +352,29 @@ export default function Leadership() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent pointer-events-none"></div>
                   
-                  {/* Bio Button - appears on hover */}
+                  {/* Mobile-friendly bio button - always visible on mobile, hover on desktop */}
                   <Dialog>
                     <DialogTrigger asChild>
-                      <button className="absolute top-4 right-4 bg-emerald/90 hover:bg-emerald text-white p-2 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-110" data-testid={`button-bio-${index}`}>
+                      <button className="absolute top-4 right-4 bg-emerald/95 hover:bg-emerald text-white p-3 rounded-full shadow-lg opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-300 transform hover:scale-110 touch-manipulation" data-testid={`button-bio-${index}`}>
                         <Info className="w-5 h-5" />
                       </button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-2xl">
+                    <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto mx-4">
                       <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold text-navy">
+                        <DialogTitle className="text-xl md:text-2xl font-bold text-navy pr-8">
                           {member.name}
                         </DialogTitle>
-                        <p className="text-emerald font-semibold text-lg">{member.title}</p>
+                        <p className="text-emerald font-semibold text-base md:text-lg">{member.title}</p>
                       </DialogHeader>
                       <div className="mt-4">
-                        <div className="flex gap-6 mb-6">
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
                           <img 
                             src={member.image}
                             alt={member.name}
-                            className="w-24 h-24 object-contain bg-gray-50 rounded-lg"
+                            className="w-20 h-20 sm:w-24 sm:h-24 object-contain bg-gray-50 rounded-lg mx-auto sm:mx-0 flex-shrink-0"
                           />
                           <div className="flex-1">
-                            <p className="text-gray-600 leading-relaxed">{member.bio}</p>
+                            <p className="text-gray-600 leading-relaxed text-sm md:text-base">{member.bio}</p>
                           </div>
                         </div>
                       </div>
@@ -385,30 +385,30 @@ export default function Leadership() {
                   <h3 className="text-xl font-bold text-navy mb-2" data-testid={`text-leader-name-${index}`}>{member.name}</h3>
                   <p className="text-emerald font-semibold mb-3" data-testid={`text-leader-title-${index}`}>{member.title}</p>
                   
-                  {/* Click for Bio hint */}
+                  {/* Mobile-friendly bio link */}
                   <Dialog>
                     <DialogTrigger asChild>
-                      <button className="text-sm text-gray-500 hover:text-emerald transition-colors flex items-center gap-1" data-testid={`link-bio-${index}`}>
+                      <button className="text-sm text-gray-500 hover:text-emerald transition-colors flex items-center gap-1 py-2 px-3 rounded-md hover:bg-gray-50 touch-manipulation" data-testid={`link-bio-${index}`}>
                         <Info className="w-4 h-4" />
                         View Biography
                       </button>
                     </DialogTrigger>
-                    <DialogContent className="max-w-2xl">
+                    <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto mx-4">
                       <DialogHeader>
-                        <DialogTitle className="text-2xl font-bold text-navy">
+                        <DialogTitle className="text-xl md:text-2xl font-bold text-navy pr-8">
                           {member.name}
                         </DialogTitle>
-                        <p className="text-emerald font-semibold text-lg">{member.title}</p>
+                        <p className="text-emerald font-semibold text-base md:text-lg">{member.title}</p>
                       </DialogHeader>
                       <div className="mt-4">
-                        <div className="flex gap-6 mb-6">
+                        <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-6">
                           <img 
                             src={member.image}
                             alt={member.name}
-                            className="w-24 h-24 object-contain bg-gray-50 rounded-lg"
+                            className="w-20 h-20 sm:w-24 sm:h-24 object-contain bg-gray-50 rounded-lg mx-auto sm:mx-0 flex-shrink-0"
                           />
                           <div className="flex-1">
-                            <p className="text-gray-600 leading-relaxed">{member.bio}</p>
+                            <p className="text-gray-600 leading-relaxed text-sm md:text-base">{member.bio}</p>
                           </div>
                         </div>
                       </div>

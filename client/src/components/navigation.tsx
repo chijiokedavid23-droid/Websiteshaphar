@@ -63,7 +63,7 @@ export default function Navigation() {
               <img 
                 src={logoPath} 
                 alt="Shaphargroup" 
-                className="h-32 w-auto"
+                className="h-24 sm:h-28 md:h-32 w-auto"
               />
             </Link>
           </motion.div>
@@ -116,7 +116,7 @@ export default function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Link href="/contact" onClick={scrollToTop} className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md">
+              <Link href="/contact" onClick={scrollToTop} className="hidden sm:inline-block bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md touch-manipulation">
                 Contact Us
               </Link>
             </motion.div>

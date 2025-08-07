@@ -100,13 +100,10 @@ export default function About() {
             Our Story
           </motion.div>
           <motion.h1 
-            className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-2xl"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight text-overlay-strong"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            style={{ 
-              textShadow: '2px 2px 4px rgba(0,0,0,0.8), 0 0 10px rgba(0,0,0,0.5)'
-            }}
           >
             Shaphargroup: Pioneering <span className="text-emerald-200 font-extrabold">Sustainable Biofuels</span> Worldwide
           </motion.h1>
@@ -123,7 +120,7 @@ export default function About() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6 leading-tight">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6 leading-tight">
                 Transforming Waste into Opportunity
               </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
