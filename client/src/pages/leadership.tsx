@@ -6,7 +6,7 @@ import { Users, Globe, Award, Building, Info } from "lucide-react";
 import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
-import aviationImagePath from "@assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp";
+import aboutPageImagePath from "@assets/About page_1754671131671.png";
 import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
 import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
@@ -278,7 +278,7 @@ export default function Leadership() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${aviationImagePath})`
+            backgroundImage: `url(${aboutPageImagePath})`
           }}
           role="img"
           aria-label="Shaphargroup sustainable aviation fuel refinery facility"
