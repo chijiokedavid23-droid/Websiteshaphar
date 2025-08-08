@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Plane, Factory, Globe, Award } from "lucide-react";
 import safImagePath from "@assets/SAF_1754159425868.png";
+import partnershipImage from "@assets/green earth_1754163467882.jpg";
+import refiningProcessImage from "@assets/UCO REFINED AND SUPPLIED FOR SAF_1754505492106.png";
+import partnershipDriveImage from "@assets/Unlocking SAF_1754168191181.jpeg";
 import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 
@@ -161,7 +164,7 @@ export default function SAF() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://shaphargroup.com/wp-content/uploads/2025/07/Partnership-and-drive-768x504.jpeg"
+                src={partnershipDriveImage}
                 alt="Partnership and drive"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
@@ -210,7 +213,7 @@ export default function SAF() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://shaphargroup.com/wp-content/uploads/2025/04/refining-Process-Image-1024x683.webp"
+                src={refiningProcessImage}
                 alt="Refining process"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
@@ -299,7 +302,7 @@ export default function SAF() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://shaphargroup.com/wp-content/uploads/2025/04/why-partner-with-Shaphargroup-1024x683.webp"
+                src={partnershipImage}
                 alt="Why partner with Shaphargroup"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />

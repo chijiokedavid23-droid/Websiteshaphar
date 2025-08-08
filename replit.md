@@ -2,6 +2,13 @@
 
 This is a full-stack web application for Shaphargroup, a sustainable aviation fuel (SAF) company. The project is built as a marketing website showcasing the company's capabilities in HEFA Sustainable Aviation Fuel production, UCO refining, and global logistics operations. The application features a modern, responsive design with smooth animations and a professional corporate presentation focused on the aviation fuel industry.
 
+## Recent Changes (August 2025)
+- **Image Loading Issues Permanently Fixed**: Replaced ALL external image URLs with local assets to eliminate dependencies on external services
+- **SAFc Article Featured**: Positioned latest SAFc approval announcement as featured article with comprehensive SEO optimization
+- **Blog Structure Enhanced**: Tim Rose board announcement moved to latest articles, content reorganized for better hierarchy
+- **Comprehensive SEO Implementation**: Added structured data, meta tags, and Open Graph optimization across all pages
+- **Local Asset Strategy**: Migrated from external URLs to bundled local images for reliability and performance
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
@@ -30,6 +37,12 @@ Preferred communication style: Simple, everyday language.
 - **Schema Management**: Centralized schema definitions in shared directory
 - **Migrations**: Drizzle Kit for database schema migrations
 - **Validation**: Zod schemas integrated with Drizzle for runtime type validation
+
+## Asset Management Strategy
+- **Local Assets**: All images now sourced from `attached_assets` directory for reliability
+- **No External Dependencies**: Eliminated external image URLs to prevent loading failures
+- **Bundled Resources**: Images imported as modules and bundled with application
+- **Path Aliases**: Configured TypeScript path mapping for clean imports (@, @shared, @assets)
 
 ## Project Structure
 - **Monorepo Design**: Client and server code in separate directories with shared schema
@@ -63,4 +76,4 @@ Preferred communication style: Simple, everyday language.
 - **React Hook Form**: Form state management with @hookform/resolvers
 - **Validation**: Zod integration for client-side form validation
 
-The application is designed as a professional corporate website with room for future expansion into user authentication, dynamic content management, and potential e-commerce functionality for fuel procurement.
+The application is designed as a professional corporate website with room for future expansion into user authentication, dynamic content management, and potential e-commerce functionality for fuel procurement. All images are now locally managed for optimal performance and reliability.

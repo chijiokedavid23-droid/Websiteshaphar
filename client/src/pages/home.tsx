@@ -16,7 +16,7 @@ export default function Home() {
     updateSEOTags({
       ...SEO_CONFIGS.home,
       canonical: window.location.href,
-      ogImage: "https://shaphargroup.com/wp-content/uploads/2025/04/Shaphargroup-logo-logo-browser.png",
+      ogImage: "https://shaphargroup.com/logo.png",
       structuredData: {
         "@context": "https://schema.org",
         "@type": "Organization",
