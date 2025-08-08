@@ -15,6 +15,7 @@ import mrTimImage from "@assets/MR TIM_1754156709435.jpg";
 import safFactoryImage from "@assets/SAF Factory to jet_1754154741557.png";
 import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 
+
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
   const titleMap: Record<string, string> = {
@@ -135,7 +136,7 @@ export default function Blog() {
     {
       title: "From UCO to Jet Fuel: The Journey Toward Sustainable Aviation",
       excerpt: "As the aviation industry races to meet its net-zero targets, one solution is already proving both practical and scalable: Sustainable Aviation Fuel (SAF) made from Used Cooking Oil (UCO).",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/05/ChatGPT-Image-May-14-2025-11_03_27-PM-768x512.png",
+      image: unlockingSafImage,
       category: "Insights & Thought Leadership",
       date: "May 14, 2025",
       author: "David C. Arinze",
@@ -144,7 +145,7 @@ export default function Blog() {
     {
       title: "Shaphargroup's David C. Arinze to Speak at SAF Investors Conference in London",
       excerpt: "We're excited to announce that David C. Arinze, Managing Partner of Shaphargroup and head of our European and American operations, will be speaking at the upcoming SAF Investors Conference in London.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/05/SAF-LONDON2-768x384.png",
+      image: unlockingSafImage,
       category: "News",
       date: "May 13, 2025",
       author: "Admin",
