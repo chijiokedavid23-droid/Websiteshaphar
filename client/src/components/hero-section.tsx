@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronDown, Send, Factory } from "lucide-react";
 import { Link } from "wouter";
-// Using the SAF factory to jet hero image
-import heroImagePath from "@assets/SAF Factory to jet_1754154741557.png";
+// Using the original hero image with sunset aviation scene
+import heroImagePath from "@assets/image_1754130971461.png";
 const aviationImageUrl = heroImagePath;
 
 export default function HeroSection() {
