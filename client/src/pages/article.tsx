@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { Calendar, User, ArrowLeft, ExternalLink } from "lucide-react";
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
+import { useEffect } from "react";
+import { updateSEOTags, optimizePagePerformance } from "@/lib/seo";
 
 interface ArticleData {
   id: string;
@@ -19,11 +21,15 @@ const articlesData: Record<string, ArticleData> = {
   "safc-approval-scope-3-credits": {
     id: "safc-approval-scope-3-credits",
     title: "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally",
-    content: `Rotterdam, Netherlands — Shaphargroup is proud to announce its official approval as a supplier on the **Sustainable Aviation Fuel Certificate (SAFc) platform**, enabling the company to deliver verified **Scope 3 emissions reduction certificates** to airlines, corporate flyers, and sustainability-focused organizations worldwide.
+    content: `**Rotterdam, Netherlands** — Shaphargroup is proud to announce its official approval as a supplier on the **Sustainable Aviation Fuel Certificate (SAFc) platform**, enabling the company to deliver verified **Scope 3 emissions reduction certificates** to airlines, corporate flyers, and sustainability-focused organizations worldwide.
 
-## Verified Scope 3 Solutions
+The SAFc registry platform represents a breakthrough in aviation sustainability, allowing organizations to claim verified carbon benefits from sustainable aviation fuel through a transparent and auditable system.
+
+## Verified Scope 3 Solutions for Global Aviation
 
 The SAFc program empowers aviation stakeholders to claim the carbon reduction benefits of Sustainable Aviation Fuel (SAF), even when physical delivery is not immediately possible, through a rigorous **Book & Claim chain-of-custody model**. With this approval, Shaphargroup can now provide clients with fully traceable, third-party verified, and registry-backed Scope 3 benefits that directly support global decarbonization goals.
+
+This certification enables airlines, cargo operators, and corporate aviation users to meet their **net-zero commitments** while supporting the scaling of sustainable aviation fuel production globally.
 
 Key benefits of SAFc certification include:
 - **Verified carbon reduction claims** through rigorous Book & Claim methodology
@@ -424,6 +430,128 @@ At Shaphargroup, we specialize in sourcing, refining, and supplying UCO to globa
 
 export default function Article() {
   const [match, params] = useRoute("/article/:id");
+  
+  // Enhanced SEO implementation for articles
+  useEffect(() => {
+    if (match && params?.id && articlesData[params.id]) {
+      const article = articlesData[params.id];
+      const articleUrl = `https://shaphargroup.com/article/${params.id}`;
+      
+      // Enhanced SEO configurations for each article
+      const seoConfigs: Record<string, any> = {
+        "safc-approval-scope-3-credits": {
+          title: "Shaphargroup Secures SAFc Approval for Verified Scope 3 SAF Credits | Global Aviation Decarbonization",
+          description: "Shaphargroup officially approved as SAFc supplier to deliver verified Scope 3 emissions reduction certificates globally. Book & Claim methodology enables airlines to claim SAF carbon benefits worldwide.",
+          keywords: "SAFc approval, Scope 3 emissions, sustainable aviation fuel certificates, Book & Claim, carbon reduction credits, aviation decarbonization, SAF registry, emissions verification, Shaphargroup SAF, airline sustainability, net zero aviation, carbon accounting, SAF credits, aviation carbon footprint, sustainable aviation fuel platform, aviation emissions, CORSIA compliance",
+          ogImage: "https://shaphargroup.com/wp-content/uploads/2025/08/safc-registry-social.jpg",
+          structuredData: {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": article.title,
+            "description": "Shaphargroup achieves SAFc platform approval to deliver verified Scope 3 emissions reduction certificates to airlines and organizations worldwide through rigorous Book & Claim methodology.",
+            "datePublished": "2025-08-08T00:00:00Z",
+            "dateModified": "2025-08-08T00:00:00Z",
+            "author": {
+              "@type": "Organization",
+              "name": "Shaphargroup",
+              "url": "https://shaphargroup.com",
+              "sameAs": [
+                "https://www.linkedin.com/company/shaphargroup"
+              ]
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "Shaphargroup",
+              "url": "https://shaphargroup.com",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://shaphargroup.com/wp-content/uploads/2025/04/Shaphargroup-logo-logo-browser.png",
+                "width": 400,
+                "height": 200
+              }
+            },
+            "image": {
+              "@type": "ImageObject",
+              "url": "https://shaphargroup.com/wp-content/uploads/2025/08/safc-registry-social.jpg",
+              "width": 1200,
+              "height": 630
+            },
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": articleUrl
+            },
+            "about": [
+              {
+                "@type": "Thing",
+                "name": "Sustainable Aviation Fuel Certificates"
+              },
+              {
+                "@type": "Thing", 
+                "name": "Scope 3 Emissions Reduction"
+              },
+              {
+                "@type": "Thing",
+                "name": "SAF Book & Claim Methodology"
+              },
+              {
+                "@type": "Thing",
+                "name": "Aviation Carbon Credits"
+              }
+            ],
+            "keywords": "SAFc, Scope 3, SAF certificates, carbon credits, aviation sustainability, Book & Claim, emissions verification",
+            "articleSection": "Sustainable Aviation Fuel",
+            "inLanguage": "en-US",
+            "wordCount": article.content.split(' ').length,
+            "isAccessibleForFree": true
+          }
+        }
+      };
+
+      const config = seoConfigs[params.id] || {
+        title: `${article.title} | Shaphargroup SAF Industry Blog`,
+        description: article.content.substring(0, 160).replace(/[#*]/g, '').trim() + "...",
+        keywords: `${article.category}, sustainable aviation fuel, SAF, Shaphargroup, aviation decarbonization, renewable energy, HEFA SAF, UCO refining`,
+        structuredData: {
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "headline": article.title,
+          "datePublished": new Date(article.date).toISOString(),
+          "dateModified": new Date(article.date).toISOString(),
+          "author": {
+            "@type": article.author === "David C. Arinze" ? "Person" : "Organization",
+            "name": article.author,
+            ...(article.author === "David C. Arinze" && {
+              "jobTitle": "Managing Director for Europe and Americas",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Shaphargroup"
+              }
+            })
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Shaphargroup"
+          },
+          "mainEntityOfPage": articleUrl,
+          "image": article.image
+        }
+      };
+
+      updateSEOTags({
+        ...config,
+        canonical: articleUrl,
+        ogTitle: config.title,
+        ogDescription: config.description,
+        ogImage: config.ogImage || article.image
+      });
+
+      optimizePagePerformance();
+    }
+
+    return () => {
+      document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
+    };
+  }, [match, params?.id]);
   
   if (!match || !params?.id) {
     return <div>Article not found</div>;
