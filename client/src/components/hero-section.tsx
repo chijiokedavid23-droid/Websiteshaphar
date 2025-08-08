@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronDown, Send, Factory } from "lucide-react";
 import { Link } from "wouter";
-// Using the original hero image with sunset aviation scene
-import heroImagePath from "@assets/image_1754130971461.png";
+// Using the new main page hero image with green aircraft
+import heroImagePath from "@assets/Main page_1754669989825.png";
 const aviationImageUrl = heroImagePath;
 
 export default function HeroSection() {
