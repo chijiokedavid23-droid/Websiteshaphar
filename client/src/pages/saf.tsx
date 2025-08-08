@@ -102,7 +102,7 @@ export default function SAF() {
               viewport={{ once: true }}
             >
               <img 
-                src="https://shaphargroup.com/wp-content/uploads/2025/04/SAF-mandate-emission-reduction-1024x683.webp"
+                src={safImagePath}
                 alt="SAF mandate emission reduction"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
