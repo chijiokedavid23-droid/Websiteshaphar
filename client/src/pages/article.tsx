@@ -16,6 +16,45 @@ interface ArticleData {
 }
 
 const articlesData: Record<string, ArticleData> = {
+  "safc-approval-scope-3-credits": {
+    id: "safc-approval-scope-3-credits",
+    title: "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally",
+    content: `Rotterdam, Netherlands — Shaphargroup is proud to announce its official approval as a supplier on the **Sustainable Aviation Fuel Certificate (SAFc) platform**, enabling the company to deliver verified **Scope 3 emissions reduction certificates** to airlines, corporate flyers, and sustainability-focused organizations worldwide.
+
+## Verified Scope 3 Solutions
+
+The SAFc program empowers aviation stakeholders to claim the carbon reduction benefits of Sustainable Aviation Fuel (SAF), even when physical delivery is not immediately possible, through a rigorous **Book & Claim chain-of-custody model**. With this approval, Shaphargroup can now provide clients with fully traceable, third-party verified, and registry-backed Scope 3 benefits that directly support global decarbonization goals.
+
+Key benefits of SAFc certification include:
+- **Verified carbon reduction claims** through rigorous Book & Claim methodology
+- **Third-party validation** ensuring complete transparency and compliance
+- **Global scope** enabling worldwide emissions reduction certificate delivery
+- **Registry backing** providing secure, traceable sustainability credits
+- **Flexible delivery** supporting both physical SAF and certificates
+
+## Leadership Statement
+
+> *"This milestone affirms Shaphargroup's role as a trusted producer and supplier of SAF, committed to delivering certified sustainable fuel solutions to the global aviation industry. It reinforces our ability to connect our SAF production directly with international demand, ensuring compliance, transparency, and real climate impact."*
+
+**David Chijioke Arinze**, Managing Director for Europe and Americas at Shaphargroup
+
+## Global Integration and Supply
+
+With integrated production and supply operations spanning **China, Europe, and the U.S.**, Shaphargroup is positioned to deliver both physical SAF and SAFc Scope 3 credits, offering airlines and corporate partners flexible solutions for meeting emissions reduction targets. 
+
+The company continues to work alongside leading sustainability organizations to expand its Book & Claim capabilities and uphold the highest environmental and industry standards.
+
+## About Shaphargroup
+
+Shaphargroup is a global renewable energy company specializing in **Sustainable Aviation Fuel (SAF) production and supply**. With operational hubs in Hainan (China), the Netherlands, and the United States, the company partners with airlines, fuel distributors, and corporate sustainability leaders to accelerate the aviation sector's transition to net-zero emissions.
+
+Our SAFc certification represents another step forward in providing comprehensive, verified sustainability solutions to the global aviation industry.`,
+    image: "https://shaphargroup.com/wp-content/uploads/2025/08/safc-registry-logo.png",
+    category: "SAF",
+    date: "August 8, 2025",
+    author: "Admin",
+    originalLink: "https://shaphargroup.com/saf/shaphargroup-secures-safc-approval-verified-sustainable-aviation-fuel-credits-scope-3-globally/"
+  },
   "biodiesel-boom-cleaner-engines": {
     id: "biodiesel-boom-cleaner-engines",
     title: "The Biodiesel Boom: Cleaner Engines, Healthier Planet",

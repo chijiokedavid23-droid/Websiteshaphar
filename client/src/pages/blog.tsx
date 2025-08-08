@@ -10,10 +10,12 @@ import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
 import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
 import ucoSampleImage from "@assets/SG UCO sample_1754488157265.jpeg";
 import yanzhouMeetingImage from "@assets/Yangxin county meeting 1_1754488489140.png";
+import safcRegistryImage from "@assets/image_1754657993774.png";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
   const titleMap: Record<string, string> = {
+    "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally": "safc-approval-scope-3-credits",
     "Tim Rose Joins Shaphargroup Board as Strategic Executive Director": "tim-rose-joins-board",
     "Why Europe and China Must Collaborate to Meet Net Zero — Not Compete": "europe-china-collaboration",
     "✈️ Shaphargroup's David C. Arinze Speaks at SAF Investors Summit London 2025": "saf-investors-summit",
@@ -64,6 +66,15 @@ export default function Blog() {
   };
 
   const blogPosts = [
+    {
+      title: "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally",
+      excerpt: "Shaphargroup is proud to announce its official approval as a supplier on the Sustainable Aviation Fuel Certificate (SAFc) platform, enabling the company to deliver verified Scope 3 emissions reduction certificates to airlines, corporate flyers, and sustainability-focused organizations worldwide.",
+      image: safcRegistryImage,
+      category: "SAF",
+      date: "August 8, 2025",
+      author: "Admin",
+      link: "https://shaphargroup.com/saf/shaphargroup-secures-safc-approval-verified-sustainable-aviation-fuel-credits-scope-3-globally/"
+    },
     {
       title: "SAF: The Fuel Taking Aviation Toward Net Zero",
       excerpt: "Aviation accounts for nearly 3% of global carbon emissions—but that's changing fast. Sustainable Aviation Fuel (SAF) is revolutionizing the skies, and Shaphargroup is right at the forefront of this transformation.",
