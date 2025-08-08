@@ -10,7 +10,7 @@ import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
 import { MapPin, Building, Send, Phone, Mail, Clock, Globe } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import aviationImagePath from "@assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp";
+import contactPageImagePath from "@assets/contact page_1754672222924.png";
 
 export default function Contact() {
   // SEO Meta Tags Setup
@@ -149,7 +149,7 @@ export default function Contact() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${aviationImagePath})`
+            backgroundImage: `url(${contactPageImagePath})`
           }}
         />
         
