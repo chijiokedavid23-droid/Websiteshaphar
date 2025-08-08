@@ -56,24 +56,24 @@ export default function Blog() {
     };
   }, []);
   const featuredPost = {
-    title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
-    excerpt: "We are pleased to announce that Tim Rose, a distinguished governance leader and board advisor, has joined our team.",
-    image: "https://shaphargroup.com/wp-content/uploads/2025/07/MR-TIM.jpg",
-    category: "News",
-    date: "July 16, 2025",
+    title: "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally",
+    excerpt: "Shaphargroup is proud to announce its official approval as a supplier on the Sustainable Aviation Fuel Certificate (SAFc) platform, enabling the company to deliver verified Scope 3 emissions reduction certificates to airlines, corporate flyers, and sustainability-focused organizations worldwide.",
+    image: safcRegistryImage,
+    category: "SAF",
+    date: "August 8, 2025",
     author: "Admin",
-    link: "https://shaphargroup.com/news/tim-rose-joins-shaphargroup-board-as-strategic-executive-director/"
+    link: "https://shaphargroup.com/saf/shaphargroup-secures-safc-approval-verified-sustainable-aviation-fuel-credits-scope-3-globally/"
   };
 
   const blogPosts = [
     {
-      title: "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally",
-      excerpt: "Shaphargroup is proud to announce its official approval as a supplier on the Sustainable Aviation Fuel Certificate (SAFc) platform, enabling the company to deliver verified Scope 3 emissions reduction certificates to airlines, corporate flyers, and sustainability-focused organizations worldwide.",
-      image: safcRegistryImage,
-      category: "SAF",
-      date: "August 8, 2025",
+      title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
+      excerpt: "We are pleased to announce that Tim Rose, a distinguished governance leader and board advisor, has joined our team.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/07/MR-TIM.jpg",
+      category: "News",
+      date: "July 16, 2025",
       author: "Admin",
-      link: "https://shaphargroup.com/saf/shaphargroup-secures-safc-approval-verified-sustainable-aviation-fuel-credits-scope-3-globally/"
+      link: "https://shaphargroup.com/news/tim-rose-joins-shaphargroup-board-as-strategic-executive-director/"
     },
     {
       title: "SAF: The Fuel Taking Aviation Toward Net Zero",
