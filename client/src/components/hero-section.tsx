@@ -22,6 +22,8 @@ export default function HeroSection() {
         style={{
           backgroundImage: `url(${aviationImageUrl})`
         }}
+        role="img"
+        aria-label="Green sustainable aircraft flying over lush landscape representing Shaphargroup's commitment to eco-friendly aviation fuel solutions"
       />
       
       {/* Overlay for better text readability while preserving image beauty */}

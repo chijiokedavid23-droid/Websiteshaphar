@@ -14,11 +14,19 @@ export default function About() {
     updateSEOTags({
       ...SEO_CONFIGS.about,
       canonical: window.location.href,
+      ogImage: `${window.location.origin}${aboutPageImagePath}`,
       structuredData: {
         "@context": "https://schema.org",
         "@type": "Organization", 
         "name": "Shaphargroup",
         "description": "Global sustainable aviation fuel producer specializing in HEFA SAF and UCO refining",
+        "image": {
+          "@type": "ImageObject",
+          "url": `${window.location.origin}${aboutPageImagePath}`,
+          "description": "Shaphargroup industrial refinery facility with storage tanks showing energy processing, global operations, and fuel production capabilities",
+          "width": "1024",
+          "height": "1024"
+        },
         "foundingDate": "2020",
         "mission": "Transforming aviation through sustainable fuel production and circular economy principles",
         "knowsAbout": [
@@ -88,6 +96,8 @@ export default function About() {
           style={{
             backgroundImage: `url(${aboutPageImagePath})`
           }}
+          role="img"
+          aria-label="Shaphargroup industrial refinery facility with storage tanks showing energy processing, global operations, and fuel production capabilities"
         />
         
         <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

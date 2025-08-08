@@ -18,10 +18,18 @@ export default function Contact() {
     updateSEOTags({
       ...SEO_CONFIGS.contact,
       canonical: window.location.href,
+      ogImage: `${window.location.origin}${contactPageImagePath}`,
       structuredData: {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Shaphargroup",
+        "image": {
+          "@type": "ImageObject",
+          "url": `${window.location.origin}${contactPageImagePath}`,
+          "description": "Peaceful green landscape with lush fields and trees under blue sky representing environmental sustainability and welcoming business atmosphere",
+          "width": "1024",
+          "height": "1024"
+        },
         "contactPoint": [
           {
             "@type": "ContactPoint",
@@ -151,6 +159,8 @@ export default function Contact() {
           style={{
             backgroundImage: `url(${contactPageImagePath})`
           }}
+          role="img"
+          aria-label="Peaceful green landscape with lush fields and trees under blue sky representing environmental sustainability and welcoming business atmosphere"
         />
         
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

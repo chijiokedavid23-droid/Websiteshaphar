@@ -12,11 +12,19 @@ export default function Sustainability() {
     updateSEOTags({
       ...SEO_CONFIGS.sustainability,
       canonical: window.location.href,
+      ogImage: `${window.location.origin}${sustainabilityImagePath}`,
       structuredData: {
         "@context": "https://schema.org",
         "@type": "EnvironmentalImpact",
         "name": "Shaphargroup Sustainability Impact",
         "description": "Environmental benefits of sustainable aviation fuel production",
+        "image": {
+          "@type": "ImageObject",
+          "url": `${window.location.origin}${sustainabilityImagePath}`,
+          "description": "Sustainable aviation fuel concept showing aircraft wing with green leaf symbol flying over solar panel farm representing renewable energy and eco-friendly aviation",
+          "width": "1024",
+          "height": "1024"
+        },
         "carbonFootprintReduction": {
           "@type": "QuantitativeValue",
           "value": "85",
@@ -110,6 +118,8 @@ export default function Sustainability() {
           style={{
             backgroundImage: `url(${sustainabilityImagePath})`
           }}
+          role="img"
+          aria-label="Sustainable aviation fuel concept showing aircraft wing with green leaf symbol flying over solar panel farm representing renewable energy and eco-friendly aviation"
         />
         
         <div className="relative z-30 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

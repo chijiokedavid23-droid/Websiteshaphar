@@ -20,10 +20,18 @@ export default function Leadership() {
     updateSEOTags({
       ...SEO_CONFIGS.leadership,
       canonical: window.location.href,
+      ogImage: `${window.location.origin}${aboutPageImagePath}`,
       structuredData: {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "Shaphargroup",
+        "image": {
+          "@type": "ImageObject",
+          "url": `${window.location.origin}${aboutPageImagePath}`,
+          "description": "Shaphargroup industrial refinery facility with storage tanks representing the company's leadership in sustainable aviation fuel production",
+          "width": "1024",
+          "height": "1024"
+        },
         "employee": [
           {
             "@type": "Person",

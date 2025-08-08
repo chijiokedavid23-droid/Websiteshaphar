@@ -3,6 +3,16 @@
 This is a full-stack web application for Shaphargroup, a sustainable aviation fuel (SAF) company. The project is built as a marketing website showcasing the company's capabilities in HEFA Sustainable Aviation Fuel production, UCO refining, and global logistics operations. The application features a modern, responsive design with smooth animations and a professional corporate presentation focused on the aviation fuel industry.
 
 ## Recent Changes (August 2025)
+- **Custom Page-Specific Images Implemented**: Added user-provided custom imagery for each major page section
+  - Home: Green aircraft over landscape for aviation focus
+  - Sustainability: Aircraft wing with leaf symbol over solar panels for eco-friendly theme  
+  - About & Leadership: Industrial refinery with three key symbols representing capabilities
+  - Contact: Peaceful green landscape for welcoming business atmosphere
+- **Complete Image SEO Optimization**: Implemented comprehensive SEO for all new images
+  - Added role="img" and detailed aria-label attributes for accessibility
+  - Integrated image data into structured Schema.org markup
+  - Added Open Graph image tags for enhanced social media sharing
+  - All images optimized with descriptive alt text and metadata
 - **Image Loading Issues Permanently Fixed**: Replaced ALL external image URLs with local assets to eliminate dependencies on external services
 - **SAFc Article Featured**: Positioned latest SAFc approval announcement as featured article with comprehensive SEO optimization
 - **Blog Structure Enhanced**: Tim Rose board announcement moved to latest articles, content reorganized for better hierarchy
