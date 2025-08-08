@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Recycle, Leaf, Target, Globe, Award, Users, BarChart3 } from "lucide-react";
 import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
-import aviationImagePath from "@assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp";
+import sustainabilityImagePath from "@assets/sustainable picture_1754670572622.png";
 
 export default function Sustainability() {
   // SEO Meta Tags Setup
@@ -108,7 +108,7 @@ export default function Sustainability() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${aviationImagePath})`
+            backgroundImage: `url(${sustainabilityImagePath})`
           }}
         />
         
