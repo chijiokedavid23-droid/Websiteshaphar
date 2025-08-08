@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Building, Users, Globe, Award, Target, Heart } from "lucide-react";
 import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
-import aviationImagePath from "@assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp";
+import aboutPageImagePath from "@assets/About page_1754671131671.png";
 import greenEarthImagePath from "@assets/green earth_1754163467882.jpg";
 
 export default function About() {
@@ -86,7 +86,7 @@ export default function About() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: `url(${aviationImagePath})`
+            backgroundImage: `url(${aboutPageImagePath})`
           }}
         />
         
