@@ -65,15 +65,6 @@ export default function Blog() {
 
   const blogPosts = [
     {
-      title: "The Biodiesel Boom: Cleaner Engines, Healthier Planet",
-      excerpt: "Biodiesel is not just a trend—it's a global movement. As the world looks for cleaner alternatives to fossil diesel, biodiesel has emerged as a powerful solution for heavy-duty transport and agricultural sectors.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/04/biofuel-filling-station_1456616751_840x560px.jpg",
-      category: "Biodiesel",
-      date: "July 25, 2025",
-      author: "Admin",
-      link: "https://shaphargroup.com/biodiesel/the-biodiesel-boom-cleaner-engines-healthier-planet/"
-    },
-    {
       title: "SAF: The Fuel Taking Aviation Toward Net Zero",
       excerpt: "Aviation accounts for nearly 3% of global carbon emissions—but that's changing fast. Sustainable Aviation Fuel (SAF) is revolutionizing the skies, and Shaphargroup is right at the forefront of this transformation.",
       image: "https://shaphargroup.com/wp-content/uploads/2025/04/bluewhales-and-Shaphargroup.jpeg",
@@ -189,6 +180,15 @@ export default function Blog() {
       date: "February 15, 2025",
       author: "Admin",
       link: "https://shaphargroup.com/news/shaphargroup-meets-with-yanzhou-district-government-expands-saf-investment-agenda-in-shandong/"
+    },
+    {
+      title: "The Biodiesel Boom: Cleaner Engines, Healthier Planet",
+      excerpt: "Biodiesel is not just a trend—it's a global movement. As the world looks for cleaner alternatives to fossil diesel, biodiesel has emerged as a powerful solution for heavy-duty transport and agricultural sectors.",
+      image: "https://shaphargroup.com/wp-content/uploads/2025/04/biofuel-filling-station_1456616751_840x560px.jpg",
+      category: "Biodiesel",
+      date: "July 25, 2025",
+      author: "Admin",
+      link: "https://shaphargroup.com/biodiesel/the-biodiesel-boom-cleaner-engines-healthier-planet/"
     }
   ];
 
