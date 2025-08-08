@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { ChevronDown, Send, Factory } from "lucide-react";
 import { Link } from "wouter";
-// Using a high-quality aviation image from Unsplash
-import aviationImagePath from "@assets/airplane-flying-over-tropical-sea-600nw-1892755264_1754131547463.webp";
-const aviationImageUrl = aviationImagePath;
+// Using the SAF factory to jet hero image
+import heroImagePath from "@assets/SAF Factory to jet_1754154741557.png";
+const aviationImageUrl = heroImagePath;
 
 export default function HeroSection() {
   const scrollToSection = (sectionId: string) => {
