@@ -384,7 +384,11 @@ export default function Blog() {
                   <img 
                     src={post.image}
                     alt={post.title}
-                    className="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300"
+                    className={`w-full h-32 group-hover:scale-105 transition-transform duration-300 ${
+                      post.image === safcRegistryImage 
+                        ? "object-contain bg-white p-4" 
+                        : "object-cover"
+                    }`}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   <div className="absolute top-2 left-2">
