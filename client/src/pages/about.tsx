@@ -3,6 +3,7 @@ import Footer from "@/components/footer";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Building, Users, Globe, Award, Target, Heart } from "lucide-react";
+import { Link } from "wouter";
 import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import aboutPageImagePath from "@assets/About page_1754671131671.png";
@@ -50,12 +51,7 @@ export default function About() {
       document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
     };
   }, []);
-  const scrollToContact = () => {
-    const section = document.getElementById("contact");
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+
 
   const companyValues = [
     {
@@ -347,13 +343,14 @@ export default function About() {
                 </div>
               </div>
 
-              <Button 
-                size="lg"
-                onClick={scrollToContact}
-                className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-8 py-4"
-              >
-                Contact Us
-              </Button>
+              <Link href="/contact">
+                <Button 
+                  size="lg"
+                  className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-8 py-4"
+                >
+                  Contact Us
+                </Button>
+              </Link>
             </motion.div>
             
             <motion.div
