@@ -11,6 +11,9 @@ import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
 import ucoSampleImage from "@assets/SG UCO sample_1754488157265.jpeg";
 import yanzhouMeetingImage from "@assets/Yangxin county meeting 1_1754488489140.png";
 import safcRegistryImage from "@assets/image_1754657993774.png";
+import mrTimImage from "@assets/MR TIM_1754156709435.jpg";
+import safFactoryImage from "@assets/SAF Factory to jet_1754154741557.png";
+import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
@@ -69,7 +72,7 @@ export default function Blog() {
     {
       title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
       excerpt: "We are pleased to announce that Tim Rose, a distinguished governance leader and board advisor, has joined our team.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/07/MR-TIM.jpg",
+      image: mrTimImage,
       category: "News",
       date: "July 16, 2025",
       author: "Admin",
@@ -78,7 +81,7 @@ export default function Blog() {
     {
       title: "SAF: The Fuel Taking Aviation Toward Net Zero",
       excerpt: "Aviation accounts for nearly 3% of global carbon emissions—but that's changing fast. Sustainable Aviation Fuel (SAF) is revolutionizing the skies, and Shaphargroup is right at the forefront of this transformation.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/04/bluewhales-and-Shaphargroup.jpeg",
+      image: safFactoryImage,
       category: "SAF",
       date: "July 20, 2025",
       author: "Admin",
@@ -96,7 +99,7 @@ export default function Blog() {
     {
       title: "✈️ Shaphargroup's David C. Arinze Speaks at SAF Investors Summit London 2025",
       excerpt: "London, UK – May 29, 2025. Shaphargroup proudly participated in the SAF Investors Summit London 2025, one of the premier events for sustainable aviation fuel stakeholders.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/06/54553304794_d731ca50ea_b-768x512.jpg",
+      image: safInvestorsImage,
       category: "News",
       date: "June 4, 2025",
       author: "Admin",
