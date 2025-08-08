@@ -309,7 +309,11 @@ export default function Blog() {
                 <img 
                   src={featuredPost.image}
                   alt={featuredPost.title}
-                  className="w-full h-full object-cover min-h-[200px] hover:scale-105 transition-transform duration-300"
+                  className={`w-full h-full min-h-[200px] hover:scale-105 transition-transform duration-300 ${
+                    featuredPost.image === safcRegistryImage 
+                      ? "object-contain bg-white p-6" 
+                      : "object-cover"
+                  }`}
                 />
                 <div className="absolute top-3 left-3">
                   <span className="bg-emerald text-white px-3 py-1 rounded-full text-sm font-medium">
