@@ -92,17 +92,17 @@ const addStructuredData = (data: Record<string, any>) => {
   document.head.appendChild(script);
 };
 
-// Predefined SEO configurations for each page
+// Predefined SEO configurations for each page - Updated for 2025 SAF industry trends
 export const SEO_CONFIGS = {
   home: {
-    title: "Shaphargroup - Leading Global SAF Producer | HEFA Sustainable Aviation Fuel & UCO Refining",
-    description: "Shaphargroup is the world's leading sustainable aviation fuel producer, specializing in HEFA SAF production and UCO refining. ISCC-certified, serving global airlines with 85% GHG reduction solutions.",
-    keywords: "sustainable aviation fuel producer, HEFA SAF manufacturer, UCO refining company, aviation biofuel supplier, ISCC certified SAF, carbon neutral aviation fuel, renewable jet fuel, aviation decarbonization leader, biofuel refinery, green aviation solutions",
+    title: "Shaphargroup - Global SAF Leader | HEFA Sustainable Aviation Fuel Production | 2025 SAF Mandate Ready",
+    description: "Shaphargroup: Premier HEFA sustainable aviation fuel producer with ISCC certification. Serving 60+ airlines with 85% GHG reduction SAF solutions. EU/UK SAF mandate compliant. 1M+ tonnes annual capacity.",
+    keywords: "sustainable aviation fuel 2025, HEFA SAF production capacity, SAF mandate compliance, aviation decarbonization solutions, CORSIA eligible SAF, ISCC certified aviation fuel, UCO to SAF conversion, net zero aviation 2050, SAF offtake agreements, HEFA-SPK commercial scale, EU SAF mandate, UK SAF requirements, aviation biofuel supplier, SAF capacity expansion",
   },
   saf: {
-    title: "HEFA Sustainable Aviation Fuel Production | Premium SAF for Commercial Airlines | Shaphargroup", 
-    description: "Premium HEFA Sustainable Aviation Fuel (SAF) production from refined UCO feedstock. ISCC-certified SAF with 85% GHG reduction for commercial airlines worldwide. Jet-A blending ready.",
-    keywords: "HEFA SAF production, sustainable aviation fuel manufacturing, HEFA-SPK, aviation biofuel production, UCO to SAF conversion, commercial SAF supplier, airline fuel solutions, renewable jet fuel manufacturing, aviation decarbonization, ISCC certified aviation fuel",
+    title: "HEFA-SPK Sustainable Aviation Fuel | Commercial Scale SAF Production | ASTM D7566 Certified | Shaphargroup", 
+    description: "Commercial-scale HEFA-SPK sustainable aviation fuel production. ASTM D7566 certified, CORSIA eligible SAF with 85% GHG reduction. 1M+ tonnes capacity serving major airlines. EU/UK mandate ready.",
+    keywords: "HEFA-SPK production, ASTM D7566 SAF certification, commercial scale SAF, CORSIA eligible aviation fuel, SAF mandate ready, airline SAF procurement, sustainable aviation fuel 2025, HEFA production capacity, aviation biofuel offtake, net zero aviation fuel",
   },
   about: {
     title: "About Shaphargroup - Global Sustainable Aviation Fuel Leader | Company Story & Mission",
@@ -115,9 +115,9 @@ export const SEO_CONFIGS = {
     keywords: "Shaphargroup leadership team, SAF industry executives, sustainable aviation fuel experts, Charles Jiao CEO, Jane Zhen CFO, David Arinze, Timothy Rose, aviation fuel leadership, UCO refining experts, renewable energy executives",
   },
   sustainability: {
-    title: "Sustainability Impact | 85% Carbon Reduction Through SAF | Environmental Benefits | Shaphargroup",
-    description: "Shaphargroup's sustainability commitment: 85% GHG reduction, 1.58M tons CO₂ avoided annually through sustainable aviation fuel production. ISCC certified circular economy solutions for aviation decarbonization.",
-    keywords: "aviation sustainability impact, SAF carbon reduction, GHG reduction aviation fuel, circular economy biofuels, environmental benefits SAF, aviation decarbonization solutions, sustainable fuel environmental impact, carbon neutral aviation",
+    title: "Aviation Decarbonization Impact | 85% Carbon Reduction | Net Zero 2050 SAF Solutions | Shaphargroup",
+    description: "Leading aviation decarbonization with 85% GHG reduction SAF solutions. 1.58M tons CO₂ avoided annually. ISCC certified circular economy contributing to net zero aviation 2050 goals.",
+    keywords: "aviation decarbonization 2050, net zero aviation solutions, SAF carbon footprint reduction, CORSIA compliance SAF, sustainable aviation targets, aviation emissions reduction, climate action aviation, carbon neutral flight operations, green aviation technology",
   },
   contact: {
     title: "Contact Shaphargroup | Global SAF Supplier | Connect with Aviation Fuel Experts Worldwide",

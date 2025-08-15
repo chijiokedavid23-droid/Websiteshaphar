@@ -8,6 +8,8 @@ import ContactSection from "@/components/contact-section";
 import Footer from "@/components/footer";
 import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
+import optimizeForGoogle from "@/lib/advanced-seo";
+import { initializePageSpeedOptimization } from "@/lib/page-speed-optimizer";
 
 export default function Home() {
   // SEO Meta Tags Setup
@@ -51,6 +53,17 @@ export default function Home() {
 
     // Optimize page performance
     optimizePagePerformance();
+    
+    // Advanced Google optimization for 2025
+    optimizeForGoogle({
+      enableE2E: true,
+      enableCoreSEO: true,
+      enableIndustryOptimization: true,
+      enableTechnicalSEO: true
+    });
+
+    // Initialize page speed optimizations
+    initializePageSpeedOptimization();
 
     // Cleanup
     return () => {

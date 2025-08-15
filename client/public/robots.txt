@@ -1,21 +1,28 @@
 User-agent: *
 Allow: /
 
-# Allow search engine crawling of all content
-Allow: /saf
-Allow: /about
-Allow: /leadership  
-Allow: /sustainability
-Allow: /contact
-Allow: /blog
-
-# Disallow admin or development areas (if any)
-Disallow: /admin
-Disallow: /_dev
-Disallow: /api
-
-# Specify sitemap location
+# Sitemap location
 Sitemap: https://shaphargroup.com/sitemap.xml
 
-# Crawl-delay for politeness (optional)
+# Specific instructions for search engines
+User-agent: Googlebot
+Allow: /
 Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block development and admin paths if any
+Disallow: /admin/
+Disallow: /.env
+Disallow: /api/internal/
+
+# Allow all assets
+Allow: /assets/
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Additional SEO directives
+Host: https://shaphargroup.com
