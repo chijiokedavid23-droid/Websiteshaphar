@@ -1,15 +1,9 @@
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Label } from "@/components/ui/label";
 import { motion } from "framer-motion";
-import { MapPin, Building, Send, Phone, Mail, Clock, Globe } from "lucide-react";
-import { useToast } from "@/hooks/use-toast";
+import { MapPin, Building, Phone, Mail, Clock, Globe } from "lucide-react";
 import contactPageImagePath from "@assets/contact page_1754672222924.png";
 
 export default function Contact() {
@@ -61,46 +55,6 @@ export default function Contact() {
       document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
     };
   }, []);
-  const { toast } = useToast();
-  const [formData, setFormData] = useState({
-    name: "",
-    company: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: ""
-  });
-
-  const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.email || !formData.message) {
-      toast({
-        title: "Please fill in all required fields",
-        description: "Name, email, and message are required.",
-        variant: "destructive"
-      });
-      return;
-    }
-
-    toast({
-      title: "Message sent successfully!",
-      description: "We'll get back to you within 24 hours.",
-    });
-
-    setFormData({
-      name: "",
-      company: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: ""
-    });
-  };
 
   const offices = [
     {
@@ -274,124 +228,7 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Contact Form */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
-            className="bg-white rounded-2xl p-8 md:p-12 shadow-xl"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h3 className="text-2xl sm:text-3xl font-bold text-navy mb-6 sm:mb-8 text-center">Get in Touch</h3>
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
-              <div>
-                <Label htmlFor="name" className="text-sm font-medium text-charcoal mb-2">
-                  Full Name *
-                </Label>
-                <Input
-                  id="name"
-                  type="text"
-                  value={formData.name}
-                  onChange={(e) => handleInputChange("name", e.target.value)}
-                  placeholder="Your Name"
-                  className="w-full"
-                  required
-                />
-              </div>
-              
-              <div>
-                <Label htmlFor="company" className="text-sm font-medium text-charcoal mb-2">
-                  Company
-                </Label>
-                <Input
-                  id="company"
-                  type="text"
-                  value={formData.company}
-                  onChange={(e) => handleInputChange("company", e.target.value)}
-                  placeholder="Your Company"
-                  className="w-full"
-                />
-              </div>
-              
-              <div>
-                <Label htmlFor="email" className="text-sm font-medium text-charcoal mb-2">
-                  Email *
-                </Label>
-                <Input
-                  id="email"
-                  type="email"
-                  value={formData.email}
-                  onChange={(e) => handleInputChange("email", e.target.value)}
-                  placeholder="your.email@company.com"
-                  className="w-full"
-                  required
-                />
-              </div>
-              
-              <div>
-                <Label htmlFor="phone" className="text-sm font-medium text-charcoal mb-2">
-                  Phone
-                </Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  value={formData.phone}
-                  onChange={(e) => handleInputChange("phone", e.target.value)}
-                  placeholder="+1 (555) 123-4567"
-                  className="w-full"
-                />
-              </div>
-              
-              <div className="md:col-span-2">
-                <Label htmlFor="subject" className="text-sm font-medium text-charcoal mb-2">
-                  Subject
-                </Label>
-                <Select value={formData.subject} onValueChange={(value) => handleInputChange("subject", value)}>
-                  <SelectTrigger className="w-full">
-                    <SelectValue placeholder="Select a subject" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="saf-inquiry">SAF Supply Inquiry</SelectItem>
-                    <SelectItem value="partnership">Partnership Opportunity</SelectItem>
-                    <SelectItem value="technical">Technical Specifications</SelectItem>
-                    <SelectItem value="certification">Certification Questions</SelectItem>
-                    <SelectItem value="investment">Investment Opportunities</SelectItem>
-                    <SelectItem value="other">Other</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="md:col-span-2">
-                <Label htmlFor="message" className="text-sm font-medium text-charcoal mb-2">
-                  Message *
-                </Label>
-                <Textarea
-                  id="message"
-                  rows={5}
-                  value={formData.message}
-                  onChange={(e) => handleInputChange("message", e.target.value)}
-                  placeholder="Tell us about your SAF requirements, volume needs, timeline, and any specific questions..."
-                  className="w-full"
-                  required
-                />
-              </div>
-              
-              <div className="md:col-span-2 text-center">
-                <Button 
-                  type="submit"
-                  size="lg"
-                  className="w-full sm:w-auto bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-6 sm:px-8 py-3 sm:py-4 touch-manipulation"
-                >
-                  <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                  Send Message
-                </Button>
-              </div>
-            </form>
-          </motion.div>
-        </div>
-      </section>
+
 
       <Footer />
     </div>
