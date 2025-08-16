@@ -66,7 +66,9 @@ export default function Navigation() {
                 src={logoPath} 
                 alt="Shaphargroup" 
                 className={`w-auto object-contain transition-all duration-300 ${
-                  isScrolled ? 'h-4' : 'h-5 sm:h-6'
+                  location === "/" 
+                    ? (isScrolled ? 'h-4' : 'h-5 sm:h-6')
+                    : 'h-6 sm:h-7'
                 }`}
               />
             </Link>
