@@ -88,28 +88,13 @@ export default function HeroSection() {
             Powering airlines to meet ReFuelEU's 2% mandate and beyond
           </motion.p>
           
-          {/* Enhanced button section with staggered animations */}
+          {/* Single button section with animation */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            className="flex justify-center items-center"
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 1 }}
           >
-            <motion.div
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Link href="/contact">
-                <Button 
-                  size="lg"
-                  className="bg-emerald hover:bg-emerald/90 text-white font-semibold text-lg px-10 py-4 rounded-xl shadow-2xl hover:shadow-emerald/25 transition-all duration-300 group"
-                >
-                  <Send className="w-5 h-5 mr-3 group-hover:translate-x-1 transition-transform duration-300" />
-                  Contact Us
-                </Button>
-              </Link>
-            </motion.div>
-            
             <motion.div
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
