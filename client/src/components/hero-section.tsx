@@ -99,11 +99,17 @@ export default function HeroSection() {
           </motion.p>
           
           <motion.p 
-            className="text-base sm:text-lg text-emerald-100 mb-12 font-semibold tracking-wide drop-shadow-md"
+            className="text-lg sm:text-xl text-white mb-12 font-bold tracking-wide drop-shadow-lg"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
-            style={{ textShadow: "1px 1px 4px rgba(0, 0, 0, 0.7)" }}
+            style={{ 
+              textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9), 0 0 10px rgba(0, 0, 0, 0.8)",
+              backgroundColor: "rgba(0, 0, 0, 0.3)",
+              padding: "8px 16px",
+              borderRadius: "8px",
+              backdropFilter: "blur(4px)"
+            }}
           >
             Powering airlines to meet ReFuelEU's 2% mandate and beyond
           </motion.p>
