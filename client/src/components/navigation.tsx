@@ -63,7 +63,7 @@ export default function Navigation() {
               <img 
                 src={logoPath} 
                 alt="Shaphargroup" 
-                className="h-24 sm:h-28 md:h-32 w-auto"
+                className="h-8 sm:h-10 md:h-12 w-auto"
               />
             </Link>
           </motion.div>
