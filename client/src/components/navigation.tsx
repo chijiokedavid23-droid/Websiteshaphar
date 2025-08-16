@@ -68,7 +68,7 @@ export default function Navigation() {
                 className={`w-auto object-contain transition-all duration-300 ${
                   location === "/" 
                     ? (isScrolled ? 'h-4' : 'h-5 sm:h-6')
-                    : 'h-6 sm:h-7'
+                    : 'h-7 sm:h-8 md:h-9'
                 }`}
               />
             </Link>
