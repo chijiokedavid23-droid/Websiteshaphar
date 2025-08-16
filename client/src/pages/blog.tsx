@@ -154,7 +154,7 @@ export default function Blog() {
       category: "News",
       date: "May 13, 2025",
       author: "Admin",
-      link: "https://shaphargroup.com/news/shaphargroups-david-c-arinze-to-speak-at-saf-investors-conference-in-london/"
+      link: "https://www.safinvestor.com/event/145508/saf-investor-london-2025/#speakers"
     },
     {
       title: "Powering Aviation's Green Future: How Strategic Feedstock Partnerships Can Accelerate SAF Adoption",
@@ -319,8 +319,10 @@ export default function Blog() {
                   src={featuredPost.image}
                   alt={featuredPost.title}
                   className={`w-full h-full min-h-[200px] hover:scale-105 transition-transform duration-300 ${
-                    featuredPost.image === safcRegistryImage || featuredPost.image === isccCorsiaImage || featuredPost.image === safInvestorAnnouncementImage
+                    featuredPost.image === safcRegistryImage || featuredPost.image === isccCorsiaImage
                       ? "object-contain bg-white p-6" 
+                      : featuredPost.image === safInvestorAnnouncementImage
+                      ? "object-cover" 
                       : "object-cover"
                   }`}
                 />
@@ -398,7 +400,7 @@ export default function Blog() {
                     src={post.image}
                     alt={post.title}
                     className={`w-full h-32 group-hover:scale-105 transition-transform duration-300 ${
-                      post.image === safcRegistryImage || post.image === isccCorsiaImage || post.image === safInvestorAnnouncementImage
+                      post.image === safcRegistryImage || post.image === isccCorsiaImage
                         ? "object-contain bg-white p-4" 
                         : "object-cover"
                     }`}
