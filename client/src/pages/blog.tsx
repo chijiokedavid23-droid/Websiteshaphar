@@ -17,6 +17,7 @@ import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jp
 import jetToFImage from "@assets/jet to f_1755325839322.png";
 import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
 import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.jpeg";
+import safJourneyImage from "@assets/saf_1755326663109.jpeg";
 
 
 // Function to map article titles to article IDs
@@ -139,7 +140,7 @@ export default function Blog() {
     {
       title: "From UCO to Jet Fuel: The Journey Toward Sustainable Aviation",
       excerpt: "As the aviation industry races to meet its net-zero targets, one solution is already proving both practical and scalable: Sustainable Aviation Fuel (SAF) made from Used Cooking Oil (UCO).",
-      image: unlockingSafImage,
+      image: safJourneyImage,
       category: "Insights & Thought Leadership",
       date: "May 14, 2025",
       author: "David C. Arinze",

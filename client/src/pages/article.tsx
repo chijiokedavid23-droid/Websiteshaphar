@@ -8,6 +8,7 @@ import { updateSEOTags, optimizePagePerformance } from "@/lib/seo";
 import jetToFImage from "@assets/jet to f_1755325839322.png";
 import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
 import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.jpeg";
+import safJourneyImage from "@assets/saf_1755326663109.jpeg";
 
 interface ArticleData {
   id: string;
@@ -399,7 +400,7 @@ Major airlines and governments are setting bold targets for SAF adoption. The su
 ## Shaphargroup's Commitment
 
 We're not just traders—we're collectors, refiners, and partners in the SAF value chain. Our vision is a world where what was once waste becomes the engine of clean aviation.`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/05/ChatGPT-Image-May-14-2025-11_03_27-PM.png",
+    image: safJourneyImage,
     category: "Insights & Thought Leadership",
     date: "May 14, 2025",
     author: "David C. Arinze",
