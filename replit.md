@@ -2,7 +2,18 @@
 
 This is a full-stack web application for Shaphargroup, a sustainable aviation fuel (SAF) company. The project is built as a marketing website showcasing the company's capabilities in HEFA Sustainable Aviation Fuel production, UCO refining, and global logistics operations. The application features a modern, responsive design with smooth animations and a professional corporate presentation focused on the aviation fuel industry.
 
-## Recent Changes (January 2025)
+## Recent Changes (August 2025)
+- **CRITICAL DEPLOYMENT ISSUE RESOLVED**: Fixed production server environment detection to prevent development mode on deployment
+  - Implemented smart environment detection using file presence and multiple environment variables
+  - Added comprehensive logging for deployment troubleshooting
+  - Ensured production server serves optimized static assets instead of development Vite code
+- **SendGrid Email Integration Completed**: Fully implemented professional email functionality
+  - Added HTML email templates with company branding
+  - Configured proper error handling and validation
+  - Ready for SendGrid sender verification (info@shaphargroup.com needs verification)
+- **Blog Content Updated**: Replaced "The Biodiesel Boom" article with new biofuel filling station image
+
+## Previous Changes (January 2025)
 - **Custom Page-Specific Images Implemented**: Added user-provided custom imagery for each major page section
   - Home: Green aircraft over landscape for aviation focus
   - Sustainability: Aircraft wing with leaf symbol over solar panels for eco-friendly theme  
