@@ -15,6 +15,7 @@ import mrTimImage from "@assets/MR TIM_1754156709435.jpg";
 import safFactoryImage from "@assets/SAF Factory to jet_1754154741557.png";
 import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 import jetToFImage from "@assets/jet to f_1755325839322.png";
+import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
 
 
 // Function to map article titles to article IDs
@@ -110,7 +111,7 @@ export default function Blog() {
     {
       title: "Controlling the Future of SAF: Why Integration, Not Size, Will Define the Next Energy Giants",
       excerpt: "By David C. Arinze, Managing Partner | Shaphargroup, Renewable Energy Strategist | UCO & SAF Advocate. An analysis of market dynamics in the sustainable aviation fuel industry.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/06/ChatGPT-Image-Jun-2-2025-04_00_37-PM-768x512.png",
+      image: controllingSafImage,
       category: "Insights & Thought Leadership",
       date: "June 2, 2025",
       author: "David C. Arinze",

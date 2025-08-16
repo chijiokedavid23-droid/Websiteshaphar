@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import { useEffect } from "react";
 import { updateSEOTags, optimizePagePerformance } from "@/lib/seo";
 import jetToFImage from "@assets/jet to f_1755325839322.png";
+import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
 
 interface ArticleData {
   id: string;
@@ -314,7 +315,7 @@ The world will always need energy. The question is: **who gets to define the nex
 At Shaphargroup, we've made our decision.
 
 We're not here to follow trends. We're here to **build the future of sustainable aviation** — one verified drop at a time.`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/06/ChatGPT-Image-Jun-2-2025-04_00_37-PM.png",
+    image: controllingSafImage,
     category: "Insights & Thought Leadership",
     date: "June 2, 2025",
     author: "David C. Arinze",
