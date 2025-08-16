@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import { updateSEOTags, optimizePagePerformance } from "@/lib/seo";
 import jetToFImage from "@assets/jet to f_1755325839322.png";
 import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
+import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.jpeg";
 
 interface ArticleData {
   id: string;
@@ -357,7 +358,7 @@ These collaborations enable us to:
 ## A Commitment to a Circular Economy
 
 The ISCC CORSIA certification reflects Shaphargroup's broader commitment to sustainability and innovation. By focusing on UCO as a feedstock, we minimize environmental impact and maximize resource efficiency, aligning with the principles of a circular economy. Our biofuels not only reduce greenhouse gas emissions but also repurpose waste materials, creating a sustainable cycle that benefits both the environment and the aviation industry.`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/05/ISCC-CORSIA-SAF-CERTIFICATE-768x1027.jpeg",
+    image: isccCorsiaImage,
     category: "SAF",
     date: "May 6, 2025",
     author: "Admin",

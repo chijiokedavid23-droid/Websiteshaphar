@@ -16,6 +16,7 @@ import safFactoryImage from "@assets/SAF Factory to jet_1754154741557.png";
 import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 import jetToFImage from "@assets/jet to f_1755325839322.png";
 import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
+import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.jpeg";
 
 
 // Function to map article titles to article IDs
@@ -120,7 +121,7 @@ export default function Blog() {
     {
       title: "Shaphargroup Achieves ISCC CORSIA Certification (SAF)",
       excerpt: "Shaphargroup is proud to announce that we have been awarded the ISCC CORSIA International Sustainability and Carbon Certification, a globally recognized standard that underscores our commitment to producing and supplying sustainable biofuels for the aviation industry.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/05/ISCC-CORSIA-SAF-CERTIFICATE-768x1027.jpeg",
+      image: isccCorsiaImage,
       category: "SAF",
       date: "May 6, 2025",
       author: "Admin",
@@ -316,7 +317,7 @@ export default function Blog() {
                   src={featuredPost.image}
                   alt={featuredPost.title}
                   className={`w-full h-full min-h-[200px] hover:scale-105 transition-transform duration-300 ${
-                    featuredPost.image === safcRegistryImage 
+                    featuredPost.image === safcRegistryImage || featuredPost.image === isccCorsiaImage
                       ? "object-contain bg-white p-6" 
                       : "object-cover"
                   }`}
@@ -395,7 +396,7 @@ export default function Blog() {
                     src={post.image}
                     alt={post.title}
                     className={`w-full h-32 group-hover:scale-105 transition-transform duration-300 ${
-                      post.image === safcRegistryImage 
+                      post.image === safcRegistryImage || post.image === isccCorsiaImage
                         ? "object-contain bg-white p-4" 
                         : "object-cover"
                     }`}
