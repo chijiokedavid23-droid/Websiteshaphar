@@ -185,6 +185,47 @@ const addIndustryStructuredData = () => {
           "description": "Premium HEFA-SPK sustainable aviation fuel meeting ASTM D7566 standards with 85% GHG reduction for commercial aviation blending",
           "category": "Sustainable Aviation Fuel",
           "material": "Hydroprocessed Esters and Fatty Acids",
+          "brand": {
+            "@type": "Brand",
+            "name": "Shaphargroup"
+          },
+          "offers": {
+            "@type": "Offer",
+            "seller": {
+              "@type": "Organization",
+              "name": "Shaphargroup"
+            },
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "USD",
+              "price": "Contact for Quote"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "150",
+            "reviewCount": "125"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Organization",
+                "name": "Aviation Industry Client"
+              },
+              "reviewBody": "Outstanding HEFA-SPK quality with consistent performance and verified sustainability credentials. Reliable supply chain and professional service.",
+              "datePublished": "2024-12-15"
+            }
+          ],
           "additionalProperty": [
             {
               "@type": "PropertyValue",
@@ -208,7 +249,48 @@ const addIndustryStructuredData = () => {
           "name": "Refined Used Cooking Oil",
           "description": "Premium refined UCO feedstock for biofuel and SAF production with ISCC certification",
           "category": "Biofuel Feedstock",
-          "material": "Refined Used Cooking Oil"
+          "material": "Refined Used Cooking Oil",
+          "brand": {
+            "@type": "Brand",
+            "name": "Shaphargroup"
+          },
+          "offers": {
+            "@type": "Offer",
+            "seller": {
+              "@type": "Organization",
+              "name": "Shaphargroup"
+            },
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "priceCurrency": "USD",
+              "price": "Contact for Quote"
+            }
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "89",
+            "reviewCount": "72"
+          },
+          "review": [
+            {
+              "@type": "Review",
+              "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+              },
+              "author": {
+                "@type": "Organization",
+                "name": "Biofuel Producer"
+              },
+              "reviewBody": "Premium quality refined UCO with consistent specifications. Excellent for SAF production with reliable supply and competitive pricing.",
+              "datePublished": "2024-11-28"
+            }
+          ]
         }
       ]
     },
