@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="40" viewBox="0 0 200 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Smaller Green geometric shape -->
+  <path d="M5 15 L18 10 L18 25 L5 30 Z" fill="#2D7D5C" />
+  
+  <!-- Smaller Yellow geometric shape -->
+  <path d="M12 20 L25 15 L25 30 L12 35 Z" fill="#F5C842" />
+  
+  <!-- ShapharGroup Text -->
+  <text x="35" y="25" font-family="Arial, sans-serif" font-size="18" font-weight="600" fill="#2D3748">
+    ShapharGroup
+  </text>
+</svg>

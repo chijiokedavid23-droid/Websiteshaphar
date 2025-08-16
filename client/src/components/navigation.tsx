@@ -9,7 +9,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import logoPath from "@assets/Shaphargroup logo logo browser_1754153550144.png";
+import logoPath from "@assets/shaphargroup-logo-reduced.svg";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
