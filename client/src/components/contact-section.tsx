@@ -23,9 +23,7 @@ export default function ContactSection() {
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
-  const [isSubmitting, setIsSubmitting] = useState(false);
-
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -38,47 +36,21 @@ export default function ContactSection() {
       return;
     }
 
-    setIsSubmitting(true);
+    // Simulate form submission
+    toast({
+      title: "Message sent successfully!",
+      description: "We'll get back to you within 24 hours.",
+    });
 
-    // Since we removed the API, use mailto link for direct email
-    const subject = encodeURIComponent(formData.subject || "Contact Form Submission");
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\n` +
-      `Company: ${formData.company || 'Not provided'}\n` +
-      `Phone: ${formData.phone || 'Not provided'}\n` +
-      `Email: ${formData.email}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    const mailtoLink = `mailto:info@shaphargroup.com?subject=${subject}&body=${body}`;
-    
-    try {
-      window.open(mailtoLink, '_blank');
-      
-      toast({
-        title: "Email client opened",
-        description: "Your default email client should open with the message pre-filled. Send it to complete your inquiry.",
-      });
-
-      // Reset form
-      setFormData({
-        name: "",
-        company: "",
-        email: "",
-        phone: "",
-        subject: "",
-        message: ""
-      });
-    } catch (error) {
-      toast({
-        title: "Error opening email client",
-        description: "Please contact us directly at info@shaphargroup.com",
-        variant: "destructive"
-      });
-      console.error('Mailto error:', error);
-    } finally {
-      setIsSubmitting(false);
-    }
+    // Reset form
+    setFormData({
+      name: "",
+      company: "",
+      email: "",
+      phone: "",
+      subject: "",
+      message: ""
+    });
   };
 
   const scrollToContact = () => {
@@ -318,11 +290,10 @@ export default function ContactSection() {
                 <Button 
                   type="submit"
                   size="lg"
-                  disabled={isSubmitting}
-                  className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-8 py-4 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                  className="bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-8 py-4"
                 >
                   <Send className="w-5 h-5 mr-2" />
-                  {isSubmitting ? "Sending..." : "Send Message"}
+                  Send Message
                 </Button>
               </div>
             </form>

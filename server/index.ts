@@ -1,12 +1,8 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
-import * as fs from "fs";
-import path from "path";
 
 const app = express();
-// Explicitly set the environment based on NODE_ENV
-app.set('env', process.env.NODE_ENV || 'development');
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
@@ -54,23 +50,9 @@ app.use((req, res, next) => {
   // importantly only setup vite in development and after
   // setting up all the other routes so the catch-all route
   // doesn't interfere with the other routes
-  // Smart production detection - multiple fallbacks to ensure deployment works
-  const distPathExists = await fs.promises.access(path.resolve(import.meta.dirname, "public")).then(() => true).catch(() => false);
-  const isDeployment = process.env.REPLIT_DEPLOYMENT === "1" || 
-                      process.env.NODE_ENV === "production" ||
-                      distPathExists; // If built files exist, we're in production
-  
-  console.log(`🚀 Environment Detection:`);
-  console.log(`   NODE_ENV: ${process.env.NODE_ENV}`);
-  console.log(`   REPLIT_DEPLOYMENT: ${process.env.REPLIT_DEPLOYMENT}`);
-  console.log(`   Built files exist: ${distPathExists}`);
-  console.log(`   → Running in: ${isDeployment ? 'PRODUCTION' : 'DEVELOPMENT'} mode`);
-  
-  if (!isDeployment) {
-    console.log("🔧 Starting development server with Vite hot reload");
+  if (app.get("env") === "development") {
     await setupVite(app, server);
   } else {
-    console.log("⚡ Starting production server with optimized static files");
     serveStatic(app);
   }
 
