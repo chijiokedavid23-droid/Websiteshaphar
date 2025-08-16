@@ -15,7 +15,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative h-[60vh] min-h-[400px] max-h-[600px] flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-[60vh] min-h-[400px] max-h-[600px] flex items-center justify-center overflow-hidden mt-16">
       {/* Custom aviation background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -32,7 +32,7 @@ export default function HeroSection() {
       {/* Additional gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-navy/20 via-transparent to-forest/20 z-15"></div>
       
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-12 sm:pt-14 md:pt-16">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8 sm:pt-10 md:pt-12">
         <div className="max-w-5xl mx-auto">
           <motion.h1 
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight tracking-tight text-overlay-strong"
