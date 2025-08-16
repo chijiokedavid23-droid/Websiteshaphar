@@ -67,7 +67,7 @@ export default function Navigation() {
                 alt="Shaphargroup" 
                 className={`w-auto object-contain transition-all duration-300 ${
                   location === "/" 
-                    ? (isScrolled ? 'h-4' : 'h-5 sm:h-6')
+                    ? (isScrolled ? 'h-3' : 'h-4 sm:h-5')
                     : 'h-12 sm:h-16 md:h-20'
                 }`}
               />
@@ -76,7 +76,7 @@ export default function Navigation() {
           
           {/* Desktop Navigation */}
           <nav className={`hidden md:flex items-center h-full ${
-            isScrolled ? 'space-x-6' : 'space-x-8'
+            isScrolled ? 'space-x-4' : 'space-x-6'
           }`}>
             {navigationItems.map((item, index) => (
               <motion.div
@@ -87,7 +87,7 @@ export default function Navigation() {
               >
                 {item.dropdown ? (
                   <DropdownMenu>
-                    <DropdownMenuTrigger className={`flex items-center ${
+                    <DropdownMenuTrigger className={`flex items-center whitespace-nowrap ${
                       isScrolled ? 'text-navy hover:text-emerald text-sm' : 'text-white hover:text-emerald text-base'
                     } transition-colors duration-200 font-medium ${
                       location === item.path || item.dropdown.some(subItem => location === subItem.path) ? 'text-emerald font-semibold' : ''
@@ -108,7 +108,7 @@ export default function Navigation() {
                 ) : (
                   <Link href={item.path} onClick={scrollToTop} className={`${
                     isScrolled ? 'text-navy hover:text-emerald text-sm' : 'text-white hover:text-emerald text-base'
-                  } transition-colors duration-200 font-medium ${
+                  } transition-colors duration-200 font-medium whitespace-nowrap ${
                     location === item.path ? 'text-emerald font-semibold' : ''
                   }`} data-testid={`link-${item.name.toLowerCase().replace(' ', '-')}`}>
                     {item.name}
