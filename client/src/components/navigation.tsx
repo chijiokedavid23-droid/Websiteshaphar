@@ -47,13 +47,13 @@ export default function Navigation() {
 
   return (
     <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white/90 backdrop-blur-sm shadow-md border-b border-gray-100/30" : "bg-transparent"
+      className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "top-0 bg-white/90 backdrop-blur-sm shadow-md border-b border-gray-100/30" : "top-0 bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex justify-between items-center w-full transition-all duration-300 ${
-          isScrolled ? 'h-12 py-0' : 'py-2'
+          isScrolled ? 'h-10 py-0' : 'py-1'
         }`}>
           <motion.div 
             className="flex items-center h-full"
@@ -66,7 +66,7 @@ export default function Navigation() {
                 src={logoPath} 
                 alt="Shaphargroup" 
                 className={`w-auto object-contain transition-all duration-300 ${
-                  isScrolled ? 'h-7' : 'h-8 sm:h-9'
+                  isScrolled ? 'h-6' : 'h-7 sm:h-8'
                 }`}
               />
             </Link>
