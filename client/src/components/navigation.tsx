@@ -64,20 +64,23 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" onClick={scrollToTop} className="flex items-center justify-center hover:opacity-80 transition-opacity">
+            <Link href="/" onClick={scrollToTop} className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src={logoPath} 
                 alt="Shaphargroup" 
                 className={`w-auto object-contain transition-all duration-300 ${
-                  isScrolled ? 'h-8 sm:h-10' : 'h-10 sm:h-12 md:h-14'
+                  isScrolled ? 'h-7 sm:h-8' : 'h-9 sm:h-10 md:h-11'
                 }`}
-                style={{ verticalAlign: 'middle' }}
+                style={{ 
+                  verticalAlign: 'baseline',
+                  transform: isScrolled ? 'translateY(-1px)' : 'translateY(-2px)'
+                }}
               />
             </Link>
           </motion.div>
           
           {/* Desktop Navigation */}
-          <nav className={`hidden md:flex items-center ${
+          <nav className={`hidden md:flex items-baseline ${
             isScrolled ? 'space-x-6' : 'space-x-8'
           }`}>
             {navigationItems.map((item, index) => (
