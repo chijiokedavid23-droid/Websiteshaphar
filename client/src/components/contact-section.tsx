@@ -85,20 +85,12 @@ export default function ContactSection() {
           </motion.p>
           
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center w-full px-4 sm:px-0"
+            className="flex justify-center items-center w-full px-4 sm:px-0"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <Button 
-              size="lg"
-              onClick={scrollToContact}
-              className="bg-white text-emerald hover:bg-gray-100 transition-all duration-300 font-semibold text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-1 px-8 py-4"
-            >
-              <Phone className="w-5 h-5 mr-2" />
-              Contact Us Now
-            </Button>
             <Button 
               size="lg"
               variant="outline"
