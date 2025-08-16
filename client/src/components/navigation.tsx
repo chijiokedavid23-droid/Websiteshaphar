@@ -50,37 +50,30 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "bg-white/90 backdrop-blur-sm shadow-md border-b border-gray-100/30" : "bg-transparent"
       }`}
-      style={{ height: isScrolled ? '64px' : 'auto' }}
     >
-      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${
-        isScrolled ? 'h-full flex items-center' : ''
-      }`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex justify-between items-center w-full transition-all duration-300 ${
-          isScrolled ? 'py-2' : 'py-4'
+          isScrolled ? 'h-16 py-0' : 'py-4'
         }`}>
           <motion.div 
-            className="flex items-center"
+            className="flex items-center h-full"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" onClick={scrollToTop} className="flex items-center hover:opacity-80 transition-opacity">
+            <Link href="/" onClick={scrollToTop} className="flex items-center h-full hover:opacity-80 transition-opacity">
               <img 
                 src={logoPath} 
                 alt="Shaphargroup" 
                 className={`w-auto object-contain transition-all duration-300 ${
-                  isScrolled ? 'h-6 sm:h-7' : 'h-8 sm:h-9 md:h-10'
+                  isScrolled ? 'h-8' : 'h-8 sm:h-9 md:h-10'
                 }`}
-                style={{ 
-                  verticalAlign: 'baseline',
-                  transform: isScrolled ? 'translateY(-1px)' : 'translateY(-2px)'
-                }}
               />
             </Link>
           </motion.div>
           
           {/* Desktop Navigation */}
-          <nav className={`hidden md:flex items-baseline ${
+          <nav className={`hidden md:flex items-center h-full ${
             isScrolled ? 'space-x-6' : 'space-x-8'
           }`}>
             {navigationItems.map((item, index) => (
@@ -123,7 +116,7 @@ export default function Navigation() {
             ))}
           </nav>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center h-full space-x-4">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
