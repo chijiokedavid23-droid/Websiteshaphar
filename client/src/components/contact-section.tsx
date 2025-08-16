@@ -63,7 +63,7 @@ export default function ContactSection() {
   return (
     <>
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald to-forest">
+      <section className="py-8 bg-gradient-to-br from-emerald to-forest">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.h2 
             className="text-4xl md:text-5xl font-bold text-navy mb-6"
@@ -113,10 +113,10 @@ export default function ContactSection() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
-            className="text-center mb-16"
+            className="text-center mb-8"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -131,7 +131,7 @@ export default function ContactSection() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-12 mb-16">
+          <div className="grid md:grid-cols-2 gap-8 mb-8">
             {/* China Office */}
             <motion.div 
               className="bg-gray-50 rounded-2xl p-8 shadow-lg"

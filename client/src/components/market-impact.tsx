@@ -11,9 +11,9 @@ export default function MarketImpact() {
   };
 
   return (
-    <section className="py-20 bg-navy">
+    <section className="py-8 bg-navy">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}

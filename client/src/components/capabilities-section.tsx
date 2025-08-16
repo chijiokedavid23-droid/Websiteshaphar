@@ -48,10 +48,10 @@ export default function CapabilitiesSection() {
   ];
 
   return (
-    <section id="capabilities" className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section id="capabilities" className="py-8 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 
-          className="text-center mb-20"
+          className="text-center mb-8"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -73,7 +73,7 @@ export default function CapabilitiesSection() {
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8 mb-20">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
           {capabilities.map((capability, index) => {
             const IconComponent = capability.icon;
             return (
