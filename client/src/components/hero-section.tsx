@@ -1,12 +1,26 @@
 import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, Send, Factory } from "lucide-react";
 import { Link } from "wouter";
+import { useRef } from "react";
 // Using the new main page hero image with green aircraft
 import heroImagePath from "@assets/Main page_1754669989825.png";
 const aviationImageUrl = heroImagePath;
 
 export default function HeroSection() {
+  const ref = useRef<HTMLElement>(null);
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+
+  // Parallax and fade effects based on scroll
+  const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5, 1], [1, 0.8, 0]);
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.1]);
+  const blur = useTransform(scrollYProgress, [0, 1], [0, 4]);
+
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -15,12 +29,19 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden mt-16">
-      {/* Enhanced background with subtle parallax effect */}
+    <section 
+      ref={ref}
+      id="home" 
+      className="relative min-h-screen flex items-center justify-center overflow-hidden mt-16"
+    >
+      {/* Enhanced background with scroll-responsive parallax */}
       <motion.div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat will-change-transform"
         style={{
-          backgroundImage: `url(${aviationImageUrl})`
+          backgroundImage: `url(${aviationImageUrl})`,
+          y: backgroundY,
+          scale,
+          filter: `blur(${blur}px)`,
         }}
         role="img"
         aria-label="Green sustainable aircraft flying over lush landscape representing Shaphargroup's commitment to eco-friendly aviation fuel solutions"
@@ -29,18 +50,25 @@ export default function HeroSection() {
         transition={{ duration: 10, ease: "easeOut" }}
       />
       
-      {/* Dynamic gradient overlay for better visual depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy/50 via-black/30 to-forest/40 z-10"></div>
+      {/* Dynamic gradient overlay that responds to scroll */}
+      <motion.div 
+        className="absolute inset-0 bg-gradient-to-br from-navy/50 via-black/30 to-forest/40 z-10"
+        style={{ opacity }}
+      />
       
       {/* Subtle animated overlay for premium feel */}
       <motion.div 
         className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-15"
         animate={{ opacity: [0.3, 0.6, 0.3] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      ></motion.div>
+        style={{ opacity }}
+      />
       
-      {/* Main content with improved spacing and animations */}
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      {/* Main content with scroll-responsive transforms */}
+      <motion.div 
+        className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center will-change-transform"
+        style={{ y, opacity }}
+      >
         <motion.div 
           className="max-w-6xl mx-auto space-y-8"
           initial={{ opacity: 0 }}
@@ -117,14 +145,18 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
         </motion.div>
-      </div>
+      </motion.div>
       
-      {/* Improved scroll indicator with bounce animation */}
+      {/* Scroll-responsive scroll indicator */}
       <motion.div 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20 will-change-transform"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.5 }}
+        style={{ 
+          opacity: useTransform(scrollYProgress, [0, 0.3], [1, 0]),
+          y: useTransform(scrollYProgress, [0, 0.3], ["0px", "30px"])
+        }}
       >
         <motion.button
           onClick={() => scrollToSection("about")}
@@ -146,27 +178,14 @@ export default function HeroSection() {
           </motion.div>
         </motion.button>
       </motion.div>
-
-      {/* Professional scroll indicator */}
+      
+      {/* Gradient fade to next section for smooth transition */}
       <motion.div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 1 }}
-      >
-        <motion.button
-          onClick={() => scrollToSection("about")}
-          className="w-8 h-12 border-2 border-white/40 rounded-full flex justify-center items-start pt-2 hover:border-white/60 transition-colors"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-        >
-          <motion.div 
-            className="w-1 h-2 bg-white/60 rounded-full"
-            animate={{ y: [0, 8, 0] }}
-            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </motion.button>
-      </motion.div>
+        className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/50 to-transparent z-10"
+        style={{
+          opacity: useTransform(scrollYProgress, [0.7, 1], [0, 1])
+        }}
+      />
     </section>
   );
 }
