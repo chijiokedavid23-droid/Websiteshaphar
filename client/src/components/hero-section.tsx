@@ -15,7 +15,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="home" className="relative h-[70vh] min-h-[500px] flex items-center justify-center overflow-hidden">
       {/* Custom aviation background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -32,10 +32,10 @@ export default function HeroSection() {
       {/* Additional gradient overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-navy/20 via-transparent to-forest/20 z-15"></div>
       
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-16">
         <div className="max-w-5xl mx-auto">
           <motion.h1 
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 leading-tight tracking-tight text-overlay-strong"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight tracking-tight text-overlay-strong"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
@@ -44,7 +44,7 @@ export default function HeroSection() {
           </motion.h1>
           
           <motion.p 
-            className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-4 sm:mb-6 leading-relaxed font-light max-w-4xl mx-auto text-overlay"
+            className="text-base sm:text-lg md:text-xl text-gray-100 mb-3 sm:mb-4 leading-relaxed font-light max-w-4xl mx-auto text-overlay"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -53,7 +53,7 @@ export default function HeroSection() {
           </motion.p>
           
           <motion.p 
-            className="text-base sm:text-lg text-gray-300 mb-10 sm:mb-14 font-light text-overlay-light"
+            className="text-sm sm:text-base text-gray-300 mb-6 sm:mb-8 font-light text-overlay-light"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
