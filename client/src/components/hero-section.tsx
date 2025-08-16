@@ -15,82 +15,137 @@ export default function HeroSection() {
   };
 
   return (
-    <section id="home" className="relative h-[60vh] min-h-[400px] max-h-[600px] flex items-center justify-center overflow-hidden mt-16">
-      {/* Custom aviation background image */}
-      <div 
+    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden mt-16">
+      {/* Enhanced background with subtle parallax effect */}
+      <motion.div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${aviationImageUrl})`
         }}
         role="img"
         aria-label="Green sustainable aircraft flying over lush landscape representing Shaphargroup's commitment to eco-friendly aviation fuel solutions"
+        initial={{ scale: 1.1 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 10, ease: "easeOut" }}
       />
       
-      {/* Overlay for better text readability while preserving image beauty */}
-      <div className="absolute inset-0 bg-black/40 z-10"></div>
+      {/* Dynamic gradient overlay for better visual depth */}
+      <div className="absolute inset-0 bg-gradient-to-br from-navy/50 via-black/30 to-forest/40 z-10"></div>
       
-      {/* Additional gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-navy/20 via-transparent to-forest/20 z-15"></div>
+      {/* Subtle animated overlay for premium feel */}
+      <motion.div 
+        className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-15"
+        animate={{ opacity: [0.3, 0.6, 0.3] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+      ></motion.div>
       
-      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-8 sm:pt-10 md:pt-12">
-        <div className="max-w-5xl mx-auto">
+      {/* Main content with improved spacing and animations */}
+      <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <motion.div 
+          className="max-w-6xl mx-auto space-y-8"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+        >
           <motion.h1 
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3 sm:mb-4 leading-tight tracking-tight text-overlay-strong"
-            initial={{ opacity: 0, y: 30 }}
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight tracking-tight"
+            initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           >
-            Powering Net-Zero Aviation Today
+            <span className="block">Powering Net-Zero</span>
+            <span className="block text-emerald-400 bg-gradient-to-r from-emerald-400 via-emerald-300 to-mint-400 bg-clip-text text-transparent">
+              Aviation Today
+            </span>
           </motion.h1>
           
           <motion.p 
-            className="text-sm sm:text-base md:text-lg text-gray-100 mb-2 sm:mb-3 leading-relaxed font-light max-w-4xl mx-auto text-overlay"
+            className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-6 leading-relaxed font-light max-w-5xl mx-auto"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
           >
             Supplying HEFA Sustainable Aviation Fuel (SAF) — backed by certified refining, proven logistics, and global reach.
           </motion.p>
           
           <motion.p 
-            className="text-xs sm:text-sm text-gray-300 mb-4 sm:mb-6 font-light text-overlay-light"
-            initial={{ opacity: 0, y: 30 }}
+            className="text-sm sm:text-base text-emerald-200 mb-12 font-medium tracking-wide"
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
           >
             Powering airlines to meet ReFuelEU's 2% mandate and beyond
           </motion.p>
           
+          {/* Enhanced button section with staggered animations */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center w-full px-4 sm:px-0"
-            initial={{ opacity: 0, y: 30 }}
+            className="flex flex-col sm:flex-row gap-6 justify-center items-center"
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
+            transition={{ duration: 0.8, delay: 1 }}
           >
-            <Link href="/contact" className="w-full sm:w-auto">
-              <Button 
-                size="lg"
-                className="w-full sm:w-auto bg-emerald text-white hover:bg-emerald/90 transition-all duration-300 font-semibold text-base sm:text-lg shadow-xl hover:shadow-2xl transform hover:-translate-y-0.5 px-8 sm:px-10 py-3 sm:py-4 rounded-lg touch-manipulation"
-              >
-                <Send className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Contact Us
-              </Button>
-            </Link>
-            
-            <Button
-              size="lg"
-              variant="outline"
-              asChild
-              className="w-full sm:w-auto bg-white/10 backdrop-blur-md border-2 border-white/30 text-white hover:bg-white hover:text-navy transition-all duration-300 font-semibold text-base sm:text-lg px-8 sm:px-10 py-3 sm:py-4 rounded-lg touch-manipulation"
+            <motion.div
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
             >
-              <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-center">
-                <Factory className="w-4 h-4 sm:w-5 sm:h-5 mr-2" />
-                Explore Our UCO Refinery
-              </a>
-            </Button>
+              <Link href="/contact">
+                <Button 
+                  size="lg"
+                  className="bg-emerald hover:bg-emerald/90 text-white font-semibold text-lg px-10 py-4 rounded-xl shadow-2xl hover:shadow-emerald/25 transition-all duration-300 group"
+                >
+                  <Send className="w-5 h-5 mr-3 group-hover:translate-x-1 transition-transform duration-300" />
+                  Contact Us
+                </Button>
+              </Link>
+            </motion.div>
+            
+            <motion.div
+              whileHover={{ scale: 1.05, y: -2 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Button
+                size="lg"
+                variant="outline"
+                asChild
+                className="bg-white/10 backdrop-blur-md border-2 border-white/40 text-white hover:bg-white hover:text-navy font-semibold text-lg px-10 py-4 rounded-xl transition-all duration-300 group"
+              >
+                <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
+                  <Factory className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform duration-300" />
+                  Explore Our UCO Refinery
+                </a>
+              </Button>
+            </motion.div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
+      
+      {/* Improved scroll indicator with bounce animation */}
+      <motion.div 
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
+        <motion.button
+          onClick={() => scrollToSection("about")}
+          className="group flex flex-col items-center gap-2 cursor-pointer"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <span className="text-white/60 text-xs font-medium tracking-wider uppercase">Scroll Down</span>
+          <motion.div 
+            className="w-6 h-10 border-2 border-white/40 rounded-full flex justify-center items-start pt-2 group-hover:border-white/70 transition-colors duration-300"
+            animate={{ y: [0, 5, 0] }}
+            transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <motion.div 
+              className="w-1 h-2 bg-white/60 rounded-full"
+              animate={{ y: [0, 8, 0], opacity: [0.6, 1, 0.6] }}
+              transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+            />
+          </motion.div>
+        </motion.button>
+      </motion.div>
 
       {/* Professional scroll indicator */}
       <motion.div 
