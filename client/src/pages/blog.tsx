@@ -14,6 +14,7 @@ import safcRegistryImage from "@assets/image_1754657993774.png";
 import mrTimImage from "@assets/MR TIM_1754156709435.jpg";
 import safFactoryImage from "@assets/SAF Factory to jet_1754154741557.png";
 import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
+import jetToFImage from "@assets/jet to f_1755325839322.png";
 
 
 // Function to map article titles to article IDs
@@ -91,7 +92,7 @@ export default function Blog() {
     {
       title: "Why Europe and China Must Collaborate to Meet Net Zero — Not Compete",
       excerpt: "Whenever China is mentioned in Western political debates, the focus often shifts to national security concerns rather than collaborative opportunities.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/07/jet-to-f-768x512.png",
+      image: jetToFImage,
       category: "Insights & Thought Leadership",
       date: "July 7, 2025",
       author: "David C. Arinze",

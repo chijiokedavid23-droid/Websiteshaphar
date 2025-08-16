@@ -5,6 +5,7 @@ import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { useEffect } from "react";
 import { updateSEOTags, optimizePagePerformance } from "@/lib/seo";
+import jetToFImage from "@assets/jet to f_1755325839322.png";
 
 interface ArticleData {
   id: string;
@@ -197,7 +198,7 @@ This is not about ego. It's about the planet.
 If the mission is truly to stop climate catastrophe, we must set aside political framing and build alliances that accelerate decarbonization. Europe, America and China are the three biggest players in this race. Working together, they can close the SAF supply gap, bring down costs, and lead the world toward a cleaner, safer future.
 
 Because in the end, **climate action is not a competition. It's a collaboration for survival**.`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/07/jet-to-f.png",
+    image: jetToFImage,
     category: "Insights & Thought Leadership",
     date: "July 7, 2025",
     author: "David C. Arinze",
