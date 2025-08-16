@@ -14,12 +14,8 @@ export default function HeroSection() {
     offset: ["start start", "end start"]
   });
 
-  // Smooth parallax and fade effects based on scroll
-  const y = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
-  const opacity = useTransform(scrollYProgress, [0, 0.6, 1], [1, 0.9, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.05]);
-  const blur = useTransform(scrollYProgress, [0, 1], [0, 2]);
+  // Simple, smooth fade effect on scroll
+  const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 0.3, 0]);
 
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
@@ -34,20 +30,14 @@ export default function HeroSection() {
       id="home" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden mt-16"
     >
-      {/* Enhanced background with smooth scroll-responsive parallax */}
-      <motion.div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+      {/* Static background - no parallax to prevent shaking */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
         style={{
           backgroundImage: `url(${aviationImageUrl})`,
-          y: backgroundY,
-          scale,
-          filter: `blur(${blur}px)`,
         }}
         role="img"
         aria-label="Green sustainable aircraft flying over lush landscape representing Shaphargroup's commitment to eco-friendly aviation fuel solutions"
-        initial={{ scale: 1.02 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 8, ease: "easeOut" }}
       />
       
       {/* Enhanced gradient overlay for better text contrast */}
@@ -64,14 +54,10 @@ export default function HeroSection() {
         style={{ opacity }}
       />
       
-      {/* Main content with smooth scroll-responsive transforms */}
+      {/* Main content with simple fade on scroll */}
       <motion.div 
         className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
-        style={{ 
-          y,
-          opacity,
-          transform: `translateY(${y}) translateZ(0)`,
-        }}
+        style={{ opacity }}
       >
         <motion.div 
           className="max-w-6xl mx-auto space-y-8"
@@ -160,15 +146,14 @@ export default function HeroSection() {
         </motion.div>
       </motion.div>
       
-      {/* Smooth scroll-responsive scroll indicator */}
+      {/* Static scroll indicator - fades out smoothly */}
       <motion.div 
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.5 }}
         style={{ 
-          opacity: useTransform(scrollYProgress, [0, 0.4], [1, 0]),
-          transform: `translateY(${useTransform(scrollYProgress, [0, 0.4], ["0px", "20px"])}) translateZ(0)`
+          opacity: useTransform(scrollYProgress, [0, 0.5], [1, 0])
         }}
       >
         <motion.button
