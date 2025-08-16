@@ -50,13 +50,13 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "bg-white/90 backdrop-blur-sm shadow-md border-b border-gray-100/30" : "bg-transparent"
       }`}
-      style={{ height: isScrolled ? '56px' : 'auto' }}
+      style={{ height: isScrolled ? '64px' : 'auto' }}
     >
       <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${
         isScrolled ? 'h-full flex items-center' : ''
       }`}>
         <div className={`flex justify-between items-center w-full transition-all duration-300 ${
-          isScrolled ? 'py-0' : 'py-4'
+          isScrolled ? 'py-2' : 'py-4'
         }`}>
           <motion.div 
             className="flex items-center"
@@ -64,13 +64,14 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Link href="/" onClick={scrollToTop} className="flex items-center hover:opacity-80 transition-opacity">
+            <Link href="/" onClick={scrollToTop} className="flex items-center justify-center hover:opacity-80 transition-opacity">
               <img 
                 src={logoPath} 
                 alt="Shaphargroup" 
-                className={`w-auto transition-all duration-300 ${
-                  isScrolled ? 'h-7 sm:h-9' : 'h-8 sm:h-10 md:h-12'
+                className={`w-auto object-contain transition-all duration-300 ${
+                  isScrolled ? 'h-8 sm:h-10' : 'h-10 sm:h-12 md:h-14'
                 }`}
+                style={{ verticalAlign: 'middle' }}
               />
             </Link>
           </motion.div>
