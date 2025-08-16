@@ -53,7 +53,7 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`flex justify-between items-center w-full transition-all duration-300 ${
-          isScrolled ? 'h-10 py-0' : 'py-1'
+          isScrolled ? 'h-12 py-1' : 'py-2'
         }`}>
           <motion.div 
             className="flex items-center h-full"
@@ -68,7 +68,7 @@ export default function Navigation() {
                 className={`w-auto object-contain transition-all duration-300 ${
                   location === "/" 
                     ? (isScrolled ? 'h-4' : 'h-5 sm:h-6')
-                    : 'h-10 sm:h-12 md:h-14'
+                    : 'h-12 sm:h-16 md:h-20'
                 }`}
               />
             </Link>
