@@ -33,8 +33,14 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
       html: params.html || params.text || '',
     });
     return true;
-  } catch (error) {
+  } catch (error: any) {
     console.error('SendGrid email error:', error);
+    
+    // Log detailed error information for debugging
+    if (error.response?.body?.errors) {
+      console.error('SendGrid error details:', error.response.body.errors);
+    }
+    
     return false;
   }
 }
@@ -107,9 +113,13 @@ This email was sent from the Shaphargroup website contact form.
 Reply directly to this email to respond to ${formData.name}.
   `;
 
+  // IMPORTANT: Replace this with your verified SendGrid sender email
+  // Go to SendGrid Dashboard → Settings → Sender Authentication to verify an email
+  const verifiedSenderEmail = process.env.SENDGRID_FROM_EMAIL || 'info@shaphargroup.com';
+  
   return await sendEmail({
     to: recipientEmail,
-    from: 'noreply@shaphargroup.com', // Use a verified sender email
+    from: verifiedSenderEmail,
     subject: subject,
     text: textContent,
     html: htmlContent,

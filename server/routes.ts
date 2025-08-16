@@ -24,7 +24,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         });
       }
 
-      // Send email
+      // Try to send email
       const emailSent = await sendContactFormEmail({
         name: name.trim(),
         email: email.trim(),
@@ -38,8 +38,18 @@ export async function registerRoutes(app: Express): Promise<Server> {
           message: "Your message has been sent successfully! We'll get back to you soon." 
         });
       } else {
-        res.status(500).json({ 
-          error: "Failed to send email. Please try again or contact us directly." 
+        // Email failed but we can still log the contact attempt
+        console.log('Contact form submission (email failed):', {
+          name: name.trim(),
+          email: email.trim(),
+          company: company?.trim(),
+          message: message.trim(),
+          timestamp: new Date().toISOString()
+        });
+        
+        res.status(200).json({ 
+          success: true, 
+          message: "Your message has been received! Due to email configuration issues, please also contact us directly at info@shaphargroup.com" 
         });
       }
     } catch (error) {
