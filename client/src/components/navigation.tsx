@@ -50,11 +50,13 @@ export default function Navigation() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "bg-white/90 backdrop-blur-sm shadow-md border-b border-gray-100/30" : "bg-transparent"
       }`}
-      style={{ height: isScrolled ? '60px' : 'auto' }}
+      style={{ height: isScrolled ? '56px' : 'auto' }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center transition-all duration-300 ${
-          isScrolled ? 'py-2' : 'py-4'
+      <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${
+        isScrolled ? 'h-full flex items-center' : ''
+      }`}>
+        <div className={`flex justify-between items-center w-full transition-all duration-300 ${
+          isScrolled ? 'py-0' : 'py-4'
         }`}>
           <motion.div 
             className="flex items-center"
@@ -67,14 +69,16 @@ export default function Navigation() {
                 src={logoPath} 
                 alt="Shaphargroup" 
                 className={`w-auto transition-all duration-300 ${
-                  isScrolled ? 'h-6 sm:h-8' : 'h-8 sm:h-10 md:h-12'
+                  isScrolled ? 'h-7 sm:h-9' : 'h-8 sm:h-10 md:h-12'
                 }`}
               />
             </Link>
           </motion.div>
           
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className={`hidden md:flex items-center ${
+            isScrolled ? 'space-x-6' : 'space-x-8'
+          }`}>
             {navigationItems.map((item, index) => (
               <motion.div
                 key={item.path}
@@ -85,7 +89,7 @@ export default function Navigation() {
                 {item.dropdown ? (
                   <DropdownMenu>
                     <DropdownMenuTrigger className={`flex items-center ${
-                      isScrolled ? 'text-navy hover:text-emerald' : 'text-white hover:text-emerald'
+                      isScrolled ? 'text-navy hover:text-emerald text-sm' : 'text-white hover:text-emerald text-base'
                     } transition-colors duration-200 font-medium ${
                       location === item.path || item.dropdown.some(subItem => location === subItem.path) ? 'text-emerald font-semibold' : ''
                     }`} data-testid="dropdown-about">
@@ -104,7 +108,7 @@ export default function Navigation() {
                   </DropdownMenu>
                 ) : (
                   <Link href={item.path} onClick={scrollToTop} className={`${
-                    isScrolled ? 'text-navy hover:text-emerald' : 'text-white hover:text-emerald'
+                    isScrolled ? 'text-navy hover:text-emerald text-sm' : 'text-white hover:text-emerald text-base'
                   } transition-colors duration-200 font-medium ${
                     location === item.path ? 'text-emerald font-semibold' : ''
                   }`} data-testid={`link-${item.name.toLowerCase().replace(' ', '-')}`}>
@@ -121,7 +125,9 @@ export default function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: 0.5 }}
             >
-              <Link href="/contact" onClick={scrollToTop} className="hidden sm:inline-block bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg px-4 py-2 rounded-md touch-manipulation">
+              <Link href="/contact" onClick={scrollToTop} className={`hidden sm:inline-block bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg rounded-md touch-manipulation ${
+                isScrolled ? 'px-3 py-1.5 text-sm' : 'px-4 py-2 text-base'
+              }`}>
                 Contact Us
               </Link>
             </motion.div>
