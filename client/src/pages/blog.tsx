@@ -33,6 +33,8 @@ const getArticleId = (title: string): string | null => {
     "Shaphargroup Achieves ISCC CORSIA Certification (SAF)": "iscc-corsia-certification",
     "From UCO to Jet Fuel: The Journey Toward Sustainable Aviation": "uco-to-jet-fuel",
     "Powering Aviation's Green Future: How Strategic Feedstock Partnerships Can Accelerate SAF Adoption": "powering-aviation-green-future",
+    "Building a Trustworthy UCO Supply Chain: Why Certification and Transparency Matter More Than Ever": "building-trustworthy-uco-supply-chain",
+    "The Critical Role of UCO in Achieving Global Sustainable Aviation Fuel (SAF) Targets": "critical-role-uco-saf-targets",
     "How Used Cooking Oil Is Powering a Greener Future": "uco-greener-future",
     "SAF: The Fuel Taking Aviation Toward Net Zero": "saf-fuel-aviation-net-zero",
     "The Biodiesel Boom: Cleaner Engines, Healthier Planet": "biodiesel-boom-cleaner-engines"
