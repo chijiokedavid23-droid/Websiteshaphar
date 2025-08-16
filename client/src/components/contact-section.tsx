@@ -40,53 +40,42 @@ export default function ContactSection() {
 
     setIsSubmitting(true);
 
+    // Since we removed the API, use mailto link for direct email
+    const subject = encodeURIComponent(formData.subject || "Contact Form Submission");
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\n` +
+      `Company: ${formData.company || 'Not provided'}\n` +
+      `Phone: ${formData.phone || 'Not provided'}\n` +
+      `Email: ${formData.email}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    const mailtoLink = `mailto:info@shaphargroup.com?subject=${subject}&body=${body}`;
+    
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: formData.name,
-          email: formData.email,
-          company: formData.company || undefined,
-          message: formData.message,
-          phone: formData.phone || undefined,
-          subject: formData.subject || undefined
-        }),
+      window.open(mailtoLink, '_blank');
+      
+      toast({
+        title: "Email client opened",
+        description: "Your default email client should open with the message pre-filled. Send it to complete your inquiry.",
       });
 
-      const data = await response.json();
-
-      if (response.ok) {
-        toast({
-          title: "Message sent successfully!",
-          description: data.message || "We'll get back to you within 24 hours.",
-        });
-
-        // Reset form
-        setFormData({
-          name: "",
-          company: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: ""
-        });
-      } else {
-        toast({
-          title: "Failed to send message",
-          description: data.error || "Please try again later.",
-          variant: "destructive"
-        });
-      }
+      // Reset form
+      setFormData({
+        name: "",
+        company: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+      });
     } catch (error) {
       toast({
-        title: "Network error",
-        description: "Please check your connection and try again.",
+        title: "Error opening email client",
+        description: "Please contact us directly at info@shaphargroup.com",
         variant: "destructive"
       });
-      console.error('Contact form error:', error);
+      console.error('Mailto error:', error);
     } finally {
       setIsSubmitting(false);
     }
