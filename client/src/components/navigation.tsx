@@ -69,7 +69,7 @@ export default function Navigation() {
                 src={logoPath} 
                 alt="Shaphargroup" 
                 className={`w-auto object-contain transition-all duration-300 ${
-                  isScrolled ? 'h-7 sm:h-8' : 'h-9 sm:h-10 md:h-11'
+                  isScrolled ? 'h-6 sm:h-7' : 'h-8 sm:h-9 md:h-10'
                 }`}
                 style={{ 
                   verticalAlign: 'baseline',
