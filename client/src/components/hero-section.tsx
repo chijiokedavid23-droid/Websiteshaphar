@@ -1,22 +1,12 @@
 import { Button } from "@/components/ui/button";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { ChevronDown, Send, Factory } from "lucide-react";
+import { motion } from "framer-motion";
+import { Send, Factory } from "lucide-react";
 import { Link } from "wouter";
-import { useRef } from "react";
 // Using the new main page hero image with green aircraft
 import heroImagePath from "@assets/Main page_1754669989825.png";
 const aviationImageUrl = heroImagePath;
 
 export default function HeroSection() {
-  const ref = useRef<HTMLElement>(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"]
-  });
-
-  // Simple, smooth fade effect on scroll
-  const opacity = useTransform(scrollYProgress, [0, 0.8, 1], [1, 0.3, 0]);
-
   const scrollToSection = (sectionId: string) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -26,13 +16,12 @@ export default function HeroSection() {
 
   return (
     <section 
-      ref={ref}
       id="home" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden mt-16"
     >
-      {/* Static background - no parallax to prevent shaking */}
+      {/* Static background - no movement at all */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${aviationImageUrl})`,
         }}
@@ -40,24 +29,19 @@ export default function HeroSection() {
         aria-label="Green sustainable aircraft flying over lush landscape representing Shaphargroup's commitment to eco-friendly aviation fuel solutions"
       />
       
-      {/* Enhanced gradient overlay for better text contrast */}
-      <motion.div 
+      {/* Static gradient overlay for text contrast */}
+      <div 
         className="absolute inset-0 bg-gradient-to-br from-navy/40 via-black/50 to-forest/30 z-10"
-        style={{ opacity }}
       />
       
-      {/* Darker overlay specifically for text readability */}
-      <motion.div 
+      {/* Static darker overlay for text readability */}
+      <div 
         className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent z-15"
-        animate={{ opacity: [0.4, 0.7, 0.4] }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        style={{ opacity }}
       />
       
-      {/* Main content with simple fade on scroll */}
-      <motion.div 
+      {/* Main content - completely static, no scroll effects */}
+      <div 
         className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
-        style={{ opacity }}
       >
         <motion.div 
           className="max-w-6xl mx-auto space-y-8"
@@ -144,17 +128,14 @@ export default function HeroSection() {
             </motion.div>
           </motion.div>
         </motion.div>
-      </motion.div>
+      </div>
       
-      {/* Static scroll indicator - fades out smoothly */}
+      {/* Static scroll indicator - no scroll effects */}
       <motion.div 
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-20"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1.5 }}
-        style={{ 
-          opacity: useTransform(scrollYProgress, [0, 0.5], [1, 0])
-        }}
       >
         <motion.button
           onClick={() => scrollToSection("about")}
@@ -176,14 +157,6 @@ export default function HeroSection() {
           </motion.div>
         </motion.button>
       </motion.div>
-      
-      {/* Gradient fade to next section for smooth transition */}
-      <motion.div 
-        className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white via-white/50 to-transparent z-10"
-        style={{
-          opacity: useTransform(scrollYProgress, [0.7, 1], [0, 1])
-        }}
-      />
     </section>
   );
 }
