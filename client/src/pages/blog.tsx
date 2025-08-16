@@ -19,6 +19,7 @@ import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_
 import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.jpeg";
 import safJourneyImage from "@assets/saf_1755326663109.jpeg";
 import safInvestorAnnouncementImage from "@assets/SAF Investor annoucement_1755327378929.jpeg";
+import ucoImage from "@assets/UCO_1755327993085.png";
 
 
 // Function to map article titles to article IDs
@@ -31,6 +32,7 @@ const getArticleId = (title: string): string | null => {
     "Controlling the Future of SAF: Why Integration, Not Size, Will Define the Next Energy Giants": "controlling-future-of-saf",
     "Shaphargroup Achieves ISCC CORSIA Certification (SAF)": "iscc-corsia-certification",
     "From UCO to Jet Fuel: The Journey Toward Sustainable Aviation": "uco-to-jet-fuel",
+    "Powering Aviation's Green Future: How Strategic Feedstock Partnerships Can Accelerate SAF Adoption": "powering-aviation-green-future",
     "How Used Cooking Oil Is Powering a Greener Future": "uco-greener-future",
     "SAF: The Fuel Taking Aviation Toward Net Zero": "saf-fuel-aviation-net-zero",
     "The Biodiesel Boom: Cleaner Engines, Healthier Planet": "biodiesel-boom-cleaner-engines"
@@ -159,7 +161,7 @@ export default function Blog() {
     {
       title: "Powering Aviation's Green Future: How Strategic Feedstock Partnerships Can Accelerate SAF Adoption",
       excerpt: "The aviation sector is under mounting pressure to decarbonize, with the EU's ReFuelEU Aviation mandate requiring a minimum of 6% Sustainable Aviation Fuel (SAF) by 2030.",
-      image: unlockingSafImage,
+      image: ucoImage,
       category: "Insights & Thought Leadership",
       date: "May 12, 2025",
       author: "David C. Arinze",
