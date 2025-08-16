@@ -50,16 +50,16 @@ export default function HeroSection() {
         transition={{ duration: 10, ease: "easeOut" }}
       />
       
-      {/* Dynamic gradient overlay that responds to scroll */}
+      {/* Enhanced gradient overlay for better text contrast */}
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-br from-navy/50 via-black/30 to-forest/40 z-10"
+        className="absolute inset-0 bg-gradient-to-br from-navy/40 via-black/50 to-forest/30 z-10"
         style={{ opacity }}
       />
       
-      {/* Subtle animated overlay for premium feel */}
+      {/* Darker overlay specifically for text readability */}
       <motion.div 
-        className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent z-15"
-        animate={{ opacity: [0.3, 0.6, 0.3] }}
+        className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-transparent z-15"
+        animate={{ opacity: [0.4, 0.7, 0.4] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         style={{ opacity }}
       />
@@ -76,31 +76,34 @@ export default function HeroSection() {
           transition={{ duration: 1.2 }}
         >
           <motion.h1 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white mb-6 leading-tight tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white drop-shadow-lg mb-6 leading-tight tracking-tight"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
+            style={{ textShadow: "2px 2px 8px rgba(0, 0, 0, 0.8)" }}
           >
-            <span className="block">Powering Net-Zero</span>
-            <span className="block text-emerald-400 bg-gradient-to-r from-emerald-400 via-emerald-300 to-mint-400 bg-clip-text text-transparent">
+            <span className="block text-white">Powering Net-Zero</span>
+            <span className="block text-emerald-300 drop-shadow-xl" style={{ textShadow: "2px 2px 12px rgba(0, 0, 0, 0.9)" }}>
               Aviation Today
             </span>
           </motion.h1>
           
           <motion.p 
-            className="text-lg sm:text-xl md:text-2xl text-gray-100 mb-6 leading-relaxed font-light max-w-5xl mx-auto"
+            className="text-lg sm:text-xl md:text-2xl text-white mb-6 leading-relaxed font-medium max-w-5xl mx-auto drop-shadow-md"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
+            style={{ textShadow: "1px 1px 6px rgba(0, 0, 0, 0.8)" }}
           >
             Supplying HEFA Sustainable Aviation Fuel (SAF) — backed by certified refining, proven logistics, and global reach.
           </motion.p>
           
           <motion.p 
-            className="text-sm sm:text-base text-emerald-200 mb-12 font-medium tracking-wide"
+            className="text-base sm:text-lg text-emerald-100 mb-12 font-semibold tracking-wide drop-shadow-md"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.8 }}
+            style={{ textShadow: "1px 1px 4px rgba(0, 0, 0, 0.7)" }}
           >
             Powering airlines to meet ReFuelEU's 2% mandate and beyond
           </motion.p>
