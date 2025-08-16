@@ -20,6 +20,7 @@ import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.j
 import safJourneyImage from "@assets/saf_1755326663109.jpeg";
 import safInvestorAnnouncementImage from "@assets/SAF Investor annoucement_1755327378929.jpeg";
 import ucoImage from "@assets/UCO_1755327993085.png";
+import biofuelFillingStationImage from "@assets/biofuel-filling-station_1456616751_840x560px_1755340629654.jpg";
 
 
 // Function to map article titles to article IDs
@@ -208,7 +209,7 @@ export default function Blog() {
     {
       title: "The Biodiesel Boom: Cleaner Engines, Healthier Planet",
       excerpt: "Biodiesel is not just a trend—it's a global movement. As the world looks for cleaner alternatives to fossil diesel, biodiesel has emerged as a powerful solution for heavy-duty transport and agricultural sectors.",
-      image: "https://shaphargroup.com/wp-content/uploads/2025/04/biofuel-filling-station_1456616751_840x560px.jpg",
+      image: biofuelFillingStationImage,
       category: "Biodiesel",
       date: "July 25, 2025",
       author: "Admin",
