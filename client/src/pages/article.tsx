@@ -9,6 +9,7 @@ import jetToFImage from "@assets/jet to f_1755325839322.png";
 import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
 import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.jpeg";
 import safJourneyImage from "@assets/saf_1755326663109.jpeg";
+import safInvestorAnnouncementImage from "@assets/SAF Investor annoucement_1755327378929.jpeg";
 
 interface ArticleData {
   id: string;

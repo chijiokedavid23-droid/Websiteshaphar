@@ -18,6 +18,7 @@ import jetToFImage from "@assets/jet to f_1755325839322.png";
 import controllingSafImage from "@assets/ChatGPT Image Jun 2, 2025, 04_00_37 PM_1755326081288.png";
 import isccCorsiaImage from "@assets/ISCC CORSIA SAF CERTIFICATE_1755326293852.jpeg";
 import safJourneyImage from "@assets/saf_1755326663109.jpeg";
+import safInvestorAnnouncementImage from "@assets/SAF Investor annoucement_1755327378929.jpeg";
 
 
 // Function to map article titles to article IDs
@@ -149,7 +150,7 @@ export default function Blog() {
     {
       title: "Shaphargroup's David C. Arinze to Speak at SAF Investors Conference in London",
       excerpt: "We're excited to announce that David C. Arinze, Managing Partner of Shaphargroup and head of our European and American operations, will be speaking at the upcoming SAF Investors Conference in London.",
-      image: unlockingSafImage,
+      image: safInvestorAnnouncementImage,
       category: "News",
       date: "May 13, 2025",
       author: "Admin",
@@ -318,7 +319,7 @@ export default function Blog() {
                   src={featuredPost.image}
                   alt={featuredPost.title}
                   className={`w-full h-full min-h-[200px] hover:scale-105 transition-transform duration-300 ${
-                    featuredPost.image === safcRegistryImage || featuredPost.image === isccCorsiaImage
+                    featuredPost.image === safcRegistryImage || featuredPost.image === isccCorsiaImage || featuredPost.image === safInvestorAnnouncementImage
                       ? "object-contain bg-white p-6" 
                       : "object-cover"
                   }`}
@@ -397,7 +398,7 @@ export default function Blog() {
                     src={post.image}
                     alt={post.title}
                     className={`w-full h-32 group-hover:scale-105 transition-transform duration-300 ${
-                      post.image === safcRegistryImage || post.image === isccCorsiaImage
+                      post.image === safcRegistryImage || post.image === isccCorsiaImage || post.image === safInvestorAnnouncementImage
                         ? "object-contain bg-white p-4" 
                         : "object-cover"
                     }`}
