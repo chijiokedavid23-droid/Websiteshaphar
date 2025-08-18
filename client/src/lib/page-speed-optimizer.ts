@@ -27,26 +27,10 @@ const implementCriticalResourcePreloading = () => {
     // Critical CSS - fonts already loaded in HTML
   ];
 
-  criticalResources.forEach(resource => {
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.href = resource.href;
-    link.as = resource.as;
-    if (resource.crossorigin) {
-      link.crossOrigin = resource.crossorigin;
-    }
-    document.head.appendChild(link);
-  });
+  // No dynamic preload creation to avoid console warnings
+  // Critical resources are already loaded via HTML head tags
 
-  // Preload critical images above the fold
-  const criticalImages = document.querySelectorAll('img[data-critical="true"]') as NodeListOf<HTMLImageElement>;
-  criticalImages.forEach(img => {
-    const link = document.createElement('link');
-    link.rel = 'preload';
-    link.href = img.src;
-    link.as = 'image';
-    document.head.appendChild(link);
-  });
+  // Images load naturally - no preload to avoid console warnings
 };
 
 // Optimize resource loading for better performance

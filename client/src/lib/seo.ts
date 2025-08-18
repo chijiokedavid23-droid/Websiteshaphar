@@ -133,22 +133,7 @@ export const SEO_CONFIGS = {
 
 // Performance and Core Web Vitals optimizations
 export const optimizePagePerformance = () => {
-  // Preload critical resources
-  const preloadCriticalResources = () => {
-    const criticalImages = [
-      'https://shaphargroup.com/assets/logo.png'
-    ];
-    
-    criticalImages.forEach(src => {
-      const link = document.createElement('link');
-      link.rel = 'preload';
-      link.as = 'image';
-      link.href = src;
-      document.head.appendChild(link);
-    });
-  };
-
-  // Optimize images with lazy loading
+  // Optimize images with lazy loading - no preload to avoid warnings
   const optimizeImages = () => {
     const images = document.querySelectorAll('img:not([loading])');
     images.forEach((img, index) => {
@@ -163,9 +148,6 @@ export const optimizePagePerformance = () => {
     });
   };
 
-  // Run optimizations
-  preloadCriticalResources();
-  
   // Run image optimization after DOM content is loaded
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', optimizeImages);

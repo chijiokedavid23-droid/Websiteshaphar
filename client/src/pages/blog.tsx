@@ -63,7 +63,7 @@ export default function Blog() {
       }
     });
 
-    optimizePagePerformance();
+    // Performance optimizations removed to prevent preload console warnings
 
     return () => {
       document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';

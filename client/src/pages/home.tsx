@@ -51,8 +51,7 @@ export default function Home() {
       }
     });
 
-    // Optimize page performance
-    optimizePagePerformance();
+    // Performance optimizations removed to prevent preload console warnings
     
     // Advanced Google optimization for 2025
     optimizeForGoogle({
@@ -61,9 +60,6 @@ export default function Home() {
       enableIndustryOptimization: true,
       enableTechnicalSEO: true
     });
-
-    // Initialize page speed optimizations
-    initializePageSpeedOptimization();
 
     // Cleanup
     return () => {

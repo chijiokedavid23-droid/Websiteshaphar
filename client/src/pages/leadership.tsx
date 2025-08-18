@@ -75,7 +75,7 @@ export default function Leadership() {
       }
     });
 
-    optimizePagePerformance();
+    // Performance optimizations removed to prevent preload console warnings
     
     // Meta Description
     const metaDescription = document.querySelector('meta[name="description"]');

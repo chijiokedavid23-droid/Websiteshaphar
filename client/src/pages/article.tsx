@@ -959,7 +959,7 @@ export default function Article() {
         ogImage: config.ogImage || article.image
       });
 
-      optimizePagePerformance();
+      // Performance optimizations removed to prevent preload console warnings
     }
 
     return () => {
