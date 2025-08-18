@@ -136,7 +136,7 @@ export const optimizePagePerformance = () => {
   // Preload critical resources
   const preloadCriticalResources = () => {
     const criticalImages = [
-      'https://shaphargroup.com/wp-content/uploads/2025/04/Shaphargroup-logo-logo-browser.png'
+      'https://shaphargroup.com/assets/logo.png'
     ];
     
     criticalImages.forEach(src => {

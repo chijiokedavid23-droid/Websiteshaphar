@@ -63,7 +63,7 @@ The company continues to work alongside leading sustainability organizations to 
 Shaphargroup is a global renewable energy company specializing in **Sustainable Aviation Fuel (SAF) production and supply**. With operational hubs in Hainan (China), the Netherlands, and the United States, the company partners with airlines, fuel distributors, and corporate sustainability leaders to accelerate the aviation sector's transition to net-zero emissions.
 
 Our SAFc certification represents another step forward in providing comprehensive, verified sustainability solutions to the global aviation industry.`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/08/safc-registry-logo.png",
+    image: "/assets/safc-registry-logo.png",
     category: "SAF",
     date: "August 8, 2025",
     author: "Admin",
@@ -110,7 +110,7 @@ Our biodiesel initiatives include:
 The future of transportation is cleaner, and biodiesel is leading the way. As governments implement stricter emission standards and businesses seek sustainable solutions, biodiesel offers a proven, scalable alternative that works today.
 
 > **Biodiesel is proof that green fuel can also be powerful.**`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/04/biofuel-filling-station_1456616751_840x560px.jpg",
+    image: "/assets/biofuel-station.jpg",
     category: "Biodiesel",
     date: "July 25, 2025",
     author: "Admin",
@@ -148,7 +148,7 @@ By investing in SAF, we're not just helping airlines meet emission targets—we'
 The aviation industry is at a pivotal moment. SAF represents not just an environmental solution, but a business opportunity that aligns profit with purpose. As we look toward 2030 and beyond, sustainable aviation fuel will become the standard, not the exception.
 
 > **From cooking oil to cruising altitude—SAF is the flight path to net zero.**`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/04/bluewhales-and-Shaphargroup.jpeg",
+    image: "/assets/sustainable-aviation.jpg",
     category: "SAF",
     date: "July 20, 2025",
     author: "Admin",
@@ -168,7 +168,7 @@ He currently holds board positions with Baptist Insurance Company plc, DNA Colch
 Tim's deep expertise in governance, international finance, and stakeholder strategy will play a critical role as Shaphargroup scales its SAF export platform across Europe and the UK, building climate-aligned fuel infrastructure between China and Europe.
 
 We're honoured to welcome Tim Rose to the team and look forward to building a sustainable future together.`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/07/MR-TIM.jpg",
+    image: "/assets/tim-rose.jpg",
     category: "News",
     date: "July 16, 2025",
     author: "Admin",
@@ -255,7 +255,7 @@ For partnership inquiries or to join the SAF Buyers Consortium, please contact:
 📧 **info@shaphargroup.com**
 
 Stay tuned as we continue to build a cleaner aviation future, turning waste into wings.`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/06/54553304794_d731ca50ea_b.jpg",
+    image: "/assets/ocean-conservation.jpg",
     category: "News",
     date: "June 4, 2025",
     author: "Admin",
@@ -834,7 +834,7 @@ Governments and energy companies in Europe are pushing hard to meet decarbonizat
 At Shaphargroup, we specialize in sourcing, refining, and supplying UCO to global markets. Our sustainable sourcing practices and refining capabilities ensure a consistent, high-quality feedstock for biofuel manufacturers across Europe and beyond.
 
 > **UCO is not just a waste product—it's a climate solution.**`,
-    image: "https://shaphargroup.com/wp-content/uploads/2025/04/SG-UCO-sample.jpeg",
+    image: "/assets/uco-sample.jpeg",
     category: "News",
     date: "April 16, 2025",
     author: "Admin",
@@ -857,7 +857,7 @@ export default function Article() {
           title: "Shaphargroup Secures SAFc Approval for Verified Scope 3 SAF Credits | Global Aviation Decarbonization",
           description: "Shaphargroup officially approved as SAFc supplier to deliver verified Scope 3 emissions reduction certificates globally. Book & Claim methodology enables airlines to claim SAF carbon benefits worldwide.",
           keywords: "SAFc approval, Scope 3 emissions, sustainable aviation fuel certificates, Book & Claim, carbon reduction credits, aviation decarbonization, SAF registry, emissions verification, Shaphargroup SAF, airline sustainability, net zero aviation, carbon accounting, SAF credits, aviation carbon footprint, sustainable aviation fuel platform, aviation emissions, CORSIA compliance",
-          ogImage: "https://shaphargroup.com/wp-content/uploads/2025/08/safc-registry-social.jpg",
+          ogImage: "/assets/safc-social.jpg",
           structuredData: {
             "@context": "https://schema.org",
             "@type": "NewsArticle",
@@ -879,14 +879,14 @@ export default function Article() {
               "url": "https://shaphargroup.com",
               "logo": {
                 "@type": "ImageObject",
-                "url": "https://shaphargroup.com/wp-content/uploads/2025/04/Shaphargroup-logo-logo-browser.png",
+                "url": "/assets/logo.png",
                 "width": 400,
                 "height": 200
               }
             },
             "image": {
               "@type": "ImageObject",
-              "url": "https://shaphargroup.com/wp-content/uploads/2025/08/safc-registry-social.jpg",
+              "url": "/assets/safc-social.jpg",
               "width": 1200,
               "height": 630
             },

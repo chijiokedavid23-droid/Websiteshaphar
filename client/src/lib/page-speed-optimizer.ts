@@ -23,10 +23,8 @@ export const initializePageSpeedOptimization = () => {
 
 // Critical resource preloading for faster page loads
 const implementCriticalResourcePreloading = () => {
-  const criticalResources = [
-    // Critical CSS and fonts
-    { href: 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap', as: 'style' },
-    { href: 'https://fonts.gstatic.com', as: 'font', crossorigin: 'anonymous' },
+  const criticalResources: { href: string; as: string; crossorigin?: string }[] = [
+    // Critical CSS - fonts already loaded in HTML
   ];
 
   criticalResources.forEach(resource => {

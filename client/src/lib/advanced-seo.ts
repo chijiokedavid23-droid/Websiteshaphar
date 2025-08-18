@@ -42,7 +42,6 @@ const implementTechnicalSEO = () => {
   
   // Performance optimization hints
   addLinkTag('dns-prefetch', '//fonts.googleapis.com');
-  addLinkTag('dns-prefetch', '//fonts.gstatic.com');
   addLinkTag('dns-prefetch', '//www.google-analytics.com');
   
   // Security headers
