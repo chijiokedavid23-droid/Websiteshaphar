@@ -173,16 +173,10 @@ const monitorCoreWebVitals = () => {
   });
 };
 
-// Implement service worker for caching optimization
+// Service worker disabled - no sw.js file present
 const implementServiceWorkerCaching = () => {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js').catch(() => {
-        // Service worker registration failed, continue without it
-        console.warn('Service worker registration failed');
-      });
-    });
-  }
+  // Service worker not implemented for this deployment
+  // This prevents service worker registration errors in console
 };
 
 // Get current performance metrics
