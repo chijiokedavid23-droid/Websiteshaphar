@@ -77,7 +77,7 @@ export default function Blog() {
     image: safcRegistryImage,
     category: "SAF",
     date: "August 8, 2025",
-    author: "Admin",
+    author: "",
     link: "https://shaphargroup.com/saf/shaphargroup-secures-safc-approval-verified-sustainable-aviation-fuel-credits-scope-3-globally/"
   };
 
@@ -88,7 +88,7 @@ export default function Blog() {
       image: chinaCourtroomImage,
       category: "News",
       date: "August 22, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/news/shaphargroup-landmark-legal-case-china/"
     },
     {
@@ -97,7 +97,7 @@ export default function Blog() {
       image: mrTimImage,
       category: "News",
       date: "July 16, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/news/tim-rose-joins-shaphargroup-board-as-strategic-executive-director/"
     },
     {
@@ -106,7 +106,7 @@ export default function Blog() {
       image: safFactoryImage,
       category: "SAF",
       date: "July 20, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/saf-bluewhale/saf-the-fuel-taking-aviation-toward-net-zero/"
     },
     {
@@ -124,7 +124,7 @@ export default function Blog() {
       image: safInvestorsImage,
       category: "News",
       date: "June 4, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/news/%e2%9c%88%ef%b8%8f-shaphargroups-david-c-arinze-speaks-at-saf-investors-summit-london-2025/"
     },
     {
@@ -142,7 +142,7 @@ export default function Blog() {
       image: isccCorsiaImage,
       category: "SAF",
       date: "May 6, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/saf/shaphargroup-achieves-iscc-corsia-certification-saf/"
     },
     {
@@ -151,7 +151,7 @@ export default function Blog() {
       image: yangxinMeetingImage,
       category: "Investment News",
       date: "April 20, 2025",
-      author: "Admin",
+      author: "",
       link: "https://mp.weixin.qq.com/s/-BH7ORo8MU2Qv620mGrI4g"
     },
     {
@@ -169,7 +169,7 @@ export default function Blog() {
       image: safInvestorAnnouncementImage,
       category: "News",
       date: "May 13, 2025",
-      author: "Admin",
+      author: "",
       link: "https://www.safinvestor.com/event/145508/saf-investor-london-2025/#speakers"
     },
     {
@@ -205,7 +205,7 @@ export default function Blog() {
       image: ucoSampleImage,
       category: "News",
       date: "April 16, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/news/uco-is-the-new-gold-how-used-cooking-oil-is-powering-a-greener-future/"
     },
     {
@@ -214,7 +214,7 @@ export default function Blog() {
       image: yanzhouMeetingImage,
       category: "News",
       date: "February 15, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/news/shaphargroup-meets-with-yanzhou-district-government-expands-saf-investment-agenda-in-shandong/"
     },
     {
@@ -223,7 +223,7 @@ export default function Blog() {
       image: biofuelFillingStationImage,
       category: "Biodiesel",
       date: "July 25, 2025",
-      author: "Admin",
+      author: "",
       link: "https://shaphargroup.com/biodiesel/the-biodiesel-boom-cleaner-engines-healthier-planet/"
     }
   ];

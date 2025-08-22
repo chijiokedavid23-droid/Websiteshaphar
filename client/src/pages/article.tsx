@@ -89,7 +89,7 @@ For investors, partners, and customers alike, the message is clear:
     image: chinaCourtroomImage,
     category: "News",
     date: "August 22, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/news/shaphargroup-landmark-legal-case-china/"
   },
   "safc-approval-scope-3-credits": {
@@ -132,7 +132,7 @@ Our SAFc certification represents another step forward in providing comprehensiv
     image: "/assets/safc-registry-logo.png",
     category: "SAF",
     date: "August 8, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/saf/shaphargroup-secures-safc-approval-verified-sustainable-aviation-fuel-credits-scope-3-globally/"
   },
   "biodiesel-boom-cleaner-engines": {
@@ -179,7 +179,7 @@ The future of transportation is cleaner, and biodiesel is leading the way. As go
     image: "/assets/biofuel-station.jpg",
     category: "Biodiesel",
     date: "July 25, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/biodiesel/the-biodiesel-boom-cleaner-engines-healthier-planet/"
   },
   "saf-fuel-aviation-net-zero": {
@@ -217,7 +217,7 @@ The aviation industry is at a pivotal moment. SAF represents not just an environ
     image: "/assets/sustainable-aviation.jpg",
     category: "SAF",
     date: "July 20, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/saf-bluewhale/saf-the-fuel-taking-aviation-toward-net-zero/"
   },
   "tim-rose-joins-board": {
@@ -237,7 +237,7 @@ We're honoured to welcome Tim Rose to the team and look forward to building a su
     image: "/assets/tim-rose.jpg",
     category: "News",
     date: "July 16, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/news/tim-rose-joins-shaphargroup-board-as-strategic-executive-director/"
   },
   "europe-china-collaboration": {
@@ -324,7 +324,7 @@ Stay tuned as we continue to build a cleaner aviation future, turning waste into
     image: "/assets/ocean-conservation.jpg",
     category: "News",
     date: "June 4, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/news/%e2%9c%88%ef%b8%8f-shaphargroups-david-c-arinze-speaks-at-saf-investors-summit-london-2025/"
   },
   "controlling-future-of-saf": {
@@ -432,7 +432,7 @@ The ISCC CORSIA certification reflects Shaphargroup's broader commitment to sust
     image: isccCorsiaImage,
     category: "SAF",
     date: "May 6, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/saf/shaphargroup-achieves-iscc-corsia-certification-saf/"
   },
   "uco-to-jet-fuel": {
@@ -903,7 +903,7 @@ At Shaphargroup, we specialize in sourcing, refining, and supplying UCO to globa
     image: "/assets/uco-sample.jpeg",
     category: "News",
     date: "April 16, 2025",
-    author: "Admin",
+    author: "",
     originalLink: "https://shaphargroup.com/news/uco-is-the-new-gold-how-used-cooking-oil-is-powering-a-greener-future/"
   }
 };

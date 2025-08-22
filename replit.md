@@ -42,6 +42,7 @@ This is a full-stack web application for Shaphargroup, a sustainable aviation fu
 # User Preferences
 
 Preferred communication style: Simple, everyday language.
+Blog Article Author Preference: Remove "by Admin" from all articles - do not include "Admin" as author in any blog posts or articles.
 
 # System Architecture
 
