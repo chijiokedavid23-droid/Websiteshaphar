@@ -1120,21 +1120,7 @@ export default function Article() {
               />
             </div>
 
-            {/* Original Article Link */}
-            <div className="mt-12 p-6 bg-gray-50 rounded-lg border-l-4 border-emerald">
-              <p className="text-gray-600 mb-3">
-                This article was originally published on the Shaphargroup website.
-              </p>
-              <a 
-                href={article.originalLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center text-emerald hover:text-forest transition-colors font-medium"
-              >
-                <span>View Original Article</span>
-                <ExternalLink className="w-4 h-4 ml-2" />
-              </a>
-            </div>
+
           </motion.div>
         </div>
       </section>
