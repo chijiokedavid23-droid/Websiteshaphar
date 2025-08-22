@@ -21,6 +21,7 @@ import safJourneyImage from "@assets/saf_1755326663109.jpeg";
 import safInvestorAnnouncementImage from "@assets/SAF Investor annoucement_1755327378929.jpeg";
 import ucoImage from "@assets/UCO_1755327993085.png";
 import biofuelFillingStationImage from "@assets/biofuel-filling-station_1456616751_840x560px_1755340629654.jpg";
+import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 
 
 // Function to map article titles to article IDs
@@ -38,7 +39,8 @@ const getArticleId = (title: string): string | null => {
     "The Critical Role of UCO in Achieving Global Sustainable Aviation Fuel (SAF) Targets": "critical-role-uco-saf-targets",
     "How Used Cooking Oil Is Powering a Greener Future": "uco-greener-future",
     "SAF: The Fuel Taking Aviation Toward Net Zero": "saf-fuel-aviation-net-zero",
-    "The Biodiesel Boom: Cleaner Engines, Healthier Planet": "biodiesel-boom-cleaner-engines"
+    "The Biodiesel Boom: Cleaner Engines, Healthier Planet": "biodiesel-boom-cleaner-engines",
+    "A Victory for International Trade: How Shaphargroup's Landmark Case Became a Legal Precedent in China": "shaphargroup-landmark-legal-case-china"
   };
   
   return titleMap[title] || null;
@@ -80,6 +82,15 @@ export default function Blog() {
   };
 
   const blogPosts = [
+    {
+      title: "A Victory for International Trade: How Shaphargroup's Landmark Case Became a Legal Precedent in China",
+      excerpt: "On May 16, 2023, the Beijing Fourth Intermediate People's Court issued a civil judgment in a dispute between Shaphargroup LLC and Baiqi Holdings. Today, the case is widely recognized as a landmark judgment in Chinese commercial law, cited by the Supreme People's Court of China.",
+      image: chinaCourtroomImage,
+      category: "News",
+      date: "August 22, 2025",
+      author: "Admin",
+      link: "https://shaphargroup.com/news/shaphargroup-landmark-legal-case-china/"
+    },
     {
       title: "Tim Rose Joins Shaphargroup Board as Strategic Executive Director",
       excerpt: "We are pleased to announce that Tim Rose, a distinguished governance leader and board advisor, has joined our team.",

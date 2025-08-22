@@ -13,6 +13,7 @@ import safInvestorAnnouncementImage from "@assets/SAF Investor annoucement_17553
 import ucoImage from "@assets/UCO_1755327993085.png";
 import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
 import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
+import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 
 interface ArticleData {
   id: string;
@@ -26,6 +27,71 @@ interface ArticleData {
 }
 
 const articlesData: Record<string, ArticleData> = {
+  "shaphargroup-landmark-legal-case-china": {
+    id: "shaphargroup-landmark-legal-case-china",
+    title: "A Victory for International Trade: How Shaphargroup's Landmark Case Became a Legal Precedent in China",
+    content: `On May 16, 2023, the Beijing Fourth Intermediate People's Court issued a civil judgment in a dispute between Shaphargroup LLC and Baiqi Holdings (China) Co., Ltd. At first glance, the case was a commercial dispute over defective goods. But its outcome has gone far beyond the immediate parties. Today, the case is widely recognized as a **landmark judgment in Chinese commercial law**, cited by the Supreme People's Court of China and used as a model case for courts, universities, and legal professionals nationwide.
+
+This milestone underscores not only the evolution of China's approach to international trade law but also Shaphargroup's resilience, credibility, and global positioning as a company that both shapes and thrives in complex international environments.
+
+## The Dispute: Shaphargroup LLC v. Baiqi Holdings (China) Co., Ltd.
+
+The case arose from a contract dispute involving international sales of goods. Shaphargroup LLC, operating under the **United Nations Convention on Contracts for the International Sale of Goods (CISG)**, alleged that Baiqi Holdings delivered defective and non-conforming products in breach of contract.
+
+**Key legal issues included:**
+- Whether the CISG applied in full
+- Whether Baiqi's defective performance constituted a fundamental breach
+- Whether Shaphargroup had properly declared avoidance of the contract
+- How the "mailbox rule" applied in determining the effectiveness of communications
+
+After careful review, the Beijing Fourth Intermediate People's Court **ruled in favor of Shaphargroup**. The judgment clarified several important legal principles:
+
+1. **Automatic application of the CISG** in international sales contracts involving Chinese parties, unless explicitly excluded
+2. A seller's failure to deliver goods in conformity with the contract can amount to a **fundamental breach**, justifying avoidance
+3. A buyer's notice of contract avoidance is effective upon dispatch (**mailbox rule**), not upon receipt
+
+## Why the Case Matters
+
+The ruling was not just another commercial judgment. The **Supreme People's Court of China** later elevated this decision into a guiding case reference for judges nationwide. It is now taught in academic institutions, cited in law journals, and referenced in training sessions for commercial law judges.
+
+This recognition highlights several broader themes:
+
+**China's commitment to CISG:** Showing China's judiciary actively enforces international trade norms.
+
+**Legal certainty for international companies:** For foreign enterprises such as Shaphargroup (now fully registered and operating with a China office and refinery), the ruling affirms that Chinese courts apply international trade law consistently and fairly, offering greater confidence and predictability for businesses engaging in cross-border commerce.
+
+**Evolution of Chinese commercial jurisprudence:** The clarification of the mailbox rule and fundamental breach standards provide a clearer framework for future disputes.
+
+## Shaphargroup's Institutional Strength
+
+For Shaphargroup, the case marked more than a legal victory. It became part of the company's institutional identity. While many businesses shy away from litigation in foreign jurisdictions, Shaphargroup demonstrated that it can navigate complex cross-border disputes, defend its rights successfully, and even shape the legal framework of international trade in China.
+
+Today, Shaphargroup is not just a participant in the global energy transition but a **recognized contributor to international commercial law**. The case is proof of the company's resilience, integrity, and ability to stand firm in high-stakes international settings.
+
+## From Legal Precedent to Sustainable Energy Leadership
+
+Fast-forward to the present: Shaphargroup is a registered and fully operational entity in China, with expanding activities across Europe and the Americas. Its focus has shifted from pure trading to becoming a **leading producer and supplier of Sustainable Aviation Fuel (SAF) and Used Cooking Oil (UCO)**.
+
+Just as the 2023 case established new standards in law, Shaphargroup is now establishing new standards in sustainable energy markets:
+
+- **Supplying SAF and Scope 3 Book & Claim solutions** to airlines and corporates
+- **Operating a fully integrated global supply chain** across China, the EU, and the U.S.
+- **Holding key sustainability certifications:** ISCC EU, ISCC CORSIA, SAFc, IATA CADO, and RSB (in progress)
+- **Partnering with airlines, energy companies, and financiers** to accelerate the transition to net-zero aviation
+
+## A Company That Shapes Markets
+
+The Beijing Fourth Intermediate Court ruling of May 16, 2023 is more than a footnote in legal history—it is a defining chapter in Shaphargroup's global story. From defending contractual integrity in China to driving the future of sustainable aviation fuels, Shaphargroup continues to show that it is a company built not only on commercial ambition but also on legal, ethical, and institutional strength.
+
+For investors, partners, and customers alike, the message is clear:
+
+**Shaphargroup doesn't just operate in the global market—it helps shape it.**`,
+    image: chinaCourtroomImage,
+    category: "News",
+    date: "August 22, 2025",
+    author: "Admin",
+    originalLink: "https://shaphargroup.com/news/shaphargroup-landmark-legal-case-china/"
+  },
   "safc-approval-scope-3-credits": {
     id: "safc-approval-scope-3-credits",
     title: "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally",
