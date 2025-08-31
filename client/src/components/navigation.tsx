@@ -51,12 +51,12 @@ export default function Navigation() {
         isScrolled ? "top-0 bg-white/90 backdrop-blur-sm shadow-md border-b border-gray-100/30" : "top-0 bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className={`flex justify-between items-center w-full transition-all duration-300 ${
+      <div className="w-full max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 min-w-0">
+        <div className={`flex justify-between items-center w-full min-w-0 transition-all duration-300 ${
           isScrolled ? 'h-12 py-1' : 'py-2'
         }`}>
           <motion.div 
-            className="flex items-center h-full"
+            className="flex items-center h-full flex-shrink-0"
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
@@ -68,7 +68,7 @@ export default function Navigation() {
                 className={`w-auto object-contain transition-all duration-300 ${
                   location === "/" 
                     ? (isScrolled ? 'h-3' : 'h-4 sm:h-5')
-                    : 'h-12 sm:h-16 md:h-20'
+                    : 'h-8 sm:h-12 md:h-16'
                 }`}
               />
             </Link>
@@ -118,7 +118,7 @@ export default function Navigation() {
             ))}
           </nav>
 
-          <div className="flex items-center h-full space-x-4">
+          <div className="flex items-center h-full space-x-2 sm:space-x-4 flex-shrink-0">
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
@@ -133,13 +133,14 @@ export default function Navigation() {
             
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-2"
+              className="md:hidden p-1.5 flex-shrink-0"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-charcoal" />
+                <X className="w-5 h-5 text-charcoal" />
               ) : (
-                <Menu className="w-6 h-6 text-charcoal" />
+                <Menu className="w-5 h-5 text-charcoal" />
               )}
             </button>
           </div>

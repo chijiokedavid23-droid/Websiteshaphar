@@ -70,6 +70,9 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Prevent horizontal scrolling on mobile */
+    overflow-x: hidden;
+    width: 100%;
   }
 
   /* Text overlay utilities for better readability */
@@ -92,6 +95,34 @@
 
   html {
     scroll-behavior: smooth;
+    /* Prevent horizontal overflow on mobile */
+    overflow-x: hidden;
+  }
+
+  /* Mobile navigation fixes */
+  @media (max-width: 768px) {
+    * {
+      max-width: 100vw;
+    }
+    
+    body {
+      position: relative;
+      width: 100vw;
+      max-width: 100vw;
+    }
+    
+    /* Fix for navigation header on mobile */
+    header {
+      width: 100vw;
+      max-width: 100vw;
+      left: 0;
+      right: 0;
+    }
+    
+    /* Ensure all flex containers don't overflow */
+    .flex {
+      min-width: 0;
+    }
   }
 }
 
