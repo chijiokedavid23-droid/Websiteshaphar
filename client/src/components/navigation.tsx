@@ -133,14 +133,14 @@ export default function Navigation() {
             
             {/* Mobile menu button */}
             <button
-              className="md:hidden p-1.5 flex-shrink-0"
+              className="md:hidden p-2 flex-shrink-0 bg-white/10 rounded-md border border-gray-300"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               aria-label="Toggle mobile menu"
             >
               {isMobileMenuOpen ? (
-                <X className="w-5 h-5 text-charcoal" />
+                <X className="w-6 h-6 text-charcoal" />
               ) : (
-                <Menu className="w-5 h-5 text-charcoal" />
+                <Menu className="w-6 h-6 text-charcoal" />
               )}
             </button>
           </div>
