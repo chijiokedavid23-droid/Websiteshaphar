@@ -3,10 +3,17 @@ import Footer from "@/components/footer";
 import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import { motion } from "framer-motion";
-import { MapPin, Building, Phone, Mail, Clock, Globe } from "lucide-react";
+import { MapPin, Building, Phone, Mail, Clock, Globe, ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 import contactPageImagePath from "@assets/contact page_1754672222924.png";
 
 export default function Contact() {
+  const [openFAQ, setOpenFAQ] = useState<number | null>(null);
+
+  const toggleFAQ = (index: number) => {
+    setOpenFAQ(openFAQ === index ? null : index);
+  };
+
   // SEO Meta Tags Setup
   useEffect(() => {
     updateSEOTags({
@@ -44,6 +51,93 @@ export default function Contact() {
             "addressLocality": "Yangxin County, Shandong",
             "addressCountry": "China",
             "streetAddress": "South of Industrial 6th Road, Economic Development Zone"
+          }
+        ],
+        "mainEntity": [
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is Sustainable Aviation Fuel (SAF)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Sustainable Aviation Fuel (SAF) is a renewable alternative to traditional jet fuel, produced from waste and sustainable feedstocks such as Used Cooking Oil (UCO). SAF reduces lifecycle greenhouse gas emissions by up to 80% compared to fossil-based Jet A. It is drop-in compatible, meaning it can be used in existing aircraft engines and fueling infrastructure without modification. SAF plays a critical role in helping airlines and corporates achieve net-zero carbon targets by 2030 and 2050."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How is SAF made from Used Cooking Oil (UCO)?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup produces SAF through the HEFA (Hydroprocessed Esters and Fatty Acids) pathway. The process begins with collecting UCO and waste fats. These are pretreated to remove impurities, then hydroprocessed with hydrogen under high pressure. The output is refined into hydrocarbons that match the properties of jet fuel. A final step, isomerization, ensures energy density and freezing point standards are met."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the difference between SAF and Jet A fuel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The main difference lies in carbon intensity and sustainability. Jet A is made from crude oil, releasing new CO₂ when burned. SAF recycles carbon already in the environment from waste oils, fats, or other biomass. This results in up to 80% lower emissions over its lifecycle. Both fuels meet strict ASTM standards, ensuring identical performance in aircraft."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why is Used Cooking Oil (UCO) an important SAF feedstock?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "UCO is one of the most sustainable and widely available waste feedstocks for SAF production. It has no competition with food markets, avoids land-use change, and contributes to circular economy goals. By recycling waste oil into jet fuel, Shaphargroup reduces environmental pollution and creates a renewable, high-value product. UCO-based SAF is certified under international sustainability standards such as ISCC and RSB."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are Scope 1, Scope 2, and Scope 3 emissions in aviation?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Scope 1: Direct emissions from aircraft fuel combustion. Scope 2: Indirect emissions from purchased electricity and operations. Scope 3: Indirect emissions in the supply chain, including corporate travel. SAF reduces Scope 1 emissions when physically used in aircraft. Through Book & Claim, SAF can also reduce Scope 3 emissions for corporates. Shaphargroup offers both physical SAF supply and Scope 3 certificates."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the Book & Claim model for SAF?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Book & Claim separates the physical SAF from its environmental attributes. Shaphargroup supplies SAF into the aviation system, and the associated carbon reduction is documented through certificates. Corporates or airlines that cannot access physical SAF can purchase these certificates to reduce their Scope 3 emissions. This model ensures wider participation in decarbonization."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is SAF more expensive than Jet A fuel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, today SAF is more expensive than fossil Jet A due to limited production scale and higher feedstock processing costs. However, government incentives, scaling refineries, and corporate commitments are rapidly narrowing this gap. Over time, SAF prices are expected to align more closely with Jet A."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What certifications does Shaphargroup hold?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup is certified under key international frameworks: ISCC EU and ISCC CORSIA for UCO and SAF supply, RSB (in progress) for advanced sustainability compliance, IATA SAFc for Book & Claim systems, and EU Union Database (UDB) registration for imports. These certifications guarantee traceability, carbon accounting, and global recognition."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Where does Shaphargroup operate?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup has refining operations in China through its subsidiary Shandong Prophet Energy, producing UCO-based SAF and refined waste oils. Strategic offices in the Netherlands and the United States manage supply chains, compliance, and customer relations. This global footprint allows Shaphargroup to supply both physical SAF and Scope 3 solutions across Asia, Europe, and the Americas."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Why partner with Shaphargroup for SAF supply?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup combines technical expertise, certified operations, and a global footprint to deliver reliable SAF and UCO solutions. With flexible models (physical supply, Book & Claim, or joint blending partnerships), Shaphargroup ensures that airlines, corporates, and energy companies can achieve their sustainability goals efficiently."
+                }
+              }
+            ]
           }
         ]
       }
@@ -98,6 +192,49 @@ export default function Contact() {
       title: "Work Hours",
       value: "Monday to Friday: 7am – 7pm, Weekend: 10am – 5pm",
       link: null
+    }
+  ];
+
+  const faqData = [
+    {
+      question: "What is Sustainable Aviation Fuel (SAF)?",
+      answer: "Sustainable Aviation Fuel (SAF) is a renewable alternative to traditional jet fuel, produced from waste and sustainable feedstocks such as Used Cooking Oil (UCO). SAF reduces lifecycle greenhouse gas emissions by up to 80% compared to fossil-based Jet A. It is \"drop-in\" compatible, meaning it can be used in existing aircraft engines and fueling infrastructure without modification. SAF plays a critical role in helping airlines and corporates achieve net-zero carbon targets by 2030 and 2050."
+    },
+    {
+      question: "How is SAF made from Used Cooking Oil (UCO)?",
+      answer: "Shaphargroup produces SAF through the HEFA (Hydroprocessed Esters and Fatty Acids) pathway. The process begins with collecting UCO and waste fats. These are pretreated to remove impurities, then hydroprocessed with hydrogen under high pressure. The output is refined into hydrocarbons that match the properties of jet fuel. A final step, isomerization, ensures energy density and freezing point standards are met. The result is a clean, high-quality fuel that can be blended with Jet A or used neat."
+    },
+    {
+      question: "What is the difference between SAF and Jet A fuel?",
+      answer: "The main difference lies in carbon intensity and sustainability. Jet A is made from crude oil, releasing new CO₂ when burned. SAF, by contrast, recycles carbon already in the environment (from waste oils, fats, or other biomass). This results in up to 80% lower emissions over its lifecycle. Both fuels meet strict ASTM standards, ensuring identical performance in aircraft. SAF is, therefore, the most effective near-term solution for aviation's decarbonization."
+    },
+    {
+      question: "Why is Used Cooking Oil (UCO) an important SAF feedstock?",
+      answer: "UCO is one of the most sustainable and widely available waste feedstocks for SAF production. It has no competition with food markets, avoids land-use change, and contributes to circular economy goals. By recycling waste oil into jet fuel, Shaphargroup reduces environmental pollution and creates a renewable, high-value product. UCO-based SAF is also certified under international sustainability standards such as ISCC and RSB, ensuring traceability and compliance."
+    },
+    {
+      question: "What are Scope 1, Scope 2, and Scope 3 emissions in aviation?",
+      answer: "Scope 1: Direct emissions from aircraft fuel combustion. Scope 2: Indirect emissions from purchased electricity and operations. Scope 3: Indirect emissions in the supply chain, including corporate travel. SAF reduces Scope 1 emissions when physically used in aircraft. Through Book & Claim, SAF can also reduce Scope 3 emissions for corporates, even if the fuel is consumed elsewhere. Shaphargroup offers both physical SAF supply and Scope 3 certificates."
+    },
+    {
+      question: "What is the Book & Claim model for SAF?",
+      answer: "Book & Claim separates the physical SAF from its environmental attributes. Shaphargroup supplies SAF into the aviation system, and the associated carbon reduction is documented through certificates. Corporates or airlines that cannot access physical SAF can purchase these certificates to reduce their Scope 3 emissions. This model ensures wider participation in decarbonization, even where SAF logistics are limited."
+    },
+    {
+      question: "Is SAF more expensive than Jet A fuel?",
+      answer: "Yes, today SAF is more expensive than fossil Jet A due to limited production scale and higher feedstock processing costs. For example, if Jet A costs $1,000/ton and SAF costs $2,000/ton, a 20% blend results in a price of $1,200/ton. However, government incentives, scaling refineries, and corporate commitments are rapidly narrowing this gap. Over time, SAF prices are expected to align more closely with Jet A."
+    },
+    {
+      question: "What certifications does Shaphargroup hold?",
+      answer: "Shaphargroup is certified under key international frameworks to ensure compliance and sustainability: ISCC EU and ISCC CORSIA for UCO and SAF supply. RSB (in progress) for advanced sustainability compliance. IATA SAFc for Book & Claim systems. EU Union Database (UDB) registration for imports. These certifications guarantee traceability, carbon accounting, and global recognition."
+    },
+    {
+      question: "Where does Shaphargroup operate?",
+      answer: "Shaphargroup has refining operations in China through its subsidiary Shandong Prophet Energy, producing UCO-based SAF and refined waste oils. Strategic offices in the Netherlands and the United States manage supply chains, compliance, and customer relations. This global footprint allows Shaphargroup to supply both physical SAF and Scope 3 solutions across Asia, Europe, and the Americas."
+    },
+    {
+      question: "Why partner with Shaphargroup for SAF supply?",
+      answer: "Shaphargroup combines technical expertise, certified operations, and a global footprint to deliver reliable SAF and UCO solutions. With flexible models (physical supply, Book & Claim, or joint blending partnerships), Shaphargroup ensures that airlines, corporates, and energy companies can achieve their sustainability goals efficiently. As a growth-stage company, Shaphargroup also offers partners the opportunity to shape the global SAF market together."
     }
   ];
 
@@ -228,7 +365,69 @@ export default function Contact() {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6">
+              Frequently Asked Questions
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Everything you need to know about Sustainable Aviation Fuel, UCO, and partnering with Shaphargroup.
+            </p>
+          </motion.div>
 
+          <div className="space-y-4">
+            {faqData.map((faq, index) => (
+              <motion.div
+                key={index}
+                className="bg-white rounded-2xl shadow-lg overflow-hidden"
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <button
+                  className="w-full px-8 py-6 text-left focus:outline-none focus:ring-2 focus:ring-emerald/20 hover:bg-gray-50 transition-colors"
+                  onClick={() => toggleFAQ(index)}
+                >
+                  <div className="flex items-center justify-between">
+                    <h3 className="text-lg font-bold text-navy pr-4">
+                      {faq.question}
+                    </h3>
+                    {openFAQ === index ? (
+                      <ChevronUp className="w-6 h-6 text-emerald flex-shrink-0" />
+                    ) : (
+                      <ChevronDown className="w-6 h-6 text-emerald flex-shrink-0" />
+                    )}
+                  </div>
+                </button>
+                {openFAQ === index && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="px-8 pb-6"
+                  >
+                    <div className="border-t border-gray-200 pt-4">
+                      <p className="text-gray-700 leading-relaxed">
+                        {faq.answer}
+                      </p>
+                    </div>
+                  </motion.div>
+                )}
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       <Footer />
     </div>
