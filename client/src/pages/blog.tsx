@@ -22,6 +22,7 @@ import safInvestorAnnouncementImage from "@assets/SAF Investor annoucement_17553
 import ucoImage from "@assets/UCO_1755327993085.png";
 import biofuelFillingStationImage from "@assets/biofuel-filling-station_1456616751_840x560px_1755340629654.jpg";
 import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
+import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
 
 
 // Function to map article titles to article IDs
@@ -40,7 +41,8 @@ const getArticleId = (title: string): string | null => {
     "How Used Cooking Oil Is Powering a Greener Future": "uco-greener-future",
     "SAF: The Fuel Taking Aviation Toward Net Zero": "saf-fuel-aviation-net-zero",
     "The Biodiesel Boom: Cleaner Engines, Healthier Planet": "biodiesel-boom-cleaner-engines",
-    "A Victory for International Trade: How Shaphargroup's Landmark Case Became a Legal Precedent in China": "shaphargroup-landmark-legal-case-china"
+    "A Victory for International Trade: How Shaphargroup's Landmark Case Became a Legal Precedent in China": "shaphargroup-landmark-legal-case-china",
+    "Multipolar Collaboration: The Key to Achieving Net Zero": "multipolar-collaboration-net-zero"
   };
   
   return titleMap[title] || null;
@@ -82,6 +84,15 @@ export default function Blog() {
   };
 
   const blogPosts = [
+    {
+      title: "Multipolar Collaboration: The Key to Achieving Net Zero",
+      excerpt: "In the global race to achieve net-zero emissions by 2030 and 2050, one reality is becoming increasingly clear: no single nation, company, or region can get us there alone. Multipolar cooperation in sustainable aviation fuel and renewable energy is not an option — it is a necessity.",
+      image: multipolarSafImage,
+      category: "Insights & Thought Leadership",
+      date: "September 10, 2025",
+      author: "",
+      link: "https://shaphargroup.com/insights/multipolar-collaboration-net-zero/"
+    },
     {
       title: "A Victory for International Trade: How Shaphargroup's Landmark Case Became a Legal Precedent in China",
       excerpt: "On May 16, 2023, the Beijing Fourth Intermediate People's Court issued a civil judgment in a dispute between Shaphargroup LLC and Baiqi Holdings. Today, the case is widely recognized as a landmark judgment in Chinese commercial law, cited by the Supreme People's Court of China.",
