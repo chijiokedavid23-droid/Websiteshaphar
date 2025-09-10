@@ -90,7 +90,7 @@ export default function Blog() {
       image: multipolarSafImage,
       category: "Insights & Thought Leadership",
       date: "September 10, 2025",
-      author: "",
+      author: "David C. Arinze",
       link: "https://shaphargroup.com/insights/multipolar-collaboration-net-zero/"
     },
     {

@@ -95,7 +95,7 @@ The future of sustainability is not unipolar. It is **multipolar, interconnected
     image: multipolarSafImage,
     category: "Insights & Thought Leadership",
     date: "September 10, 2025",
-    author: "",
+    author: "David C. Arinze",
     originalLink: ""
   },
   "shaphargroup-landmark-legal-case-china": {
@@ -1311,6 +1311,32 @@ export default function Article() {
               />
             </div>
 
+            {/* Author Bio Section - Only for Insights & Thought Leadership */}
+            {article.category === "Insights & Thought Leadership" && article.author === "David C. Arinze" && (
+              <div className="mt-12 p-8 bg-gradient-to-r from-gray-50 to-gray-100 rounded-2xl border-l-4 border-emerald">
+                <div className="flex items-start space-x-6">
+                  <div className="w-20 h-20 bg-emerald rounded-full flex items-center justify-center flex-shrink-0">
+                    <User className="w-10 h-10 text-white" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold text-navy mb-2">Written by David C. Arinze</h3>
+                    <div className="space-y-1 mb-4">
+                      <p className="text-emerald font-semibold">Managing Partner | Shaphargroup</p>
+                      <p className="text-gray-600">Renewable Energy Strategist | UCO & SAF Advocate</p>
+                    </div>
+                    <div className="flex items-center text-gray-600">
+                      <span className="mr-2">📩</span>
+                      <a 
+                        href="mailto:davis.c@shaphargroup.com" 
+                        className="text-emerald hover:text-forest transition-colors font-medium"
+                      >
+                        davis.c@shaphargroup.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )}
 
           </motion.div>
         </div>
