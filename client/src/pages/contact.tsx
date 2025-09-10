@@ -126,7 +126,7 @@ export default function Contact() {
                 "name": "Where does Shaphargroup operate?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Shaphargroup has refining operations in China through its subsidiary Shandong Prophet Energy, producing UCO-based SAF and refined waste oils. Strategic offices in the Netherlands and the United States manage supply chains, compliance, and customer relations. This global footprint allows Shaphargroup to supply both physical SAF and Scope 3 solutions across Asia, Europe, and the Americas."
+                  "text": "Shaphargroup oversees Sustainable Aviation Fuel (SAF) refining directly, while its subsidiary, Shandong Prophet Energy, operates the group's UCO and waste oil refining activities in China. Strategic offices in the Netherlands and the United States manage global supply chains, compliance, and customer relations. Together, this structure enables Shaphargroup to deliver physical SAF, UCO, and Scope 3 solutions across Asia, Europe, and the Americas."
                 }
               },
               {
@@ -230,7 +230,7 @@ export default function Contact() {
     },
     {
       question: "Where does Shaphargroup operate?",
-      answer: "Shaphargroup has refining operations in China through its subsidiary Shandong Prophet Energy, producing UCO-based SAF and refined waste oils. Strategic offices in the Netherlands and the United States manage supply chains, compliance, and customer relations. This global footprint allows Shaphargroup to supply both physical SAF and Scope 3 solutions across Asia, Europe, and the Americas."
+      answer: "Shaphargroup oversees Sustainable Aviation Fuel (SAF) refining directly, while its subsidiary, Shandong Prophet Energy, operates the group's UCO and waste oil refining activities in China. Strategic offices in the Netherlands and the United States manage global supply chains, compliance, and customer relations. Together, this structure enables Shaphargroup to deliver physical SAF, UCO, and Scope 3 solutions across Asia, Europe, and the Americas."
     },
     {
       question: "Why partner with Shaphargroup for SAF supply?",
