@@ -767,12 +767,9 @@ export default function ChinaEuropeSAFIndex() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold text-white mb-8">
               Ready to Bridge China and Europe?
             </h2>
-            <p className="text-xl text-gray-100 mb-8">
-              ShapharGroup connects certified China UCO & SAF supply with European offtakers and financiers.
-            </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Button className="bg-white text-navy hover:bg-gray-100 px-8 py-6 text-lg" data-testid="button-contact-sales">
                 Contact Our Team
