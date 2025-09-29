@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import facilityImage from "@assets/SAF Factory to jet_1754154741557.png";
+import facilityImage from "@assets/SAF Shaphar_1759180227545.png";
 
 export default function MarketImpact() {
   const scrollToContact = () => {
@@ -22,7 +22,7 @@ export default function MarketImpact() {
           >
             <img 
               src={facilityImage}
-              alt="Clean energy renewable fuel processing facility"
+              alt="Commercial aircraft ascending through golden sunset clouds representing sustainable aviation fuel transformation"
               className="rounded-2xl shadow-2xl w-full h-auto"
             />
           </motion.div>
