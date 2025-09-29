@@ -591,7 +591,7 @@ export default function ChinaEuropeSAFIndex() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
               Implications – What to Do Now
             </h2>
-            <p className="text-xl text-gray-300">Plain-English actions you can take right now</p>
+            <p className="text-xl text-gray-300">Actions you can take right now</p>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
