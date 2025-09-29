@@ -27,6 +27,44 @@ This is a full-stack web application for Shaphargroup, a sustainable aviation fu
   - Created XML sitemap and robots.txt for better search engine crawling
   - Added technical SEO enhancements for mobile-first indexing and performance optimization
 
+## Market Intelligence - China → Europe SAF Index (September 2025)
+- **New Market Intelligence Section**: Added dedicated "Market Intelligence" dropdown navigation menu positioned between "SAF" and "Sustainability"
+- **Monthly Report Format Established**: Created standardized template for China → Europe SAF Bridge monthly reports with the following structure:
+  
+  **Page Structure (Must maintain for all monthly reports):**
+  1. **Hero Section**: Gradient background (navy → forest → emerald), month badge, report title, download PDF button
+  2. **Market Flow Snapshot**: Two-column layout (Europe Inland UCO + China Collection) with Bridge Takeaways for EU Buyers and Chinese Suppliers
+  3. **Price & Premium Signals**: Interactive line charts using Recharts for UCO ARA and UCO China price trends, with trend indicators
+  4. **SAF Price Rally**: Dark gradient card showing SAF FOB ARA and SAF FOB China prices with arbitrage update
+  5. **Policy & Certification Watch**: Grid of policy update cards with key regulatory developments
+  6. **Deal Highlights**: Notable transactions and partnerships in card format
+  7. **Implications - What to Do Now**: Two-column actionable recommendations (For European Buyers | For Chinese Suppliers)
+  8. **August Benchmarks**: Four-column benchmark cards showing key price indicators with trend icons
+  9. **Report Archive**: Grid showing current month + placeholder for previous months with subscribe CTA
+  10. **Contact CTA**: Simple heading with action buttons (no subtitle text)
+  11. **Disclaimer**: Legal disclaimer section at bottom
+  
+  **Visual Design Standards:**
+  - Color scheme: Navy (headings), Emerald (primary actions), Forest (secondary), gradient backgrounds for emphasis sections
+  - Charts: Line charts with 3-point data (Early/Mid/End month), custom colors matching brand palette
+  - Cards: Rounded-2xl corners, shadow-lg, gradient borders for key sections
+  - Icons: Lucide React icons for visual hierarchy (DollarSign, TrendingUp, AlertCircle, Briefcase, etc.)
+  - Animations: Framer Motion with staggered delays for sequential reveal
+  
+  **SEO Structure (Required for each monthly report):**
+  - Multiple structured data schemas: Report, Dataset, BreadcrumbList
+  - Dataset schema with temporalCoverage, spatialCoverage, variableMeasured fields
+  - Unique title format: "China → Europe SAF Index – {Month YYYY} | Shaphargroup Market Intelligence"
+  - Keywords: China Europe SAF index, UCO prices, sustainable aviation fuel market, HEFA SAF, Book and Claim
+  - OG image optimization for social sharing
+  
+  **Monthly Update Process:**
+  - Replace month variable and all price data arrays (ucoARA, ucoChina, safARA, safChina)
+  - Update policy updates, deal highlights, and implications text
+  - Link new PDF report from attached_assets with proper download attribute
+  - Add previous month card to archive section
+  - Update SEO datePublished and temporalCoverage fields
+
 ## Browser Compatibility & Deployment Fixes (August 2025)
 - **Cross-Browser Compatibility Issue Resolved**: Fixed critical browser-specific rendering differences where Chrome showed basic HTML while Firefox displayed modern React site
 - **Environment Detection Fixed**: Corrected production vs development environment detection in server configuration (process.env.NODE_ENV vs app.get("env"))
