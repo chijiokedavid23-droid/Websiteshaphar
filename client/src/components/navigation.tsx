@@ -32,6 +32,13 @@ export default function Navigation() {
   const navigationItems = [
     { name: "Home", path: "/" },
     { name: "SAF", path: "/saf" },
+    { 
+      name: "Market Intelligence", 
+      path: "/market-intelligence",
+      dropdown: [
+        { name: "China → Europe SAF Index", path: "/market-intelligence/china-europe-saf-index" }
+      ]
+    },
     { name: "Sustainability", path: "/sustainability" },
     { 
       name: "About", 

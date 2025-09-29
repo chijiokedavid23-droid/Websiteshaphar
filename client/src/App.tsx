@@ -11,6 +11,7 @@ import Leadership from "@/pages/leadership";
 import Blog from "@/pages/blog";
 import Article from "@/pages/article";
 import Contact from "@/pages/contact";
+import ChinaEuropeSAFIndex from "@/pages/market-intelligence/china-europe-saf-index";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import NotFound from "@/pages/not-found";
@@ -26,6 +27,7 @@ function Router() {
       <Route path="/blog" component={Blog} />
       <Route path="/article/:id" component={Article} />
       <Route path="/contact" component={Contact} />
+      <Route path="/market-intelligence/china-europe-saf-index" component={ChinaEuropeSAFIndex} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-of-service" component={TermsOfService} />
       <Route component={NotFound} />
