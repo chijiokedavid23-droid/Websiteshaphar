@@ -36,7 +36,7 @@ export default function Navigation() {
       name: "Market Intelligence", 
       path: "/market-intelligence",
       dropdown: [
-        { name: "China → Europe SAF Index", path: "/market-intelligence/china-europe-saf-index" }
+        { name: "China → Europe SAF Index", path: "/market-intelligence/china-europe-saf-index-september" }
       ]
     },
     { name: "Sustainability", path: "/sustainability" },
