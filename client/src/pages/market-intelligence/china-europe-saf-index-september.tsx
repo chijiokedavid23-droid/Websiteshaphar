@@ -788,12 +788,12 @@ export default function ChinaEuropeSAFIndexSeptember() {
               Ready to Bridge China and Europe?
             </h2>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Link href="/contact">
+              <Link href="/contact#contact-info">
                 <Button className="bg-white text-navy hover:bg-gray-100 px-8 py-6 text-lg" data-testid="button-contact-sales">
                   Contact Our Team
                 </Button>
               </Link>
-              <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg" data-testid="button-view-archive">
+              <Button className="bg-navy/80 text-white border-2 border-white hover:bg-navy px-8 py-6 text-lg" data-testid="button-view-archive">
                 View Report Archive
               </Button>
             </div>
