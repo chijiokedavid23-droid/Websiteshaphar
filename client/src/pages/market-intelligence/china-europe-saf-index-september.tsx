@@ -1,31 +1,29 @@
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
-import { useEffect, useState } from "react";
-import { updateSEOTags, SEO_CONFIGS } from "@/lib/seo";
+import { useEffect } from "react";
+import { updateSEOTags } from "@/lib/seo";
 import { motion } from "framer-motion";
-import { TrendingUp, TrendingDown, FileText, Download, Calendar, DollarSign, AlertCircle, Briefcase, ArrowRight } from "lucide-react";
+import { TrendingUp, TrendingDown, FileText, Download, Calendar, DollarSign, AlertCircle, Briefcase, ArrowRight, Minus } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Link } from "wouter";
 import { ChartContainer, ChartTooltip, ChartTooltipContent } from "@/components/ui/chart";
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from "recharts";
-import reportPdfPath from "@assets/Shaphargroups-China-Europe-SAF-Bridge-Report-August-edition Copy_1759177805394.pdf";
+import { LineChart, Line, XAxis, YAxis, CartesianGrid } from "recharts";
+import { Link } from "wouter";
+import septemberPdfPath from "@assets/September Shaphargroups-China-Europe-SAF-Bridge-Report-edition_1759358960847.pdf";
 
-export default function ChinaEuropeSAFIndex() {
-  const [currentMonth] = useState("August 2025");
-
+export default function ChinaEuropeSAFIndexSeptember() {
   useEffect(() => {
     updateSEOTags({
-      title: "China → Europe SAF Index – August 2025 | Shaphargroup Market Intelligence",
-      description: "Monthly market intelligence report on China-Europe UCO and SAF deals, prices, policy updates, and supply chain dynamics. Essential insights for European buyers and Chinese suppliers in the sustainable aviation fuel market.",
-      keywords: "China Europe SAF index, UCO prices, sustainable aviation fuel market, HEFA SAF, China UCO export, European SAF import, aviation fuel prices, SAF market intelligence, Book and Claim",
+      title: "China → Europe SAF Index – September 2025 | Shaphargroup Market Intelligence",
+      description: "September 2025 monthly market intelligence report on China-Europe UCO and SAF deals, prices, policy updates, and supply chain dynamics. Essential insights for European buyers and Chinese suppliers.",
+      keywords: "China Europe SAF index, UCO prices, sustainable aviation fuel market, HEFA SAF, China UCO export, European SAF import, aviation fuel prices, SAF market intelligence, September 2025",
       canonical: window.location.href,
       structuredData: [
         {
           "@context": "https://schema.org",
           "@type": "Report",
-          "name": "China → Europe SAF Bridge Report – August 2025",
+          "name": "China → Europe SAF Bridge Report – September 2025",
           "description": "Monthly market intelligence report providing essential insights for European SAF buyers and Chinese suppliers navigating the sustainable aviation fuel landscape",
-          "datePublished": "2025-08-26",
+          "datePublished": "2025-09-30",
           "publisher": {
             "@type": "Organization",
             "name": "Shaphargroup",
@@ -63,16 +61,17 @@ export default function ChinaEuropeSAFIndex() {
         {
           "@context": "https://schema.org",
           "@type": "Dataset",
-          "name": "China-Europe SAF and UCO Price Index - August 2025",
+          "name": "China-Europe SAF and UCO Price Index - September 2025",
           "description": "Monthly price data for UCO and SAF between China and Europe markets",
           "url": window.location.href,
-          "temporalCoverage": "2025-08",
+          "temporalCoverage": "2025-09",
           "spatialCoverage": ["China", "Europe"],
           "variableMeasured": [
             "UCO T1 CIF ARA Price",
             "UCO FOB China Price", 
             "SAF FOB ARA Price",
-            "SAF FOB China Price"
+            "SAF FOB China Price",
+            "UCOME FOB ARA Price"
           ],
           "publisher": {
             "@type": "Organization",
@@ -98,7 +97,7 @@ export default function ChinaEuropeSAFIndex() {
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "China → Europe SAF Index",
+              "name": "China → Europe SAF Index - September",
               "item": window.location.href
             }
           ]
@@ -114,63 +113,65 @@ export default function ChinaEuropeSAFIndex() {
 
   const priceData = {
     ucoARA: [
-      { period: "Early Aug", price: 1113 },
-      { period: "Mid Aug", price: 1119 },
-      { period: "End Aug", price: 1145 }
+      { period: "Early Sep", price: 1145 },
+      { period: "Mid Sep", price: 1170 },
+      { period: "End Sep", price: 1163 }
     ],
     ucoChina: [
-      { period: "Early Aug", price: 1065 },
-      { period: "Mid Aug", price: 1105 },
-      { period: "End Aug", price: 1120 }
+      { period: "Early Sep", price: 1110 },
+      { period: "Mid Sep", price: 1150 },
+      { period: "End Sep", price: 1130 }
     ],
     safARA: [
-      { period: "Early Aug", price: 2025 },
-      { period: "Mid Aug", price: 2253 },
-      { period: "End Aug", price: 2410 }
+      { period: "Early Sep", price: 2647 },
+      { period: "Mid Sep", price: 2670 },
+      { period: "End Sep", price: 2710 }
     ],
     safChina: [
-      { period: "Early Aug", price: 1850 },
-      { period: "Mid Aug", price: 1900 },
-      { period: "End Aug", price: 2300 }
+      { period: "Early Sep", price: 2100 },
+      { period: "Mid Sep", price: 2300 },
+      { period: "End Sep", price: 2125 }
     ]
   };
 
   const benchmarks = [
-    { label: "UCO T1 CIF ARA", value: "$1,145", change: "+$32 vs Aug 1", trend: "up" },
-    { label: "UCO Ex-Works NL", value: "€1,065", change: "T2 grade, late-month", trend: "neutral" },
-    { label: "UCO FOB China", value: "$1,120", change: "Standard grade, late-month", trend: "up" },
-    { label: "SAF FOB ARA", value: "$2,410", change: "Late-month assessment", trend: "up" }
+    { label: "UCO T1 CIF ARA", value: "$1,163", change: "flexi, 5% FFA (end-month)", trend: "neutral" },
+    { label: "UCO Ex-Works NL", value: "€1,078", change: "end-month pricing", trend: "neutral" },
+    { label: "UCO FOB China (std)", value: "$1,130", change: "bulk, end-month", trend: "down" },
+    { label: "UCO FOB China (HVO)", value: "$1,165", change: "bulk, end-month", trend: "down" },
+    { label: "UCOME FOB ARA", value: "$1,493", change: "end-month pricing", trend: "down" },
+    { label: "SAF FOB ARA", value: "$2,710", change: "end-month pricing", trend: "up" }
   ];
 
   const policyUpdates = [
     {
-      title: "UK Anti-Dumping Duties",
-      description: "15.68% duty for named exporters; 54.64% for all others on CN biodiesel/HVO. SAF explicitly excluded. Narrows UK arbitrage for CN biodiesel/HVO; strengthens premium for EU/UK provenance."
+      title: "EC Anti-Dumping Extension",
+      description: "Extended anti-dumping/anti-subsidy to HEFA-SAF from US/Indonesia/Argentina (immediate). Goal: protect EU SAF build-out and prevent SAF leaking into road fuels."
     },
     {
-      title: "Germany Draft Biofuel Law",
-      description: "Shifts sustainability liability to buyers when fraud is discovered – higher contractual risk, stronger KYC/traceability demands."
+      title: "China SAF Monitoring",
+      description: "China SAF under monitoring (TARIC codes noted by EC); export whitelist continues to constrain near-term CN SAF outflows despite stronger EU interest."
     },
     {
-      title: "Ireland SAF Roadmap",
-      description: "Issued its first SAF roadmap supporting product, market certainty, collaboration, and uptake."
+      title: "Refinery Updates",
+      description: "BP halts standalone Rotterdam biofuels project (after Shell's cancellation); co-processing up at Castellón → incremental supply, but no step-change."
     },
     {
-      title: "Standards & Metrology",
-      description: "FOBAS highlights energy-content mismeasurement in FAME blends; ISO 8217:2024 recommends ASTM D240 calorimetry for accurate NSE."
+      title: "Germany EEG Support",
+      description: "Germany adds ~€7.9bn to EEG biogas support (bigger auctions, higher flexibility bonus). Neutral for UCO/SAF near-term."
     }
   ];
 
   const dealHighlights = [
     {
-      title: "SAIL Amsterdam",
-      date: "August 20",
-      description: "Event vessels to run on GoodFuels HVO100 (FincoEnergies) – showcasing drop-in readiness and premium for high-blend provenance."
+      title: "Christiania Shipping × FincoEnergies",
+      date: "September",
+      description: "First GoodFuels B100 bunkering completed in Europe – showcases high-blend readiness and provenance value in the marine fuel sector."
     },
     {
-      title: "Viking Line × Gasum",
-      date: "August",
-      description: "Bio-LNG deployment on RoPax (FuelEU Maritime pooling) – growing alternative compliance pathways within Europe."
+      title: "Bunker One Sweden",
+      date: "September",
+      description: "Long-term charter Sagafjord – expands Nordic bio-bunkering capability and future-fuels readiness across Scandinavian markets."
     }
   ];
 
@@ -191,7 +192,7 @@ export default function ChinaEuropeSAFIndex() {
           >
             <span className="text-emerald-300 font-semibold flex items-center gap-2">
               <Calendar className="w-4 h-4" />
-              {currentMonth}
+              September 2025
             </span>
           </motion.div>
 
@@ -220,10 +221,10 @@ export default function ChinaEuropeSAFIndex() {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-wrap gap-4 justify-center"
           >
-            <a href={reportPdfPath} download="Shaphargroup-China-Europe-SAF-Index-August-2025.pdf">
-              <Button className="bg-emerald hover:bg-emerald/90 text-white px-8 py-6 text-lg" data-testid="button-download-report">
+            <a href={septemberPdfPath} download="Shaphargroup-China-Europe-SAF-Bridge-September-2025.pdf">
+              <Button className="bg-emerald hover:bg-emerald/90 text-white px-8 py-6 text-lg" data-testid="button-download-september-report">
                 <Download className="w-5 h-5 mr-2" />
-                Download August Report
+                Download September Report
               </Button>
             </a>
           </motion.div>
@@ -243,7 +244,7 @@ export default function ChinaEuropeSAFIndex() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6">
               Market Flow Snapshot
             </h2>
-            <p className="text-xl text-gray-600">What Moved in August</p>
+            <p className="text-xl text-gray-600">What Moved in September</p>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -254,9 +255,9 @@ export default function ChinaEuropeSAFIndex() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-navy mb-4">Europe Inland UCO</h3>
+              <h3 className="text-2xl font-bold text-navy mb-4">Europe</h3>
               <p className="text-gray-700 leading-relaxed">
-                Tightened modestly mid-month as traceable EU/UK-origin material commanded a premium (e.g., UCO FOB ARA EU/UK ~€1,115/t; Spain→Scandinavia mid-€1,100s/t; UK bulk bids ↑ +€25/t). Rising compliance scrutiny is rewarding provenance and documentation quality.
+                Import T1 UCO CIF ARA held tight at $1,163/t (flexi, 5% FFA) as buyers returned after summer. Inland Ex-Works NL eased to €1,078/t while EU/UK-origin FOB ARA tracked lower at €1,129/t but maintained provenance premium. October inland demand building, especially in Iberia.
               </p>
             </motion.div>
 
@@ -267,9 +268,9 @@ export default function ChinaEuropeSAFIndex() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-navy mb-4">China Collection</h3>
+              <h3 className="text-2xl font-bold text-navy mb-4">China</h3>
               <p className="text-gray-700 leading-relaxed">
-                Strained as multiple traders paused offers due to low inventories; palm oil strength supported waste oil prices. Standard UCO DAP China frequently quoted RMB 7,800–8,100/t over the month.
+                Standard UCO FOB softened late-month to $1,130/t bulk after mid-month firmness. HVO-grade eased to $1,165/t. Light US interest and fewer EU inquiries reported, while export-permit (whitelist) limits continued to cap near-term SAF export optionality.
               </p>
             </motion.div>
           </div>
@@ -289,15 +290,19 @@ export default function ChinaEuropeSAFIndex() {
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <ArrowRight className="w-5 h-5 text-emerald mt-1 flex-shrink-0" />
-                  <span>Prioritize provenance and documentation quality</span>
+                  <span>Provenance premiums persist for EU/UK-origin materials</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <ArrowRight className="w-5 h-5 text-emerald mt-1 flex-shrink-0" />
-                  <span>Focus on traceable EU/UK-origin material</span>
+                  <span>Documentary quality requirements tightening</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <ArrowRight className="w-5 h-5 text-emerald mt-1 flex-shrink-0" />
-                  <span>Accept premium for compliance certainty</span>
+                  <span>October demand building, especially Iberian markets</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-emerald mt-1 flex-shrink-0" />
+                  <span>Forward planning needed for Q4/Q1 volumes</span>
                 </li>
               </ul>
             </motion.div>
@@ -311,20 +316,24 @@ export default function ChinaEuropeSAFIndex() {
             >
               <h4 className="text-lg font-bold text-navy mb-3 flex items-center gap-2">
                 <Briefcase className="w-5 h-5 text-forest" />
-                Bridge Takeaway: Chinese Suppliers
+                Bridge Takeaway: CN Suppliers
               </h4>
               <ul className="space-y-2 text-gray-700">
                 <li className="flex items-start gap-2">
                   <ArrowRight className="w-5 h-5 text-forest mt-1 flex-shrink-0" />
-                  <span>Lead with transparent documentation</span>
+                  <span>Export-permit headroom critical for SAF access</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <ArrowRight className="w-5 h-5 text-forest mt-1 flex-shrink-0" />
-                  <span>Demonstrate consistent collection capacity</span>
+                  <span>Documentation standards must meet EU requirements</span>
                 </li>
                 <li className="flex items-start gap-2">
                   <ArrowRight className="w-5 h-5 text-forest mt-1 flex-shrink-0" />
-                  <span>Prove certification upfront</span>
+                  <span>HVO-grade specifications commanding premiums</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <ArrowRight className="w-5 h-5 text-forest mt-1 flex-shrink-0" />
+                  <span>US interest light, EU inquiries fewer than expected</span>
                 </li>
               </ul>
             </motion.div>
@@ -345,7 +354,7 @@ export default function ChinaEuropeSAFIndex() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6">
               Price & Premium Signals
             </h2>
-            <p className="text-xl text-gray-600">End-Month Levels and Trends</p>
+            <p className="text-xl text-gray-600">Early/Mid/End September & Direction</p>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
@@ -374,7 +383,7 @@ export default function ChinaEuropeSAFIndex() {
                 <LineChart data={priceData.ucoARA}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="period" />
-                  <YAxis domain={[1100, 1160]} />
+                  <YAxis domain={[1140, 1175]} />
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Line 
                     type="monotone" 
@@ -386,12 +395,12 @@ export default function ChinaEuropeSAFIndex() {
                 </LineChart>
               </ChartContainer>
 
-              <div className="mt-6 p-4 bg-emerald/10 rounded-lg border border-emerald/20">
-                <div className="flex items-center gap-2 text-emerald font-bold">
-                  <TrendingUp className="w-5 h-5" />
-                  <span>+$32 ARA Premium Growth</span>
+              <div className="mt-6 p-4 bg-gray-100 rounded-lg border border-gray-300">
+                <div className="flex items-center gap-2 text-gray-700 font-bold">
+                  <Minus className="w-5 h-5" />
+                  <span>Within ±$10 range</span>
                 </div>
-                <p className="text-sm text-gray-600 mt-2">UCO T1 CIF ARA gained $32/t from Aug 1 to Aug 26</p>
+                <p className="text-sm text-gray-600 mt-2">Held tight at $1,163/t (flexi, 5% FFA) end-month</p>
               </div>
             </motion.div>
 
@@ -420,7 +429,7 @@ export default function ChinaEuropeSAFIndex() {
                 <LineChart data={priceData.ucoChina}>
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="period" />
-                  <YAxis domain={[1050, 1130]} />
+                  <YAxis domain={[1100, 1160]} />
                   <ChartTooltip content={<ChartTooltipContent />} />
                   <Line 
                     type="monotone" 
@@ -432,17 +441,17 @@ export default function ChinaEuropeSAFIndex() {
                 </LineChart>
               </ChartContainer>
 
-              <div className="mt-6 p-4 bg-forest/10 rounded-lg border border-forest/20">
-                <div className="flex items-center gap-2 text-forest font-bold">
-                  <TrendingUp className="w-5 h-5" />
-                  <span>+$55 China Price Rise</span>
+              <div className="mt-6 p-4 bg-amber-50 rounded-lg border border-amber-300">
+                <div className="flex items-center gap-2 text-amber-700 font-bold">
+                  <TrendingDown className="w-5 h-5" />
+                  <span>-$20 Mid to End Month</span>
                 </div>
-                <p className="text-sm text-gray-600 mt-2">UCO FOB China standard increased $55/t through August</p>
+                <p className="text-sm text-gray-600 mt-2">Softened late-month to $1,130/t bulk after mid-month firmness</p>
               </div>
             </motion.div>
           </div>
 
-          {/* SAF Price Rally */}
+          {/* Arbitrage Analysis */}
           <motion.div
             className="bg-gradient-to-br from-navy to-forest rounded-2xl p-8 text-white mb-12"
             initial={{ opacity: 0, y: 30 }}
@@ -450,38 +459,31 @@ export default function ChinaEuropeSAFIndex() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-3xl font-bold mb-6">SAF Price Rally</h3>
-            <p className="text-gray-200 mb-8">SAF markets showed strong momentum through August, with both ARA and China experiencing significant price increases.</p>
+            <h3 className="text-3xl font-bold mb-6">Arbitrage Analysis</h3>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div>
-                <h4 className="text-xl font-bold mb-4 text-emerald-300">SAF FOB ARA</h4>
-                <div className="space-y-3">
-                  {priceData.safARA.map((item, index) => (
-                    <div key={index} className="flex justify-between items-center p-3 bg-white/10 rounded-lg backdrop-blur-sm">
-                      <span className="text-gray-200">{item.period}</span>
-                      <span className="text-xl font-bold text-white">${item.price}</span>
-                    </div>
-                  ))}
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl font-bold text-emerald-300 mb-2">$319</div>
+                <div className="text-sm font-semibold text-gray-200 mb-2">UCOME CN → EU</div>
+                <p className="text-sm text-gray-300">Closed by $319/t at generic duty (month-end)</p>
               </div>
 
-              <div>
-                <h4 className="text-xl font-bold mb-4 text-emerald-300">SAF FOB China</h4>
-                <div className="space-y-3">
-                  {priceData.safChina.map((item, index) => (
-                    <div key={index} className="flex justify-between items-center p-3 bg-white/10 rounded-lg backdrop-blur-sm">
-                      <span className="text-gray-200">{item.period}</span>
-                      <span className="text-xl font-bold text-white">${item.price}</span>
-                    </div>
-                  ))}
-                </div>
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl font-bold text-emerald-300 mb-2">$142</div>
+                <div className="text-sm font-semibold text-gray-200 mb-2">Cooperating Duty</div>
+                <p className="text-sm text-gray-300">Closed by $142/t at cooperating duty rate</p>
+              </div>
+
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                <div className="text-4xl font-bold text-emerald-300 mb-2">+$35</div>
+                <div className="text-sm font-semibold text-gray-200 mb-2">CN Premium UCO</div>
+                <p className="text-sm text-gray-300">Averaged +$35/t vs bulk early-Sept, easing to ~+$30/t late-month</p>
               </div>
             </div>
 
             <div className="mt-6 p-4 bg-yellow-500/20 rounded-lg border border-yellow-500/30">
               <p className="text-sm text-yellow-100">
-                <strong>Arbitrage Update:</strong> Chinese UCOME → EU remained closed on generic duties (~$300/t closed late Aug; $116–124/t closed for cooperating duty bands).
+                Mid-September UCOME/FAME0/RME premiums were volatile as higher gasoil lifted flats. Chinese premium UCO maintained consistent premiums throughout the month.
               </p>
             </div>
           </motion.div>
@@ -522,18 +524,6 @@ export default function ChinaEuropeSAFIndex() {
               </motion.div>
             ))}
           </div>
-
-          <motion.div
-            className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-lg"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <p className="text-gray-800">
-              <strong className="text-amber-800">Bridge Takeaway:</strong> Policy risk now sits closer to the buyer (DE draft law; UK duties). Contracts must price in sustainability liability and potential tariff exposure.
-            </p>
-          </motion.div>
         </div>
       </section>
 
@@ -548,9 +538,9 @@ export default function ChinaEuropeSAFIndex() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6">
-              Deal Highlights
+              Deal & Partnership Highlights
             </h2>
-            <p className="text-xl text-gray-600">Notable August transactions and partnerships</p>
+            <p className="text-xl text-gray-600">Notable September transactions and partnerships</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -576,6 +566,18 @@ export default function ChinaEuropeSAFIndex() {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            className="mt-12 bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <p className="text-gray-800">
+              These partnerships signal growing confidence in high-blend biofuel capabilities and the importance of established supply chains for sustainable aviation and marine fuels.
+            </p>
+          </motion.div>
         </div>
       </section>
 
@@ -595,7 +597,7 @@ export default function ChinaEuropeSAFIndex() {
             <p className="text-xl text-gray-300">Actions you can take right now</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
             <motion.div
               className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20"
               initial={{ opacity: 0, x: -30 }}
@@ -607,19 +609,15 @@ export default function ChinaEuropeSAFIndex() {
               <ol className="space-y-4 text-gray-200">
                 <li className="flex items-start gap-3">
                   <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">1</span>
-                  <span><strong>Lock a slice of volume now.</strong> SAF in ARA jumped in August; secure part of Q4/Q1 and keep some flexibility for later. Use Book & Claim (SAFc) to cover any shortfall.</span>
+                  <span><strong>Stage Q4/Q1 volumes:</strong> SAF ARA firmed late-month; use SAFc/Book-&-Claim as flexibility on top of physical</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">2</span>
-                  <span><strong>Prioritise paperwork over headline price.</strong> Choose suppliers who can hand you ISCC/CORSIA certificates, chain-of-custody and origin proof on day one.</span>
+                  <span><strong>Price provenance & liability:</strong> Pay up for EU/UK-origin or fully documented CN supply; add duty & sustainability-liability clauses</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">3</span>
-                  <span><strong>Protect yourself in the contract.</strong> Add warranties on origin/sustainability, audit rights, remedies if certificates fail.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">4</span>
-                  <span><strong>Keep logistics optionality.</strong> Ask for quotes both flexi vs ISO and CIF vs DAP.</span>
+                  <span><strong>Check deliverability:</strong> For CN SAF, confirm export-permit headroom and shipment windows before value-locking</span>
                 </li>
               </ol>
             </motion.div>
@@ -635,27 +633,36 @@ export default function ChinaEuropeSAFIndex() {
               <ol className="space-y-4 text-gray-200">
                 <li className="flex items-start gap-3">
                   <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">1</span>
-                  <span><strong>Lead with documentation.</strong> Share ISCC/CORSIA IDs, recent lab results/CoAs, mass-balance/collection records.</span>
+                  <span><strong>Lead with documentation:</strong> ISCC/CORSIA IDs, CoAs, collection trails; state flexi vs ISO, FFA%, EUR.1 if applicable</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">2</span>
-                  <span><strong>Quote clearly.</strong> State specs (FFA %, moisture/impurities), container (flexi/ISO), Incoterms, lead-time.</span>
+                  <span><strong>Show permit capacity:</strong> Include whitelist proof and remaining export quota in offers; propose allocations beyond October</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">3</span>
-                  <span><strong>Prove reliability.</strong> Explain how you secure collection, show inventory buffers and shipment schedules.</span>
-                </li>
-                <li className="flex items-start gap-3">
-                  <span className="bg-emerald/20 text-emerald-300 font-bold px-3 py-1 rounded-lg flex-shrink-0">4</span>
-                  <span><strong>Offer compliance comfort.</strong> Accept KYC checks, allow third-party audits.</span>
+                  <span><strong>Offer delivery optionality:</strong> CIF/DAP to core EU ports; match HVO-grade specs when targeting refiner demand</span>
                 </li>
               </ol>
             </motion.div>
           </div>
+
+          <motion.div
+            className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-bold text-emerald-300 mb-4">For Financiers & Trade Credit</h3>
+            <p className="text-gray-200 leading-relaxed">
+              Re-underwrite spreads: mild softness in UCOME vs firmer SAF ARA shifts cash-flow timing; stress at ±$100/t. Maintain elevated documentation risk discipline amid tighter buyer-liability regimes.
+            </p>
+          </motion.div>
         </div>
       </section>
 
-      {/* August Benchmarks */}
+      {/* September Benchmarks */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -666,12 +673,12 @@ export default function ChinaEuropeSAFIndex() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-navy mb-6">
-              August Benchmarks
+              Quick Reference – September Benchmarks
             </h2>
             <p className="text-xl text-gray-600">Key end-of-month price indicators</p>
           </motion.div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {benchmarks.map((benchmark, index) => (
               <motion.div
                 key={index}
@@ -684,9 +691,11 @@ export default function ChinaEuropeSAFIndex() {
                 <div className="text-4xl font-bold text-navy mb-2">{benchmark.value}</div>
                 <div className="text-sm font-semibold text-gray-700 mb-3">{benchmark.label}</div>
                 <div className={`inline-flex items-center gap-1 text-sm ${
-                  benchmark.trend === "up" ? "text-emerald" : "text-gray-600"
+                  benchmark.trend === "up" ? "text-emerald" : benchmark.trend === "down" ? "text-amber-600" : "text-gray-600"
                 }`}>
                   {benchmark.trend === "up" && <TrendingUp className="w-4 h-4" />}
+                  {benchmark.trend === "down" && <TrendingDown className="w-4 h-4" />}
+                  {benchmark.trend === "neutral" && <Minus className="w-4 h-4" />}
                   {benchmark.change}
                 </div>
               </motion.div>
@@ -720,16 +729,14 @@ export default function ChinaEuropeSAFIndex() {
               viewport={{ once: true }}
             >
               <div className="flex items-center justify-between mb-4">
-                <span className="text-sm font-semibold text-emerald bg-emerald/10 px-3 py-1 rounded-full">Latest</span>
+                <span className="text-sm font-semibold text-emerald bg-emerald/10 px-3 py-1 rounded-full">Current</span>
                 <Calendar className="w-5 h-5 text-emerald" />
               </div>
               <h3 className="text-2xl font-bold text-navy mb-2">September 2025</h3>
               <p className="text-gray-600 mb-4">Latest market intelligence and price signals</p>
-              <Link href="/market-intelligence/china-europe-saf-index-september">
-                <Button className="w-full bg-emerald hover:bg-emerald/90 text-white" data-testid="button-view-september-report">
-                  View September Report
-                </Button>
-              </Link>
+              <Button className="w-full bg-emerald hover:bg-emerald/90 text-white" data-testid="button-view-september-report">
+                Current Report
+              </Button>
             </motion.div>
 
             <motion.div
@@ -745,9 +752,11 @@ export default function ChinaEuropeSAFIndex() {
               </div>
               <h3 className="text-2xl font-bold text-navy mb-2">August 2025</h3>
               <p className="text-gray-600 mb-4">Previous month's market report</p>
-              <Button variant="outline" className="w-full border-navy text-navy hover:bg-navy hover:text-white" data-testid="button-view-august-report">
-                Current Report
-              </Button>
+              <Link href="/market-intelligence/china-europe-saf-index">
+                <Button variant="outline" className="w-full border-navy text-navy hover:bg-navy hover:text-white" data-testid="button-view-august-report">
+                  View August Report
+                </Button>
+              </Link>
             </motion.div>
           </div>
 
@@ -779,9 +788,11 @@ export default function ChinaEuropeSAFIndex() {
               Ready to Bridge China and Europe?
             </h2>
             <div className="flex flex-wrap gap-4 justify-center">
-              <Button className="bg-white text-navy hover:bg-gray-100 px-8 py-6 text-lg" data-testid="button-contact-sales">
-                Contact Our Team
-              </Button>
+              <Link href="/contact">
+                <Button className="bg-white text-navy hover:bg-gray-100 px-8 py-6 text-lg" data-testid="button-contact-sales">
+                  Contact Our Team
+                </Button>
+              </Link>
               <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg" data-testid="button-view-archive">
                 View Report Archive
               </Button>
@@ -793,8 +804,11 @@ export default function ChinaEuropeSAFIndex() {
       {/* Disclaimer */}
       <section className="py-8 bg-gray-100 border-t border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-sm text-gray-600 text-center mb-4">
+            <strong>Disclaimer:</strong> This report is compiled from curated market information for September 2025. It is for information only and not investment advice. Market levels are indicative and may differ from executed prices depending on specs, terms, and logistics. Figures are indicative; terms/specs affect comparability. UK duties note: SAF excluded.
+          </p>
           <p className="text-sm text-gray-600 text-center">
-            <strong>Disclaimer:</strong> This report is compiled from curated market information for August 2025. It is for information only and not investment advice. Market levels are indicative and may differ from executed prices depending on specs, terms, and logistics. Figures are indicative; trade terms (FOB/CIF/DAP), container type (flexi/ISO), FFA%, and EUR.1 status materially affect price comparability.
+            <strong>Methodology & Sources:</strong> Curated from September market notes and price checks (Sept 2025) and supplementary assessor commentary. Trade terms (FOB/CIF/DAP), container type (flexi/ISO), FFA%, and EUR.1 status materially affect comparability.
           </p>
         </div>
       </section>
