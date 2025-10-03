@@ -20,21 +20,23 @@ export default function CompanyOverview() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center justify-between mb-6">
-              <div className="text-sm font-bold text-emerald tracking-wider uppercase flex items-center">
+            <div className="mb-6">
+              <div className="text-sm font-bold text-emerald tracking-wider uppercase flex items-center mb-4">
                 <div className="w-8 h-0.5 bg-emerald mr-3"></div>
                 Who We Are
               </div>
-              <Link href="/market-intelligence/china-europe-saf-index-september">
-                <motion.div
-                  className="text-sm font-bold text-navy tracking-wider uppercase flex items-center gap-2 hover:text-emerald transition-colors cursor-pointer border-2 border-navy hover:border-emerald px-4 py-2 rounded-lg"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  <FileText className="w-4 h-4" />
-                  China - Europe SAF Market Report
-                </motion.div>
-              </Link>
+              <div className="flex justify-end">
+                <Link href="/market-intelligence/china-europe-saf-index-september">
+                  <motion.div
+                    className="text-sm font-bold text-navy tracking-wider uppercase flex items-center gap-2 hover:text-emerald transition-colors cursor-pointer border-2 border-navy hover:border-emerald px-4 py-2 rounded-lg"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    <FileText className="w-4 h-4" />
+                    China - Europe SAF Market Report
+                  </motion.div>
+                </Link>
+              </div>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-navy mb-8 leading-tight tracking-tight">
               An Integrated SAF Refiner and Exporter with a{" "}
