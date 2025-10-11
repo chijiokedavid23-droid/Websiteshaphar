@@ -23,11 +23,13 @@ import ucoImage from "@assets/UCO_1755327993085.png";
 import biofuelFillingStationImage from "@assets/biofuel-filling-station_1456616751_840x560px_1755340629654.jpg";
 import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
+import safCreditsImage from "@assets/image_1760175223253.png";
 
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
   const titleMap: Record<string, string> = {
+    "From Mandates to Markets: How Verified SAF Credits Accelerate Aviation Decarbonization": "mandates-to-markets-saf-credits",
     "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally": "safc-approval-scope-3-credits",
     "Tim Rose Joins Shaphargroup Board as Strategic Executive Director": "tim-rose-joins-board",
     "Why Europe and China Must Collaborate to Meet Net Zero — Not Compete": "europe-china-collaboration",
@@ -84,6 +86,15 @@ export default function Blog() {
   };
 
   const blogPosts = [
+    {
+      title: "From Mandates to Markets: How Verified SAF Credits Accelerate Aviation Decarbonization",
+      excerpt: "The aviation sector is on the cusp of a fundamental shift. The European Union's ReFuelEU Aviation regulation, which enters into force in 2025, requires that at least 2 percent of all fuel uplifted at EU airports be sustainable aviation fuel (SAF). How can airlines meet their decarbonisation goals when the fuel isn't always available on their routes?",
+      image: safCreditsImage,
+      category: "Insights & Thought Leadership",
+      date: "October 11, 2025",
+      author: "David C. Arinze",
+      link: "https://shaphargroup.com/insights/mandates-to-markets-saf-credits/"
+    },
     {
       title: "Multipolar Collaboration: The Key to Achieving Net Zero",
       excerpt: "In the global race to achieve net-zero emissions by 2030 and 2050, one reality is becoming increasingly clear: no single nation, company, or region can get us there alone. Multipolar cooperation in sustainable aviation fuel and renewable energy is not an option — it is a necessity.",

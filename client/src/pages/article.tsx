@@ -15,6 +15,7 @@ import ucoCertificateImage from "@assets/uco certificate_1754487529555.jpeg";
 import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
 import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
+import safCreditsImage from "@assets/image_1760175223253.png";
 
 interface ArticleData {
   id: string;
@@ -28,6 +29,44 @@ interface ArticleData {
 }
 
 const articlesData: Record<string, ArticleData> = {
+  "mandates-to-markets-saf-credits": {
+    id: "mandates-to-markets-saf-credits",
+    title: "From Mandates to Markets: How Verified SAF Credits Accelerate Aviation Decarbonization",
+    content: `The aviation sector is on the cusp of a fundamental shift. The European Union's ReFuelEU Aviation regulation, which enters into force in 2025, requires that at least 2 percent of all fuel uplifted at EU airports be sustainable aviation fuel (SAF). This share will scale up steadily to 70 percent by mid‑century. Similar mandates are emerging across the United States and Asia, signalling a new era for airlines and fuel suppliers alike. Yet physical supplies of SAF remain limited and expensive, and not every flight can be fueled with these low‑carbon alternatives today. How can airlines, corporate flyers and logistics providers meet their decarbonisation goals when the fuel isn't always available on their routes?
+
+## Enter the "book and claim" model
+
+One innovative solution is the **book and claim** approach to sustainable fuels. The model separates the environmental benefits of using SAF from the physical fuel itself. Producers "book" the emissions savings from a batch of SAF into a registry and issue a certificate; customers then "claim" those emissions reductions for their own reporting—regardless of where the actual fuel was consumed.
+
+**Verified emissions reductions**: Each SAF certificate (SAFc) represents a verifiable amount of lifecycle emissions reductions. Independent standards such as the Roundtable on Sustainable Biomaterials (RSB) or the International Sustainability & Carbon Certification (ISCC) system ensure the fuel meets stringent sustainability criteria.
+
+**Flexible access**: Corporate buyers and airlines can claim Scope 3 emissions reductions even when they cannot physically access SAF at every airport. By purchasing certificates, they fund producers and help scale up SAF production.
+
+**Market signal**: The model provides a transparent and auditable trail of ownership. Buying SAFc sends a clear demand signal to suppliers and investors, encouraging the development of new production facilities and lowering costs over time.
+
+## Why SAF credits matter now
+
+ReFuelEU's mandates create a growing obligation for airlines to blend SAF into their fuel supply. However, Europe's SAF supply chain is still maturing. A book‑and‑claim system bridges the gap between regulatory requirements and the current availability of fuel. It allows airlines to over‑comply with the 2 percent requirement by supporting more SAF production, even if that fuel is consumed on another flight. The system also enables cargo operators and corporate travelers to claim verified Scope 3 reductions—helping them meet net‑zero commitments sooner.
+
+From a sustainability perspective, the model ensures that emissions reductions are **real, additional and permanent**. Certificates must be retired in a registry once claimed, preventing double counting. Robust governance under internationally recognised standards underpins transparency and credibility.
+
+## Shaphargroup's role
+
+Shaphargroup was recently approved as a supplier on the Sustainable Aviation Fuel Certificate (SAFc) platform, joining a select group of producers able to issue verified certificates that represent Scope 3 emissions reductions. As a vertically integrated refiner with operations in China, the Netherlands and the United States, we produce HEFA‑SPK SAF from waste‑based feedstocks like used cooking oil and animal fats. Our 350 000 MT/year SAF production capacity and 500 000 MT/year certified feedstock refining enable us to deliver reliable, traceable fuel to airlines and corporate buyers.
+
+Through the SAFc registry, customers can purchase certificates directly linked to our certified SAF production and claim the associated emissions reductions. Each transaction supports investment in new refining capacity, upgrades our infrastructure and accelerates the scaling of sustainable aviation fuel globally.
+
+## Looking ahead
+
+The path to net‑zero aviation demands more than compliance—it requires **innovation and collaboration** across the value chain. Verified SAF certificates provide a flexible tool to help airlines and corporates meet emerging mandates while catalysing investment in physical fuel supply. When used alongside direct SAF purchases and long‑term offtake agreements, the book‑and‑claim model can unlock the capital needed to bring sustainable aviation fuel to scale.
+
+At Shaphargroup, we believe that decarbonising flight is both a responsibility and an opportunity. By combining our refining expertise with transparent, verified certificate platforms, we're working to power a net‑zero future—one flight, one certificate and one partnership at a time. If you're interested in learning more about SAFc or exploring a partnership, we invite you to connect with us.`,
+    image: safCreditsImage,
+    category: "Insights & Thought Leadership",
+    date: "October 11, 2025",
+    author: "David C. Arinze | Managing Partner | Shaphargroup | Renewable Energy Strategist | UCO & SAF Advocate | davis.c@shaphargroup.com",
+    originalLink: ""
+  },
   "multipolar-collaboration-net-zero": {
     id: "multipolar-collaboration-net-zero",
     title: "Multipolar Collaboration: The Key to Achieving Net Zero",
