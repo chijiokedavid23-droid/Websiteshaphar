@@ -1,0 +1,80 @@
+🟢 Section 1 — Overview
+
+Short and clear:
+
+Shaphar Refining is developing a 200,000 metric ton per year HEFA-based SAF/HVO refinery in the Netherlands, designed to produce sustainable aviation fuel and renewable diesel using waste-based feedstocks such as used cooking oil (UCO), tallow, and PFAD.
+
+Add 2–3 clean sentences summarizing:
+
+Technology (HEFA process, multi-feedstock capability)
+
+Location (Netherlands, with potential co-location in Rotterdam region)
+
+Target start (Q4 2026)
+
+Strategic goal (support Europe’s energy transition and ReFuelEU Aviation targets)
+
+🟢 Section 2 — Our Vision
+
+Show your sustainability and innovation mission:
+
+To accelerate the transition to clean aviation and renewable fuels by building one of Europe’s most efficient, multi-feedstock biorefineries — powered by circular resources and advanced refining technologies.
+
+🟢 Section 3 — Key Facts
+Item	Details
+Capacity	200,000 MT per year (SAF + HVO)
+Technology	HEFA process (Hydroprocessed Esters and Fatty Acids)
+Feedstock	Used Cooking Oil (UCO), Animal Fats, PFAD
+Target Start	2026
+Location	Netherlands (Rotterdam region, under site evaluation)
+Future Expansion	Potential to scale to 250,000 MT/year
+Certifications	Targeting ISCC EU, CORSIA, SAFc frameworks
+🟢 Section 4 — Environmental Impact
+
+CO₂ reduction per year (e.g. equivalent to removing ~300,000 cars from the road)
+
+Contribution to EU ReFuelEU Aviation mandate
+
+Circular economy integration (China feedstock collection → Europe refining)
+
+🟢 Section 5 — Development Partners
+
+List or mention:
+
+Shaphargroup (China, USA, Netherlands)
+
+Potential licensors (Honeywell, Topsoe, Axens — under discussion)
+
+Strategic stakeholders (Invest-NL, RVO, ETF-R)
+
+Engineering & project consultants (once selected)
+
+🟢 Section 6 — Investment & Collaboration
+
+Invite engagement:
+
+Shaphar Refining welcomes partnerships with technology licensors, offtakers, and investors aligned with Europe’s decarbonization goals.
+For collaboration inquiries, contact:
+📩 david.c@shaphargroup.com
+
+🟢 Section 7 — Contact
+
+A simple contact form or email.
+
+🎨 3️⃣ Visual Style
+
+Use the Shaphar Refining logo (the one you choose)
+
+Add a banner image — refinery + sustainable energy style (I can generate one)
+
+Include infographics (capacity, CO₂ savings, timeline)
+
+Keep the tone corporate and investor-oriented, not marketing-heavy
+
+🏁 4️⃣ Domain Structure Recommendation
+
+Add it as a subpage to your main website:
+
+👉 https://shaphargroup.com/shaphar-refining
+or
+👉 https://shaphargroup.com/projects/shaphar-refinery
