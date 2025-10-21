@@ -5,7 +5,7 @@ import { Leaf, TrendingUp, Mail, MapPin, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { updateSEOTags } from "@/lib/seo";
-import shapharRefiningLogo from "@assets/Refinary Logo_1761043230419.jpg";
+import shapharRefiningLogo from "@assets/Refinary Logo2_1761044221418.jpg";
 
 export default function ShapharRefining() {
   useEffect(() => {
@@ -77,12 +77,12 @@ export default function ShapharRefining() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-8"
+            className="mb-12"
           >
             <img 
               src={shapharRefiningLogo} 
               alt="Shaphar Refining Logo"
-              className="h-32 mx-auto mb-8 bg-white px-8 py-4 rounded-2xl shadow-2xl"
+              className="h-40 mx-auto bg-white px-12 py-6 rounded-2xl shadow-2xl"
             />
           </motion.div>
 
@@ -96,27 +96,13 @@ export default function ShapharRefining() {
           </motion.h1>
           
           <motion.p 
-            className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto leading-relaxed"
+            className="text-xl sm:text-2xl text-gray-200 max-w-3xl mx-auto leading-relaxed"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             Developing Europe's next-generation sustainable aviation fuel and renewable diesel refinery in the Netherlands
           </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex flex-wrap gap-4 justify-center"
-          >
-            <Button className="bg-white text-navy hover:bg-gray-100 px-8 py-6 text-lg" data-testid="button-contact-team">
-              Contact Our Team
-            </Button>
-            <Button variant="outline" className="border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg" data-testid="button-download-overview">
-              Download Overview
-            </Button>
-          </motion.div>
         </div>
       </section>
 
