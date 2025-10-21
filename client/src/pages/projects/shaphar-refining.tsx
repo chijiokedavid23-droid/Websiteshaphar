@@ -1,7 +1,7 @@
 import Navigation from "@/components/navigation";
 import Footer from "@/components/footer";
 import { motion } from "framer-motion";
-import { Factory, Leaf, TrendingUp, Users, Mail, MapPin, Calendar, Zap, Award } from "lucide-react";
+import { Leaf, TrendingUp, Mail, MapPin, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { updateSEOTags } from "@/lib/seo";
@@ -36,9 +36,9 @@ export default function ShapharRefining() {
     { label: "Capacity", value: "200,000 MT per year", sublabel: "(SAF + HVO)" },
     { label: "Technology", value: "HEFA Process", sublabel: "Hydroprocessed Esters and Fatty Acids" },
     { label: "Feedstock", value: "UCO, Animal Fats, PFAD", sublabel: "Multi-feedstock capability" },
-    { label: "Target Start", value: "Q4 2026", sublabel: "Construction phase" },
-    { label: "Location", value: "Netherlands", sublabel: "Rotterdam region (under site evaluation)" },
-    { label: "Future Expansion", value: "250,000 MT/year", sublabel: "Scalability built-in" },
+    { label: "Target Start", value: "2027", sublabel: "Construction phase" },
+    { label: "Location", value: "Rotterdam, Netherlands", sublabel: "" },
+    { label: "Future Expansion", value: "500,000 MT/year", sublabel: "Scalability built-in" },
     { label: "Certifications", value: "ISCC EU, CORSIA, SAFc", sublabel: "Targeting all frameworks" }
   ];
 
@@ -63,12 +63,6 @@ export default function ShapharRefining() {
     }
   ];
 
-  const partners = [
-    { name: "Shaphargroup", role: "Project Developer (China, USA, Netherlands)" },
-    { name: "Technology Licensors", role: "Honeywell, Topsoe, Axens (under discussion)" },
-    { name: "Strategic Stakeholders", role: "Invest-NL, RVO, ETF-R" },
-    { name: "Engineering & Consultants", role: "Selection in progress" }
-  ];
 
   return (
     <div className="min-h-screen bg-white">
@@ -154,10 +148,10 @@ export default function ShapharRefining() {
               The facility will utilize advanced <strong className="text-navy">HEFA (Hydroprocessed Esters and Fatty Acids) technology</strong> with multi-feedstock capability, enabling flexible production to meet evolving market demands and regulatory requirements.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Located in the <strong className="text-navy">Netherlands, with potential co-location in the Rotterdam region</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
+              Located in <strong className="text-navy">Rotterdam, Netherlands</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              With a target commissioning date of <strong className="text-navy">Q4 2026</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
+              With a construction target start of <strong className="text-navy">Q1 2027</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
             </p>
           </motion.div>
         </div>
@@ -256,49 +250,7 @@ export default function ShapharRefining() {
         </div>
       </section>
 
-      {/* Section 5 - Development Partners */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">Development Partners</h2>
-            <div className="w-24 h-1 bg-emerald mx-auto mb-8"></div>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Collaborating with industry leaders and strategic stakeholders to deliver world-class refining infrastructure
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {partners.map((partner, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: index * 0.1 }}
-                viewport={{ once: true }}
-                className="bg-white rounded-2xl p-8 shadow-lg"
-              >
-                <div className="flex items-start">
-                  <div className="w-12 h-12 bg-emerald/10 rounded-xl flex items-center justify-center mr-4 flex-shrink-0">
-                    <Users className="w-6 h-6 text-emerald" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-navy mb-2">{partner.name}</h3>
-                    <p className="text-gray-600">{partner.role}</p>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 6 - Investment & Collaboration */}
+      {/* Section 5 - Investment & Collaboration */}
       <section className="py-20 bg-gradient-to-br from-emerald via-forest to-navy">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -317,18 +269,18 @@ export default function ShapharRefining() {
                 For collaboration inquiries, contact:
               </p>
               <a 
-                href="mailto:david.c@shaphargroup.com"
+                href="mailto:davis.c@shaphargroup.com"
                 className="inline-flex items-center text-2xl font-bold text-emerald-300 hover:text-emerald-200 transition-colors"
               >
                 <Mail className="w-6 h-6 mr-3" />
-                david.c@shaphargroup.com
+                davis.c@shaphargroup.com
               </a>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Section 7 - Contact */}
+      {/* Section 6 - Contact */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
@@ -347,8 +299,8 @@ export default function ShapharRefining() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
                 <div className="flex items-center justify-center md:justify-start">
                   <Mail className="w-6 h-6 text-emerald mr-3" />
-                  <a href="mailto:david.c@shaphargroup.com" className="text-lg text-navy hover:text-emerald transition-colors">
-                    david.c@shaphargroup.com
+                  <a href="mailto:davis.c@shaphargroup.com" className="text-lg text-navy hover:text-emerald transition-colors">
+                    davis.c@shaphargroup.com
                   </a>
                 </div>
                 <div className="flex items-center justify-center md:justify-start">
