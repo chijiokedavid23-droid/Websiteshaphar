@@ -14,6 +14,7 @@ import Contact from "@/pages/contact";
 import ChinaEuropeSAFIndex from "@/pages/market-intelligence/china-europe-saf-index";
 import ChinaEuropeSAFIndexSeptember from "@/pages/market-intelligence/china-europe-saf-index-september";
 import ShapharRefining from "@/pages/projects/shaphar-refining";
+import SAFProject from "@/pages/saf-project";
 import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import NotFound from "@/pages/not-found";
@@ -32,6 +33,7 @@ function Router() {
       <Route path="/market-intelligence/china-europe-saf-index" component={ChinaEuropeSAFIndex} />
       <Route path="/market-intelligence/china-europe-saf-index-september" component={ChinaEuropeSAFIndexSeptember} />
       <Route path="/projects/shaphar-refining" component={ShapharRefining} />
+      <Route path="/saf-project" component={SAFProject} />
       <Route path="/privacy-policy" component={PrivacyPolicy} />
       <Route path="/terms-of-service" component={TermsOfService} />
       <Route component={NotFound} />

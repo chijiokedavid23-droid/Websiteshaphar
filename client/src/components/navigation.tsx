@@ -32,6 +32,7 @@ export default function Navigation() {
   const navigationItems = [
     { name: "Home", path: "/" },
     { name: "SAF", path: "/saf" },
+    { name: "SAF Project", path: "/saf-project" },
     { 
       name: "Market Intelligence", 
       path: "/market-intelligence",
