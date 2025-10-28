@@ -71,81 +71,81 @@ export default function ProjectsSection() {
             </div>
 
             {/* Right Column - Key Stats */}
-            <div className="p-12 bg-gray-50">
-              <div className="grid grid-cols-2 gap-6 mb-8">
+            <div className="p-6 md:p-12 bg-gray-50">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
                 <motion.div
-                  className="bg-white rounded-2xl p-6 shadow-md border border-gray-100"
+                  className="bg-white rounded-2xl p-4 md:p-6 shadow-md border border-gray-100"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.1 }}
                   viewport={{ once: true }}
                 >
-                  <div className="w-12 h-12 bg-emerald/10 rounded-xl flex items-center justify-center mb-4">
-                    <Building2 className="w-6 h-6 text-emerald" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-emerald/10 rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                    <Building2 className="w-5 h-5 md:w-6 md:h-6 text-emerald" />
                   </div>
-                  <div className="text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Capacity</div>
-                  <div className="text-2xl font-bold text-navy">200,000 MT/year</div>
-                  <div className="text-sm text-gray-600 mt-1">SAF + HVO</div>
+                  <div className="text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Capacity</div>
+                  <div className="text-xl md:text-2xl font-bold text-navy">200,000 MT/year</div>
+                  <div className="text-xs md:text-sm text-gray-600 mt-1">SAF + HVO</div>
                 </motion.div>
 
                 <motion.div
-                  className="bg-white rounded-2xl p-6 shadow-md border border-gray-100"
+                  className="bg-white rounded-2xl p-4 md:p-6 shadow-md border border-gray-100"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <div className="w-12 h-12 bg-sky/10 rounded-xl flex items-center justify-center mb-4">
-                    <MapPin className="w-6 h-6 text-sky" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-sky/10 rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-sky" />
                   </div>
-                  <div className="text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Location</div>
-                  <div className="text-2xl font-bold text-navy">Rotterdam</div>
-                  <div className="text-sm text-gray-600 mt-1">Netherlands</div>
+                  <div className="text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Location</div>
+                  <div className="text-xl md:text-2xl font-bold text-navy">Rotterdam</div>
+                  <div className="text-xs md:text-sm text-gray-600 mt-1">Netherlands</div>
                 </motion.div>
 
                 <motion.div
-                  className="bg-white rounded-2xl p-6 shadow-md border border-gray-100"
+                  className="bg-white rounded-2xl p-4 md:p-6 shadow-md border border-gray-100"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
                   viewport={{ once: true }}
                 >
-                  <div className="w-12 h-12 bg-forest/10 rounded-xl flex items-center justify-center mb-4">
-                    <Calendar className="w-6 h-6 text-forest" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-forest/10 rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                    <Calendar className="w-5 h-5 md:w-6 md:h-6 text-forest" />
                   </div>
-                  <div className="text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Target Start</div>
-                  <div className="text-2xl font-bold text-navy">Q1 2027</div>
-                  <div className="text-sm text-gray-600 mt-1">Construction</div>
+                  <div className="text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Target Start</div>
+                  <div className="text-xl md:text-2xl font-bold text-navy">Q1 2027</div>
+                  <div className="text-xs md:text-sm text-gray-600 mt-1">Construction</div>
                 </motion.div>
 
                 <motion.div
-                  className="bg-white rounded-2xl p-6 shadow-md border border-gray-100"
+                  className="bg-white rounded-2xl p-4 md:p-6 shadow-md border border-gray-100"
                   initial={{ opacity: 0, scale: 0.9 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: 0.4 }}
                   viewport={{ once: true }}
                 >
-                  <div className="w-12 h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-4">
-                    <TrendingUp className="w-6 h-6 text-gold" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 bg-gold/10 rounded-xl flex items-center justify-center mb-3 md:mb-4">
+                    <TrendingUp className="w-5 h-5 md:w-6 md:h-6 text-gold" />
                   </div>
-                  <div className="text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Expansion</div>
-                  <div className="text-2xl font-bold text-navy">500,000 MT/year</div>
-                  <div className="text-sm text-gray-600 mt-1">Future potential</div>
+                  <div className="text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Expansion</div>
+                  <div className="text-xl md:text-2xl font-bold text-navy">500,000 MT/year</div>
+                  <div className="text-xs md:text-sm text-gray-600 mt-1">Future potential</div>
                 </motion.div>
               </div>
 
-              <div className="bg-gradient-to-br from-emerald/10 to-mint/10 rounded-2xl p-6 border-2 border-emerald/20">
-                <h4 className="text-lg font-bold text-navy mb-3">Technology</h4>
-                <p className="text-gray-700 mb-2">
+              <div className="bg-gradient-to-br from-emerald/10 to-mint/10 rounded-2xl p-4 md:p-6 border-2 border-emerald/20">
+                <h4 className="text-base md:text-lg font-bold text-navy mb-2 md:mb-3">Technology</h4>
+                <p className="text-sm md:text-base text-gray-700 mb-2">
                   <strong className="text-navy">HEFA Process</strong> - Hydroprocessed Esters and Fatty Acids
                 </p>
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 text-xs md:text-sm">
                   Multi-feedstock capability: UCO, Animal Fats, PFAD
                 </p>
               </div>
 
-              <div className="mt-6 bg-white rounded-2xl p-6 border border-gray-100">
-                <h4 className="text-lg font-bold text-navy mb-3">Certifications</h4>
+              <div className="mt-4 md:mt-6 bg-white rounded-2xl p-4 md:p-6 border border-gray-100">
+                <h4 className="text-base md:text-lg font-bold text-navy mb-2 md:mb-3">Certifications</h4>
                 <div className="flex flex-wrap gap-2">
                   <span className="bg-emerald/10 text-emerald text-sm font-bold px-4 py-2 rounded-lg">ISCC EU</span>
                   <span className="bg-sky/10 text-sky text-sm font-bold px-4 py-2 rounded-lg">CORSIA</span>
