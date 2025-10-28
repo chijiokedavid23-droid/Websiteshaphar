@@ -2,6 +2,7 @@ import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
 import CompanyOverview from "@/components/company-overview";
 import CapabilitiesSection from "@/components/capabilities-section";
+import ProjectsSection from "@/components/projects-section";
 import MarketImpact from "@/components/market-impact";
 import NewsSection from "@/components/news-section";
 import ContactSection from "@/components/contact-section";
@@ -74,6 +75,7 @@ export default function Home() {
         <HeroSection />
         <CompanyOverview />
         <CapabilitiesSection />
+        <ProjectsSection />
         <MarketImpact />
         <NewsSection />
         <ContactSection />
