@@ -36,7 +36,7 @@ export default function SAFProject() {
   const keyFacts = [
     { label: "Capacity", value: "200,000 MT per year", sublabel: "(SAF + HVO)" },
     { label: "Technology", value: "HEFA Process", sublabel: "Hydroprocessed Esters and Fatty Acids" },
-    { label: "Feedstock", value: "UCO, Animal Fats, PFAD", sublabel: "Multi-feedstock capability" },
+    { label: "Feedstock", value: "Waste-based Feedstocks", sublabel: "Multi-feedstock capability" },
     { label: "Target Start", value: "2027", sublabel: "Construction phase" },
     { label: "Location", value: "Rotterdam, Netherlands", sublabel: "" },
     { label: "Future Expansion", value: "500,000 MT/year", sublabel: "Scalability built-in" },
