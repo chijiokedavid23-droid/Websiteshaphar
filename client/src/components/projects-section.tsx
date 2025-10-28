@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Building2, MapPin, Calendar, TrendingUp, ArrowRight } from "lucide-react";
 import { Link } from "wouter";
-import shapharRefiningLogo from "@assets/Refinary Logo2_1761044221418.jpg";
+import shapharRefiningLogo from "@assets/Refinary Logo_1761655481254.jpg";
 
 export default function ProjectsSection() {
   return (

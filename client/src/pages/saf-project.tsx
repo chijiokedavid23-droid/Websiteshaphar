@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useEffect } from "react";
 import { updateSEOTags } from "@/lib/seo";
 import { Link } from "wouter";
-import shapharRefiningLogo from "@assets/Refinary Logo2_1761044221418.jpg";
+import shapharRefiningLogo from "@assets/Refinary Logo_1761655481254.jpg";
 
 export default function SAFProject() {
   useEffect(() => {
