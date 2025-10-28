@@ -140,7 +140,7 @@ export default function ProjectsSection() {
                   <strong className="text-navy">HEFA Process</strong> - Hydroprocessed Esters and Fatty Acids
                 </p>
                 <p className="text-gray-600 text-xs md:text-sm">
-                  Multi-feedstock capability: UCO, Animal Fats, PFAD
+                  Multi-feedstock capability
                 </p>
               </div>
 
