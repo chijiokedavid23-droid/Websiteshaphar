@@ -70,67 +70,107 @@ export default function ContactSection() {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-navy mb-6">Global Operations</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Reach out to our teams across China, Netherlands, and beyond for sustainable aviation fuel solutions.
+              Reach out to our teams across USA, Canada, Netherlands, and China for sustainable aviation fuel solutions.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8 mb-8">
-            {/* China Office */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+            {/* USA Office */}
             <motion.div 
-              className="bg-gray-50 rounded-2xl p-8 shadow-lg"
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              className="bg-gray-50 rounded-2xl p-6 shadow-lg"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-navy rounded-2xl flex items-center justify-center mr-4">
-                  <MapPin className="w-8 h-8 text-white" />
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-navy rounded-xl flex items-center justify-center mr-3">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-navy">China Operations</h3>
-                  <p className="text-gray-600">Primary Refinery & Production</p>
+                  <h3 className="text-lg font-bold text-navy">USA</h3>
+                  <p className="text-sm text-gray-600">US Operations</p>
                 </div>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <Building className="w-5 h-5 text-emerald mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <div className="font-medium text-charcoal">Address</div>
-                    <div className="text-gray-600">
-                      South of Industrial 6th Road, Economic Development Zone, Yangxin County, Shandong China
-                    </div>
-                  </div>
+              <div className="flex items-start">
+                <Building className="w-4 h-4 text-emerald mt-1 mr-2 flex-shrink-0" />
+                <div className="text-sm text-gray-600">
+                  5718 Westheimer Rd, Suite 1000, Houston, Texas 77057
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Canada Office */}
+            <motion.div 
+              className="bg-gray-50 rounded-2xl p-6 shadow-lg"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-sky rounded-xl flex items-center justify-center mr-3">
+                  <MapPin className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-navy">Canada</h3>
+                  <p className="text-sm text-gray-600">Canadian Operations</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Building className="w-4 h-4 text-emerald mt-1 mr-2 flex-shrink-0" />
+                <div className="text-sm text-gray-600">
+                  Office 138, 145 1/2 Church Street, Unit 5, Toronto, Ontario M5B 1Y4
                 </div>
               </div>
             </motion.div>
 
             {/* Netherlands Office */}
             <motion.div 
-              className="bg-gray-50 rounded-2xl p-8 shadow-lg"
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8 }}
+              className="bg-gray-50 rounded-2xl p-6 shadow-lg"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
               viewport={{ once: true }}
             >
-              <div className="flex items-center mb-6">
-                <div className="w-16 h-16 bg-emerald rounded-2xl flex items-center justify-center mr-4">
-                  <MapPin className="w-8 h-8 text-white" />
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-emerald rounded-xl flex items-center justify-center mr-3">
+                  <MapPin className="w-6 h-6 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold text-navy">Netherlands Office</h3>
-                  <p className="text-gray-600">European Operations Hub</p>
+                  <h3 className="text-lg font-bold text-navy">Netherlands</h3>
+                  <p className="text-sm text-gray-600">European Hub</p>
                 </div>
               </div>
-              <div className="space-y-4">
-                <div className="flex items-start">
-                  <Building className="w-5 h-5 text-emerald mt-1 mr-3 flex-shrink-0" />
-                  <div>
-                    <div className="font-medium text-charcoal">Address</div>
-                    <div className="text-gray-600">
-                      Coolsingel 104, 3011 AG, Rotterdam, Netherlands
-                    </div>
-                  </div>
+              <div className="flex items-start">
+                <Building className="w-4 h-4 text-emerald mt-1 mr-2 flex-shrink-0" />
+                <div className="text-sm text-gray-600">
+                  Coolsingel 104, 3011 AG, Rotterdam, Netherlands
+                </div>
+              </div>
+            </motion.div>
+
+            {/* China Office */}
+            <motion.div 
+              className="bg-gray-50 rounded-2xl p-6 shadow-lg"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 bg-forest rounded-xl flex items-center justify-center mr-3">
+                  <MapPin className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-navy">China</h3>
+                  <p className="text-sm text-gray-600">Primary Refinery</p>
+                </div>
+              </div>
+              <div className="flex items-start">
+                <Building className="w-4 h-4 text-emerald mt-1 mr-2 flex-shrink-0" />
+                <div className="text-sm text-gray-600">
+                  South of Industrial 6th Road, Economic Development Zone, Yangxin County, Shandong
                 </div>
               </div>
             </motion.div>

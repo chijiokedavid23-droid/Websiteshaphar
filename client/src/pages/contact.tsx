@@ -159,6 +159,13 @@ export default function Contact() {
       color: "bg-navy"
     },
     {
+      country: "Canada",
+      title: "Canadian Operations",
+      address: "Office 138, 145 1/2 Church Street, Unit 5, Toronto, Ontario M5B 1Y4",
+      icon: Building,
+      color: "bg-sky"
+    },
+    {
       country: "Netherlands",
       title: "European Operations Hub",
       address: "Coolsingel 104, 3011 AG, Rotterdam, Netherlands",
