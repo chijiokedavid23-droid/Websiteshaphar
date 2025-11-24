@@ -38,7 +38,7 @@ export default function SAFProject() {
     { label: "Technology", value: "HEFA Process", sublabel: "Hydroprocessed Esters and Fatty Acids" },
     { label: "Feedstock", value: "Waste-based Feedstocks", sublabel: "Multi-feedstock capability" },
     { label: "Target Start", value: "2027", sublabel: "Construction phase" },
-    { label: "Location", value: "Rotterdam, Netherlands", sublabel: "" },
+    { label: "Location", value: "Netherlands", sublabel: "" },
     { label: "Future Expansion", value: "500,000 MT/year", sublabel: "Scalability built-in" },
     { label: "Certifications", value: "ISCC EU, CORSIA, SAFc", sublabel: "Targeting all frameworks" }
   ];
@@ -128,13 +128,13 @@ export default function SAFProject() {
             className="max-w-4xl mx-auto"
           >
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Shaphar Refining is developing a <strong className="text-navy">200,000 metric ton per year HEFA-based SAF/HVO refinery</strong> in the Netherlands, designed to produce sustainable aviation fuel and renewable diesel using waste-based feedstocks such as used cooking oil (UCO), tallow, and PFAD.
+              Shaphar Refining is developing <strong className="text-navy">RefuelOne</strong>, a <strong className="text-navy">200,000 metric ton per year HEFA-based SAF/HVO refinery</strong> in the Netherlands, designed to produce sustainable aviation fuel and renewable diesel using waste-based feedstocks such as used cooking oil (UCO), tallow, and PFAD.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
               The facility will utilize advanced <strong className="text-navy">HEFA (Hydroprocessed Esters and Fatty Acids) technology</strong> with multi-feedstock capability, enabling flexible production to meet evolving market demands and regulatory requirements.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Located in <strong className="text-navy">Rotterdam, Netherlands</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
+              Located in <strong className="text-navy">Netherlands</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
               With a construction target start of <strong className="text-navy">Q1 2027</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
