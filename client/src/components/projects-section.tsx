@@ -99,8 +99,8 @@ export default function ProjectsSection() {
                     <MapPin className="w-5 h-5 md:w-6 md:h-6 text-sky" />
                   </div>
                   <div className="text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Location</div>
-                  <div className="text-xl md:text-2xl font-bold text-navy">Rotterdam</div>
-                  <div className="text-xs md:text-sm text-gray-600 mt-1">Netherlands</div>
+                  <div className="text-xl md:text-2xl font-bold text-navy">Netherlands</div>
+                  <div className="text-xs md:text-sm text-gray-600 mt-1"></div>
                 </motion.div>
 
                 <motion.div
