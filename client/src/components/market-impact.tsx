@@ -40,7 +40,7 @@ export default function MarketImpact() {
               With mandates rolling out across Europe, the U.S., and Asia, airlines face pressure 
               to meet SAF blend ratios.
             </p>
-            <p className="text-lg text-emerald-300 mb-8 font-semibold">
+            <p className="text-lg text-white mb-8 font-semibold">
               ShapharGroup is already in the field— not just talking, but executing, delivering 
               real fuel, to real jets, reducing real emissions.
             </p>
