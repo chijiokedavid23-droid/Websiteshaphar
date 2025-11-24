@@ -256,7 +256,7 @@ export default function SAFProject() {
               </p>
               <a 
                 href="mailto:info@shaphargroup.com"
-                className="inline-flex items-center text-2xl font-bold text-emerald-300 hover:text-emerald-200 transition-colors"
+                className="inline-flex items-center text-2xl font-bold text-white hover:text-gray-200 transition-colors"
               >
                 info@shaphargroup.com
               </a>
