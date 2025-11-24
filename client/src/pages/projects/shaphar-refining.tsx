@@ -36,7 +36,7 @@ export default function ShapharRefining() {
     { label: "Capacity", value: "200,000 MT per year", sublabel: "(SAF + HVO)" },
     { label: "Technology", value: "HEFA Process", sublabel: "Hydroprocessed Esters and Fatty Acids" },
     { label: "Feedstock", value: "UCO, Animal Fats, PFAD", sublabel: "Multi-feedstock capability" },
-    { label: "Target Start", value: "2027", sublabel: "Construction phase" },
+    { label: "Target Start", value: "2028", sublabel: "Production" },
     { label: "Location", value: "Netherlands", sublabel: "" },
     { label: "Future Expansion", value: "500,000 MT/year", sublabel: "Scalability built-in" },
     { label: "Certifications", value: "ISCC EU, CORSIA, SAFc", sublabel: "Targeting all frameworks" }
@@ -137,7 +137,7 @@ export default function ShapharRefining() {
               Located in <strong className="text-navy">Netherlands</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              With a construction target start of <strong className="text-navy">Q1 2027</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
+              With a production target start of <strong className="text-navy">2028</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
             </p>
           </motion.div>
         </div>

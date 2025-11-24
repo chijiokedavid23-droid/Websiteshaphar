@@ -114,8 +114,8 @@ export default function ProjectsSection() {
                     <Calendar className="w-5 h-5 md:w-6 md:h-6 text-forest" />
                   </div>
                   <div className="text-xs md:text-sm text-gray-500 font-medium uppercase tracking-wide mb-1">Target Start</div>
-                  <div className="text-xl md:text-2xl font-bold text-navy">Q1 2027</div>
-                  <div className="text-xs md:text-sm text-gray-600 mt-1">Construction</div>
+                  <div className="text-xl md:text-2xl font-bold text-navy">2028</div>
+                  <div className="text-xs md:text-sm text-gray-600 mt-1">Production</div>
                 </motion.div>
 
                 <motion.div
