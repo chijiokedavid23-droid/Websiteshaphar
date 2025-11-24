@@ -255,10 +255,10 @@ export default function SAFProject() {
                 For collaboration inquiries, contact:
               </p>
               <a 
-                href="mailto:davis.c@shaphargroup.com"
+                href="mailto:info@shaphargroup.com"
                 className="inline-flex items-center text-2xl font-bold text-emerald-300 hover:text-emerald-200 transition-colors"
               >
-                davis.c@shaphargroup.com
+                info@shaphargroup.com
               </a>
             </div>
           </motion.div>
