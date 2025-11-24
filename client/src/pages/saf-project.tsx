@@ -154,7 +154,7 @@ export default function SAFProject() {
             className="text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">Our Vision</h2>
-            <p className="text-2xl md:text-3xl text-emerald-300 leading-relaxed max-w-5xl mx-auto font-light">
+            <p className="text-2xl md:text-3xl text-white leading-relaxed max-w-5xl mx-auto font-light">
               To accelerate the transition to clean aviation and renewable fuels by building one of Europe's most efficient, multi-feedstock biorefineries — powered by circular resources and advanced refining technologies.
             </p>
           </motion.div>
