@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { CheckCircle, FileText } from "lucide-react";
 import { Link } from "wouter";
-import safFactoryImagePath from "@assets/SAF Factory to jet_1754154741557.png";
 import chinaTeamImagePath from "@assets/Tanks_1764341200861.jpg";
 
 export default function CompanyOverview() {
@@ -80,26 +79,14 @@ export default function CompanyOverview() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <div className="space-y-6">
-              <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-r from-emerald/20 to-mint/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
-                <img 
-                  src={safFactoryImagePath}
-                  alt="SAF Factory to Jet - Sustainable Aviation Fuel production and delivery process"
-                  className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-500 z-10"
-                  key="saf-factory-image"
-                />
-              </div>
-              <div className="relative">
-                <img 
-                  src={chinaTeamImagePath}
-                  alt="Shaphargroup leadership team visiting China facility with industrial storage tanks in background"
-                  className="relative rounded-2xl shadow-xl w-full h-auto z-10"
-                />
-                <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm rounded-lg px-3 py-2">
-                  <p className="text-xs font-semibold text-navy">Live from China Operations</p>
-                </div>
-              </div>
+            <div className="absolute -inset-4 bg-gradient-to-r from-emerald/20 to-mint/20 rounded-3xl blur-xl opacity-70 group-hover:opacity-100 transition-opacity"></div>
+            <img 
+              src={chinaTeamImagePath}
+              alt="Shaphargroup leadership team visiting China facility with industrial storage tanks in background"
+              className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-500 z-10"
+            />
+            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 z-20">
+              <p className="text-sm font-semibold text-navy">Live from China Operations</p>
             </div>
           </motion.div>
         </div>
