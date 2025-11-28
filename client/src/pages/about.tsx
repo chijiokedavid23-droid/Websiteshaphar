@@ -158,7 +158,7 @@ export default function About() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent rounded-2xl"></div>
               <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2">
                 <p className="text-sm font-semibold text-navy">Shaphargroup China Operations</p>
-                <p className="text-xs text-gray-600">Hainan Province, China</p>
+                <p className="text-xs text-gray-600">Shandong Province, China</p>
               </div>
             </motion.div>
           </div>
