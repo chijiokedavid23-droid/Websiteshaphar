@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import aboutPageImagePath from "@assets/About page_1754671131671.png";
 import greenEarthImagePath from "@assets/green earth_1754163467882.jpg";
+import chinaFacilityImagePath from "@assets/tanks3jpg_1764341289677.jpg";
 
 export default function About() {
   // SEO Meta Tags Setup
@@ -150,11 +151,15 @@ export default function About() {
               viewport={{ once: true }}
             >
               <img 
-                src={greenEarthImagePath}
-                alt="Green earth sustainability concept"
+                src={chinaFacilityImagePath}
+                alt="Shaphargroup Industry Hainan Co Ltd facility in China showing industrial storage tanks with SGUCO branding and advanced refining infrastructure"
                 className="rounded-2xl shadow-2xl w-full h-auto"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy/20 to-transparent rounded-2xl"></div>
+              <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2">
+                <p className="text-sm font-semibold text-navy">Shaphargroup China Operations</p>
+                <p className="text-xs text-gray-600">Hainan Province, China</p>
+              </div>
             </motion.div>
           </div>
         </div>
