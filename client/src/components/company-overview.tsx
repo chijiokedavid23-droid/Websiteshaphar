@@ -85,9 +85,6 @@ export default function CompanyOverview() {
               alt="Shaphargroup leadership team visiting China facility with industrial storage tanks in background"
               className="relative rounded-2xl shadow-2xl w-full h-auto transform group-hover:scale-105 transition-transform duration-500 z-10"
             />
-            <div className="absolute bottom-4 left-4 bg-white/90 backdrop-blur-sm rounded-lg px-4 py-2 z-20">
-              <p className="text-sm font-semibold text-navy">Live from China Operations</p>
-            </div>
           </motion.div>
         </div>
       </div>
