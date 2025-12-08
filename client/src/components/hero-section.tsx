@@ -107,7 +107,7 @@ export default function HeroSection() {
               >
                 <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
                   <Factory className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform duration-300" />
-                  Explore our UCO Pre-Treatment Plant in China: Shandong Prophet Energy Co., LTD
+                  Explore our UCO Pre-Treatment Plant in China: Shandong Prophet Energy Co., LTD (SG UCO)
                 </a>
               </Button>
             </motion.div>
