@@ -98,16 +98,18 @@ export default function HeroSection() {
             <motion.div
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
+              className="w-full max-w-md sm:max-w-xl px-4 sm:px-0"
             >
               <Button
                 size="lg"
                 variant="outline"
                 asChild
-                className="bg-white/10 backdrop-blur-md border-2 border-white/40 text-white hover:bg-white hover:text-navy font-semibold text-lg px-10 py-4 rounded-xl transition-all duration-300 group"
+                className="bg-white/10 backdrop-blur-md border-2 border-white/40 text-white hover:bg-white hover:text-navy font-semibold text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-3 sm:py-4 rounded-xl transition-all duration-300 group w-full"
               >
-                <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer" className="flex items-center">
-                  <Factory className="w-5 h-5 mr-3 group-hover:rotate-12 transition-transform duration-300" />
-                  Explore our UCO Pre-Treatment Plant in China: Shandong Prophet Energy Co., LTD (SG UCO)
+                <a href="https://sg-uco.com/" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center text-center flex-wrap">
+                  <Factory className="w-5 h-5 mr-2 sm:mr-3 group-hover:rotate-12 transition-transform duration-300 flex-shrink-0" />
+                  <span className="hidden sm:inline">Explore our UCO Pre-Treatment Plant in China: Shandong Prophet Energy Co., LTD (SG UCO)</span>
+                  <span className="sm:hidden">Explore SG UCO Pre-Treatment Plant</span>
                 </a>
               </Button>
             </motion.div>
