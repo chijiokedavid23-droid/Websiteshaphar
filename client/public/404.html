@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0;url=/">
+  <meta http-equiv="refresh" content="0;url=/Websiteshaphar/">
   <script>
     // Single Page App redirect for GitHub Pages
     // Redirects 404 requests to the main app for client-side routing
+    const basePath = '/Websiteshaphar';
     const path = window.location.pathname;
     const search = window.location.search;
     const hash = window.location.hash;
     sessionStorage.setItem('redirect', path + search + hash);
-    window.location.replace('/');
+    window.location.replace(basePath + '/');
   </script>
   <title>Redirecting...</title>
 </head>

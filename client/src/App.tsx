@@ -19,7 +19,7 @@ import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import NotFound from "@/pages/not-found";
 
-const basePath = import.meta.env.BASE_URL?.replace(/\/$/, "") || "";
+const basePath = "/Websiteshaphar";
 
 function AppRoutes() {
   return (
