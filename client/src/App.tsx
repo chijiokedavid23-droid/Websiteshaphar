@@ -19,7 +19,7 @@ import PrivacyPolicy from "@/pages/privacy-policy";
 import TermsOfService from "@/pages/terms-of-service";
 import NotFound from "@/pages/not-found";
 
-const basePath = "/Websiteshaphar";
+const basePath = "";
 
 function AppRoutes() {
   return (
