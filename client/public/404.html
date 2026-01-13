@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="refresh" content="0;url=/">
+  <script>
+    // Single Page App redirect for GitHub Pages
+    // Redirects 404 requests to the main app for client-side routing
+    const path = window.location.pathname;
+    const search = window.location.search;
+    const hash = window.location.hash;
+    sessionStorage.setItem('redirect', path + search + hash);
+    window.location.replace('/');
+  </script>
+  <title>Redirecting...</title>
+</head>
+<body>
+  <p>Redirecting to homepage...</p>
+</body>
+</html>
