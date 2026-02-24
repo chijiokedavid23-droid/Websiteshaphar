@@ -13,6 +13,7 @@ import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane_Picture_1771951543509.jpeg";
 import jiGangImagePath from "@assets/Ji_Gang_(Gee_Gang)_1771951371246.jpeg";
 import elvisImagePath from "@assets/Elvis_1771951421457.jpeg";
+import brianImagePath from "@assets/Brian_1771951929122.jpeg";
 
 export default function Leadership() {
   // SEO Meta Tags Setup
@@ -70,6 +71,12 @@ export default function Leadership() {
             "name": "Elvis Cao",
             "jobTitle": "Director Supply Chain",
             "description": "Supply chain expert managing global UCO procurement and logistics"
+          },
+          {
+            "@type": "Person",
+            "name": "Brian Jelier",
+            "jobTitle": "Director of Operations Europe",
+            "description": "Operations leader driving European refining and logistics infrastructure"
           }
         ]
       }
@@ -206,6 +213,16 @@ export default function Leadership() {
             "name": "Shaphargroup"
           },
           "description": "Supply chain expert overseeing UCO sourcing and logistics across China, former Sinopec executive."
+        },
+        {
+          "@type": "Person",
+          "name": "Brian Jelier",
+          "jobTitle": "Director of Operations Europe",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup"
+          },
+          "description": "Operations leader with extensive experience in industrial operations and renewable energy project delivery across European markets."
         }
       ]
     };
@@ -272,6 +289,12 @@ export default function Leadership() {
       title: "Director Supply Chain",
       image: elvisImagePath,
       bio: "Elvis Cao is Director of Supply Chain at Shaphargroup, where he oversees the end-to-end sourcing, logistics, and traceability of UCO across China. With a degree in Chemistry from North China University of Science and Technology, he brings over 10 years of experience managing international supply chains in the renewable fuels sector. Prior to Shaphargroup, Elvis held a senior logistics role at Sinopec, one of China's largest energy companies. His expertise ensures secure, scalable, and compliant feedstock delivery for SAF and HVO markets."
+    },
+    {
+      name: "Brian Jelier",
+      title: "Director of Operations Europe",
+      image: brianImagePath,
+      bio: "Brian Jelier is Director of Operations Europe at Shaphargroup, where he leads the company's operational strategy and execution across European markets. With extensive experience in industrial operations, process optimization, and renewable energy project delivery, Brian oversees the development and scaling of Shaphargroup's European refining and logistics infrastructure. His deep understanding of European regulatory frameworks, sustainability mandates, and SAF market dynamics ensures operational excellence and compliance across the region. Brian's leadership is central to advancing Shaphargroup's RefuelOne project and expanding its European footprint in the sustainable aviation fuel sector."
     }
   ];
 
