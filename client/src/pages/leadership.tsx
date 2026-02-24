@@ -11,7 +11,7 @@ import timRoseImagePath from "@assets/Tim_1771950388205.png";
 import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
-import jiGangImagePath from "@assets/Gee_1754161789665.jpg";
+import jiGangImagePath from "@assets/Ji_Gang_(Gee_Gang)_1771951371246.jpeg";
 import elvisImagePath from "@assets/Elvis.jpg2_1754161974007.jpg";
 
 export default function Leadership() {
