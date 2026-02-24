@@ -10,7 +10,7 @@ import aboutPageImagePath from "@assets/About page_1754671131671.png";
 import timRoseImagePath from "@assets/Tim_1771950388205.png";
 import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
-import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
+import janeImagePath from "@assets/Jane_Picture_1771951543509.jpeg";
 import jiGangImagePath from "@assets/Ji_Gang_(Gee_Gang)_1771951371246.jpeg";
 import elvisImagePath from "@assets/Elvis_1771951421457.jpeg";
 
