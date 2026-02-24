@@ -14,6 +14,7 @@ import janeImagePath from "@assets/Jane_Picture_1771951543509.jpeg";
 import jiGangImagePath from "@assets/Ji_Gang_(Gee_Gang)_1771951371246.jpeg";
 import elvisImagePath from "@assets/Elvis_1771951421457.jpeg";
 import brianImagePath from "@assets/Brian_1771951929122.jpeg";
+import jeremiahImagePath from "@assets/Jeremiah_Shallangwa_1771952202886.jpeg";
 
 export default function Leadership() {
   // SEO Meta Tags Setup
@@ -77,6 +78,12 @@ export default function Leadership() {
             "name": "Brian Jelier",
             "jobTitle": "Director of Operations Europe",
             "description": "Operations leader driving European refining and logistics infrastructure"
+          },
+          {
+            "@type": "Person",
+            "name": "Jeremiah Shallangwa",
+            "jobTitle": "Lead Energy Integration Europe",
+            "description": "Energy integration specialist driving sustainable fuel solutions across European markets"
           }
         ]
       }
@@ -223,6 +230,16 @@ export default function Leadership() {
             "name": "Shaphargroup"
           },
           "description": "Operations leader with extensive experience in industrial operations and renewable energy project delivery across European markets."
+        },
+        {
+          "@type": "Person",
+          "name": "Jeremiah Shallangwa",
+          "jobTitle": "Lead Energy Integration Europe",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Shaphargroup"
+          },
+          "description": "Energy integration specialist with expertise in renewable fuel technologies and cross-border project coordination across European markets."
         }
       ]
     };
@@ -295,6 +312,12 @@ export default function Leadership() {
       title: "Director of Operations Europe",
       image: brianImagePath,
       bio: "Brian Jelier is Director of Operations Europe at Shaphargroup, where he leads the company's operational strategy and execution across European markets. With extensive experience in industrial operations, process optimization, and renewable energy project delivery, Brian oversees the development and scaling of Shaphargroup's European refining and logistics infrastructure. His deep understanding of European regulatory frameworks, sustainability mandates, and SAF market dynamics ensures operational excellence and compliance across the region. Brian's leadership is central to advancing Shaphargroup's RefuelOne project and expanding its European footprint in the sustainable aviation fuel sector."
+    },
+    {
+      name: "Jeremiah Shallangwa",
+      title: "Lead Energy Integration Europe",
+      image: jeremiahImagePath,
+      bio: "Jeremiah Shallangwa serves as Lead Energy Integration Europe at Shaphargroup, where he spearheads the integration of sustainable energy solutions across the company's European operations. With a strong background in energy systems engineering, renewable fuel technologies, and cross-border project coordination, Jeremiah plays a pivotal role in aligning Shaphargroup's SAF production capabilities with European energy infrastructure and regulatory requirements. His expertise in energy transition strategies, HEFA process integration, and stakeholder engagement ensures seamless collaboration between technical teams, regulatory bodies, and commercial partners. Jeremiah's work is integral to Shaphargroup's mission of delivering scalable, sustainable aviation fuel solutions to the European market."
     }
   ];
 
