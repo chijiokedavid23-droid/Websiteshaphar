@@ -55,8 +55,8 @@ export default function Leadership() {
           },
           {
             "@type": "Person",
-            "name": "Jane Zhen",
-            "jobTitle": "Chief Financial Officer",
+            "name": "Zhen Tiyu (Jane Zhen)",
+            "jobTitle": "CFO Asia",
             "description": "Financial expert specializing in sustainable energy investments and operations"
           },
           {
@@ -179,7 +179,7 @@ export default function Leadership() {
           "@type": "Person",
           "name": "Zhen Tiyu",
           "alternateName": "Jane Zhen",
-          "jobTitle": "Chief Financial Officer",
+          "jobTitle": "CFO Asia",
           "worksFor": {
             "@type": "Organization",
             "name": "Shaphargroup Industry (Hainan)"
@@ -257,7 +257,7 @@ export default function Leadership() {
     },
     {
       name: "Zhen Tiyu (Jane Zhen)",
-      title: "CFO",
+      title: "CFO Asia",
       image: janeImagePath,
       bio: "As Chief Financial Officer of Shaphargroup Industry (Hainan), Jane Zhen leads financial strategy across global UCO and SAF trade operations. With deep expertise in international trade finance, export tax optimization, and capital risk control, she ensures the group's financial resilience and compliance. Jane holds a degree in Accounting from Wuxi Vocational and Technical University and has led finance teams at Michelin and Bertelsmann. Her leadership is instrumental in aligning Shaphargroup's financial structure with its global growth and sustainability goals."
     },
