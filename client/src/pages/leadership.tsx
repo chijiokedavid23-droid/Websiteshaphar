@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import aboutPageImagePath from "@assets/About page_1754671131671.png";
-import timRoseImagePath from "@assets/MR TIM_1754156709435.jpg";
+import timRoseImagePath from "@assets/Tim_1771950388205.png";
 import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
@@ -62,7 +62,7 @@ export default function Leadership() {
           {
             "@type": "Person",
             "name": "Timothy Rose",
-            "jobTitle": "Non Executive Director",
+            "jobTitle": "Chief Strategy and Finance Director",
             "description": "Distinguished governance leader and strategic advisor"
           },
           {
@@ -189,7 +189,7 @@ export default function Leadership() {
         {
           "@type": "Person",
           "name": "Timothy Rose",
-          "jobTitle": "Non Executive Director",
+          "jobTitle": "Chief Strategy and Finance Director",
           "worksFor": {
             "@type": "Organization",
             "name": "Shaphargroup"
@@ -263,7 +263,7 @@ export default function Leadership() {
     },
     {
       name: "Timothy Rose",
-      title: "Non Executive Director",
+      title: "Chief Strategy and Finance Director",
       image: timRoseImagePath,
       bio: "An accomplished boardroom leader and Chartered Director, Timothy brings over 30 years of strategic governance and high-impact advisory experience across finance, renewable energy, and global development sectors. He has chaired and advised numerous public and private boards, including multi-million-pound turnarounds, international fund management, and ESG-driven growth. Timothy previously led the World Bank's $500M Financial Sector Reform Programme and has raised over $1 billion for prominent clients. His global insight and disciplined board leadership make him a cornerstone of Shaphargroup's growth and governance strategy."
     },
