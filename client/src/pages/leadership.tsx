@@ -12,7 +12,7 @@ import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane pics_1754161615576.jpg";
 import jiGangImagePath from "@assets/Ji_Gang_(Gee_Gang)_1771951371246.jpeg";
-import elvisImagePath from "@assets/Elvis.jpg2_1754161974007.jpg";
+import elvisImagePath from "@assets/Elvis_1771951421457.jpeg";
 
 export default function Leadership() {
   // SEO Meta Tags Setup
