@@ -8,7 +8,7 @@ import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from 
 import { updateSEOTags, SEO_CONFIGS, optimizePagePerformance } from "@/lib/seo";
 import aboutPageImagePath from "@assets/About page_1754671131671.png";
 import timRoseImagePath from "@assets/Tim_1771950388205.png";
-import charlesImagePath from "@assets/Charles JIOAa_1754162241994.jpg";
+import charlesImagePath from "@assets/Charles_1771951673745.jpeg";
 import davidImagePath from "@assets/David C. Arinze_1754161237875.jpg";
 import janeImagePath from "@assets/Jane_Picture_1771951543509.jpeg";
 import jiGangImagePath from "@assets/Ji_Gang_(Gee_Gang)_1771951371246.jpeg";
