@@ -82,8 +82,8 @@ export default function Leadership() {
           {
             "@type": "Person",
             "name": "Jeremiah Shallangwa",
-            "jobTitle": "Lead Energy Integration Europe",
-            "description": "Energy integration specialist driving sustainable fuel solutions across European markets"
+            "jobTitle": "Director of Energy Infrastructure",
+            "description": "Director of Energy Infrastructure driving sustainable fuel solutions across European markets"
           }
         ]
       }
@@ -234,7 +234,7 @@ export default function Leadership() {
         {
           "@type": "Person",
           "name": "Jeremiah Shallangwa",
-          "jobTitle": "Lead Energy Integration Europe",
+          "jobTitle": "Director of Energy Infrastructure",
           "worksFor": {
             "@type": "Organization",
             "name": "Shaphargroup"
@@ -315,7 +315,7 @@ export default function Leadership() {
     },
     {
       name: "Jeremiah Shallangwa",
-      title: "Lead Energy Integration Europe",
+      title: "Director of Energy Infrastructure",
       image: jeremiahImagePath,
       bio: "Jeremiah Shallangwa serves as Lead Energy Integration Europe at Shaphargroup, where he spearheads the integration of sustainable energy solutions across the company's European operations. With a strong background in energy systems engineering, renewable fuel technologies, and cross-border project coordination, Jeremiah plays a pivotal role in aligning Shaphargroup's SAF production capabilities with European energy infrastructure and regulatory requirements. His expertise in energy transition strategies, HEFA process integration, and stakeholder engagement ensures seamless collaboration between technical teams, regulatory bodies, and commercial partners. Jeremiah's work is integral to Shaphargroup's mission of delivering scalable, sustainable aviation fuel solutions to the European market."
     }
