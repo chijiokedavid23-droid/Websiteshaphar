@@ -300,7 +300,15 @@
           "name": "Shaphargroup",
           "description": "Official website of Shaphargroup — SAF producer in China, SAF and UCO distributor in Europe, and developer of the Shaphar Refining HEFA refinery in Rotterdam, Netherlands.",
           "publisher": { "@id": "https://shaphargroup.com/#organization" },
-          "inLanguage": "en"
+          "inLanguage": "en",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://shaphargroup.com/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
         },
         {
           "@type": "FAQPage",

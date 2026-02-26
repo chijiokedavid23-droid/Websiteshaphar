@@ -25,240 +25,204 @@ export default function Leadership() {
       ogImage: `${window.location.origin}${aboutPageImagePath}`,
       structuredData: {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Shaphargroup",
-        "image": {
-          "@type": "ImageObject",
-          "url": `${window.location.origin}${aboutPageImagePath}`,
-          "description": "Shaphargroup industrial refinery facility with storage tanks representing the company's leadership in sustainable aviation fuel production",
-          "width": "1024",
-          "height": "1024"
-        },
-        "employee": [
+        "@graph": [
           {
-            "@type": "Person",
-            "name": "Charles Jiao",
-            "alternateName": "Jiao Li Guang",
-            "jobTitle": "Chief Executive Officer",
-            "description": "Seasoned industrial chemist with expertise in SAF production and oleochemical refining"
+            "@type": "CollectionPage",
+            "@id": "https://shaphargroup.com/leadership#page",
+            "name": "Shaphargroup Leadership Team — Sustainable Aviation Fuel Executives",
+            "description": "The Shaphargroup leadership team comprises SAF production experts, UCO refining specialists, European operations directors, and strategic governance leaders driving the company's mission across China, the Netherlands, and the Americas.",
+            "url": "https://shaphargroup.com/leadership",
+            "isPartOf": { "@id": "https://shaphargroup.com/#website" },
+            "about": { "@id": "https://shaphargroup.com/#organization" }
           },
           {
-            "@type": "Person",
-            "name": "Ji Gang",
-            "jobTitle": "Production Director",
-            "description": "Expert in UCO refining operations and sustainable fuel production"
+            "@type": "Organization",
+            "@id": "https://shaphargroup.com/#organization",
+            "name": "Shaphargroup",
+            "url": "https://shaphargroup.com",
+            "description": "Shaphargroup is a sustainable aviation fuel company producing HEFA SAF in Shandong, China, distributing SAF and UCO in Europe from Rotterdam, and developing the Shaphar Refining HEFA refinery in the Netherlands.",
+            "employee": [
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#charles-jiao",
+                "name": "Charles Jiao",
+                "alternateName": ["Jiao Li Guang", "Charles Jiao SAF CEO"],
+                "jobTitle": "Chief Executive Officer",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Seasoned industrial chemist and refinery executive with over a decade of experience in sustainable aviation fuel production and oleochemical refining. Leads Shaphargroup's SAF and UCO operations in China.",
+                "knowsAbout": ["HEFA SAF Production", "UCO Refining", "Oleochemical Processing", "SAF Feedstock Science", "Sustainable Fuel Manufacturing", "ISCC Certification"],
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Chief Executive Officer",
+                  "occupationLocation": { "@type": "Country", "name": "China" }
+                }
+              },
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#ji-gang",
+                "name": "Ji Gang",
+                "alternateName": "Gee Gang",
+                "jobTitle": "Production Director",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Veteran oleochemical engineer with over 15 years of expertise in palm oil and UCO refining. Leads R&D and production line innovation at Shaphargroup's Shandong facility.",
+                "knowsAbout": ["UCO Refining", "Palm Oil Processing", "Oleochemical Engineering", "SAF Production Lines", "Renewable Fuel Manufacturing"],
+                "alumniOf": { "@type": "CollegeOrUniversity", "name": "Jiangsu University of Technology" },
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Production Director",
+                  "occupationLocation": { "@type": "Country", "name": "China" }
+                }
+              },
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#david-arinze",
+                "name": "David Chijioke Arinze",
+                "alternateName": ["David C. Arinze", "David Arinze SAF"],
+                "jobTitle": "Managing Director, Europe & Americas",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Visionary leader in renewable energy, SAF distribution, and sustainable trade. Drives Shaphargroup's UCO and SAF supply chains across Europe and the Americas. Leads European operations including Rotterdam distribution and Shaphar Refining development.",
+                "knowsAbout": ["SAF Distribution Europe", "UCO Supply Chain", "Sustainable Aviation Fuel Trade", "ESG Strategy", "Renewable Energy Markets", "SAF Offtake Agreements", "European SAF Mandates"],
+                "alumniOf": [
+                  { "@type": "CollegeOrUniversity", "name": "University of Salford", "description": "M.Sc. Project Management" },
+                  { "@type": "CollegeOrUniversity", "name": "Frankfurt School of Finance & Management", "description": "Diploma in SME & Digital Finance" }
+                ],
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Managing Director Europe & Americas",
+                  "occupationLocation": [
+                    { "@type": "City", "name": "Rotterdam", "containedInPlace": { "@type": "Country", "name": "Netherlands" } }
+                  ]
+                }
+              },
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#jane-zhen",
+                "name": "Zhen Tiyu",
+                "alternateName": "Jane Zhen",
+                "jobTitle": "Chief Financial Officer, Asia",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Financial strategy leader with expertise in international trade finance, export tax optimization, and capital risk control for global UCO and SAF operations. Former finance leader at Michelin and Bertelsmann.",
+                "knowsAbout": ["International Trade Finance", "SAF Financial Strategy", "Export Tax Optimization", "Capital Risk Management", "Renewable Energy Finance"],
+                "alumniOf": { "@type": "CollegeOrUniversity", "name": "Wuxi Vocational and Technical University", "description": "Accounting" },
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Chief Financial Officer",
+                  "occupationLocation": { "@type": "Country", "name": "China" }
+                }
+              },
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#timothy-rose",
+                "name": "Timothy Rose",
+                "jobTitle": "Chief Strategy and Finance Director",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Accomplished boardroom leader and Chartered Director with over 30 years of strategic governance and advisory experience across finance, renewable energy, and global development. Former World Bank leader who led the $500M Financial Sector Reform Programme and has raised over £200 million for prominent clients.",
+                "knowsAbout": ["Strategic Governance", "Renewable Energy Finance", "Board Leadership", "ESG Investment", "International Development Finance", "SAF Strategy"],
+                "hasCredential": [
+                  { "@type": "EducationalOccupationalCredential", "name": "Chartered Director", "credentialCategory": "professional_certification" }
+                ],
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Chief Strategy and Finance Director"
+                }
+              },
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#elvis-cao",
+                "name": "Cao Yuzhao",
+                "alternateName": "Elvis Cao",
+                "jobTitle": "Director of Supply Chain",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Supply chain expert overseeing end-to-end sourcing, logistics, and traceability of UCO across China. Former senior logistics executive at Sinopec. Ensures secure and compliant feedstock delivery for SAF and HVO markets.",
+                "knowsAbout": ["UCO Supply Chain China", "International Logistics", "SAF Feedstock Procurement", "Supply Chain Traceability", "ISCC Supply Chain Compliance"],
+                "alumniOf": { "@type": "CollegeOrUniversity", "name": "North China University of Science and Technology", "description": "Chemistry" },
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Director of Supply Chain",
+                  "occupationLocation": { "@type": "Country", "name": "China" }
+                }
+              },
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#brian-jelier",
+                "name": "Brian Jelier",
+                "jobTitle": "Director of Operations Europe",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Operations leader driving Shaphargroup's European operational strategy, including SAF and UCO distribution infrastructure in Rotterdam and development of the Shaphar Refining HEFA refinery in the Netherlands.",
+                "knowsAbout": ["SAF Operations Europe", "HEFA Refinery Operations", "European Energy Regulations", "Renewable Energy Project Delivery", "SAF Distribution Infrastructure"],
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Director of Operations Europe",
+                  "occupationLocation": { "@type": "City", "name": "Rotterdam", "containedInPlace": { "@type": "Country", "name": "Netherlands" } }
+                }
+              },
+              {
+                "@type": "Person",
+                "@id": "https://shaphargroup.com/leadership#jeremiah-shallangwa",
+                "name": "Jeremiah Shallangwa",
+                "jobTitle": "Director of Energy Infrastructure",
+                "worksFor": { "@id": "https://shaphargroup.com/#organization" },
+                "description": "Energy infrastructure specialist integrating sustainable energy solutions across Shaphargroup's European operations. Aligns HEFA SAF production capabilities with European energy infrastructure and regulatory requirements.",
+                "knowsAbout": ["Energy Infrastructure", "HEFA Process Integration", "SAF Energy Systems", "European Energy Regulations", "Renewable Fuel Technologies", "Energy Transition Strategy"],
+                "hasOccupation": {
+                  "@type": "Occupation",
+                  "name": "Director of Energy Infrastructure",
+                  "occupationLocation": { "@type": "Country", "name": "Netherlands" }
+                }
+              }
+            ]
           },
           {
-            "@type": "Person",
-            "name": "David Chijioke Arinze",
-            "alternateName": "David C. Arinze",
-            "jobTitle": "MD Europe & Americas",
-            "description": "Leading expert in sustainable aviation fuel and renewable energy markets"
-          },
-          {
-            "@type": "Person",
-            "name": "Zhen Tiyu (Jane Zhen)",
-            "jobTitle": "CFO Asia",
-            "description": "Financial expert specializing in sustainable energy investments and operations"
-          },
-          {
-            "@type": "Person",
-            "name": "Timothy Rose",
-            "jobTitle": "Chief Strategy and Finance Director",
-            "description": "Distinguished governance leader and strategic advisor"
-          },
-          {
-            "@type": "Person",
-            "name": "Elvis Cao",
-            "jobTitle": "Director Supply Chain",
-            "description": "Supply chain expert managing global UCO procurement and logistics"
-          },
-          {
-            "@type": "Person",
-            "name": "Brian Jelier",
-            "jobTitle": "Director of Operations Europe",
-            "description": "Operations leader driving European refining and logistics infrastructure"
-          },
-          {
-            "@type": "Person",
-            "name": "Jeremiah Shallangwa",
-            "jobTitle": "Director of Energy Infrastructure",
-            "description": "Director of Energy Infrastructure driving sustainable fuel solutions across European markets"
+            "@type": "FAQPage",
+            "@id": "https://shaphargroup.com/leadership#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Who is the CEO of Shaphargroup?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "The CEO of Shaphargroup is Charles Jiao (also known as Jiao Li Guang), a seasoned industrial chemist and refinery executive with over a decade of experience in sustainable aviation fuel production and UCO refining in China."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who leads Shaphargroup's European operations?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "David Chijioke Arinze (David C. Arinze) serves as Managing Director for Europe and the Americas. He leads Shaphargroup's SAF and UCO distribution in Europe from Rotterdam, Netherlands, including overseeing the Shaphar Refining HEFA refinery development project."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who manages Shaphargroup's SAF and UCO supply chain in China?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Elvis Cao (Cao Yuzhao) is Director of Supply Chain at Shaphargroup, overseeing UCO sourcing, logistics, and traceability across China. He is a former senior executive at Sinopec with over 10 years in renewable fuel supply chains."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Who is responsible for Shaphargroup's European refinery operations?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Brian Jelier, as Director of Operations Europe, leads the operational strategy for Shaphargroup's European activities including SAF distribution from Rotterdam and development of the Shaphar Refining 200,000 MT/year HEFA refinery in the Netherlands."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Shaphargroup's leadership experience in sustainable aviation fuel?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup's leadership team combines deep technical expertise across the SAF value chain: CEO Charles Jiao has 10+ years in SAF and oleochemical refining; Production Director Ji Gang has 15+ years in UCO refining; MD David Arinze leads SAF trade and distribution across Europe and Americas; CFO Jane Zhen brings expertise from Michelin and Bertelsmann; and Chief Strategy Director Timothy Rose is a Chartered Director with 30+ years in strategic governance including the World Bank's $500M Financial Sector Reform Programme."
+                }
+              }
+            ]
           }
         ]
       }
     });
 
-    // Performance optimizations removed to prevent preload console warnings
-    
-    // Meta Description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Meet Shaphargroup\'s leadership team of sustainable aviation fuel experts, including CEO Charles Jiao, CFO Jane Zhen, and our global directors driving SAF innovation across Asia, Europe, and Americas.');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'description';
-      meta.content = 'Meet Shaphargroup\'s leadership team of sustainable aviation fuel experts, including CEO Charles Jiao, CFO Jane Zhen, and our global directors driving SAF innovation across Asia, Europe, and Americas.';
-      document.head.appendChild(meta);
-    }
-
-    // Keywords
-    const metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (metaKeywords) {
-      metaKeywords.setAttribute('content', 'Shaphargroup leadership, SAF executives, sustainable aviation fuel team, Charles Jiao CEO, Jane Zhen CFO, David Arinze, Timothy Rose, Ji Gang, Elvis Cao, UCO refining experts, renewable energy leaders');
-    } else {
-      const meta = document.createElement('meta');
-      meta.name = 'keywords';
-      meta.content = 'Shaphargroup leadership, SAF executives, sustainable aviation fuel team, Charles Jiao CEO, Jane Zhen CFO, David Arinze, Timothy Rose, Ji Gang, Elvis Cao, UCO refining experts, renewable energy leaders';
-      document.head.appendChild(meta);
-    }
-
-    // Open Graph Tags
-    const updateOrCreateOGTag = (property: string, content: string) => {
-      let tag = document.querySelector(`meta[property="${property}"]`);
-      if (tag) {
-        tag.setAttribute('content', content);
-      } else {
-        tag = document.createElement('meta');
-        tag.setAttribute('property', property);
-        tag.setAttribute('content', content);
-        document.head.appendChild(tag);
-      }
-    };
-
-    updateOrCreateOGTag('og:title', 'Leadership Team - Sustainable Aviation Fuel Experts | Shaphargroup');
-    updateOrCreateOGTag('og:description', 'Meet Shaphargroup\'s leadership team of sustainable aviation fuel experts driving SAF innovation globally.');
-    updateOrCreateOGTag('og:type', 'website');
-    updateOrCreateOGTag('og:url', window.location.href);
-    updateOrCreateOGTag('og:site_name', 'Shaphargroup');
-
-    // Twitter Card Tags
-    const updateOrCreateTwitterTag = (name: string, content: string) => {
-      let tag = document.querySelector(`meta[name="${name}"]`);
-      if (tag) {
-        tag.setAttribute('content', content);
-      } else {
-        tag = document.createElement('meta');
-        tag.setAttribute('name', name);
-        tag.setAttribute('content', content);
-        document.head.appendChild(tag);
-      }
-    };
-
-    updateOrCreateTwitterTag('twitter:card', 'summary_large_image');
-    updateOrCreateTwitterTag('twitter:title', 'Leadership Team - Shaphargroup');
-    updateOrCreateTwitterTag('twitter:description', 'Meet our expert leadership team driving sustainable aviation fuel innovation.');
-
-    // Structured Data for Organization and People
-    const structuredData = {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Shaphargroup",
-      "url": "https://www.shaphargroup.com",
-      "description": "Leading sustainable aviation fuel producer specializing in UCO refining and HEFA SAF production",
-      "employee": [
-        {
-          "@type": "Person",
-          "name": "Jiao Li Guang",
-          "alternateName": "Charles Jiao",
-          "jobTitle": "Chief Executive Officer",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup Industry (Hainan) Co., Ltd."
-          },
-          "description": "Seasoned industrial chemist and refinery executive with over a decade of experience in sustainable aviation fuel systems."
-        },
-        {
-          "@type": "Person",
-          "name": "Ji Gang",
-          "alternateName": "Gee Gang",
-          "jobTitle": "Production Director",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup"
-          },
-          "description": "Veteran oleochemical engineer with 15+ years expertise in palm oil and UCO refining."
-        },
-        {
-          "@type": "Person",
-          "name": "David Chijioke Arinze",
-          "jobTitle": "Managing Director, Europe & Americas",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup"
-          },
-          "description": "Visionary leader in renewable energy and sustainable trade with M.Sc. in Project Management."
-        },
-        {
-          "@type": "Person",
-          "name": "Zhen Tiyu",
-          "alternateName": "Jane Zhen",
-          "jobTitle": "CFO Asia",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup Industry (Hainan)"
-          },
-          "description": "Financial strategy leader with expertise in international trade finance and capital risk control."
-        },
-        {
-          "@type": "Person",
-          "name": "Timothy Rose",
-          "jobTitle": "Chief Strategy and Finance Director",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup"
-          },
-          "description": "Chartered Director with 30+ years strategic governance experience, former World Bank leader."
-        },
-        {
-          "@type": "Person",
-          "name": "Cao Yuzhao",
-          "alternateName": "Elvis Cao",
-          "jobTitle": "Director Supply Chain",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup"
-          },
-          "description": "Supply chain expert overseeing UCO sourcing and logistics across China, former Sinopec executive."
-        },
-        {
-          "@type": "Person",
-          "name": "Brian Jelier",
-          "jobTitle": "Director of Operations Europe",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup"
-          },
-          "description": "Operations leader with extensive experience in industrial operations and renewable energy project delivery across European markets."
-        },
-        {
-          "@type": "Person",
-          "name": "Jeremiah Shallangwa",
-          "jobTitle": "Director of Energy Infrastructure",
-          "worksFor": {
-            "@type": "Organization",
-            "name": "Shaphargroup"
-          },
-          "description": "Energy integration specialist with expertise in renewable fuel technologies and cross-border project coordination across European markets."
-        }
-      ]
-    };
-
-    // Remove existing structured data script
-    const existingScript = document.querySelector('script[type="application/ld+json"]');
-    if (existingScript) {
-      existingScript.remove();
-    }
-
-    // Add new structured data
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify(structuredData);
-    document.head.appendChild(script);
-
-    // Cleanup function
     return () => {
-      // Reset title on unmount
       document.title = 'Shaphargroup - Sustainable Aviation Fuel | UCO Refining & HEFA SAF Production';
     };
   }, []);

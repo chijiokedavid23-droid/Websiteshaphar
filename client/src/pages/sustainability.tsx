@@ -15,30 +15,96 @@ export default function Sustainability() {
       ogImage: `${window.location.origin}${sustainabilityImagePath}`,
       structuredData: {
         "@context": "https://schema.org",
-        "@type": "EnvironmentalImpact",
-        "name": "Shaphargroup Sustainability Impact",
-        "description": "Environmental benefits of sustainable aviation fuel production",
-        "image": {
-          "@type": "ImageObject",
-          "url": `${window.location.origin}${sustainabilityImagePath}`,
-          "description": "Sustainable aviation fuel concept showing aircraft wing with green leaf symbol flying over solar panel farm representing renewable energy and eco-friendly aviation",
-          "width": "1024",
-          "height": "1024"
-        },
-        "carbonFootprintReduction": {
-          "@type": "QuantitativeValue",
-          "value": "85",
-          "unitText": "percent GHG reduction vs fossil fuels"
-        },
-        "carbonEmissionsAvoided": {
-          "@type": "QuantitativeValue", 
-          "value": "1580000",
-          "unitText": "tons CO₂ annually"
-        },
-        "circularEconomyPrinciples": [
-          "Waste oil valorization",
-          "UCO to SAF conversion", 
-          "Renewable feedstock processing"
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://shaphargroup.com/sustainability#page",
+            "name": "SAF Sustainability & Aviation Decarbonization | Shaphargroup",
+            "description": "Shaphargroup's HEFA SAF reduces greenhouse gas emissions by up to 85% versus conventional jet fuel. ISCC-certified circular economy: UCO collected in China, converted to SAF for European aviation. Supporting net-zero aviation 2050.",
+            "url": "https://shaphargroup.com/sustainability",
+            "isPartOf": { "@id": "https://shaphargroup.com/#website" },
+            "about": { "@id": "https://shaphargroup.com/#organization" },
+            "image": {
+              "@type": "ImageObject",
+              "url": `${window.location.origin}${sustainabilityImagePath}`,
+              "description": "Sustainable aviation fuel concept showing aircraft wing with green leaf symbol flying over solar panel farm representing renewable energy and eco-friendly aviation",
+              "width": "1024",
+              "height": "1024"
+            },
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2", ".speakable-content"]
+            }
+          },
+          {
+            "@type": "Dataset",
+            "name": "Shaphargroup HEFA SAF Environmental Impact Data",
+            "description": "Quantitative environmental impact data for Shaphargroup's HEFA sustainable aviation fuel production, including GHG lifecycle reduction, CO2 avoided, and circular economy metrics.",
+            "creator": { "@id": "https://shaphargroup.com/#organization" },
+            "variableMeasured": [
+              {
+                "@type": "PropertyValue",
+                "name": "GHG Lifecycle Reduction vs Fossil Jet Fuel",
+                "value": "85",
+                "unitCode": "P1",
+                "unitText": "percent"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "CO2 Emissions Avoided Annually",
+                "value": "1580000",
+                "unitText": "metric tons CO2 per year"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Equivalent Cars Removed from Roads",
+                "value": "330000",
+                "unitText": "passenger cars equivalent annually"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "UCO Refining Capacity",
+                "value": "500000",
+                "unitText": "metric tons per year"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "HEFA SAF Blending Maximum",
+                "value": "50",
+                "unitText": "percent with conventional Jet A-1"
+              }
+            ],
+            "keywords": ["HEFA SAF GHG reduction", "SAF lifecycle emissions", "UCO to SAF carbon footprint", "aviation decarbonization metrics", "CORSIA sustainability", "ReFuelEU SAF data"]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "How much does HEFA SAF reduce carbon emissions?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup's HEFA SAF (Hydroprocessed Esters and Fatty Acids Sustainable Aviation Fuel) reduces lifecycle greenhouse gas emissions by up to 85% compared to conventional fossil-based jet fuel. This is calculated on a full lifecycle basis from feedstock collection through combustion, in accordance with ISCC EU and CORSIA sustainability criteria."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is Shaphargroup's SAF compliant with CORSIA and ReFuelEU?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Shaphargroup's HEFA SAF is produced from ISCC-certified UCO feedstock, making it eligible under CORSIA (ICAO's Carbon Offsetting and Reduction Scheme for International Aviation) and compliant with ReFuelEU Aviation mandates for SAF blending in European airports. The supply chain carries full ISCC EU and ISCC PLUS certification."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is the circular economy model Shaphargroup uses for SAF production?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup operates a China-to-Europe circular economy: Used Cooking Oil (UCO) is collected from restaurants and food processors in Shandong, China, pre-treated by Shandong Prophet Energy Co., LTD, then shipped to European refiners and converted into HEFA SAF. This waste valorization model diverts UCO from landfill, avoids fossil fuel extraction, and delivers SAF with up to 85% lower lifecycle CO2 emissions."
+                }
+              }
+            ]
+          }
         ]
       }
     });

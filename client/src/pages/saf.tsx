@@ -18,29 +18,91 @@ export default function SAF() {
       canonical: window.location.href,
       structuredData: {
         "@context": "https://schema.org",
-        "@type": "Product",
-        "name": "HEFA Sustainable Aviation Fuel",
-        "description": "Premium HEFA-SPK sustainable aviation fuel produced from refined UCO feedstock with ISCC certification",
-        "manufacturer": {
-          "@type": "Organization",
-          "name": "Shaphargroup"
-        },
-        "category": "Sustainable Aviation Fuel",
-        "additionalProperty": [
+        "@graph": [
           {
-            "@type": "PropertyValue",
-            "name": "GHG Reduction",
-            "value": "85%"
+            "@type": "WebPage",
+            "@id": "https://shaphargroup.com/saf#page",
+            "name": "HEFA SAF & UCO Supply | Shaphargroup | SAF Producer China | Distributor Europe",
+            "url": "https://shaphargroup.com/saf",
+            "isPartOf": { "@id": "https://shaphargroup.com/#website" },
+            "about": { "@id": "https://shaphargroup.com/#organization" },
+            "speakable": {
+              "@type": "SpeakableSpecification",
+              "cssSelector": ["h1", "h2"]
+            }
           },
           {
-            "@type": "PropertyValue", 
-            "name": "Certification",
-            "value": "ISCC EU & ISCC PLUS"
+            "@type": "Product",
+            "name": "HEFA Sustainable Aviation Fuel (HEFA-SPK)",
+            "description": "Premium HEFA-SPK sustainable aviation fuel produced from ISCC-certified UCO feedstock in Shandong, China by Shandong Prophet Energy Co., LTD and distributed to European airlines and refiners from Rotterdam, Netherlands. Meets ASTM D7566 Annex 2, CORSIA eligible, with up to 85% lifecycle GHG reduction.",
+            "brand": { "@type": "Brand", "name": "Shaphargroup" },
+            "manufacturer": { "@id": "https://shaphargroup.com/#organization" },
+            "category": "Sustainable Aviation Fuel",
+            "additionalProperty": [
+              { "@type": "PropertyValue", "name": "GHG Lifecycle Reduction", "value": "Up to 85% vs fossil jet fuel" },
+              { "@type": "PropertyValue", "name": "ASTM Standard", "value": "D7566 Annex 2 (HEFA-SPK)" },
+              { "@type": "PropertyValue", "name": "Certification", "value": "ISCC EU, ISCC PLUS, CORSIA eligible" },
+              { "@type": "PropertyValue", "name": "Blending Ratio", "value": "Up to 50% with Jet A-1" },
+              { "@type": "PropertyValue", "name": "Feedstock", "value": "Used Cooking Oil (UCO), animal fats" },
+              { "@type": "PropertyValue", "name": "Production Origin", "value": "Shandong, China" },
+              { "@type": "PropertyValue", "name": "Distribution Hub", "value": "Rotterdam, Netherlands" }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "seller": { "@id": "https://shaphargroup.com/#organization" },
+              "areaServed": "Europe",
+              "availability": "https://schema.org/InStock",
+              "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "USD" }
+            }
           },
           {
-            "@type": "PropertyValue",
-            "name": "Fuel Type",
-            "value": "HEFA-SPK"
+            "@type": "Product",
+            "name": "ISCC-Certified Refined Used Cooking Oil (UCO)",
+            "description": "ISCC EU and ISCC PLUS certified refined Used Cooking Oil supplied from Shandong, China via Shandong Prophet Energy Co., LTD. Available to European SAF refiners, HVO producers, and biodiesel manufacturers. Full chain-of-custody documentation for EU regulatory compliance.",
+            "brand": { "@type": "Brand", "name": "Shaphargroup" },
+            "manufacturer": { "@id": "https://shaphargroup.com/#organization" },
+            "category": "Biofuel Feedstock",
+            "additionalProperty": [
+              { "@type": "PropertyValue", "name": "Origin", "value": "Shandong Province, China" },
+              { "@type": "PropertyValue", "name": "Certification", "value": "ISCC EU, ISCC PLUS" },
+              { "@type": "PropertyValue", "name": "Application", "value": "HEFA SAF production, HVO production, biodiesel" },
+              { "@type": "PropertyValue", "name": "Distribution", "value": "Rotterdam, Netherlands and pan-European delivery" }
+            ],
+            "offers": {
+              "@type": "Offer",
+              "seller": { "@id": "https://shaphargroup.com/#organization" },
+              "areaServed": "Europe",
+              "availability": "https://schema.org/InStock"
+            }
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Where does Shaphargroup produce SAF?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Shaphargroup produces HEFA Sustainable Aviation Fuel (SAF) in Shandong, China, through its subsidiary Shandong Prophet Energy Co., LTD. The facility is ISCC certified and processes Used Cooking Oil (UCO) feedstock using the HEFA (Hydroprocessed Esters and Fatty Acids) pathway."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does Shaphargroup distribute SAF in Europe?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. Shaphargroup distributes ISCC-certified HEFA SAF and refined UCO across Europe, operating from Rotterdam, Netherlands. The company supplies airlines, fuel blenders, and refiners with physical SAF delivery and Book and Claim SAF certificates (SAFc) compliant with ReFuelEU Aviation, CORSIA, and ASTM D7566 standards."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What is Book and Claim SAF and does Shaphargroup offer it?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Book and Claim (also known as SAFc — SAF certificates) allows airlines to purchase SAF sustainability attributes separately from physical fuel delivery. Shaphargroup offers Book and Claim SAF certificates, enabling airlines worldwide to reduce their Scope 1 and Scope 3 emissions without requiring physical SAF blending at their departure airport."
+                }
+              }
+            ]
           }
         ]
       }
