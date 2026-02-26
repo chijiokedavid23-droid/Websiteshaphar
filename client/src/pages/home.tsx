@@ -23,32 +23,52 @@ export default function Home() {
       structuredData: {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": "https://shaphargroup.com/#organization",
         "name": "Shaphargroup",
-        "alternateName": "Shaphargroup Industry (Hainan) Co., Ltd.",
-        "url": "https://www.shaphargroup.com",
+        "alternateName": ["Shaphargroup Industry (Hainan) Co., Ltd.", "Shaphar Group"],
+        "url": "https://shaphargroup.com",
         "logo": "https://shaphargroup.com/logo.png",
-        "description": "Global leader in sustainable aviation fuel production, specializing in HEFA SAF and UCO refining with operations in China, Netherlands, and Americas.",
-        "industry": "Sustainable Aviation Fuel Production",
+        "email": "info@shaphargroup.com",
+        "description": "Shaphargroup is a vertically integrated sustainable aviation fuel (SAF) company that produces HEFA SAF in Shandong, China through Shandong Prophet Energy Co., LTD, distributes SAF and refined UCO across Europe from Rotterdam, Netherlands, and is developing the Shaphar Refining HEFA refinery — a 200,000 MT/year SAF and HVO production facility in the Netherlands targeting 2028.",
         "foundingDate": "2020",
-        "keywords": ["Sustainable Aviation Fuel", "HEFA SAF", "UCO Refining", "Biofuel Production", "Aviation Decarbonization"],
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Sustainable Aviation Fuel Products",
-          "itemListElement": [
-            {
-              "@type": "Product",
-              "name": "HEFA Sustainable Aviation Fuel",
-              "description": "Premium HEFA-SPK sustainable aviation fuel for commercial aviation blending"
-            },
-            {
-              "@type": "Product", 
-              "name": "Refined Used Cooking Oil",
-              "description": "Premium refined UCO feedstock for biofuel and SAF production"
-            }
-          ]
-        },
-        "areaServed": ["Global", "Asia", "Europe", "Americas"],
-        "serviceType": ["Sustainable Aviation Fuel Production", "UCO Refining", "Biofuel Manufacturing"]
+        "subOrganization": [
+          {
+            "@type": "Organization",
+            "name": "Shaphar Refining",
+            "description": "Shaphargroup subsidiary developing a 200,000 MT/year HEFA SAF refinery in the Netherlands near Rotterdam, targeting production in 2028."
+          },
+          {
+            "@type": "Organization",
+            "name": "Shandong Prophet Energy Co., LTD",
+            "description": "Shaphargroup's China subsidiary for UCO pre-treatment and HEFA SAF production in Yangxin County, Shandong Province."
+          }
+        ],
+        "location": [
+          {
+            "@type": "Place",
+            "name": "Rotterdam, Netherlands",
+            "description": "European headquarters, SAF and UCO distribution hub, and Shaphar Refining development base"
+          },
+          {
+            "@type": "Place",
+            "name": "Shandong, China",
+            "description": "HEFA SAF production and UCO pre-treatment via Shandong Prophet Energy Co., LTD"
+          },
+          { "@type": "Place", "name": "Houston, Texas, USA" },
+          { "@type": "Place", "name": "Toronto, Ontario, Canada" }
+        ],
+        "hasCredential": ["ISCC EU", "ISCC PLUS", "REACH Compliance", "CORSIA SAF Eligible"],
+        "areaServed": [
+          { "@type": "Place", "name": "Europe", "description": "SAF and UCO distribution" },
+          { "@type": "Place", "name": "China", "description": "SAF production and UCO supply" },
+          { "@type": "Place", "name": "Americas", "description": "Commercial operations" }
+        ],
+        "serviceType": [
+          "HEFA SAF Production (Shandong, China)",
+          "SAF Distribution Europe",
+          "UCO Distribution Europe",
+          "HEFA Refinery Development (Rotterdam, Netherlands)"
+        ]
       }
     });
 

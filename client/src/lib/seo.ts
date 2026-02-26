@@ -95,39 +95,39 @@ const addStructuredData = (data: Record<string, any>) => {
 // Predefined SEO configurations for each page - Updated for 2025 SAF industry trends
 export const SEO_CONFIGS = {
   home: {
-    title: "Shaphargroup - Global SAF Leader | HEFA Sustainable Aviation Fuel Production | 2025 SAF Mandate Ready",
-    description: "Shaphargroup: Premier HEFA sustainable aviation fuel producer with ISCC certification. Serving 60+ airlines with 85% GHG reduction SAF solutions. EU/UK SAF mandate compliant. 1M+ tonnes annual capacity.",
-    keywords: "sustainable aviation fuel 2025, HEFA SAF production capacity, SAF mandate compliance, aviation decarbonization solutions, CORSIA eligible SAF, ISCC certified aviation fuel, UCO to SAF conversion, net zero aviation 2050, SAF offtake agreements, HEFA-SPK commercial scale, EU SAF mandate, UK SAF requirements, aviation biofuel supplier, SAF capacity expansion",
+    title: "Shaphargroup | SAF Producer China | UCO & SAF Distributor Europe | Rotterdam Refinery",
+    description: "Shaphargroup produces HEFA SAF in Shandong, China and distributes SAF and UCO across Europe from Rotterdam. Building a 200,000 MT/year HEFA refinery in the Netherlands (Shaphar Refining, 2028). ISCC certified, CORSIA eligible.",
+    keywords: "SAF producer China, SAF distributor Europe, UCO distributor Europe, HEFA SAF Shandong, UCO supplier Rotterdam, sustainable aviation fuel Netherlands, HEFA refinery Rotterdam, SAF supplier Europe, Shaphargroup, Shaphar Refining, Shandong Prophet Energy, UCO to SAF, SAF mandate compliance, CORSIA eligible SAF, ISCC certified SAF, ReFuelEU Aviation, aviation decarbonization",
   },
   saf: {
-    title: "HEFA-SPK Sustainable Aviation Fuel | Commercial Scale SAF Production | ASTM D7566 Certified | Shaphargroup", 
-    description: "Commercial-scale HEFA-SPK sustainable aviation fuel production. ASTM D7566 certified, CORSIA eligible SAF with 85% GHG reduction. 1M+ tonnes capacity serving major airlines. EU/UK mandate ready.",
-    keywords: "HEFA-SPK production, ASTM D7566 SAF certification, commercial scale SAF, CORSIA eligible aviation fuel, SAF mandate ready, airline SAF procurement, sustainable aviation fuel 2025, HEFA production capacity, aviation biofuel offtake, net zero aviation fuel",
+    title: "HEFA SAF & UCO Supply | Shaphargroup | SAF Producer China | Distributor Europe",
+    description: "Shaphargroup supplies ISCC-certified HEFA Sustainable Aviation Fuel (SAF) and refined UCO from Shandong, China to European airlines and refiners. ASTM D7566 certified, CORSIA eligible. Up to 85% GHG reduction.",
+    keywords: "HEFA SAF China, UCO supplier Europe, HEFA-SPK distributor, SAF supply Europe, UCO Europe supplier, sustainable aviation fuel China, SAF producer Shandong, CORSIA SAF, ISCC certified UCO, ASTM D7566 SAF, Book and Claim SAF, SAFc certificates, ReFuelEU SAF compliance, aviation biofuel Europe",
   },
   about: {
-    title: "About Shaphargroup - Global Sustainable Aviation Fuel Leader | Company Story & Mission",
-    description: "Founded in 2020, Shaphargroup is a global leader in sustainable aviation fuel production with operations across Asia, Europe, and Americas. Learn about our mission to transform aviation through HEFA SAF and UCO refining.",
-    keywords: "Shaphargroup company profile, SAF company history, sustainable aviation fuel mission, UCO refining company story, aviation biofuel producer background, renewable energy company, ISCC certified manufacturer, global SAF operations",
+    title: "About Shaphargroup | SAF & UCO Producer China | SAF Distributor Europe | Rotterdam Refinery",
+    description: "Shaphargroup is a vertically integrated SAF company: producing HEFA SAF in Shandong, China; distributing SAF and UCO in Europe from Rotterdam; and building the 200,000 MT/year Shaphar Refining HEFA refinery in the Netherlands (2028).",
+    keywords: "Shaphargroup company, SAF producer China, UCO producer Shandong, SAF distributor Rotterdam, sustainable aviation fuel company, Shandong Prophet Energy, Shaphar Refining, HEFA SAF company, UCO refining Europe, vertically integrated SAF, global SAF operations, Rotterdam SAF company",
   },
   leadership: {
-    title: "Leadership Team - Sustainable Aviation Fuel Industry Experts | SAF Executive Team | Shaphargroup",
-    description: "Meet Shaphargroup's world-class leadership team of SAF experts, including CEO Charles Jiao, CFO Jane Zhen, and global directors driving sustainable aviation fuel innovation across continents.",
-    keywords: "Shaphargroup leadership team, SAF industry executives, sustainable aviation fuel experts, Charles Jiao CEO, Jane Zhen CFO, David Arinze, Timothy Rose, aviation fuel leadership, UCO refining experts, renewable energy executives",
+    title: "Leadership Team | Shaphargroup | Sustainable Aviation Fuel Executives",
+    description: "Meet Shaphargroup's leadership team driving SAF production in China, UCO and SAF distribution in Europe, and the Shaphar Refining HEFA refinery development in Rotterdam. CEO Charles Jiao, CFO Jane Zhen, MD David Arinze and global directors.",
+    keywords: "Shaphargroup leadership, Charles Jiao CEO SAF, Jane Zhen CFO, David Arinze SAF Europe, Timothy Rose, Brian Jelier Operations Europe, Jeremiah Shallangwa Energy Infrastructure, SAF company executives, HEFA SAF leadership, Rotterdam SAF team",
   },
   sustainability: {
-    title: "Aviation Decarbonization Impact | 85% Carbon Reduction | Net Zero 2050 SAF Solutions | Shaphargroup",
-    description: "Leading aviation decarbonization with 85% GHG reduction SAF solutions. 1.58M tons CO₂ avoided annually. ISCC certified circular economy contributing to net zero aviation 2050 goals.",
-    keywords: "aviation decarbonization 2050, net zero aviation solutions, SAF carbon footprint reduction, CORSIA compliance SAF, sustainable aviation targets, aviation emissions reduction, climate action aviation, carbon neutral flight operations, green aviation technology",
+    title: "SAF Sustainability | 85% CO₂ Reduction | ISCC Certified | Shaphargroup",
+    description: "Shaphargroup's HEFA SAF reduces greenhouse gas emissions by up to 85% versus conventional jet fuel. ISCC certified circular economy: UCO collected in China, converted to SAF for European aviation. Supporting net-zero aviation 2050.",
+    keywords: "SAF carbon reduction, HEFA SAF emissions, UCO lifecycle emissions, sustainable aviation fuel CO2, ISCC certified SAF, net zero aviation 2050, aviation decarbonization, ReFuelEU sustainability, circular economy SAF, SAF GHG reduction 85 percent, CORSIA sustainability criteria",
   },
   contact: {
-    title: "Contact Shaphargroup | Global SAF Supplier | Connect with Aviation Fuel Experts Worldwide",
-    description: "Contact Shaphargroup for sustainable aviation fuel partnerships. Global offices in China, Netherlands, and Americas. Connect with our SAF experts for HEFA SAF procurement and UCO refining solutions.",
-    keywords: "contact Shaphargroup, SAF supplier contact, sustainable aviation fuel inquiry, HEFA SAF partnership, aviation fuel procurement, UCO refining contact, SAF expert consultation, biofuel supplier contact",
+    title: "Contact Shaphargroup | SAF & UCO Supplier | Rotterdam | Shandong | Houston | Toronto",
+    description: "Contact Shaphargroup for SAF and UCO supply in Europe, HEFA SAF production in China, or Shaphar Refining partnership enquiries. Offices in Rotterdam (Netherlands), Shandong (China), Houston (USA), and Toronto (Canada).",
+    keywords: "contact Shaphargroup, SAF supplier Rotterdam, UCO supplier Europe, Shaphargroup Rotterdam, Shaphargroup Shandong, HEFA SAF inquiry, Shaphar Refining contact, SAF offtake Europe, UCO purchase Europe, sustainable aviation fuel contact",
   },
   blog: {
-    title: "SAF Industry Insights & News | Sustainable Aviation Fuel Blog | Expert Analysis | Shaphargroup",
-    description: "Latest insights on sustainable aviation fuel industry, HEFA SAF technology advances, UCO refining innovations, and aviation decarbonization trends from Shaphargroup's industry experts.",
-    keywords: "SAF industry insights, sustainable aviation fuel news, HEFA SAF technology, aviation decarbonization trends, UCO refining innovations, biofuel industry analysis, aviation fuel market updates, renewable jet fuel developments",
+    title: "SAF Market Insights | China Europe SAF Bridge | Shaphargroup",
+    description: "SAF industry insights, UCO market intelligence, and China–Europe SAF Bridge monthly reports from Shaphargroup. Stay current on HEFA SAF prices, ReFuelEU mandates, and UCO feedstock trends.",
+    keywords: "SAF market news, China Europe SAF, UCO price Europe, HEFA SAF market, SAF industry insights, ReFuelEU Aviation update, UCO market China, SAF feedstock prices, sustainable aviation fuel news, SAF mandate updates",
   }
 };
 

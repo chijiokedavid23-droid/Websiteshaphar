@@ -19,9 +19,10 @@ export default function About() {
       ogImage: `${window.location.origin}${aboutPageImagePath}`,
       structuredData: {
         "@context": "https://schema.org",
-        "@type": "Organization", 
+        "@type": "Organization",
+        "@id": "https://shaphargroup.com/#organization",
         "name": "Shaphargroup",
-        "description": "Global sustainable aviation fuel producer specializing in HEFA SAF and UCO refining",
+        "description": "Shaphargroup is a vertically integrated sustainable aviation fuel (SAF) company: (1) producing HEFA SAF in Shandong, China through Shandong Prophet Energy Co., LTD; (2) distributing SAF and UCO across Europe from Rotterdam, Netherlands; and (3) developing the Shaphar Refining project — a 200,000 MT/year HEFA SAF and HVO refinery in the Netherlands, targeting 2028.",
         "image": {
           "@type": "ImageObject",
           "url": `${window.location.origin}${aboutPageImagePath}`,
@@ -30,19 +31,33 @@ export default function About() {
           "height": "1024"
         },
         "foundingDate": "2020",
-        "mission": "Transforming aviation through sustainable fuel production and circular economy principles",
+        "subOrganization": [
+          {
+            "@type": "Organization",
+            "name": "Shandong Prophet Energy Co., LTD",
+            "description": "Shaphargroup's China production subsidiary for UCO pre-treatment and HEFA SAF production in Yangxin County, Shandong Province, China."
+          },
+          {
+            "@type": "Organization",
+            "name": "Shaphar Refining",
+            "description": "Shaphargroup's Netherlands refinery subsidiary developing a 200,000 MT/year HEFA SAF refinery near Rotterdam, targeting 2028 production."
+          }
+        ],
         "knowsAbout": [
-          "Sustainable Aviation Fuel Production",
-          "HEFA SAF Manufacturing", 
-          "UCO Refining",
+          "HEFA SAF Production in Shandong China",
+          "SAF Distribution in Europe from Rotterdam",
+          "UCO Distribution Europe",
+          "HEFA Refinery Development Netherlands",
+          "Used Cooking Oil Refining",
           "Aviation Decarbonization",
-          "Biofuel Technology",
-          "Circular Economy"
+          "ReFuelEU Aviation Compliance",
+          "Circular Economy Biofuel Solutions"
         ],
         "hasCredential": [
           "ISCC EU Certification",
-          "ISCC PLUS Certification", 
-          "REACH Compliance"
+          "ISCC PLUS Certification",
+          "REACH Compliance",
+          "CORSIA SAF Eligible"
         ]
       }
     });
