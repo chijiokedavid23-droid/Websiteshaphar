@@ -299,7 +299,7 @@ export default function Leadership() {
       name: "Timothy Rose",
       title: "Chief Strategy and Finance Director",
       image: timRoseImagePath,
-      bio: "An accomplished boardroom leader and Chartered Director, Timothy brings over 30 years of strategic governance and high-impact advisory experience across finance, renewable energy, and global development sectors. He has chaired and advised numerous public and private boards, including multi-million-pound turnarounds, international fund management, and ESG-driven growth. Timothy previously led the World Bank's $500M Financial Sector Reform Programme and has raised over $1 billion for prominent clients. His global insight and disciplined board leadership make him a cornerstone of Shaphargroup's growth and governance strategy."
+      bio: "An accomplished boardroom leader and Chartered Director, Timothy brings over 30 years of strategic governance and high-impact advisory experience across finance, renewable energy, and global development sectors. He has chaired and advised numerous public and private boards, including multi-million-pound turnarounds, international fund management, and ESG-driven growth. Timothy previously led the World Bank's $500M Financial Sector Reform Programme and has raised over £200 million for prominent clients. His global insight and disciplined board leadership make him a cornerstone of Shaphargroup's growth and governance strategy."
     },
     {
       name: "Cao Yuzhao (Elvis)",
