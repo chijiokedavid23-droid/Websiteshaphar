@@ -127,18 +127,6 @@ export default function Navigation() {
           </nav>
 
           <div className="flex items-center h-full space-x-4">
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            >
-              <Link href="/contact" onClick={scrollToTop} className={`hidden sm:inline-block bg-emerald text-white hover:bg-emerald/90 transition-all duration-200 font-medium shadow-md hover:shadow-lg rounded-md touch-manipulation ${
-                isScrolled ? 'px-3 py-1.5 text-sm' : 'px-4 py-2 text-base'
-              }`}>
-                Contact Us
-              </Link>
-            </motion.div>
-            
             {/* Mobile menu button */}
             <button
               className="md:hidden p-2"
