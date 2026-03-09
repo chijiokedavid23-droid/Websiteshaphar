@@ -29,6 +29,7 @@ import safCreditsImage from "@assets/image_1760175223253.png";
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
   const titleMap: Record<string, string> = {
+    "Shaphargroup at Sustainable Fuels Global Summit 2026": "sustainable-fuels-global-summit-2026",
     "From Mandates to Markets: How Verified SAF Credits Accelerate Aviation Decarbonization": "mandates-to-markets-saf-credits",
     "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally": "safc-approval-scope-3-credits",
     "Tim Rose Joins Shaphargroup Board as Strategic Executive Director": "tim-rose-joins-board",
@@ -86,6 +87,15 @@ export default function Blog() {
   };
 
   const blogPosts = [
+    {
+      title: "Shaphargroup at Sustainable Fuels Global Summit 2026",
+      excerpt: "Shaphargroup will be attending and speaking at the Sustainable Fuels Global Summit 2026. David Chijioke Arinze, MD for Global Markets, will take the stage on 11–12 March 2026 to address how Asia's UCO supply can bridge Europe's SAF mandate through real, certified supply chains.",
+      image: safInvestorsImage,
+      category: "News",
+      date: "March 9, 2026",
+      author: "",
+      link: ""
+    },
     {
       title: "From Mandates to Markets: How Verified SAF Credits Accelerate Aviation Decarbonization",
       excerpt: "The aviation sector is on the cusp of a fundamental shift. The European Union's ReFuelEU Aviation regulation, which enters into force in 2025, requires that at least 2 percent of all fuel uplifted at EU airports be sustainable aviation fuel (SAF). How can airlines meet their decarbonisation goals when the fuel isn't always available on their routes?",

@@ -16,6 +16,7 @@ import shaphargroupImage from "@assets/shaphargroup image_1754487899319.jpeg";
 import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
 import safCreditsImage from "@assets/image_1760175223253.png";
+import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 
 interface ArticleData {
   id: string;
@@ -991,6 +992,53 @@ The future of sustainable aviation depends not just on technological innovation,
     date: "April 26, 2025",
     author: "David C. Arinze",
     originalLink: "https://shaphargroup.com/uco-saf-market-perspective/the-critical-role-of-uco-in-achieving-global-sustainable-aviation-fuel-saf-targets/"
+  },
+  "sustainable-fuels-global-summit-2026": {
+    id: "sustainable-fuels-global-summit-2026",
+    title: "Shaphargroup at Sustainable Fuels Global Summit 2026",
+    content: `We are proud to announce that **Shaphargroup will be attending and speaking at the Sustainable Fuels Global Summit 2026** — one of the world's premier gatherings for sustainable aviation fuel stakeholders, policymakers, and supply chain leaders.
+
+## Shaphargroup Takes the Stage
+
+Our **Managing Director for Global Markets, David Chijioke Arinze**, will be taking the stage at this year's Summit to deliver a keynote address on one of the most pressing challenges in the SAF industry today.
+
+> **Speaking on:** *"Bridging Asia's UCO Supply to Europe's SAF Mandate: Building the Real Supply Chains Behind Sustainable Aviation Fuel"*
+
+This presentation will draw on Shaphargroup's firsthand experience operating across China, the Netherlands, the United States, and Canada — connecting feedstock origination in Asia to blending and distribution hubs in Europe. David will share how real, certified, and scalable supply chains are built, and why the Asia-Europe corridor is critical to meeting the EU's ReFuelEU Aviation mandates.
+
+## Event Details
+
+| | |
+|---|---|
+| **Date** | 11 – 12 March 2026 |
+| **Event** | Sustainable Fuels Global Summit 2026 |
+| **Topic** | UCO Supply · SAF Mandates · Global Trade |
+
+## Why This Matters
+
+Europe's SAF mandates are accelerating — the EU requires 2% SAF blending in 2025, scaling to 70% by 2050. Yet Europe cannot produce enough feedstock domestically. Asia — particularly China — holds the world's largest reserves of Used Cooking Oil (UCO) and other waste-based feedstocks. Connecting these two sides of the equation is not just an opportunity; it is a necessity.
+
+At Shaphargroup, we have spent years building the infrastructure, certifications, and partnerships to make this connection real. Our supply chain spans:
+
+- **UCO collection and pre-treatment** through Shandong Prophet Energy Co., LTD in China
+- **ISCC CORSIA and ISCC EU certified** feedstock refining
+- **Distribution and blending** partnerships across Rotterdam and European hubs
+- **Book & Claim SAFc certification** enabling global Scope 3 emissions reporting for airlines and corporates
+
+## Meet Us at the Summit
+
+Are you attending the Sustainable Fuels Global Summit 2026? We would love to connect, share our perspective on the Asia-Europe UCO corridor, and explore how we can work together to build the supply chains that will define sustainable aviation in this decade.
+
+Whether you are an airline, a fuel buyer, an investor, or a logistics partner — there has never been a more important moment to align on supply chain strategy.
+
+**Reach out to us before the event to schedule a meeting:** info@shaphargroup.com
+
+*Shaphargroup — Powering Net-Zero Aviation Today.*`,
+    image: safInvestorsImage,
+    category: "News",
+    date: "March 9, 2026",
+    author: "",
+    originalLink: ""
   },
   "uco-greener-future": {
     id: "uco-greener-future", 
