@@ -24,6 +24,7 @@ import biofuelFillingStationImage from "@assets/biofuel-filling-station_14566167
 import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
 import safCreditsImage from "@assets/image_1760175223253.png";
+import summitAnnouncementImage from "@assets/image_1773091526302.png";
 
 
 // Function to map article titles to article IDs
@@ -90,7 +91,7 @@ export default function Blog() {
     {
       title: "Shaphargroup at Sustainable Fuels Global Summit 2026",
       excerpt: "Shaphargroup will be attending and speaking at the Sustainable Fuels Global Summit 2026. David Chijioke Arinze, MD for Global Markets, will take the stage on 11–12 March 2026 to address how Asia's UCO supply can bridge Europe's SAF mandate through real, certified supply chains.",
-      image: safInvestorsImage,
+      image: summitAnnouncementImage,
       category: "News",
       date: "March 9, 2026",
       author: "",

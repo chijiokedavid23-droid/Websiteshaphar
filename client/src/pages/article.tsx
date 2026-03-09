@@ -17,6 +17,7 @@ import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
 import safCreditsImage from "@assets/image_1760175223253.png";
 import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
+import summitAnnouncementImage from "@assets/image_1773091526302.png";
 
 interface ArticleData {
   id: string;
@@ -1034,7 +1035,7 @@ Whether you are an airline, a fuel buyer, an investor, or a logistics partner â€
 **Reach out to us before the event to schedule a meeting:** info@shaphargroup.com
 
 *Shaphargroup â€” Powering Net-Zero Aviation Today.*`,
-    image: safInvestorsImage,
+    image: summitAnnouncementImage,
     category: "News",
     date: "March 9, 2026",
     author: "",
