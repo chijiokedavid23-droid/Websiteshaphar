@@ -1009,11 +1009,11 @@ This presentation will draw on Shaphargroup's firsthand experience operating acr
 
 ## Event Details
 
-| | |
-|---|---|
-| **Date** | 11 – 12 March 2026 |
-| **Event** | Sustainable Fuels Global Summit 2026 |
-| **Topic** | UCO Supply · SAF Mandates · Global Trade |
+**Date:** 11 – 12 March 2026
+
+**Event:** Sustainable Fuels Global Summit 2026
+
+**Topic:** UCO Supply · SAF Mandates · Global Trade
 
 ## Why This Matters
 
