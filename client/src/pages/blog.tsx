@@ -459,9 +459,13 @@ export default function Blog() {
                   <img 
                     src={post.image}
                     alt={post.title}
-                    className={`w-full h-32 group-hover:scale-105 transition-transform duration-300 ${
+                    className={`w-full h-48 group-hover:scale-105 transition-transform duration-300 ${
                       post.image === safcRegistryImage || post.image === isccCorsiaImage
-                        ? "object-contain bg-white p-4" 
+                        ? "object-contain bg-white p-4"
+                        : post.image === summitAnnouncementImage
+                        ? "object-contain bg-navy"
+                        : post.image === summitKeynoteImage
+                        ? "object-contain bg-gray-900"
                         : "object-cover"
                     }`}
                   />
