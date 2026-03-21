@@ -18,6 +18,7 @@ import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
 import safCreditsImage from "@assets/image_1760175223253.png";
 import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 import summitAnnouncementImage from "@assets/image_1773091526302.png";
+import summitKeynoteImage from "@assets/image_1774097863421.png";
 
 interface ArticleData {
   id: string;
@@ -993,6 +994,66 @@ The future of sustainable aviation depends not just on technological innovation,
     date: "April 26, 2025",
     author: "David C. Arinze",
     originalLink: "https://shaphargroup.com/uco-saf-market-perspective/the-critical-role-of-uco-in-achieving-global-sustainable-aviation-fuel-saf-targets/"
+  },
+  "asia-molecules-europe-mandate": {
+    id: "asia-molecules-europe-mandate",
+    title: "Asia Has the Molecules. Europe Has the Mandate. Shaphargroup Is Building the Bridge.",
+    content: `Reflections from the Sustainable Fuels Global Summit 2026
+
+Rotterdam, March 2026. The sustainable aviation fuel industry has no shortage of announcements. What it has a shortage of is execution. It was this distinction, between the map and the territory, between policy ambition and industrial reality, that Shaphargroup's Managing Director for Global Office, David Chijioke Arinze, brought to the stage of the Sustainable Fuels Global Summit 2026, delivering a keynote that challenged the industry to move beyond aspirational targets and confront the structural gaps that stand between mandate and delivery.
+
+## The Mandate Is Real. The Supply Chain Is Not.
+
+Europe has set the most aggressive SAF blending targets in the world: 2% by 2025, 6% by 2030, and 70% by 2050. These are not aspirational; they are legally binding under ReFuelEU Aviation. And yet the uncomfortable arithmetic of the present moment tells a sobering story.
+
+EU aviation consumes approximately 50 to 55 million tonnes of jet fuel annually. A 6% SAF mandate by 2030 requires roughly 3 million tonnes of sustainable fuel. Current EU production capacity sits at under 1 million tonnes. The gap is not marginal; it is structural, and it will not be closed by innovation alone.
+
+As David framed it to the audience: "The mandate is bankable; the current supply chain is not. To meet 2030 targets, we must bridge the 8,000 miles between Asian collection and European wings."
+
+## Why UCO and Why Asia
+
+Of all the pathways to SAF, HEFA (Hydroprocessed Esters and Fatty Acids) dominates. It accounts for more than 85 to 90% of the global SAF capacity pipeline through 2035, and its preferred feedstock, Used Cooking Oil, has earned its status as what David described as the "golden molecule." UCO qualifies as an Annex IX Part B waste under EU regulation, delivers an 80 to 90% lifecycle greenhouse gas reduction, and requires no engine or aircraft modification to use.
+
+The problem is geographical. Europe consumes eight times more UCO than it collects domestically. Asia produces 60 to 70% of the world's 12 to 14 million tonnes of annual UCO supply. China alone exported 2.95 million metric tonnes in 2024, a 43% increase year on year, though the recent cancellation of China's 13% export tax rebate signals a pivot toward domestic SAF production that will reshape supply dynamics. Meanwhile, Indonesia is restricting exports to fuel its own biofuel mandates.
+
+The feedstock exists. The collection infrastructure exists. What has been missing is the supply chain architecture to connect them reliably to European refineries.
+
+## The Hidden Bridge: Pretreatment
+
+One of the most important insights David brought to the SFGS audience was a point that rarely makes it into high-level policy conversations: raw UCO is not refinery-ready. Waste feedstocks arrive with water, high free fatty acid content, phosphorus contamination up to 300 parts per million, and metals up to 1,000 parts per million. Without industrial-scale pretreatment, these molecules destroy refinery metallurgy.
+
+As David put it: "Waste is not feedstock until it is pretreated."
+
+This is where Shaphargroup's 200,000 MT pretreatment facility in Shandong, China enters the picture, not as an ancillary operation, but as the critical hidden bridge in the supply chain. Through advanced degumming, acid neutralisation, and filtration, Shandong transforms lowest-quality waste streams into HEFA-ready feedstock, ensuring a certified and stable supply for our Rotterdam refinery. It is the link that makes the rest of the chain credible.
+
+## Trust Is Now as Important as Tonnage
+
+With feedstock fraud rising, fraudulent POME and UCO adulterated with virgin palm oil have become a documented problem across the sector. David Chijioke Arinze addressed the integrity crisis head-on. Compliance today requires ISCC certification, digital chain-of-custody traceability, and integration with the EU Union Database to ensure that every molecule can be verified from source to wing.
+
+This is not a bureaucratic inconvenience. It is a commercial prerequisite. Vertically integrated supply chains linking collection in Asia, pretreatment in Shandong, and refining in Rotterdam drastically reduce fraud exposure, lower feedstock volatility, and increase the bankability of SAF projects for lenders and offtakers alike.
+
+## Rotterdam: Where Molecules, Hydrogen, and Logistics Converge
+
+SAF production must occur where the inputs align, and Rotterdam is the clearest convergence point in Europe. Shaphargroup's planned 200,000 MT per year SAF refinery, co-sited at the Chane Botlek terminal and built on Honeywell UOP's proven Ecofining technology, is positioned precisely at this intersection. The co-location with Chane reduces our CAPEX by up to 50%, connects us to existing logistics infrastructure, and supports our 2029 commissioning target.
+
+Rotterdam's hydrogen availability, the CEPS pipeline, its rail networks, and waterway connections across the continent make it uniquely suited to convert Asian molecules into fuel for European flights.
+
+And yet, the financing picture remains sobering. Current binding airline offtake commitments for 2030 represent only one-sixth of what mandated volumes will require. Global SAF supply may reach 8 to 10 million tonnes by 2030, but Europe will almost certainly remain supply-constrained, not because the technology fails, but because the gap between announced intent and binding commercial commitment has not been closed.
+
+## From Uncertainty to a Certified, Stable Bridge
+
+David Chijioke Arinze closed his keynote with a message that captured the stakes plainly:
+
+"The European SAF mandate is bankable, but our current supply chain is not. Today, we face a massive realization gap, with only 24% of announced capacity actually coming online. Asia has the molecules, and Europe has the mandate. Bridging this divide is no longer a challenge of innovation; it is a challenge of global logistical and industrial execution. Our mission is to turn 8,000 miles of uncertainty into a certified, stable bridge that converts Asian waste into European wings."
+
+That mission is not a slide. It is a refinery under development, a pretreatment hub in operation, and a supply chain being built one molecule at a time.
+
+Shaphargroup is a Rotterdam-based energy transition company developing large-scale HEFA-SAF production and feedstock supply infrastructure across Europe and Asia. For partnership and investment enquiries, please get in touch through our website.`,
+    image: summitKeynoteImage,
+    category: "News",
+    date: "March 13, 2026",
+    author: "David C. Arinze",
+    originalLink: ""
   },
   "sustainable-fuels-global-summit-2026": {
     id: "sustainable-fuels-global-summit-2026",

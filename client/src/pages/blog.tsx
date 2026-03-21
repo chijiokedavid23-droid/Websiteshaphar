@@ -25,11 +25,13 @@ import chinaCourtroomImage from "@assets/China court room_1755864508713.jpeg";
 import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
 import safCreditsImage from "@assets/image_1760175223253.png";
 import summitAnnouncementImage from "@assets/image_1773091526302.png";
+import summitKeynoteImage from "@assets/image_1774097863421.png";
 
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
   const titleMap: Record<string, string> = {
+    "Asia Has the Molecules. Europe Has the Mandate. Shaphargroup Is Building the Bridge.": "asia-molecules-europe-mandate",
     "Shaphargroup at Sustainable Fuels Global Summit 2026": "sustainable-fuels-global-summit-2026",
     "From Mandates to Markets: How Verified SAF Credits Accelerate Aviation Decarbonization": "mandates-to-markets-saf-credits",
     "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally": "safc-approval-scope-3-credits",
@@ -88,6 +90,15 @@ export default function Blog() {
   };
 
   const blogPosts = [
+    {
+      title: "Asia Has the Molecules. Europe Has the Mandate. Shaphargroup Is Building the Bridge.",
+      excerpt: "Reflections from the Sustainable Fuels Global Summit 2026. David Chijioke Arinze took the stage in Rotterdam to challenge the industry to move beyond aspirational targets and confront the structural gaps standing between mandate and delivery.",
+      image: summitKeynoteImage,
+      category: "News",
+      date: "March 13, 2026",
+      author: "David C. Arinze",
+      link: ""
+    },
     {
       title: "Shaphargroup at Sustainable Fuels Global Summit 2026",
       excerpt: "Shaphargroup will be attending and speaking at the Sustainable Fuels Global Summit 2026. David Chijioke Arinze, MD for Global Markets, will take the stage on 11–12 March 2026 to address how Asia's UCO supply can bridge Europe's SAF mandate through real, certified supply chains.",
