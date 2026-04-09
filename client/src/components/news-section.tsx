@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { useLocation } from "wouter";
 import safSummitImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
+import signing1Image from "@assets/Signing_1_v2_1775771352528.jpg";
 import refineryInvestmentImage from "@assets/Yangxin county meeting 1_1754156293882.png";
 import isccCertificationImage from "@assets/image_1754156625874.png";
 import timRoseImage from "@assets/MR TIM_1754156709435.jpg";
@@ -11,11 +12,11 @@ export default function NewsSection() {
 
   const newsItems = [
     {
-      image: safSummitImage,
-      category: "Recent Event",
-      title: "David C. Arinze Speaks at SAF Investors Summit London 2025",
-      description: "Shaphargroup's leadership addresses key industry stakeholders at prestigious aviation summit.",
-      internalLink: "/article/saf-investors-summit"
+      image: signing1Image,
+      category: "Partnership",
+      title: "Shaphargroup Selects Honeywell UOP Technology for Rotterdam SAF Facility",
+      description: "A landmark agreement formalises Honeywell UOP's Ecofining™ process technology as licensor for Shaphargroup's 200,000 MT/year SAF refinery at the Port of Rotterdam.",
+      internalLink: "/article/honeywell-loa-announcement"
     },
     {
       image: refineryInvestmentImage,

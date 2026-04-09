@@ -26,11 +26,13 @@ import multipolarSafImage from "@assets/multipolar_saf_collaboration.png";
 import safCreditsImage from "@assets/image_1760175223253.png";
 import summitAnnouncementImage from "@assets/image_1773091526302.png";
 import summitKeynoteImage from "@assets/image_1774097863421.png";
+import signing1Image from "@assets/Signing_1_v2_1775771352528.jpg";
 
 
 // Function to map article titles to article IDs
 const getArticleId = (title: string): string | null => {
   const titleMap: Record<string, string> = {
+    "Shaphargroup Selects Honeywell UOP Ecofining™ Technology for Rotterdam SAF Refinery": "honeywell-loa-announcement",
     "Asia Has the Molecules. Europe Has the Mandate. Shaphargroup Is Building the Bridge.": "asia-molecules-europe-mandate",
     "Shaphargroup at Sustainable Fuels Global Summit 2026": "sustainable-fuels-global-summit-2026",
     "From Mandates to Markets: How Verified SAF Credits Accelerate Aviation Decarbonization": "mandates-to-markets-saf-credits",
@@ -80,16 +82,25 @@ export default function Blog() {
     };
   }, []);
   const featuredPost = {
-    title: "Shaphargroup Secures SAFc Approval to Deliver Verified Sustainable Aviation Fuel Credits (Scope 3) Globally",
-    excerpt: "Shaphargroup is proud to announce its official approval as a supplier on the Sustainable Aviation Fuel Certificate (SAFc) platform, enabling the company to deliver verified Scope 3 emissions reduction certificates to airlines, corporate flyers, and sustainability-focused organizations worldwide.",
-    image: safcRegistryImage,
-    category: "SAF",
-    date: "August 8, 2025",
+    title: "Shaphargroup Selects Honeywell UOP Ecofining™ Technology for Rotterdam SAF Refinery",
+    excerpt: "Shaphargroup announces a landmark agreement to deploy Honeywell UOP's Ecofining™ process technology for its 200,000 MT/year SAF facility at the Port of Rotterdam — a defining milestone in Europe's transition to sustainable aviation fuel.",
+    image: signing1Image,
+    category: "News",
+    date: "April 9, 2026",
     author: "",
-    link: "https://shaphargroup.com/saf/shaphargroup-secures-safc-approval-verified-sustainable-aviation-fuel-credits-scope-3-globally/"
+    link: ""
   };
 
   const blogPosts = [
+    {
+      title: "Shaphargroup Selects Honeywell UOP Ecofining™ Technology for Rotterdam SAF Refinery",
+      excerpt: "Shaphargroup announces a landmark agreement to deploy Honeywell UOP's Ecofining™ process technology for its 200,000 MT/year SAF facility at the Port of Rotterdam — a defining milestone in Europe's transition to sustainable aviation fuel.",
+      image: signing1Image,
+      category: "News",
+      date: "April 9, 2026",
+      author: "",
+      link: ""
+    },
     {
       title: "Asia Has the Molecules. Europe Has the Mandate. Shaphargroup Is Building the Bridge.",
       excerpt: "Reflections from the Sustainable Fuels Global Summit 2026. David Chijioke Arinze took the stage in Rotterdam to challenge the industry to move beyond aspirational targets and confront the structural gaps standing between mandate and delivery.",

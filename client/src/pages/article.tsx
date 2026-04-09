@@ -19,12 +19,16 @@ import safCreditsImage from "@assets/image_1760175223253.png";
 import safInvestorsImage from "@assets/54553304794_d731ca50ea_b_1754155828424.jpg";
 import summitAnnouncementImage from "@assets/image_1773091526302.png";
 import summitKeynoteImage from "@assets/image_1774097863421.png";
+import signing1Image from "@assets/Signing_1_v2_1775771352528.jpg";
+import signing2Image from "@assets/signing_2_v2_1775771352529.jpg";
 
 interface ArticleData {
   id: string;
   title: string;
   content: string;
   image: string;
+  image1?: string;
+  image2?: string;
   category: string;
   date: string;
   author: string;
@@ -995,6 +999,56 @@ The future of sustainable aviation depends not just on technological innovation,
     author: "David C. Arinze",
     originalLink: "https://shaphargroup.com/uco-saf-market-perspective/the-critical-role-of-uco-in-achieving-global-sustainable-aviation-fuel-saf-targets/"
   },
+  "honeywell-loa-announcement": {
+    id: "honeywell-loa-announcement",
+    title: "Shaphargroup Selects Honeywell UOP Ecofining™ Technology for Rotterdam SAF Refinery",
+    content: `ROTTERDAM, Netherlands — Shaphargroup, the developer behind one of Europe's most advanced sustainable aviation fuel (SAF) projects, today announced its plans to deploy Honeywell UOP's Ecofining™ process technology for its flagship SAF facility at the Port of Rotterdam.
+
+The facility will be designed to process 200,000 metric tonnes per year of pre-treated biofeedstock. Structured as a Special Purpose Vehicle (SPV) and strategically positioned at the largest seaport in Europe and a critical hub for global energy logistics, the project is designed to meet the rapidly growing demand for SAF driven by the EU's ReFuelEU Aviation regulation and other international decarbonisation mandates.
+
+"The signing of this award agreement with Honeywell is a landmark moment for Shaphargroup and for sustainable aviation more broadly. We are aiming to combine world-class technology with an unrivalled location and a robust feedstock supply chain to deliver a project that will make a material difference to Europe's SAF production capacity. Rotterdam is the right home for this facility and Honeywell's process technology is the solution to help us realise it."
+
+— David Chijioke Arinze, Managing Director Global Office, Shaphargroup
+
+[PHOTO_1]
+
+The award agreement formalises the engagement of Honeywell as the process technology licensor for the project, providing a proven, commercially validated pathway for converting used cooking oil (UCO) and other waste-based feedstocks into SAF and renewable diesel. Honeywell UOP's Ecofining process technology, developed in collaboration with Eni S.p.A., is widely recognised as the industry benchmark for SAF and renewable diesel production, offering high yields, regulatory compliance, and feedstock flexibility.
+
+"Honeywell's SAF process technology portfolio continues to advance innovation in SAF production by providing flexible feedstock options and reliable performance at a commercial scale. Our Ecofining process technology will help Shaphargroup produce lower-carbon aviation fuels in-line with European mandates."
+
+— Paul Allan, General Manager Europe, Honeywell UOP
+
+A ceremony to formalise the selection was held at Honeywell's offices in Bracknell, UK, and was attended by senior representatives of both organisations. This marks a pivotal step in the project's development, following the completion of Pre-Front End Engineering and Design (Pre-FEED) activities and the advancement toward FEED.
+
+## Project Highlights
+
+Capacity: 200,000 metric tonnes of pre-treated biofeedstock per year
+
+Location: Port of Rotterdam, Netherlands — Europe's largest seaport and a world-class energy and chemicals hub
+
+Technology: Honeywell UOP Ecofining™ process technology
+
+Feedstock: Used Cooking Oil (UCO) and other waste-based lipid feedstocks, with a secured international supply chain
+
+[PHOTO_2]
+
+## About Shaphargroup
+
+Shaphargroup is an integrated renewable energy company specializing in waste lipid and UCO aggregation and pretreatment, as well as SAF production via the HEFA pathway. The company is developing a SAF facility at the Port of Rotterdam, bringing together world-class technology, logistics, and its existing pretreated biofeedstock production capability to accelerate the decarbonization of the aviation sector.
+
+## About Honeywell
+
+Honeywell is an integrated operating company serving a broad range of industries and geographies around the world. As a trusted partner, Honeywell helps organizations solve the world's toughest challenges, providing actionable solutions and innovations across aerospace, industrial automation, process automation, and process technology.
+
+Media Contacts: Shaphargroup — Daisy Richards, Daisy@shaphargroup.com | Honeywell — Chris Martin, chris.martin2@honeywell.com`,
+    image: signing1Image,
+    image1: signing1Image,
+    image2: signing2Image,
+    category: "News",
+    date: "April 9, 2026",
+    author: "",
+    originalLink: ""
+  },
   "asia-molecules-europe-mandate": {
     id: "asia-molecules-europe-mandate",
     title: "Asia Has the Molecules. Europe Has the Mandate. Shaphargroup Is Building the Bridge.",
@@ -1455,6 +1509,8 @@ export default function Article() {
                 className="text-gray-700 leading-relaxed space-y-6"
                 dangerouslySetInnerHTML={{ 
                   __html: article.content
+                    .replace(/\[PHOTO_1\]/g, article.image1 ? `<img src="${article.image1}" alt="Signing ceremony" class="w-full rounded-xl shadow-lg my-8 object-cover" style="max-height:500px" />` : '')
+                    .replace(/\[PHOTO_2\]/g, article.image2 ? `<img src="${article.image2}" alt="Team photo" class="w-full rounded-xl shadow-lg my-8 object-cover" style="max-height:500px" />` : '')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                     .replace(/## (.*?)$/gm, '<h2 class="text-2xl font-bold text-navy mt-8 mb-4">$1</h2>')
                     .replace(/### (.*?)$/gm, '<h3 class="text-xl font-bold text-navy mt-6 mb-3">$1</h3>')
