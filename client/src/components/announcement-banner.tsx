@@ -56,7 +56,7 @@ export default function AnnouncementBanner() {
 
           {/* Description */}
           <p className="text-gray-300 text-base leading-relaxed mb-8 max-w-lg">
-            Shaphargroup has formalised Honeywell UOP's Ecofining™ process technology as licensor for its flagship sustainable aviation fuel facility at the Port of Rotterdam — a defining milestone in Europe's transition to large-scale SAF production.
+            Shaphargroup has formalised Honeywell UOP's Ecofining™ process technology as licensor for its flagship sustainable aviation fuel facility at the Port of Rotterdam — a defining milestone in Europe's transition to large-scale SAF production. The facility will be designed to process 200,000 metric tonnes per year of pre-treated biofeedstock, converting used cooking oil and other waste-based feedstocks into certified SAF and renewable diesel.
           </p>
 
           {/* CTA */}
