@@ -1,5 +1,6 @@
 import Navigation from "@/components/navigation";
 import HeroSection from "@/components/hero-section";
+import AnnouncementBanner from "@/components/announcement-banner";
 import CompanyOverview from "@/components/company-overview";
 import CapabilitiesSection from "@/components/capabilities-section";
 import ProjectsSection from "@/components/projects-section";
@@ -93,6 +94,7 @@ export default function Home() {
       <Navigation />
       <main role="main">
         <HeroSection />
+        <AnnouncementBanner />
         <CompanyOverview />
         <CapabilitiesSection />
         <ProjectsSection />
