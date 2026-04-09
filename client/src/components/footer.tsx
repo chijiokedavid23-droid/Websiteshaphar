@@ -174,7 +174,7 @@ export default function Footer() {
             </Link>
           </div>
           <p className="text-white font-medium">
-            © 2025 Shaphargroup. All rights reserved. | Powering Net-Zero Aviation Today.
+            © 2026 Shaphargroup. All rights reserved. | Powering Net-Zero Aviation Today.
           </p>
         </motion.div>
       </div>
