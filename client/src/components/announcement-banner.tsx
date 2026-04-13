@@ -36,8 +36,8 @@ export default function AnnouncementBanner() {
         >
           {/* Badge */}
           <div className="flex items-center gap-2 mb-5">
-            <Award className="w-4 h-4 text-gold" />
-            <span className="text-xs font-bold tracking-widest uppercase text-gold border border-gold/40 bg-gold/10 px-3 py-1 rounded-full">
+            <Award className="w-4 h-4 text-yellow-300" />
+            <span className="text-xs font-bold tracking-widest uppercase text-navy bg-yellow-300 px-3 py-1 rounded-full">
               Landmark Announcement
             </span>
           </div>
