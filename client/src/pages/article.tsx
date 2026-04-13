@@ -1004,7 +1004,7 @@ The future of sustainable aviation depends not just on technological innovation,
     title: "Shaphargroup Selects Honeywell UOP Ecofining™ Technology for Rotterdam SAF Refinery",
     content: `ROTTERDAM, Netherlands — Shaphargroup, the developer behind one of Europe's most advanced sustainable aviation fuel (SAF) projects, today announced its plans to deploy Honeywell UOP's Ecofining™ process technology for its flagship SAF facility at the Port of Rotterdam.
 
-The facility will be designed to process 200,000 metric tonnes per year of pre-treated biofeedstock. Structured as a Special Purpose Vehicle (SPV) and strategically positioned at the largest seaport in Europe and a critical hub for global energy logistics, the project is designed to meet the rapidly growing demand for SAF driven by the EU's ReFuelEU Aviation regulation and other international decarbonisation mandates.
+The facility will be designed to produce 200,000 MT of HEFA-SAF per year. Structured as a Special Purpose Vehicle (SPV) and strategically positioned at the largest seaport in Europe and a critical hub for global energy logistics, the project is designed to meet the rapidly growing demand for SAF driven by the EU's ReFuelEU Aviation regulation and other international decarbonisation mandates.
 
 "The signing of this award agreement with Honeywell is a landmark moment for Shaphargroup and for sustainable aviation more broadly. We are aiming to combine world-class technology with an unrivalled location and a robust feedstock supply chain to deliver a project that will make a material difference to Europe's SAF production capacity. Rotterdam is the right home for this facility and Honeywell's process technology is the solution to help us realise it."
 
@@ -1022,7 +1022,7 @@ A ceremony to formalise the selection was held at Honeywell's offices in Brackne
 
 ## Project Highlights
 
-Capacity: 200,000 metric tonnes of pre-treated biofeedstock per year
+Capacity: 200,000 MT of HEFA-SAF per year
 
 Location: Port of Rotterdam, Netherlands — Europe's largest seaport and a world-class energy and chemicals hub
 
