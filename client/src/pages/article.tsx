@@ -1038,7 +1038,7 @@ Shaphargroup is an integrated renewable energy company specializing in waste lip
 
 Honeywell is an integrated operating company serving a broad range of industries and geographies around the world. As a trusted partner, Honeywell helps organizations solve the world's toughest challenges, providing actionable solutions and innovations across aerospace, industrial automation, process automation, and process technology.
 
-Media Contacts: Shaphargroup — Daisy Richards, Daisy@shaphargroup.com | Honeywell — Chris Martin, chris.martin2@honeywell.com`,
+[PRESS_CONTACTS]`,
     image: signing1Image,
     image1: signing1Image,
     image2: signing2Image,
@@ -1511,6 +1511,7 @@ export default function Article() {
                     .replace(/\[PHOTO_2\]/g, article.image2 ? `<img src="${article.image2}" alt="Team photo" class="w-full rounded-xl shadow-lg my-8 object-cover" style="max-height:500px" />` : '')
                     .replace(/\[BLOCKQUOTE\]([\s\S]*?)\[\/BLOCKQUOTE\]/g, '<blockquote class="border-l-4 border-emerald bg-gray-50 rounded-r-xl pl-5 pr-4 py-4 my-4 text-sm italic text-gray-600 leading-relaxed">$1</blockquote>')
                     .replace(/\[ATTR\](.*?)\[\/ATTR\]/g, '<p class="text-xs text-gray-500 font-medium mt-[-12px] mb-4 pl-5">$1</p>')
+                    .replace(/\[PRESS_CONTACTS\]/g, '<div class="mt-8 border-t border-gray-100 pt-6 pb-2"><p class="text-xs font-semibold text-gray-400 uppercase tracking-widest mb-3">Media Contacts</p><div class="flex flex-col gap-2 text-xs text-gray-500"><span><strong class="text-gray-600">Shaphargroup</strong> &mdash; Daisy Richards &nbsp;&bull;&nbsp; <a href="mailto:Daisy@shaphargroup.com" class="text-emerald hover:underline">Daisy@shaphargroup.com</a></span><span><strong class="text-gray-600">Honeywell</strong> &mdash; Chris Martin &nbsp;&bull;&nbsp; <a href="mailto:chris.martin2@honeywell.com" class="text-emerald hover:underline">chris.martin2@honeywell.com</a></span></div></div>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                     .replace(/## (.*?)$/gm, '<h2 class="text-2xl font-bold text-navy mt-8 mb-4">$1</h2>')
                     .replace(/### (.*?)$/gm, '<h3 class="text-xl font-bold text-navy mt-6 mb-3">$1</h3>')
