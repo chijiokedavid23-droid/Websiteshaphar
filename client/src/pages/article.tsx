@@ -1006,17 +1006,15 @@ The future of sustainable aviation depends not just on technological innovation,
 
 The facility will be designed to produce 200,000 MT of HEFA-SAF per year. Structured as a Special Purpose Vehicle (SPV) and strategically positioned at the largest seaport in Europe and a critical hub for global energy logistics, the project is designed to meet the rapidly growing demand for SAF driven by the EU's ReFuelEU Aviation regulation and other international decarbonisation mandates.
 
-"The signing of this award agreement with Honeywell is a landmark moment for Shaphargroup and for sustainable aviation more broadly. We are aiming to combine world-class technology with an unrivalled location and a robust feedstock supply chain to deliver a project that will make a material difference to Europe's SAF production capacity. Rotterdam is the right home for this facility and Honeywell's process technology is the solution to help us realise it."
-
-— David Chijioke Arinze, Managing Director Global Office, Shaphargroup
+[BLOCKQUOTE]"The signing of this award agreement with Honeywell is a landmark moment for Shaphargroup and for sustainable aviation more broadly. We are aiming to combine world-class technology with an unrivalled location and a robust feedstock supply chain to deliver a project that will make a material difference to Europe's SAF production capacity. Rotterdam is the right home for this facility and Honeywell's process technology is the solution to help us realise it."[/BLOCKQUOTE]
+[ATTR]— David Chijioke Arinze, Managing Director Global Office, Shaphargroup[/ATTR]
 
 [PHOTO_1]
 
 The award agreement formalises the engagement of Honeywell as the process technology licensor for the project, providing a proven, commercially validated pathway for converting used cooking oil (UCO) and other waste-based feedstocks into SAF and renewable diesel. Honeywell UOP's Ecofining process technology, developed in collaboration with Eni S.p.A., is widely recognised as the industry benchmark for SAF and renewable diesel production, offering high yields, regulatory compliance, and feedstock flexibility.
 
-"Honeywell's SAF process technology portfolio continues to advance innovation in SAF production by providing flexible feedstock options and reliable performance at a commercial scale. Our Ecofining process technology will help Shaphargroup produce lower-carbon aviation fuels in-line with European mandates."
-
-— Paul Allan, General Manager Europe, Honeywell UOP
+[BLOCKQUOTE]"Honeywell's SAF process technology portfolio continues to advance innovation in SAF production by providing flexible feedstock options and reliable performance at a commercial scale. Our Ecofining process technology will help Shaphargroup produce lower-carbon aviation fuels in-line with European mandates."[/BLOCKQUOTE]
+[ATTR]— Paul Allan, General Manager Europe, Honeywell UOP[/ATTR]
 
 A ceremony to formalise the selection was held at Honeywell's offices in Bracknell, UK, and was attended by senior representatives of both organisations. This marks a pivotal step in the project's development, following the completion of Pre-Front End Engineering and Design (Pre-FEED) activities and the advancement toward FEED.
 
@@ -1511,6 +1509,8 @@ export default function Article() {
                   __html: article.content
                     .replace(/\[PHOTO_1\]/g, article.image1 ? `<img src="${article.image1}" alt="Signing ceremony" class="w-full rounded-xl shadow-lg my-8 object-cover" style="max-height:500px" />` : '')
                     .replace(/\[PHOTO_2\]/g, article.image2 ? `<img src="${article.image2}" alt="Team photo" class="w-full rounded-xl shadow-lg my-8 object-cover" style="max-height:500px" />` : '')
+                    .replace(/\[BLOCKQUOTE\]([\s\S]*?)\[\/BLOCKQUOTE\]/g, '<blockquote class="border-l-4 border-emerald bg-gray-50 rounded-r-xl pl-5 pr-4 py-4 my-4 text-sm italic text-gray-600 leading-relaxed">$1</blockquote>')
+                    .replace(/\[ATTR\](.*?)\[\/ATTR\]/g, '<p class="text-xs text-gray-500 font-medium mb-4 pl-5">$1</p>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                     .replace(/## (.*?)$/gm, '<h2 class="text-2xl font-bold text-navy mt-8 mb-4">$1</h2>')
                     .replace(/### (.*?)$/gm, '<h3 class="text-xl font-bold text-navy mt-6 mb-3">$1</h3>')
