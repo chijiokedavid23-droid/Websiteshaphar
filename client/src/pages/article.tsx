@@ -1510,7 +1510,7 @@ export default function Article() {
                     .replace(/\[PHOTO_1\]/g, article.image1 ? `<img src="${article.image1}" alt="Signing ceremony" class="w-full rounded-xl shadow-lg my-8 object-cover" style="max-height:500px" />` : '')
                     .replace(/\[PHOTO_2\]/g, article.image2 ? `<img src="${article.image2}" alt="Team photo" class="w-full rounded-xl shadow-lg my-8 object-cover" style="max-height:500px" />` : '')
                     .replace(/\[BLOCKQUOTE\]([\s\S]*?)\[\/BLOCKQUOTE\]/g, '<blockquote class="border-l-4 border-emerald bg-gray-50 rounded-r-xl pl-5 pr-4 py-4 my-4 text-sm italic text-gray-600 leading-relaxed">$1</blockquote>')
-                    .replace(/\[ATTR\](.*?)\[\/ATTR\]/g, '<p class="text-xs text-gray-500 font-medium mb-4 pl-5">$1</p>')
+                    .replace(/\[ATTR\](.*?)\[\/ATTR\]/g, '<p class="text-xs text-gray-500 font-medium mt-[-12px] mb-4 pl-5">$1</p>')
                     .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
                     .replace(/## (.*?)$/gm, '<h2 class="text-2xl font-bold text-navy mt-8 mb-4">$1</h2>')
                     .replace(/### (.*?)$/gm, '<h3 class="text-xl font-bold text-navy mt-6 mb-3">$1</h3>')
