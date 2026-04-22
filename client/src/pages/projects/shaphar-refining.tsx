@@ -10,9 +10,9 @@ import shapharRefiningLogo from "@assets/Refinary Logo_1761655481254.jpg";
 export default function ShapharRefining() {
   useEffect(() => {
     updateSEOTags({
-      title: "Shaphar Refining | 200,000 MT/Year HEFA SAF Refinery Rotterdam Netherlands | 2028",
-      description: "Shaphar Refining (a Shaphargroup subsidiary) is building a 200,000 MT/year HEFA SAF and HVO refinery near Rotterdam, Netherlands. Processing UCO and waste feedstocks. Production target: 2028. Scalable to 500,000 MT/year.",
-      keywords: "Shaphar Refining, HEFA refinery Rotterdam, SAF refinery Netherlands, HVO refinery Rotterdam, SAF factory Netherlands 2028, sustainable aviation fuel refinery Europe, UCO refinery Rotterdam, HEFA SAF Netherlands, Shaphargroup Rotterdam, SAF production Europe, renewable fuel refinery Netherlands, SAF capacity Netherlands",
+      title: "Shaphar Refining | 200,000 MT/Year HEFA SAF Refinery Rotterdam Netherlands | 2029",
+      description: "Shaphar Refining (a Shaphargroup subsidiary) is building a 200,000 MT/year HEFA SAF and HVO refinery near Rotterdam, Netherlands. Processing UCO and waste feedstocks. Production target: 2029. Scalable to 500,000 MT/year.",
+      keywords: "Shaphar Refining, HEFA refinery Rotterdam, SAF refinery Netherlands, HVO refinery Rotterdam, SAF factory Netherlands 2029, sustainable aviation fuel refinery Europe, UCO refinery Rotterdam, HEFA SAF Netherlands, Shaphargroup Rotterdam, SAF production Europe, renewable fuel refinery Netherlands, SAF capacity Netherlands",
       canonical: window.location.href,
       structuredData: {
         "@context": "https://schema.org",
@@ -20,7 +20,7 @@ export default function ShapharRefining() {
           {
             "@type": "Organization",
             "name": "Shaphar Refining",
-            "description": "Shaphargroup subsidiary developing a 200,000 MT/year HEFA SAF and HVO refinery in the Netherlands near Rotterdam, targeting production in 2028. The facility will process UCO, animal fats, and PFAD using HEFA technology and is designed to scale to 500,000 MT/year.",
+            "description": "Shaphargroup subsidiary developing a 200,000 MT/year HEFA SAF and HVO refinery in the Netherlands near Rotterdam, targeting production in 2029. The facility will process UCO, animal fats, and PFAD using HEFA technology and is designed to scale to 500,000 MT/year.",
             "parentOrganization": {
               "@type": "Organization",
               "name": "Shaphargroup",
@@ -44,10 +44,10 @@ export default function ShapharRefining() {
           {
             "@type": "Project",
             "name": "Shaphar Refining — HEFA SAF Refinery Rotterdam",
-            "description": "A 200,000 MT/year HEFA-based sustainable aviation fuel and HVO refinery under development in the Netherlands near Rotterdam by Shaphargroup. Processing UCO, animal fats, and PFAD feedstocks. Production target: 2028. Scalable to 500,000 MT/year. Expected to reduce CO₂ emissions by approximately 450,000 tons per year.",
+            "description": "A 200,000 MT/year HEFA-based sustainable aviation fuel and HVO refinery under development in the Netherlands near Rotterdam by Shaphargroup. Processing UCO, animal fats, and PFAD feedstocks. Production target: 2029. Scalable to 500,000 MT/year. Expected to reduce CO₂ emissions by approximately 450,000 tons per year.",
             "status": "Under Development",
             "startDate": "2024",
-            "endDate": "2028",
+            "endDate": "2029",
             "location": {
               "@type": "Place",
               "name": "Rotterdam, Netherlands",
@@ -79,7 +79,7 @@ export default function ShapharRefining() {
                 "name": "What is Shaphar Refining?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Shaphar Refining is a subsidiary of Shaphargroup that is developing a 200,000 metric ton per year HEFA-based sustainable aviation fuel (SAF) and HVO refinery in the Netherlands, near Rotterdam. The facility will process waste-based feedstocks including UCO, animal fats, and PFAD, targeting commercial production in 2028."
+                  "text": "Shaphar Refining is a subsidiary of Shaphargroup that is developing a 200,000 metric ton per year HEFA-based sustainable aviation fuel (SAF) and HVO refinery in the Netherlands, near Rotterdam. The facility will process waste-based feedstocks including UCO, animal fats, and PFAD, targeting commercial production in 2029."
                 }
               },
               {
@@ -103,7 +103,7 @@ export default function ShapharRefining() {
                 "name": "When will the Shaphar Refining refinery start production?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Shaphar Refining is targeting commercial production in 2028. The refinery is currently in the development and permitting phase, with HEFA technology selected for its proven commercial viability and compliance with ISCC, CORSIA, and ASTM D7566 SAF certification standards."
+                  "text": "Shaphar Refining is targeting commercial production in 2029. The refinery is currently in the development and permitting phase, with HEFA technology selected for its proven commercial viability and compliance with ISCC, CORSIA, and ASTM D7566 SAF certification standards."
                 }
               },
               {
@@ -129,7 +129,7 @@ export default function ShapharRefining() {
     { label: "Capacity", value: "200,000 MT per year", sublabel: "(SAF + HVO)" },
     { label: "Technology", value: "HEFA Process", sublabel: "Hydroprocessed Esters and Fatty Acids" },
     { label: "Feedstock", value: "UCO, Animal Fats, PFAD", sublabel: "Multi-feedstock capability" },
-    { label: "Target Start", value: "2028", sublabel: "Production" },
+    { label: "Target Start", value: "2029", sublabel: "Production" },
     { label: "Location", value: "Netherlands", sublabel: "" },
     { label: "Future Expansion", value: "500,000 MT/year", sublabel: "Scalability built-in" },
     { label: "Certifications", value: "ISCC EU, CORSIA, SAFc", sublabel: "Targeting all frameworks" }
@@ -230,7 +230,7 @@ export default function ShapharRefining() {
               Located in <strong className="text-navy">Netherlands</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              With a production target start of <strong className="text-navy">2028</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
+              With a production target start of <strong className="text-navy">2029</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
             </p>
           </motion.div>
         </div>
