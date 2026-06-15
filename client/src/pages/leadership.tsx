@@ -251,7 +251,7 @@ export default function Leadership() {
       name: "David Chijioke Arinze",
       title: "MD Europe & Americas",
       image: davidImagePath,
-      bio: "A visionary leader in renewable energy and sustainable trade, David serves as Managing Director, Europe and Americas at Shaphargroup, driving global UCO and SAF supply chains across the U.S., EU, and China. With a strong foundation in business and project leadership, he holds an M.Sc. in Project Management from the University of Salford (UK), a diploma in SME & Digital Finance from the Frankfurt School (Germany), and a B.Sc. in Business Administration. He brings deep expertise in ESG, digital finance, and cross-border execution. David's strategic direction continues to expand Shaphargroup's global footprint in the clean energy sector."
+      bio: "David Chijioke Arinze is Managing Director for Shaphargroup's European and Americas operations, leading the development of the company's €400 million HEFA-SAF refinery at the Port of Rotterdam — one of Northwest Europe's first large-scale sustainable aviation fuel facilities.\n\nWith over 15 years of experience spanning renewable energy infrastructure, international commodity trading, and project finance, David has built and operationalized complex energy assets from concept through commercial operation. He Co-founded Shaphargroup in 2019 and subsequently delivered a 200,000 MT/year ISCC EU and CORSIA-certified waste feedstock pretreatment facility in Shandong, China — managing the project end-to-end from contractor selection through dual certification and commercial ramp-up."
     },
     {
       name: "Zhen Tiyu (Jane Zhen)",
