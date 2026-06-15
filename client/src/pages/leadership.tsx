@@ -300,9 +300,9 @@ export default function Leadership() {
     },
     {
       name: "Jeremiah Shallangwa",
-      title: "Director of Energy Infrastructure",
+      title: "Chief Innovation Officer",
       image: jeremiahImagePath,
-      bio: "Jeremiah Shallangwa serves as Lead Energy Integration Europe at Shaphargroup, where he spearheads the integration of sustainable energy solutions across the company's European operations. With a strong background in energy systems engineering, renewable fuel technologies, and cross-border project coordination, Jeremiah plays a pivotal role in aligning Shaphargroup's SAF production capabilities with European energy infrastructure and regulatory requirements. His expertise in energy transition strategies, HEFA process integration, and stakeholder engagement ensures seamless collaboration between technical teams, regulatory bodies, and commercial partners. Jeremiah's work is integral to Shaphargroup's mission of delivering scalable, sustainable aviation fuel solutions to the European market."
+      bio: "Jeremiah Shallangwa serves as Chief Innovation Officer at Shaphargroup, bringing nine years of experience spanning cleantech infrastructure development, digital platform engineering, and renewable energy finance across the Netherlands.\n\nJeremiah's career reflects a deliberate progression from early-stage technology entrepreneurship to industrial-scale energy project leadership. He has deployed over 10 MW of solar energy systems across commercial and residential portfolios, demonstrating fluency in project finance structuring, grid integration, and Energy-as-a-Service business models.\n\nAt Shaphargroup, Jeremiah leads energy strategy and proprietary platform development for the Rotterdam HEFA-SAF refinery. He holds a BSc in Automotive Technology with Management from the University of Hertfordshire (UK) and is an alumnus of the Rockstart Smart Energy Accelerator (Amsterdam, 2018/2019). His achievements include winning the GIZ Pitch Prize for cleantech innovation and selection as a Viva Tech Finalist."
     }
   ];
 
