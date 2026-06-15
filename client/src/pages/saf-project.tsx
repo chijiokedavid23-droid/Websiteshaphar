@@ -37,8 +37,8 @@ export default function SAFProject() {
     { label: "Capacity", value: "200,000 MT per year", sublabel: "(SAF + HVO)" },
     { label: "Technology", value: "HEFA Process", sublabel: "Hydroprocessed Esters and Fatty Acids" },
     { label: "Feedstock", value: "Waste-based Feedstocks", sublabel: "Multi-feedstock capability" },
-    { label: "Target Start", value: "2029", sublabel: "Production" },
-    { label: "Location", value: "Netherlands", sublabel: "" },
+    { label: "Target Start", value: "2030", sublabel: "Production" },
+    { label: "Location", value: "Rotterdam, Netherlands", sublabel: "" },
     { label: "Future Expansion", value: "500,000 MT/year", sublabel: "Scalability built-in" },
     { label: "Certifications", value: "ISCC EU, CORSIA, SAFc", sublabel: "Targeting all frameworks" }
   ];
@@ -134,10 +134,10 @@ export default function SAFProject() {
               The facility will utilize advanced <strong className="text-navy">HEFA (Hydroprocessed Esters and Fatty Acids) technology</strong> with multi-feedstock capability, enabling flexible production to meet evolving market demands and regulatory requirements.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed mb-6">
-              Located in <strong className="text-navy">Netherlands</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
+              Located in <strong className="text-navy">Rotterdam, Netherlands</strong>, the refinery is strategically positioned to serve European markets and integrate with existing logistics infrastructure.
             </p>
             <p className="text-xl text-gray-700 leading-relaxed">
-              With a production target start of <strong className="text-navy">2029</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
+              With a production target start of <strong className="text-navy">2030</strong>, this project represents a strategic investment to support Europe's energy transition and help airlines meet ReFuelEU Aviation targets.
             </p>
           </motion.div>
         </div>
