@@ -96,7 +96,7 @@ const addStructuredData = (data: Record<string, any>) => {
 export const SEO_CONFIGS = {
   home: {
     title: "Shaphargroup | SAF Producer China | UCO & SAF Distributor Europe | Rotterdam Refinery",
-    description: "Shaphargroup produces HEFA SAF in Shandong, China and distributes SAF and UCO across Europe from Rotterdam. Building a 200,000 MT/year HEFA refinery in the Netherlands (Shaphar Refining, 2028). ISCC certified, CORSIA eligible.",
+    description: "Shaphargroup produces HEFA SAF in Shandong, China and distributes SAF and UCO across Europe from Rotterdam. Building a 200,000 MT/year HEFA refinery in Rotterdam, Netherlands (Shaphar Refining, 2030). ISCC certified, CORSIA eligible.",
     keywords: "SAF producer China, SAF distributor Europe, UCO distributor Europe, HEFA SAF Shandong, UCO supplier Rotterdam, sustainable aviation fuel Netherlands, HEFA refinery Rotterdam, SAF supplier Europe, Shaphargroup, Shaphar Refining, Shandong Prophet Energy, UCO to SAF, SAF mandate compliance, CORSIA eligible SAF, ISCC certified SAF, ReFuelEU Aviation, aviation decarbonization",
   },
   saf: {
@@ -106,7 +106,7 @@ export const SEO_CONFIGS = {
   },
   about: {
     title: "About Shaphargroup | SAF & UCO Producer China | SAF Distributor Europe | Rotterdam Refinery",
-    description: "Shaphargroup is a vertically integrated SAF company: producing HEFA SAF in Shandong, China; distributing SAF and UCO in Europe from Rotterdam; and building the 200,000 MT/year Shaphar Refining HEFA refinery in the Netherlands (2028).",
+    description: "Shaphargroup is a vertically integrated SAF company: producing HEFA SAF in Shandong, China; distributing SAF and UCO in Europe from Rotterdam; and building the 200,000 MT/year Shaphar Refining HEFA refinery in Rotterdam, Netherlands (2030).",
     keywords: "Shaphargroup company, SAF producer China, UCO producer Shandong, SAF distributor Rotterdam, sustainable aviation fuel company, Shandong Prophet Energy, Shaphar Refining, HEFA SAF company, UCO refining Europe, vertically integrated SAF, global SAF operations, Rotterdam SAF company",
   },
   leadership: {

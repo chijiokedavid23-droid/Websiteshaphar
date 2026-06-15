@@ -22,7 +22,7 @@ export default function About() {
         "@type": "Organization",
         "@id": "https://shaphargroup.com/#organization",
         "name": "Shaphargroup",
-        "description": "Shaphargroup is a vertically integrated sustainable aviation fuel (SAF) company: (1) producing HEFA SAF in Shandong, China through Shandong Prophet Energy Co., LTD; (2) distributing SAF and UCO across Europe from Rotterdam, Netherlands; and (3) developing the Shaphar Refining project — a 200,000 MT/year HEFA SAF and HVO refinery in the Netherlands, targeting 2028.",
+        "description": "Shaphargroup is a vertically integrated sustainable aviation fuel (SAF) company: (1) producing HEFA SAF in Shandong, China through Shandong Prophet Energy Co., LTD; (2) distributing SAF and UCO across Europe from Rotterdam, Netherlands; and (3) developing the Shaphar Refining project — a 200,000 MT/year HEFA SAF and HVO refinery in Rotterdam, Netherlands, targeting 2030.",
         "image": {
           "@type": "ImageObject",
           "url": `${window.location.origin}${aboutPageImagePath}`,
@@ -40,7 +40,7 @@ export default function About() {
           {
             "@type": "Organization",
             "name": "Shaphar Refining",
-            "description": "Shaphargroup's Netherlands refinery subsidiary developing a 200,000 MT/year HEFA SAF refinery near Rotterdam, targeting 2028 production."
+            "description": "Shaphargroup's Netherlands refinery subsidiary developing a 200,000 MT/year HEFA SAF refinery in Rotterdam, targeting 2030 production."
           }
         ],
         "knowsAbout": [
