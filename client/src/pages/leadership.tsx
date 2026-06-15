@@ -16,6 +16,7 @@ import elvisImagePath from "@assets/Elvis_1771951421457.jpeg";
 import brianImagePath from "@assets/Brian_1771951929122.jpeg";
 import jeremiahImagePath from "@assets/Jeremiah_Shallangwa_1771952202886.jpeg";
 import williamImagePath from "@assets/William_PM_1781523366226.jpeg";
+import robImagePath from "@assets/Rob_AM_1781523987622.png";
 
 export default function Leadership() {
   // SEO Meta Tags Setup
@@ -241,6 +242,12 @@ export default function Leadership() {
       title: "Chief Structuring & Legal Officer",
       image: williamImagePath,
       bio: "Chief Structuring and Legal Officer\n\nWilliam Abraham serves as Chief Structuring and Legal Officer at Shaphargroup, bringing over three decades of elite transactional and governance experience spanning international law firm partnership, public-sector board appointments, and serial entrepreneurship in project finance and energy infrastructure.\n\nWilliam's career includes partner-level positions at Baker & McKenzie Singapore and Squire Patton Boggs, where he led the International Projects and Finance Group and personally delivered over €15 billion in cross-border infrastructure and energy transactions. His renewable fuels expertise is direct and extensive: he structured GAE's high-FFA waste lipid refining platform in Ajman, led Conduit Capital's tyre-to-oil recycling rollout, and handled major wind and offshore energy mandates including Vattenfall's €5 billion/5,000 MW programme and the London Array offshore consortium. His regulatory-credit expertise spans CDM, EU ETS, and Kyoto Protocol implementation, directly supporting Shaphargroup's RED compliance framework and carbon credit structures.\n\nHe holds a Juris Doctor (JD) degree, Master of Laws (LL.M) from the University of Cambridge, and Fellowship of the Chartered Institute of Credit Services (FCCS). Since 2008, he has operated as founder and strategic lead across multiple project-development platforms including CAP Incubation LLC. His public-sector governance credentials include a Ministerial appointment as Non-Executive Director and Chair of the Audit Committee for Northern Ireland Ambulance NHS Trust — a £125 million organisation with approximately 1,300 employees."
+    },
+    {
+      name: "Rob Groeliker",
+      title: "Chief Operating Officer",
+      image: robImagePath,
+      bio: "Chief Operating Officer\n\nRob Groeliker serves as Chief Operating Officer at Shaphargroup, bringing over 30 years of leadership experience spanning industrial-scale biorefining, renewable energy operations, and sustainable supply chain development across Europe.\n\nRob's career is defined by full-cycle industrial project execution at scale. He served as the founding employee and Managing Director of Abengoa Bioenergy Rotterdam (2006–2011), where he delivered a €530 million greenfield bioethanol plant from concept to 110% operational capacity — Europe's largest facility at the time. Since 2011, he has led Viterra Biofuels Europe (now part of Bunge Ltd), managing biodiesel operations across the Netherlands and Germany with revenues exceeding €500 million and teams of 110–260 employees. His operational leadership transformed Viterra from dramatic losses in 2011 to lowest-cost-producer status through systematic efficiency improvements and feedstock optimization.\n\nRob's public affairs expertise is extensive: he currently serves as President of the Nederlandse Vereniging voor Duurzame Brandstoffen (NVDB) and chairs the MVO Biodiesel working group, while previously holding a Board seat at the European Biodiesel Board. Fluent in Dutch, English, and German, his managerial philosophy centres on servant leadership."
     },
     {
       name: "Jiao Li Guang (Charles)",
