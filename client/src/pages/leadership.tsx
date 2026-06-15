@@ -17,6 +17,7 @@ import brianImagePath from "@assets/Brian_1771951929122.jpeg";
 import jeremiahImagePath from "@assets/Jeremiah_Shallangwa_1771952202886.jpeg";
 import williamImagePath from "@assets/William_PM_1781523366226.jpeg";
 import robImagePath from "@assets/Rob_AM_1781523987622.png";
+import grazvydasImagePath from "@assets/Grazvydas_Profile_Picture_1781524602742.png";
 
 export default function Leadership() {
   // SEO Meta Tags Setup
@@ -254,6 +255,12 @@ export default function Leadership() {
       title: "CEO",
       image: charlesImagePath,
       bio: "A seasoned industrial chemist and refinery executive, Charles Jiao has over a decade of frontline experience in waste oil processing, advanced oleochemicals, and sustainable aviation fuel (SAF) systems. As CEO of Shaphargroup Industry (Hainan) Co., Ltd., he oversees the production of ISCC-certified UCO and SAF. Charles has led multiple refinery expansions, optimized distillation processes for high-purity outputs, and spearheaded compliance with global SAF standards. His deep command of feedstock science and market dynamics positions him as a key figure in Asia's clean energy transformation."
+    },
+    {
+      name: "Grazvydas Bajoras",
+      title: "Commercial Lead",
+      image: grazvydasImagePath,
+      bio: "Commercial Lead\n\nGrazvydas Bajoras serves as Commercial Lead at Shaphargroup, bringing over 20 years of experience spanning global energy markets, aviation fuel supply, and sustainable aviation fuel (SAF) commercialisation across Europe and the United States.\n\nGrazvydas's career trajectory reflects deliberate positioning at the intersection of conventional jet fuel supply and the energy transition. He began with senior roles at Williams Energy refining and BP, gaining deep exposure to refining economics and wholesale fuel markets, then transitioned into international oil supply and trading leadership, building and leading organisations across Europe and the United States that generated multi-billion-dollar annual revenues. Early in his career, he served as part of the founding management team of FL Technics, contributing to the development of aviation maintenance and leasing services for European markets — experience that provides him with rare insight into airline operational requirements and procurement behaviour.\n\nIn his current work, he operates as a conventional jet fuel and SAF originator and commercial strategist, actively managing airline fuel tenders (Jet A-1), sourcing SAF across EU and US markets, and engaging with SAF developers on supply contracts and investment structures. His live market engagement provides real-time intelligence on SAF pricing dynamics, feedstock benchmarks, and the commercial viability of production economics. His ability to bridge SAF production, airline demand, and project financing positions him to secure the offtake agreements that will determine Shaphargroup's revenue certainty and debt serviceability for the Rotterdam refinery project."
     },
     {
       name: "Ji Gang (Gee Gang)",
