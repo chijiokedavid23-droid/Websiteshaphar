@@ -15,6 +15,7 @@ import jiGangImagePath from "@assets/Ji_Gang_(Gee_Gang)_1771951371246.jpeg";
 import elvisImagePath from "@assets/Elvis_1771951421457.jpeg";
 import brianImagePath from "@assets/Brian_1771951929122.jpeg";
 import jeremiahImagePath from "@assets/Jeremiah_Shallangwa_1771952202886.jpeg";
+import williamImagePath from "@assets/William_PM_1781523366226.jpeg";
 
 export default function Leadership() {
   // SEO Meta Tags Setup
@@ -235,6 +236,12 @@ export default function Leadership() {
   };
 
   const leadership = [
+    {
+      name: "William Abraham",
+      title: "Chief Structuring & Legal Officer",
+      image: williamImagePath,
+      bio: "Chief Structuring and Legal Officer\n\nWilliam Abraham serves as Chief Structuring and Legal Officer at Shaphargroup, bringing over three decades of elite transactional and governance experience spanning international law firm partnership, public-sector board appointments, and serial entrepreneurship in project finance and energy infrastructure.\n\nWilliam's career includes partner-level positions at Baker & McKenzie Singapore and Squire Patton Boggs, where he led the International Projects and Finance Group and personally delivered over €15 billion in cross-border infrastructure and energy transactions. His renewable fuels expertise is direct and extensive: he structured GAE's high-FFA waste lipid refining platform in Ajman, led Conduit Capital's tyre-to-oil recycling rollout, and handled major wind and offshore energy mandates including Vattenfall's €5 billion/5,000 MW programme and the London Array offshore consortium. His regulatory-credit expertise spans CDM, EU ETS, and Kyoto Protocol implementation, directly supporting Shaphargroup's RED compliance framework and carbon credit structures.\n\nHe holds a Juris Doctor (JD) degree, Master of Laws (LL.M) from the University of Cambridge, and Fellowship of the Chartered Institute of Credit Services (FCCS). Since 2008, he has operated as founder and strategic lead across multiple project-development platforms including CAP Incubation LLC. His public-sector governance credentials include a Ministerial appointment as Non-Executive Director and Chair of the Audit Committee for Northern Ireland Ambulance NHS Trust — a £125 million organisation with approximately 1,300 employees."
+    },
     {
       name: "Jiao Li Guang (Charles)",
       title: "CEO",
