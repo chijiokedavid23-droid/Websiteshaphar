@@ -251,10 +251,10 @@ export default function Leadership() {
       bio: "Rob Groeliker serves as Chief Operating Officer at Shaphargroup, bringing over 30 years of leadership experience spanning industrial-scale biorefining, renewable energy operations, and sustainable supply chain development across Europe.\n\nRob's career is defined by full-cycle industrial project execution at scale. He served as the founding employee and Managing Director of Abengoa Bioenergy Rotterdam (2006–2011), where he delivered a €530 million greenfield bioethanol plant from concept to 110% operational capacity — Europe's largest facility at the time. Since 2011, he has led Viterra Biofuels Europe (now part of Bunge Ltd), managing biodiesel operations across the Netherlands and Germany with revenues exceeding €500 million and teams of 110–260 employees. His operational leadership transformed Viterra from dramatic losses in 2011 to lowest-cost-producer status through systematic efficiency improvements and feedstock optimization.\n\nRob's public affairs expertise is extensive: he currently serves as President of the Nederlandse Vereniging voor Duurzame Brandstoffen (NVDB) and chairs the MVO Biodiesel working group, while previously holding a Board seat at the European Biodiesel Board. Fluent in Dutch, English, and German, his managerial philosophy centres on servant leadership."
     },
     {
-      name: "Jiao Li Guang (Charles)",
-      title: "CEO",
-      image: charlesImagePath,
-      bio: "A seasoned industrial chemist and refinery executive, Charles Jiao has over a decade of frontline experience in waste oil processing, advanced oleochemicals, and sustainable aviation fuel (SAF) systems. As CEO of Shaphargroup Industry (Hainan) Co., Ltd., he oversees the production of ISCC-certified UCO and SAF. Charles has led multiple refinery expansions, optimized distillation processes for high-purity outputs, and spearheaded compliance with global SAF standards. His deep command of feedstock science and market dynamics positions him as a key figure in Asia's clean energy transformation."
+      name: "David Chijioke Arinze",
+      title: "MD/CEO",
+      image: davidImagePath,
+      bio: "David Chijioke Arinze is Managing Director for Shaphargroup's European and Americas operations, leading the development of the company's €400 million HEFA-SAF refinery at the Port of Rotterdam — one of Northwest Europe's first large-scale sustainable aviation fuel facilities.\n\nWith over 15 years of experience spanning renewable energy infrastructure, international commodity trading, and project finance, David has built and operationalized complex energy assets from concept through commercial operation. He Co-founded Shaphargroup in 2019 and subsequently delivered a 200,000 MT/year ISCC EU and CORSIA-certified waste feedstock pretreatment facility in Shandong, China — managing the project end-to-end from contractor selection through dual certification and commercial ramp-up."
     },
     {
       name: "Grazvydas Bajoras",
@@ -269,10 +269,10 @@ export default function Leadership() {
       bio: "Ji Gang is a veteran oleochemical engineer with over 15 years of expertise in palm oil and UCO refining. As Director of R&D at Shaphargroup, he leads the design and innovation of next-generation UCO production lines that meet global SAF and biodiesel standards. Ji earned a Bachelor's in Chemistry from Jiangsu University of Technology and spent 16 years at PT. Duakuda Indonesia driving efficiency in oleochemical operations. His leadership ensures Shaphargroup's technology stays ahead in sustainable fuel refinement."
     },
     {
-      name: "David Chijioke Arinze",
-      title: "MD Europe & Americas",
-      image: davidImagePath,
-      bio: "David Chijioke Arinze is Managing Director for Shaphargroup's European and Americas operations, leading the development of the company's €400 million HEFA-SAF refinery at the Port of Rotterdam — one of Northwest Europe's first large-scale sustainable aviation fuel facilities.\n\nWith over 15 years of experience spanning renewable energy infrastructure, international commodity trading, and project finance, David has built and operationalized complex energy assets from concept through commercial operation. He Co-founded Shaphargroup in 2019 and subsequently delivered a 200,000 MT/year ISCC EU and CORSIA-certified waste feedstock pretreatment facility in Shandong, China — managing the project end-to-end from contractor selection through dual certification and commercial ramp-up."
+      name: "Jiao Li Guang (Charles)",
+      title: "CEO Asia",
+      image: charlesImagePath,
+      bio: "A seasoned industrial chemist and refinery executive, Charles Jiao has over a decade of frontline experience in waste oil processing, advanced oleochemicals, and sustainable aviation fuel (SAF) systems. As CEO of Shaphargroup Industry (Hainan) Co., Ltd., he oversees the production of ISCC-certified UCO and SAF. Charles has led multiple refinery expansions, optimized distillation processes for high-purity outputs, and spearheaded compliance with global SAF standards. His deep command of feedstock science and market dynamics positions him as a key figure in Asia's clean energy transformation."
     },
     {
       name: "Zhen Tiyu (Jane Zhen)",
